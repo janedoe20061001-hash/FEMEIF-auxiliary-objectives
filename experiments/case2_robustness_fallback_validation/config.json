@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_name": "case2_independent_fallback_robustness_validation",
+  "seeds": {"start": 500, "count": 100},
+  "population": 150, "generations": 300, "algorithm": "NSGA-II", "encoding": "log10",
+  "crossover_probability": 0.9, "crossover_eta": 1,
+  "mutation_individual_probability": 1.0, "mutation_variable_probability": 0.08, "mutation_eta": 1,
+  "selection_objectives": "all", "report_front": "wsmse_selected",
+  "final_selection": {"method": "min_wsmse_final_population", "phase_weight": 17.38, "tie_break": "first_index"},
+  "features": {
+    "chinese": {"turn_quantile": 0.95, "fit_turn_ratio": 0.2, "event_min_gap": 4, "ptc_neighbor_db": 0.2, "ptc_gamma": 0.41, "weak_location_weight": 0.1, "excess_event_weight": 0.1, "speed_epsilon_ratio": 0.05, "dtw_window": 4, "soft_dtw_window": 10, "soft_dtw_gamma": 0.1, "hausdorff_quantile": 0.95},
+    "paper": {"THk": 8.0, "beta": 0.4, "mu": 0.5, "gamma": 0.41, "THlf": 1.6, "DTW_points": 60}
+  },
+  "conditions": [
+    {"name": "noise_high", "kind": "noise", "sigma_magnitude_db": 0.5, "sigma_phase_degree": 2.0},
+    {"name": "random_gap_20pct", "kind": "random_gap", "fraction": 0.2}
+  ],
+  "groups": [[], ["reactance_crossing_direction_consistency", "transition_speed_relative_error"], ["reactance_crossing_direction_consistency"], ["DTW", "LFP"], ["DTW", "LMEP"]],
+  "target_data": {"file": "data/targetImpedance_case2.csv", "sha256": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725", "magnitude_unit": "ohm", "phase_unit": "degree", "sampling": "all_rows", "points": 201},
+  "case": "case2_paper_figure15"
+}
+

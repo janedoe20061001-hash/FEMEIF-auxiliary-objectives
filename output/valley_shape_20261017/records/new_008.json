@@ -1,0 +1,132 @@
+{
+  "id": "new_008",
+  "target": "mixed_resonators/base",
+  "cohort": "new",
+  "family": "offset",
+  "numerical_passed": true,
+  "levels": [
+    {
+      "n": 128,
+      "search": [
+        4.481400997820092,
+        4.961916562662406
+      ],
+      "radius": 146.32151119408272,
+      "extrema": [
+        {
+          "x": 4.696841780714922,
+          "frequency_hz": 49755.57857323795,
+          "kind": "peak",
+          "real_ohm": 192.23875672016248,
+          "imag_ohm": 177.321783404595,
+          "magnitude_ohm": 261.5315553716223,
+          "phase_deg": 42.68856301030793,
+          "R_dR": 905635.923676078,
+          "X_dX": -905635.9236761434,
+          "radial_balance_relative": 3.612125422386399e-14,
+          "normalized_radial_dot": -3.600374389162937e-14
+        },
+        {
+          "x": 4.730066281469251,
+          "frequency_hz": 53711.37637319645,
+          "kind": "valley",
+          "real_ohm": 111.76099915479593,
+          "imag_ohm": 105.36181745964387,
+          "magnitude_ohm": 153.59568193955718,
+          "phase_deg": 43.31183104668756,
+          "R_dR": -153842.7302017255,
+          "X_dX": 153842.73020172605,
+          "radial_balance_relative": 1.797201525066724e-15,
+          "normalized_radial_dot": 1.7940820059708604e-15
+        }
+      ],
+      "candidates": [
+        {
+          "center": 4.730066281469251,
+          "root": {
+            "x": 4.730066281469251,
+            "frequency_hz": 53711.37637319645,
+            "kind": "valley",
+            "real_ohm": 111.76099915479593,
+            "imag_ohm": 105.36181745964387,
+            "magnitude_ohm": 153.59568193955718,
+            "phase_deg": 43.31183104668756,
+            "R_dR": -153842.7302017255,
+            "X_dX": 153842.73020172605,
+            "radial_balance_relative": 1.797201525066724e-15,
+            "normalized_radial_dot": 1.7940820059708604e-15
+          },
+          "status": "valley_above_radius",
+          "diagnostics": {}
+        }
+      ]
+    },
+    {
+      "n": 256,
+      "search": [
+        4.481400997820092,
+        4.961916562662406
+      ],
+      "radius": 146.32151119408272,
+      "extrema": [
+        {
+          "x": 4.696841780714922,
+          "frequency_hz": 49755.57857323795,
+          "kind": "peak",
+          "real_ohm": 192.23875672016248,
+          "imag_ohm": 177.321783404595,
+          "magnitude_ohm": 261.5315553716223,
+          "phase_deg": 42.68856301030793,
+          "R_dR": 905635.923676078,
+          "X_dX": -905635.9236761434,
+          "radial_balance_relative": 3.612125422386399e-14,
+          "normalized_radial_dot": -3.600374389162937e-14
+        },
+        {
+          "x": 4.730066281469251,
+          "frequency_hz": 53711.37637319645,
+          "kind": "valley",
+          "real_ohm": 111.76099915479593,
+          "imag_ohm": 105.36181745964387,
+          "magnitude_ohm": 153.59568193955718,
+          "phase_deg": 43.31183104668756,
+          "R_dR": -153842.7302017255,
+          "X_dX": 153842.73020172605,
+          "radial_balance_relative": 1.797201525066724e-15,
+          "normalized_radial_dot": 1.7940820059708604e-15
+        }
+      ],
+      "candidates": [
+        {
+          "center": 4.730066281469251,
+          "root": {
+            "x": 4.730066281469251,
+            "frequency_hz": 53711.37637319645,
+            "kind": "valley",
+            "real_ohm": 111.76099915479593,
+            "imag_ohm": 105.36181745964387,
+            "magnitude_ohm": 153.59568193955718,
+            "phase_deg": 43.31183104668756,
+            "R_dR": -153842.7302017255,
+            "X_dX": 153842.73020172605,
+            "radial_balance_relative": 1.797201525066724e-15,
+            "normalized_radial_dot": 1.7940820059708604e-15
+          },
+          "status": "valley_above_radius",
+          "diagnostics": {}
+        }
+      ]
+    }
+  ],
+  "identity": {
+    "applicable": true,
+    "passed": true,
+    "max_absolute": 1.4210854715202004e-14,
+    "max_relative": 1.5353918312496019e-16
+  },
+  "control": null,
+  "nodal": {
+    "mode": "double",
+    "double_max_relative_error": 1.737180931230687e-14
+  }
+}

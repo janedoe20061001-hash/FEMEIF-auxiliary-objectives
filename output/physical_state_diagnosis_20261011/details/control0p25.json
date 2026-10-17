@@ -1,0 +1,5496 @@
+{
+  "target": {
+    "circuit": {
+      "id": "control_rlc",
+      "title": "单并联RLC对照",
+      "tree": [
+        "P",
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "expression": "(R1 // L1 // C1)",
+      "names": [
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "parameters": [
+        3000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "units": [
+        "ohm",
+        "H",
+        "F"
+      ],
+      "netlist": [
+        {
+          "component": "R1",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "component": "L1",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "component": "C1",
+          "a": 1,
+          "b": 0
+        }
+      ]
+    },
+    "damping_component": "R1",
+    "lc_components": [
+      "L1",
+      "C1"
+    ],
+    "focus_log10_span": [
+      3.989168419174264,
+      4.0108315808257355
+    ],
+    "amplitude_catalog": [
+      {
+        "event_id": "P1",
+        "kind": "peak",
+        "x": 4.0,
+        "frequency_hz": 10000.0,
+        "height_db": 69.54242509439325,
+        "prominence_db": 81.58275631872172,
+        "width_3db_decades": 0.0036105269419119956,
+        "width_3db_hz": 83.13569454728167,
+        "left_3db_x": 3.998194736482811,
+        "right_3db_x": 4.001805263424723
+      }
+    ],
+    "reference": {
+      "stable": true,
+      "passed": true,
+      "level4": [
+        {
+          "index": 0,
+          "x": 4.0,
+          "frequency_hz": 10000.0,
+          "direction": -1,
+          "real_ohm": 3000.0,
+          "kappa": -240.0,
+          "root_residual": 0.0,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0
+        }
+      ],
+      "events": [
+        {
+          "index": 0,
+          "x": 4.0,
+          "frequency_hz": 10000.0,
+          "direction": -1,
+          "real_ohm": 3000.0,
+          "kappa": -240.0,
+          "root_residual": 0.0,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0,
+          "nodal_relative_error": 0.0,
+          "nodal_kappa": [
+            -240.00000001087264,
+            -240.00000000106067
+          ],
+          "nodal_derivative_error": [
+            1.0872639677472762e-08,
+            1.0606697742332472e-09
+          ],
+          "nodal_step_ln_f": 4.166666666666667e-06,
+          "nodal_passed": true
+        }
+      ]
+    }
+  },
+  "representatives": [
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 43000,
+      "log_parameters": [
+        3.477142033137957,
+        -3.400219221430368,
+        -6.196140507466389
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999960902635,
+            "frequency_hz": 9999.99990997499,
+            "direction": -1,
+            "real_ohm": 3000.1435356623015,
+            "kappa": -240.0000796173206,
+            "root_residual": 4.163535538090765e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999996090263,
+            "frequency_hz": 9999.99990997498,
+            "direction": -1,
+            "real_ohm": 3000.1435356623015,
+            "kappa": -240.00007961732055,
+            "root_residual": 1.8735909921408442e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842375000759308e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00007963877204,
+              -240.00007963936844
+            ],
+            "nodal_derivative_error": [
+              2.1451484144563437e-08,
+              2.2047885295251035e-08
+            ],
+            "nodal_step_ln_f": 4.166665284421977e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99990997498,
+          "fit_real_ohm": 3000.1435356623015,
+          "fit_kappa": -240.00007961732055,
+          "shift_decades": -3.9097369786134095e-09,
+          "shift_tangent_scales": 2.1606005002758763e-06,
+          "real_ratio": 1.000047845220767,
+          "real_db": 0.0004155683658907274,
+          "kappa_ratio": 1.0000003317388357,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 43001,
+      "log_parameters": [
+        3.4717048148445424,
+        -3.4056565205566973,
+        -6.19070319403144
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999889359534,
+            "frequency_hz": 9999.999745240917,
+            "direction": -1,
+            "real_ohm": 2962.8169111108814,
+            "kappa": -240.00012824087878,
+            "root_residual": 4.111734440580107e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842372601517214e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999988935953,
+            "frequency_hz": 9999.999745240906,
+            "direction": -1,
+            "real_ohm": 2962.8169111108814,
+            "kappa": -240.00012824087872,
+            "root_residual": 3.0838008304350805e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00012830481995,
+              -240.00012813600767
+            ],
+            "nodal_derivative_error": [
+              6.394122920028167e-08,
+              1.0487104873391218e-07
+            ],
+            "nodal_step_ln_f": 4.166664440263712e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999745240906,
+          "fit_real_ohm": 2962.8169111108814,
+          "fit_kappa": -240.00012824087872,
+          "shift_decades": -1.1064047011899447e-08,
+          "shift_tangent_scales": 6.114218332268396e-06,
+          "real_ratio": 0.9876056370369605,
+          "real_db": -0.10832879750240035,
+          "kappa_ratio": 1.0000005343369947,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 43002,
+      "log_parameters": [
+        3.4768964826202935,
+        -3.4004670129559376,
+        -6.195892735301984
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000005770846,
+            "frequency_hz": 10000.000132878642,
+            "direction": -1,
+            "real_ohm": 2998.447731072402,
+            "kappa": -240.0013126979451,
+            "root_residual": 1.0402955341161376e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000005770846,
+            "frequency_hz": 10000.000132878642,
+            "direction": -1,
+            "real_ohm": 2998.447731072402,
+            "kappa": -240.0013126979451,
+            "root_residual": 1.0402955341161376e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.0013126411243,
+              -240.0013126517072
+            ],
+            "nodal_derivative_error": [
+              5.6820823601810844e-08,
+              4.623791483027162e-08
+            ],
+            "nodal_step_ln_f": 4.1666438768964365e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000132878642,
+          "fit_real_ohm": 2998.447731072402,
+          "fit_kappa": -240.0013126979451,
+          "shift_decades": 5.770846023267495e-09,
+          "shift_tangent_scales": 3.1890873665135296e-06,
+          "real_ratio": 0.999482577024134,
+          "real_db": -0.004495441987378354,
+          "kappa_ratio": 1.0000054695747713,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 43003,
+      "log_parameters": [
+        3.4766052105058876,
+        -3.400756360354957,
+        -6.195603361265282
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999924520044,
+            "frequency_hz": 9999.999826200981,
+            "direction": -1,
+            "real_ohm": 2996.437409875688,
+            "kappa": -240.0002564177262,
+            "root_residual": 6.237588383047792e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999992452004,
+            "frequency_hz": 9999.99982620097,
+            "direction": -1,
+            "real_ohm": 2996.437409875688,
+            "kappa": -240.0002564177262,
+            "root_residual": 2.0791961276825975e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00025643462698,
+              -240.00025643605454
+            ],
+            "nodal_derivative_error": [
+              1.690077056082373e-08,
+              1.8328336182094063e-08
+            ],
+            "nodal_step_ln_f": 4.166662214974787e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99982620097,
+          "fit_real_ohm": 2996.437409875688,
+          "fit_kappa": -240.0002564177262,
+          "shift_decades": -7.547996005996538e-09,
+          "shift_tangent_scales": 4.1711767404926935e-06,
+          "real_ratio": 0.9988124699585627,
+          "real_db": -0.010320884275497634,
+          "kappa_ratio": 1.0000010684071925,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_ANGULAR",
+      "seed": 43000,
+      "log_parameters": [
+        3.4770806178412483,
+        -3.400280575698771,
+        -6.196079163743155
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000001362851,
+            "frequency_hz": 10000.000031380809,
+            "direction": -1,
+            "real_ohm": 2999.719303521185,
+            "kappa": -240.00004297808508,
+            "root_residual": 1.8108818570113306e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842376808657177e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000001362848,
+            "frequency_hz": 10000.000031380727,
+            "direction": -1,
+            "real_ohm": 2999.719303521185,
+            "kappa": -240.00004297808508,
+            "root_residual": 1.457031379204519e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842376808657177e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00004298914504,
+              -240.00004298682725
+            ],
+            "nodal_derivative_error": [
+              1.1059967164328555e-08,
+              8.742176760279108e-09
+            ],
+            "nodal_step_ln_f": 4.16666592051949e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000031380727,
+          "fit_real_ohm": 2999.719303521185,
+          "fit_kappa": -240.00004297808508,
+          "shift_decades": 1.3628476125404632e-09,
+          "shift_tangent_scales": 7.53137423197967e-07,
+          "real_ratio": 0.9999064345070616,
+          "real_db": -0.0008127375682824308,
+          "kappa_ratio": 1.0000001790753545,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_ANGULAR",
+      "seed": 43001,
+      "log_parameters": [
+        3.4734782330691054,
+        -3.40388346766531,
+        -6.192476274677227
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000002813153,
+            "frequency_hz": 10000.000064775248,
+            "direction": -1,
+            "real_ohm": 2974.940150517374,
+            "kappa": -240.00032246281089,
+            "root_residual": 8.257117629965544e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000002813153,
+            "frequency_hz": 10000.000064775248,
+            "direction": -1,
+            "real_ohm": 2974.940150517374,
+            "kappa": -240.00032246281089,
+            "root_residual": 8.257117629965544e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00032240433552,
+              -240.00032242061684
+            ],
+            "nodal_derivative_error": [
+              5.847536499459238e-08,
+              4.219404559080431e-08
+            ],
+            "nodal_step_ln_f": 4.166661068361499e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000064775248,
+          "fit_real_ohm": 2974.940150517374,
+          "fit_kappa": -240.00032246281089,
+          "shift_decades": 2.813153265890378e-09,
+          "shift_tangent_scales": 1.554605945843208e-06,
+          "real_ratio": 0.9916467168391248,
+          "real_db": -0.07286043301114073,
+          "kappa_ratio": 1.0000013435950454,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_ANGULAR",
+      "seed": 43002,
+      "log_parameters": [
+        3.477093072797866,
+        -3.4002711202710683,
+        -6.19608842545033
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999904502584,
+            "frequency_hz": 9999.997801090973,
+            "direction": -1,
+            "real_ohm": 2999.805332497118,
+            "kappa": -240.00175411238723,
+            "root_residual": 6.244599280371794e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842292376369376e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999904502581,
+            "frequency_hz": 9999.99780109091,
+            "direction": -1,
+            "real_ohm": 2999.805332497118,
+            "kappa": -240.00175411238723,
+            "root_residual": 1.5195191582238033e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842292376369376e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.0017540584015,
+              -240.00175407689903
+            ],
+            "nodal_derivative_error": [
+              5.3985729664418614e-08,
+              3.5488199046085356e-08
+            ],
+            "nodal_step_ln_f": 4.1666362135491865e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99780109091,
+          "fit_real_ohm": 2999.805332497118,
+          "fit_kappa": -240.00175411238723,
+          "shift_decades": -9.5497418861612e-08,
+          "shift_tangent_scales": 5.27738239416375e-05,
+          "real_ratio": 0.9999351108323726,
+          "real_db": -0.0005636384359294814,
+          "kappa_ratio": 1.0000073088016135,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_ANGULAR",
+      "seed": 43003,
+      "log_parameters": [
+        3.477050499730312,
+        -3.4003079364108997,
+        -6.196051773993224
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999986843947,
+            "frequency_hz": 9999.999697070687,
+            "direction": -1,
+            "real_ohm": 2999.5112816607266,
+            "kappa": -239.99852721114803,
+            "root_residual": 8.325316218806629e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842451601962918e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999986843946,
+            "frequency_hz": 9999.999697070665,
+            "direction": -1,
+            "real_ohm": 2999.5112816607266,
+            "kappa": -239.99852721114803,
+            "root_residual": 4.578923920343647e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842451601962918e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99852718565958,
+              -239.9985271741842
+            ],
+            "nodal_derivative_error": [
+              2.5488446908639162e-08,
+              3.69638257780025e-08
+            ],
+            "nodal_step_ln_f": 4.166692236074478e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999697070665,
+          "fit_real_ohm": 2999.5112816607266,
+          "fit_kappa": -239.99852721114803,
+          "shift_decades": -1.3156054023966135e-08,
+          "shift_tangent_scales": 7.270304130770101e-06,
+          "real_ratio": 0.9998370938869089,
+          "real_db": -0.0014150997870082899,
+          "kappa_ratio": 0.9999938633797835,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_BRIDGE",
+      "seed": 43000,
+      "log_parameters": [
+        3.4770816660467054,
+        -3.4002784975674234,
+        -6.1960811228029815
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999418270873,
+            "frequency_hz": 9999.998660519273,
+            "direction": -1,
+            "real_ohm": 2999.726543599218,
+            "kappa": -239.9995067211849,
+            "root_residual": 1.0407392113384656e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999941827085,
+            "frequency_hz": 9999.998660519223,
+            "direction": -1,
+            "real_ohm": 2999.726543599218,
+            "kappa": -239.9995067211849,
+            "root_residual": 1.3113314062864669e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99950673430945,
+              -239.99950657921147
+            ],
+            "nodal_derivative_error": [
+              1.3124548559062532e-08,
+              1.419734303453879e-07
+            ],
+            "nodal_step_ln_f": 4.166675230552586e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.998660519223,
+          "fit_real_ohm": 2999.726543599218,
+          "fit_kappa": -239.9995067211849,
+          "shift_decades": -5.817291492959953e-08,
+          "shift_tangent_scales": 3.21475408158976e-05,
+          "real_ratio": 0.999908847866406,
+          "real_db": -0.0007917734591400187,
+          "kappa_ratio": 0.9999979446716037,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_BRIDGE",
+      "seed": 43001,
+      "log_parameters": [
+        3.481895171761585,
+        -3.3954229056778593,
+        -6.2009370080943285
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000088527979,
+            "frequency_hz": 10000.002038432249,
+            "direction": -1,
+            "real_ohm": 3033.158964234257,
+            "kappa": -239.97616915436393,
+            "root_residual": 8.418707298602659e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000088527979,
+            "frequency_hz": 10000.002038432249,
+            "direction": -1,
+            "real_ohm": 3033.158964234257,
+            "kappa": -239.97616915436393,
+            "root_residual": 8.418707298602659e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9761691039744,
+              -239.97616910920502
+            ],
+            "nodal_derivative_error": [
+              5.0389530770189594e-08,
+              4.515891305345576e-08
+            ],
+            "nodal_step_ln_f": 4.167080437711101e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.002038432249,
+          "fit_real_ohm": 3033.158964234257,
+          "fit_kappa": -239.97616915436393,
+          "shift_decades": 8.852797872549445e-08,
+          "shift_tangent_scales": 4.892236899029221e-05,
+          "real_ratio": 1.0110529880780856,
+          "real_db": 0.09547834083845347,
+          "kappa_ratio": 0.9999007048098497,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_BRIDGE",
+      "seed": 43002,
+      "log_parameters": [
+        3.5254169790754095,
+        -3.3518507667931847,
+        -6.244508813467782
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999921772368,
+            "frequency_hz": 9999.99819874237,
+            "direction": -1,
+            "real_ohm": 3352.872039022232,
+            "kappa": -239.94845140650412,
+            "root_residual": 6.979567005645708e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999921772366,
+            "frequency_hz": 9999.99819874232,
+            "direction": -1,
+            "real_ohm": 3352.872039022232,
+            "kappa": -239.94845140650412,
+            "root_residual": 1.2795872843683799e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.94845139802788,
+              -239.94845153311712
+            ],
+            "nodal_derivative_error": [
+              8.476234825138818e-09,
+              1.2661300274885434e-07
+            ],
+            "nodal_step_ln_f": 4.167561799787859e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99819874232,
+          "fit_real_ohm": 3352.872039022232,
+          "fit_kappa": -239.94845140650412,
+          "shift_decades": -7.82276341482202e-08,
+          "shift_tangent_scales": 4.323018821997212e-05,
+          "real_ratio": 1.1176240130074107,
+          "real_db": 0.9659144871149412,
+          "kappa_ratio": 0.9997852141937672,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_BRIDGE",
+      "seed": 43003,
+      "log_parameters": [
+        3.477134113954851,
+        -3.400735790871953,
+        -6.195623706635878
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999998803958006,
+            "frequency_hz": 9999.997246011913,
+            "direction": -1,
+            "real_ohm": 3000.0888297648517,
+            "kappa": -240.2813989137222,
+            "root_residual": 6.24518942761065e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.182851005483341e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999880395798,
+            "frequency_hz": 9999.997246011852,
+            "direction": -1,
+            "real_ohm": 3000.0888297648517,
+            "kappa": -240.2813989137222,
+            "root_residual": 1.4155762702584141e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.182851005483341e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.28139886137248,
+              -240.28139887655868
+            ],
+            "nodal_derivative_error": [
+              5.23497192261857e-08,
+              3.716351670846052e-08
+            ],
+            "nodal_step_ln_f": 4.161786990257493e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.997246011852,
+          "fit_real_ohm": 3000.0888297648517,
+          "fit_kappa": -240.2813989137222,
+          "shift_decades": -1.1960420209788936e-07,
+          "shift_tangent_scales": 6.609572467441134e-05,
+          "real_ratio": 1.0000296099216173,
+          "real_db": 0.00025718470376868074,
+          "kappa_ratio": 1.0011724954738426,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_EXCESS",
+      "seed": 43000,
+      "log_parameters": [
+        3.4772901497904307,
+        -3.4000681790490903,
+        -6.196291533591739
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999879623,
+            "frequency_hz": 9999.999722821714,
+            "direction": -1,
+            "real_ohm": 3001.166912705404,
+            "kappa": -239.9984672963929,
+            "root_residual": 6.24743363855388e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842454558388413e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999987962299,
+            "frequency_hz": 9999.999722821694,
+            "direction": -1,
+            "real_ohm": 3001.166912705404,
+            "kappa": -239.9984672963929,
+            "root_residual": 4.3732035469877165e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842454558388413e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99846732268858,
+              -239.9984673187037
+            ],
+            "nodal_derivative_error": [
+              2.6295680299881496e-08,
+              2.2310786107482272e-08
+            ],
+            "nodal_step_ln_f": 4.166693276274226e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999722821694,
+          "fit_real_ohm": 3001.166912705404,
+          "fit_kappa": -239.9984672963929,
+          "shift_decades": -1.2037701058176253e-08,
+          "shift_tangent_scales": 6.65227944251407e-06,
+          "real_ratio": 1.0003889709018012,
+          "real_db": 0.003377901415365245,
+          "kappa_ratio": 0.9999936137349704,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_EXCESS",
+      "seed": 43001,
+      "log_parameters": [
+        3.478323693173362,
+        -3.39910021591589,
+        -6.197259558068676
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000018634168,
+            "frequency_hz": 10000.000429067584,
+            "direction": -1,
+            "real_ohm": 3008.317659885314,
+            "kappa": -240.03469383428785,
+            "root_residual": 1.8786957364075196e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1840667270384436e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000018634168,
+            "frequency_hz": 10000.000429067584,
+            "direction": -1,
+            "real_ohm": 3008.317659885314,
+            "kappa": -240.03469383428785,
+            "root_residual": 1.8786957364075196e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1840667270384436e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.0346938325199,
+              -240.03469369532655
+            ],
+            "nodal_derivative_error": [
+              1.7679440134088509e-09,
+              1.3896129757995368e-07
+            ],
+            "nodal_step_ln_f": 4.1660644302126075e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000429067584,
+          "fit_real_ohm": 3008.317659885314,
+          "fit_kappa": -240.03469383428785,
+          "shift_decades": 1.8634167986419925e-08,
+          "shift_tangent_scales": 1.0297621782210575e-05,
+          "real_ratio": 1.0027725532951046,
+          "real_db": 0.024048769073988403,
+          "kappa_ratio": 1.000144557642866,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_EXCESS",
+      "seed": 43002,
+      "log_parameters": [
+        3.475456930691744,
+        -3.4019805161766463,
+        -6.19437654520609
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999986623332533,
+            "frequency_hz": 9999.96919913233,
+            "direction": -1,
+            "real_ohm": 2988.525257980332,
+            "kappa": -240.0429259380767,
+            "root_residual": 4.1474119388545003e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999986623332533,
+            "frequency_hz": 9999.96919913233,
+            "direction": -1,
+            "real_ohm": 2988.525257980332,
+            "kappa": -240.0429259380767,
+            "root_residual": 4.1474119388545003e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.04292593926536,
+              -240.04292607218628
+            ],
+            "nodal_derivative_error": [
+              1.1886527317983564e-09,
+              1.3410956967163656e-07
+            ],
+            "nodal_step_ln_f": 4.165921557954878e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.96919913233,
+          "fit_real_ohm": 2988.525257980332,
+          "fit_kappa": -240.0429259380767,
+          "shift_decades": -1.3376667467035475e-06,
+          "shift_tangent_scales": 0.0007392219624848234,
+          "real_ratio": 0.996175085993444,
+          "real_db": -0.033286480558369,
+          "kappa_ratio": 1.0001788580753197,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_EXCESS",
+      "seed": 43003,
+      "log_parameters": [
+        3.4773176491464133,
+        -3.400042990293265,
+        -6.196316747010201
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0000000002936185,
+            "frequency_hz": 10000.000006760814,
+            "direction": -1,
+            "real_ohm": 3001.35695143184,
+            "kappa": -239.99973736193897,
+            "root_residual": 2.4991316944487973e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000000293621,
+            "frequency_hz": 10000.000006760876,
+            "direction": -1,
+            "real_ohm": 3001.35695143184,
+            "kappa": -239.99973736193897,
+            "root_residual": 1.7493921861141582e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9997373810784,
+              -239.999737255469
+            ],
+            "nodal_derivative_error": [
+              1.9139434925818932e-08,
+              1.0646996884133841e-07
+            ],
+            "nodal_step_ln_f": 4.166671226360216e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000006760876,
+          "fit_real_ohm": 3001.35695143184,
+          "fit_kappa": -239.99973736193897,
+          "shift_decades": 2.93621127411825e-10,
+          "shift_tangent_scales": 1.6226103143197768e-07,
+          "real_ratio": 1.0004523171439468,
+          "real_db": 0.0039278885350168945,
+          "kappa_ratio": 0.9999989056747457,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 43000,
+      "log_parameters": [
+        3.4770816660467054,
+        -3.4002784975674234,
+        -6.1960811228029815
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999418270873,
+            "frequency_hz": 9999.998660519273,
+            "direction": -1,
+            "real_ohm": 2999.726543599218,
+            "kappa": -239.9995067211849,
+            "root_residual": 1.0407392113384656e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999941827085,
+            "frequency_hz": 9999.998660519223,
+            "direction": -1,
+            "real_ohm": 2999.726543599218,
+            "kappa": -239.9995067211849,
+            "root_residual": 1.3113314062864669e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99950673430945,
+              -239.99950657921147
+            ],
+            "nodal_derivative_error": [
+              1.3124548559062532e-08,
+              1.419734303453879e-07
+            ],
+            "nodal_step_ln_f": 4.166675230552586e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.998660519223,
+          "fit_real_ohm": 2999.726543599218,
+          "fit_kappa": -239.9995067211849,
+          "shift_decades": -5.817291492959953e-08,
+          "shift_tangent_scales": 3.21475408158976e-05,
+          "real_ratio": 0.999908847866406,
+          "real_db": -0.0007917734591400187,
+          "kappa_ratio": 0.9999979446716037,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 43001,
+      "log_parameters": [
+        3.481895171761585,
+        -3.3954229056778593,
+        -6.2009370080943285
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000088527979,
+            "frequency_hz": 10000.002038432249,
+            "direction": -1,
+            "real_ohm": 3033.158964234257,
+            "kappa": -239.97616915436393,
+            "root_residual": 8.418707298602659e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000088527979,
+            "frequency_hz": 10000.002038432249,
+            "direction": -1,
+            "real_ohm": 3033.158964234257,
+            "kappa": -239.97616915436393,
+            "root_residual": 8.418707298602659e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9761691039744,
+              -239.97616910920502
+            ],
+            "nodal_derivative_error": [
+              5.0389530770189594e-08,
+              4.515891305345576e-08
+            ],
+            "nodal_step_ln_f": 4.167080437711101e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.002038432249,
+          "fit_real_ohm": 3033.158964234257,
+          "fit_kappa": -239.97616915436393,
+          "shift_decades": 8.852797872549445e-08,
+          "shift_tangent_scales": 4.892236899029221e-05,
+          "real_ratio": 1.0110529880780856,
+          "real_db": 0.09547834083845347,
+          "kappa_ratio": 0.9999007048098497,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 43002,
+      "log_parameters": [
+        3.5254169790754095,
+        -3.3518507667931847,
+        -6.244508813467782
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999921772368,
+            "frequency_hz": 9999.99819874237,
+            "direction": -1,
+            "real_ohm": 3352.872039022232,
+            "kappa": -239.94845140650412,
+            "root_residual": 6.979567005645708e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999921772366,
+            "frequency_hz": 9999.99819874232,
+            "direction": -1,
+            "real_ohm": 3352.872039022232,
+            "kappa": -239.94845140650412,
+            "root_residual": 1.2795872843683799e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.94845139802788,
+              -239.94845153311712
+            ],
+            "nodal_derivative_error": [
+              8.476234825138818e-09,
+              1.2661300274885434e-07
+            ],
+            "nodal_step_ln_f": 4.167561799787859e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99819874232,
+          "fit_real_ohm": 3352.872039022232,
+          "fit_kappa": -239.94845140650412,
+          "shift_decades": -7.82276341482202e-08,
+          "shift_tangent_scales": 4.323018821997212e-05,
+          "real_ratio": 1.1176240130074107,
+          "real_db": 0.9659144871149412,
+          "kappa_ratio": 0.9997852141937672,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 43003,
+      "log_parameters": [
+        3.477134113954851,
+        -3.400735790871953,
+        -6.195623706635878
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999998803958006,
+            "frequency_hz": 9999.997246011913,
+            "direction": -1,
+            "real_ohm": 3000.0888297648517,
+            "kappa": -240.2813989137222,
+            "root_residual": 6.24518942761065e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.182851005483341e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999880395798,
+            "frequency_hz": 9999.997246011852,
+            "direction": -1,
+            "real_ohm": 3000.0888297648517,
+            "kappa": -240.2813989137222,
+            "root_residual": 1.4155762702584141e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.182851005483341e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.28139886137248,
+              -240.28139887655868
+            ],
+            "nodal_derivative_error": [
+              5.23497192261857e-08,
+              3.716351670846052e-08
+            ],
+            "nodal_step_ln_f": 4.161786990257493e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.997246011852,
+          "fit_real_ohm": 3000.0888297648517,
+          "fit_kappa": -240.2813989137222,
+          "shift_decades": -1.1960420209788936e-07,
+          "shift_tangent_scales": 6.609572467441134e-05,
+          "real_ratio": 1.0000296099216173,
+          "real_db": 0.00025718470376868074,
+          "kappa_ratio": 1.0011724954738426,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_OCCUPANCY",
+      "seed": 43000,
+      "log_parameters": [
+        3.4771288633778674,
+        -3.4002327014536364,
+        -6.196127058713585
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000011725495,
+            "frequency_hz": 10000.000269989509,
+            "direction": -1,
+            "real_ohm": 3000.0525592092877,
+            "kappa": -240.00024243484998,
+            "root_residual": 2.2898751055948466e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000011725495,
+            "frequency_hz": 10000.000269989509,
+            "direction": -1,
+            "real_ohm": 3000.0525592092877,
+            "kappa": -240.00024243484998,
+            "root_residual": 2.2898751055948466e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.0002424975597,
+              -240.00024235909814
+            ],
+            "nodal_derivative_error": [
+              6.270971653066226e-08,
+              7.575184213237662e-08
+            ],
+            "nodal_step_ln_f": 4.1666624577325504e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000269989509,
+          "fit_real_ohm": 3000.0525592092877,
+          "fit_kappa": -240.00024243484998,
+          "shift_decades": 1.1725495241421413e-08,
+          "shift_tangent_scales": 6.479748132208696e-06,
+          "real_ratio": 1.0000175197364292,
+          "real_db": 0.00015217316409871142,
+          "kappa_ratio": 1.0000010101452081,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_OCCUPANCY",
+      "seed": 43001,
+      "log_parameters": [
+        3.4716375706539733,
+        -3.4034199964846317,
+        -6.193101575118067
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000080917443235,
+            "frequency_hz": 10001.863366570742,
+            "direction": -1,
+            "real_ohm": 2962.3581974730578,
+            "kappa": -238.68590687590466,
+            "root_residual": 1.6444391390108325e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1907577536691664e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000080917443235,
+            "frequency_hz": 10001.863366570742,
+            "direction": -1,
+            "real_ohm": 2962.3581974730578,
+            "kappa": -238.68590687590466,
+            "root_residual": 1.6444391390108325e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1907577536691664e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -238.6859069455591,
+              -238.68590677279093
+            ],
+            "nodal_derivative_error": [
+              6.965444754314376e-08,
+              1.031137344398303e-07
+            ],
+            "nodal_step_ln_f": 4.189606387275771e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10001.863366570742,
+          "fit_real_ohm": 2962.3581974730578,
+          "fit_kappa": -238.68590687590466,
+          "shift_decades": 8.091744323479588e-05,
+          "shift_tangent_scales": 0.0447166316533519,
+          "real_ratio": 0.9874527324910193,
+          "real_db": -0.10967368131378297,
+          "kappa_ratio": 0.9945246119829361,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_OCCUPANCY",
+      "seed": 43002,
+      "log_parameters": [
+        3.477342509265397,
+        -3.400018808109913,
+        -6.196340936976466
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0000000041850745,
+            "frequency_hz": 10000.000096364902,
+            "direction": -1,
+            "real_ohm": 3001.528761642712,
+            "kappa": -240.000109852397,
+            "root_residual": 8.330915850625931e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0000000041850745,
+            "frequency_hz": 10000.000096364902,
+            "direction": -1,
+            "real_ohm": 3001.528761642712,
+            "kappa": -240.000109852397,
+            "root_residual": 8.330915850625931e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00010980924992,
+              -240.00010982026004
+            ],
+            "nodal_derivative_error": [
+              4.3147082351424615e-08,
+              3.213696686543699e-08
+            ],
+            "nodal_step_ln_f": 4.166664759507869e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000096364902,
+          "fit_real_ohm": 3001.528761642712,
+          "fit_kappa": -240.000109852397,
+          "shift_decades": 4.185074509166498e-09,
+          "shift_tangent_scales": 2.3127576426902764e-06,
+          "real_ratio": 1.0005095872142373,
+          "real_db": 0.004425090914692709,
+          "kappa_ratio": 1.0000004577183208,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_OCCUPANCY",
+      "seed": 43003,
+      "log_parameters": [
+        3.476462163686444,
+        -3.4009018123537693,
+        -6.195457915116592
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999953770655,
+            "frequency_hz": 9999.999893553,
+            "direction": -1,
+            "real_ohm": 2995.450613413657,
+            "kappa": -240.00158395760624,
+            "root_residual": 2.078511400087119e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842300772241737e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999995377065,
+            "frequency_hz": 9999.99989355299,
+            "direction": -1,
+            "real_ohm": 2995.450613413657,
+            "kappa": -240.00158395760627,
+            "root_residual": 2.286362540095831e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00158391411216,
+              -240.00158405022765
+            ],
+            "nodal_derivative_error": [
+              4.349411142356985e-08,
+              9.262137723453634e-08
+            ],
+            "nodal_step_ln_f": 4.166639167584158e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99989355299,
+          "fit_real_ohm": 2995.450613413657,
+          "fit_kappa": -240.00158395760627,
+          "shift_decades": -4.622934923759203e-09,
+          "shift_tangent_scales": 2.5547282499190817e-06,
+          "real_ratio": 0.9984835378045522,
+          "real_db": -0.013181820664366177,
+          "kappa_ratio": 1.0000065998233594,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_RADIAL",
+      "seed": 43000,
+      "log_parameters": [
+        3.477122768320593,
+        -3.4002383152841524,
+        -6.1961214215087566
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.00000000003834,
+            "frequency_hz": 10000.000000882812,
+            "direction": -1,
+            "real_ohm": 3000.0104556030383,
+            "kappa": -239.99998295755486,
+            "root_residual": 3.1225131393062806e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.00000000003834,
+            "frequency_hz": 10000.000000882812,
+            "direction": -1,
+            "real_ohm": 3000.0104556030383,
+            "kappa": -239.99998295755486,
+            "root_residual": 3.1225131393062806e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99998288624133,
+              -239.99998290557264
+            ],
+            "nodal_derivative_error": [
+              7.131353640943416e-08,
+              5.1982226523250574e-08
+            ],
+            "nodal_step_ln_f": 4.166666962542472e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000000882812,
+          "fit_real_ohm": 3000.0104556030383,
+          "fit_kappa": -239.99998295755486,
+          "shift_decades": 3.8339997843195306e-11,
+          "shift_tangent_scales": 2.1187465799799693e-08,
+          "real_ratio": 1.0000034852010127,
+          "real_db": 3.027201861057403e-05,
+          "kappa_ratio": 0.9999999289898119,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_RADIAL",
+      "seed": 43001,
+      "log_parameters": [
+        3.4772453645719645,
+        -3.4001169126904744,
+        -6.196242826797184
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000001385711,
+            "frequency_hz": 10000.000031907177,
+            "direction": -1,
+            "real_ohm": 3000.85744299882,
+            "kappa": -240.0006418534444,
+            "root_residual": 1.832391564759285e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000001385715,
+            "frequency_hz": 10000.000031907259,
+            "direction": -1,
+            "real_ohm": 3000.85744299882,
+            "kappa": -240.00064185344442,
+            "root_residual": 1.6658105134175315e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00064187134112,
+              -240.00064171868266
+            ],
+            "nodal_derivative_error": [
+              1.7896695680974517e-08,
+              1.3476176263793604e-07
+            ],
+            "nodal_step_ln_f": 4.1666555234075024e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000031907259,
+          "fit_real_ohm": 3000.85744299882,
+          "fit_kappa": -240.00064185344442,
+          "shift_decades": 1.3857146541340626e-09,
+          "shift_tangent_scales": 7.657742173805982e-07,
+          "real_ratio": 1.0002858143329398,
+          "real_db": 0.0024821970460412444,
+          "kappa_ratio": 1.0000026743893518,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_RADIAL",
+      "seed": 43002,
+      "log_parameters": [
+        3.477121313384261,
+        -3.400239454166627,
+        -6.196120281560756
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999995055764,
+            "frequency_hz": 9999.999988615476,
+            "direction": -1,
+            "real_ohm": 3000.0004052407185,
+            "kappa": -239.99980859423027,
+            "root_residual": 4.163336904728807e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999995055764,
+            "frequency_hz": 9999.999988615476,
+            "direction": -1,
+            "real_ohm": 3000.0004052407185,
+            "kappa": -239.99980859423027,
+            "root_residual": 4.163336904728807e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99980864941992,
+              -239.99980849972005
+            ],
+            "nodal_derivative_error": [
+              5.51896448541811e-08,
+              9.451022719986213e-08
+            ],
+            "nodal_step_ln_f": 4.166669989686152e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999988615476,
+          "fit_real_ohm": 3000.0004052407185,
+          "fit_kappa": -239.99980859423027,
+          "shift_decades": -4.944236131620983e-10,
+          "shift_tangent_scales": 2.732285859099125e-07,
+          "real_ratio": 1.0000001350802394,
+          "real_db": 1.1732919728012654e-06,
+          "kappa_ratio": 0.9999992024759595,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "family",
+      "target": "control0p25",
+      "method": "MAG_PHA_RADIAL",
+      "seed": 43003,
+      "log_parameters": [
+        3.476997684406277,
+        -3.400853104271856,
+        -6.195520077136529
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000006722346078,
+            "frequency_hz": 10000.15478893666,
+            "direction": -1,
+            "real_ohm": 2999.1465279408417,
+            "kappa": -240.26703754789904,
+            "root_residual": 1.248645573579194e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000006722346078,
+            "frequency_hz": 10000.15478893666,
+            "direction": -1,
+            "real_ohm": 2999.1465279408417,
+            "kappa": -240.26703754789904,
+            "root_residual": 1.248645573579194e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.26703754953178,
+              -240.2670375497119
+            ],
+            "nodal_derivative_error": [
+              1.632741941648419e-09,
+              1.8128503143088892e-09
+            ],
+            "nodal_step_ln_f": 4.16203575074522e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.15478893666,
+          "fit_real_ohm": 2999.1465279408417,
+          "fit_kappa": -240.26703754789904,
+          "shift_decades": 6.722346078014141e-06,
+          "shift_tangent_scales": 0.0037149057286037642,
+          "real_ratio": 0.9997155093136139,
+          "real_db": -0.002471406267711076,
+          "kappa_ratio": 1.0011126564495794,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 41000,
+      "log_parameters": [
+        3.472203733907859,
+        -3.405177876597451,
+        -6.191181806607937
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999973244579,
+            "frequency_hz": 9999.999383933684,
+            "direction": -1,
+            "real_ohm": 2966.222561675257,
+            "kappa": -240.0113416167678,
+            "root_residual": 6.174691095252156e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1841819323599163e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999732445777,
+            "frequency_hz": 9999.999383933653,
+            "direction": -1,
+            "real_ohm": 2966.222561675257,
+            "kappa": -240.01134161676774,
+            "root_residual": 8.027098423827804e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.01134167680272,
+              -240.01134151478664
+            ],
+            "nodal_derivative_error": [
+              6.003497787787637e-08,
+              1.0198110089731927e-07
+            ],
+            "nodal_step_ln_f": 4.166469772902339e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999383933653,
+          "fit_real_ohm": 2966.222561675257,
+          "fit_kappa": -240.01134161676774,
+          "shift_decades": -2.6755422322111144e-08,
+          "shift_tangent_scales": 1.4785592782956781e-05,
+          "real_ratio": 0.9887408538917524,
+          "real_db": -0.09835041623607185,
+          "kappa_ratio": 1.0000472567365322,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 41001,
+      "log_parameters": [
+        3.477405079891708,
+        -3.3999518335317256,
+        -6.196407911868577
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000004342036,
+            "frequency_hz": 10000.000099979075,
+            "direction": -1,
+            "real_ohm": 3001.9612356254397,
+            "kappa": -239.9976760631374,
+            "root_residual": 8.33211620705887e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842493601032607e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000004342036,
+            "frequency_hz": 10000.000099979075,
+            "direction": -1,
+            "real_ohm": 3001.9612356254397,
+            "kappa": -239.9976760631374,
+            "root_residual": 8.33211620705887e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842493601032607e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99767606911948,
+              -239.9976759184897
+            ],
+            "nodal_derivative_error": [
+              5.982087714073714e-09,
+              1.4464768582911347e-07
+            ],
+            "nodal_step_ln_f": 4.166707013183432e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000099979075,
+          "fit_real_ohm": 3001.9612356254397,
+          "fit_kappa": -239.9976760631374,
+          "shift_decades": 4.342036064031163e-09,
+          "shift_tangent_scales": 2.399497803427367e-06,
+          "real_ratio": 1.0006537452084798,
+          "real_db": 0.005676503440910833,
+          "kappa_ratio": 0.9999903169297392,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 41002,
+      "log_parameters": [
+        3.477552564039007,
+        -3.399807463589866,
+        -6.196552309408505
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.00000001814107,
+            "frequency_hz": 10000.000417713582,
+            "direction": -1,
+            "real_ohm": 3002.980859167554,
+            "kappa": -239.9993894005596,
+            "root_residual": 1.8753629019505052e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.184240905836977e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.00000001814107,
+            "frequency_hz": 10000.000417713582,
+            "direction": -1,
+            "real_ohm": 3002.980859167554,
+            "kappa": -239.9993894005596,
+            "root_residual": 1.8753629019505052e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.184240905836977e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9993894607953,
+              -239.99938944722274
+            ],
+            "nodal_derivative_error": [
+              6.023569198987389e-08,
+              4.6663132025059895e-08
+            ],
+            "nodal_step_ln_f": 4.1666772673783655e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000417713582,
+          "fit_real_ohm": 3002.980859167554,
+          "fit_kappa": -239.9993894005596,
+          "shift_decades": 1.814106997954923e-08,
+          "shift_tangent_scales": 1.0025125753409245e-05,
+          "real_ratio": 1.000993619722518,
+          "real_db": 0.008626186386886862,
+          "kappa_ratio": 0.999997455835665,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 41003,
+      "log_parameters": [
+        3.4771698299172074,
+        -3.4001903106462734,
+        -6.196169388417409
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999981173726,
+            "frequency_hz": 9999.999566509034,
+            "direction": -1,
+            "real_ohm": 3000.3355643431073,
+            "kappa": -239.99947223924326,
+            "root_residual": 6.245703047128932e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842404970820873e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999981173725,
+            "frequency_hz": 9999.999566509003,
+            "direction": -1,
+            "real_ohm": 3000.3355643431073,
+            "kappa": -239.99947223924332,
+            "root_residual": 6.870273351841826e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99947223747898,
+              -239.99947225264862
+            ],
+            "nodal_derivative_error": [
+              1.7643344563111896e-09,
+              1.3405298204816063e-08
+            ],
+            "nodal_step_ln_f": 4.166675829199952e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999566509003,
+          "fit_real_ohm": 3000.3355643431073,
+          "fit_kappa": -239.99947223924332,
+          "shift_decades": -1.8826275205441334e-08,
+          "shift_tangent_scales": 1.0403784154716632e-05,
+          "real_ratio": 1.0001118547810357,
+          "real_db": 0.0009715039508980509,
+          "kappa_ratio": 0.9999978009968472,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA_GEOMETRY",
+      "seed": 41000,
+      "log_parameters": [
+        3.4770541030197584,
+        -3.4003389960880157,
+        -6.196019014998609
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999991371851973,
+            "frequency_hz": 9999.980132974708,
+            "direction": -1,
+            "real_ohm": 2999.5361683508245,
+            "kappa": -240.01815289510773,
+            "root_residual": 6.244038969935634e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1841483274319174e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999991371851964,
+            "frequency_hz": 9999.980132974688,
+            "direction": -1,
+            "real_ohm": 2999.5361683508245,
+            "kappa": -240.01815289510773,
+            "root_residual": 5.203365808279695e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1841483274319174e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.01815287896133,
+              -240.01815300944344
+            ],
+            "nodal_derivative_error": [
+              1.6146401549121947e-08,
+              1.1433570534791215e-07
+            ],
+            "nodal_step_ln_f": 4.166351536073266e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.980132974688,
+          "fit_real_ohm": 2999.5361683508245,
+          "fit_kappa": -240.01815289510773,
+          "shift_decades": -8.628148036038397e-07,
+          "shift_tangent_scales": 0.0004768090811502688,
+          "real_ratio": 0.9998453894502748,
+          "real_db": -0.0013430339980816835,
+          "kappa_ratio": 1.0000756370629489,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA_GEOMETRY",
+      "seed": 41001,
+      "log_parameters": [
+        3.4766189415841207,
+        -3.4007351956591414,
+        -6.195624489366449
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999741546803,
+            "frequency_hz": 9999.99940488954,
+            "direction": -1,
+            "real_ohm": 2996.5321496631973,
+            "kappa": -239.99615859091935,
+            "root_residual": 6.237785599847995e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842568479960408e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999974154679,
+            "frequency_hz": 9999.99940488951,
+            "direction": -1,
+            "real_ohm": 2996.5321496631973,
+            "kappa": -239.9961585909193,
+            "root_residual": 6.653637973171195e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99615854458145,
+              -239.99615856222684
+            ],
+            "nodal_derivative_error": [
+              4.633784556062892e-08,
+              2.8692454634438036e-08
+            ],
+            "nodal_step_ln_f": 4.166733358864007e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.99940488951,
+          "fit_real_ohm": 2996.5321496631973,
+          "fit_kappa": -239.9961585909193,
+          "shift_decades": -2.584532099447756e-08,
+          "shift_tangent_scales": 1.428265220292722e-05,
+          "real_ratio": 0.9988440498877325,
+          "real_db": -0.010046262710834704,
+          "kappa_ratio": 0.9999839941288304,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA_GEOMETRY",
+      "seed": 41002,
+      "log_parameters": [
+        3.4772514342053276,
+        -3.400118884158162,
+        -6.196240802290419
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999748661756,
+            "frequency_hz": 9999.999421272323,
+            "direction": -1,
+            "real_ohm": 3000.899382817289,
+            "kappa": -240.00510023867517,
+            "root_residual": 1.0411461216834925e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999748661743,
+            "frequency_hz": 9999.999421272294,
+            "direction": -1,
+            "real_ohm": 3000.899382817289,
+            "kappa": -240.00510023867514,
+            "root_residual": 7.912710524794543e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00510022415233,
+              -240.00510022599818
+            ],
+            "nodal_derivative_error": [
+              1.4522811397910118e-08,
+              1.267696347895253e-08
+            ],
+            "nodal_step_ln_f": 4.166578122737981e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999421272294,
+          "fit_real_ohm": 3000.899382817289,
+          "fit_kappa": -240.00510023867514,
+          "shift_decades": -2.5133825687362332e-08,
+          "shift_tangent_scales": 1.3889465365831521e-05,
+          "real_ratio": 1.0002997942724297,
+          "real_db": 0.0026035897133033065,
+          "kappa_ratio": 1.0000212509944797,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "pilot",
+      "target": "control0p25",
+      "method": "MAG_PHA_GEOMETRY",
+      "seed": 41003,
+      "log_parameters": [
+        3.47636302947863,
+        -3.4010066003665727,
+        -6.195353103765864
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999999837081033,
+            "frequency_hz": 9999.999624865222,
+            "direction": -1,
+            "real_ohm": 2994.7669350646684,
+            "kappa": -240.0047148552985,
+            "root_residual": 6.234111008802949e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.184214628764263e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999837081024,
+            "frequency_hz": 9999.9996248652,
+            "direction": -1,
+            "real_ohm": 2994.7669350646684,
+            "kappa": -240.0047148552985,
+            "root_residual": 6.026307308509516e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.184214628764263e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.004714784222,
+              -240.00471480642958
+            ],
+            "nodal_derivative_error": [
+              7.10764993527846e-08,
+              4.886891247224412e-08
+            ],
+            "nodal_step_ln_f": 4.1665848131479884e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.9996248652,
+          "fit_real_ohm": 2994.7669350646684,
+          "fit_kappa": -240.0047148552985,
+          "shift_decades": -1.6291897608766703e-08,
+          "shift_tangent_scales": 9.003235336927573e-06,
+          "real_ratio": 0.9982556450215562,
+          "real_db": -0.015164504820650026,
+          "kappa_ratio": 1.0000196452304104,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 42000,
+      "log_parameters": [
+        3.4760336771310856,
+        -3.4005651145142215,
+        -6.195756576275971
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999809770369814,
+            "frequency_hz": 9999.56198968222,
+            "direction": -1,
+            "real_ohm": 2992.49667915034,
+            "kappa": -239.58958866399237,
+            "root_residual": 8.305846785767567e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1862664646193565e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999809770369814,
+            "frequency_hz": 9999.56198968222,
+            "direction": -1,
+            "real_ohm": 2992.49667915034,
+            "kappa": -239.58958866399237,
+            "root_residual": 8.305846785767567e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1862664646193565e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.58958865712412,
+              -239.5895886473539
+            ],
+            "nodal_derivative_error": [
+              6.8682481924042804e-09,
+              1.663846660449053e-08
+            ],
+            "nodal_step_ln_f": 4.17380406876707e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.56198968222,
+          "fit_real_ohm": 2992.49667915034,
+          "fit_kappa": -239.58958866399237,
+          "shift_decades": -1.9022963018588968e-05,
+          "shift_tangent_scales": 0.010512477857083194,
+          "real_ratio": 0.9974988930501133,
+          "real_db": -0.021751551771537012,
+          "kappa_ratio": 0.9982899527666349,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 42001,
+      "log_parameters": [
+        3.4795243289061255,
+        -3.397842112837507,
+        -6.198517579786725
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999977954001,
+            "frequency_hz": 9999.999492372131,
+            "direction": -1,
+            "real_ohm": 3016.6458590492994,
+            "kappa": -240.00295619699176,
+            "root_residual": 6.279655668481251e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842233062777687e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999977954,
+            "frequency_hz": 9999.9994923721,
+            "direction": -1,
+            "real_ohm": 3016.6458590492994,
+            "kappa": -240.00295619699165,
+            "root_residual": 6.698299379713335e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842233062777692e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00295619323268,
+              -240.00295618922624
+            ],
+            "nodal_derivative_error": [
+              3.758970024136943e-09,
+              7.765407872284413e-09
+            ],
+            "nodal_step_ln_f": 4.16661534443439e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.9994923721,
+          "fit_real_ohm": 3016.6458590492994,
+          "fit_kappa": -240.00295619699165,
+          "shift_decades": -2.204600013655522e-08,
+          "shift_tangent_scales": 1.218306990589842e-05,
+          "real_ratio": 1.0055486196830998,
+          "real_db": 0.048061483729262146,
+          "kappa_ratio": 1.000012317487465,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 42002,
+      "log_parameters": [
+        3.477053632171729,
+        -3.400317829455595,
+        -6.1960418287317465
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999960735556,
+            "frequency_hz": 9999.999095902804,
+            "direction": -1,
+            "real_ohm": 2999.5329163524975,
+            "kappa": -240.00573985293167,
+            "root_residual": 6.244032200354225e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999960735554,
+            "frequency_hz": 9999.999095902762,
+            "direction": -1,
+            "real_ohm": 2999.5329163524975,
+            "kappa": -240.00573985293167,
+            "root_residual": 9.574182707209811e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00573983508627,
+              -240.0057399626476
+            ],
+            "nodal_derivative_error": [
+              1.7845394495452638e-08,
+              1.0971592701025656e-07
+            ],
+            "nodal_step_ln_f": 4.166567018825342e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999095902762,
+          "fit_real_ohm": 2999.5329163524975,
+          "fit_kappa": -240.00573985293167,
+          "shift_decades": -3.9264445916842305e-08,
+          "shift_tangent_scales": 2.1698334684670086e-05,
+          "real_ratio": 0.9998443054508325,
+          "real_db": -0.0013524509586708392,
+          "kappa_ratio": 1.000023916053882,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA",
+      "seed": 42003,
+      "log_parameters": [
+        3.476249298967755,
+        -3.401115002911007,
+        -6.195244749883359
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000008039068,
+            "frequency_hz": 10000.000185106384,
+            "direction": -1,
+            "real_ohm": 2993.9827856111037,
+            "kappa": -240.00175702656614,
+            "root_residual": 1.4542450229636049e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000008039068,
+            "frequency_hz": 10000.000185106384,
+            "direction": -1,
+            "real_ohm": 2993.9827856111037,
+            "kappa": -240.00175702656614,
+            "root_residual": 1.4542450229636049e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.001757039831,
+              -240.00175704125746
+            ],
+            "nodal_derivative_error": [
+              1.3264866538520437e-08,
+              1.4691323713122983e-08
+            ],
+            "nodal_step_ln_f": 4.166636162956543e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.000185106384,
+          "fit_real_ohm": 2993.9827856111037,
+          "fit_kappa": -240.00175702656614,
+          "shift_decades": 8.039068077891898e-09,
+          "shift_tangent_scales": 4.442553196252363e-06,
+          "real_ratio": 0.9979942618703679,
+          "real_db": -0.01743911503814592,
+          "kappa_ratio": 1.0000073209440257,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_CHORD",
+      "seed": 42000,
+      "log_parameters": [
+        3.477272380476468,
+        -3.400096036840503,
+        -6.196263930636043
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000000115380158,
+            "frequency_hz": 10000.002656726669,
+            "direction": -1,
+            "real_ohm": 3001.0441214004645,
+            "kappa": -240.00397200932508,
+            "root_residual": 6.247178027802693e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000000115380158,
+            "frequency_hz": 10000.002656726669,
+            "direction": -1,
+            "real_ohm": 3001.0441214004645,
+            "kappa": -240.00397200932508,
+            "root_residual": 6.247178027802693e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00397196134853,
+              -240.0039719702747
+            ],
+            "nodal_derivative_error": [
+              4.7976556061257725e-08,
+              3.905037715412618e-08
+            ],
+            "nodal_step_ln_f": 4.1665977093126866e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.002656726669,
+          "fit_real_ohm": 3001.0441214004645,
+          "fit_kappa": -240.00397200932508,
+          "shift_decades": 1.153801578723801e-07,
+          "shift_tangent_scales": 6.376143157061808e-05,
+          "real_ratio": 1.0003480404668215,
+          "real_db": 0.003022515136107411,
+          "kappa_ratio": 1.0000165500388545,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_CHORD",
+      "seed": 42001,
+      "log_parameters": [
+        3.4309533400219667,
+        -3.446536221808909,
+        -6.14981924192912
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999978635108997,
+            "frequency_hz": 9999.950805641467,
+            "direction": -1,
+            "real_ohm": 2697.4496067479545,
+            "kappa": -240.07217418797765,
+            "root_residual": 3.7434633264720664e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999978635108997,
+            "frequency_hz": 9999.950805641467,
+            "direction": -1,
+            "real_ohm": 2697.4496067479545,
+            "kappa": -240.07217418797765,
+            "root_residual": 3.7434633264720664e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.07217417466973,
+              -240.07217416736054
+            ],
+            "nodal_derivative_error": [
+              1.3307925428307499e-08,
+              2.0617108020815067e-08
+            ],
+            "nodal_step_ln_f": 4.165414019273201e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.950805641467,
+          "fit_real_ohm": 2697.4496067479545,
+          "fit_kappa": -240.07217418797765,
+          "shift_decades": -2.1364891003017306e-06,
+          "shift_tangent_scales": 0.0011806675088877662,
+          "real_ratio": 0.8991498689159848,
+          "real_db": -0.9233582939539147,
+          "kappa_ratio": 1.0003007257832401,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_CHORD",
+      "seed": 42002,
+      "log_parameters": [
+        3.476898863067072,
+        -3.396240569307609,
+        -6.200210551023468
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000045691807424,
+            "frequency_hz": 10001.05214809336,
+            "direction": -1,
+            "real_ohm": 2998.464166152976,
+            "kappa": -237.6533102250101,
+            "root_residual": 1.8725422251242836e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000045691807421,
+            "frequency_hz": 10001.052148093298,
+            "direction": -1,
+            "real_ohm": 2998.464166152976,
+            "kappa": -237.65331022501016,
+            "root_residual": 1.2899735328633958e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -237.65331021940779,
+              -237.6533102315355
+            ],
+            "nodal_derivative_error": [
+              5.602373676083516e-09,
+              6.525340268126456e-09
+            ],
+            "nodal_step_ln_f": 4.207810103941746e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10001.052148093298,
+          "fit_real_ohm": 2998.464166152976,
+          "fit_kappa": -237.65331022501016,
+          "shift_decades": 4.5691807421199826e-05,
+          "shift_tangent_scales": 0.025250225913602264,
+          "real_ratio": 0.9994880553843253,
+          "real_db": -0.004447833051811633,
+          "kappa_ratio": 0.9902221259375423,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_CHORD",
+      "seed": 42003,
+      "log_parameters": [
+        3.4772608305301023,
+        -3.4000959674217994,
+        -6.196263870423552
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0000000505645605,
+            "frequency_hz": 10000.001164292102,
+            "direction": -1,
+            "real_ohm": 3000.9643104906345,
+            "kappa": -239.99758670858154,
+            "root_residual": 6.247011887971987e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0000000505645605,
+            "frequency_hz": 10000.001164292102,
+            "direction": -1,
+            "real_ohm": 3000.9643104906345,
+            "kappa": -239.99758670858154,
+            "root_residual": 6.247011887971987e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.99758666541445,
+              -239.9975866685096
+            ],
+            "nodal_derivative_error": [
+              4.316709123486362e-08,
+              4.007193865618319e-08
+            ],
+            "nodal_step_ln_f": 4.166708564508425e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.001164292102,
+          "fit_real_ohm": 3000.9643104906345,
+          "fit_kappa": -239.99758670858154,
+          "shift_decades": 5.056456053864622e-08,
+          "shift_tangent_scales": 2.7943008799219623e-05,
+          "real_ratio": 1.0003214368302116,
+          "real_db": 0.002791516208797838,
+          "kappa_ratio": 0.9999899446190897,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 42000,
+      "log_parameters": [
+        3.4776648717702616,
+        -3.3996316731351124,
+        -6.196727328371883
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.9999996323953826,
+            "frequency_hz": 9999.991535594461,
+            "direction": -1,
+            "real_ohm": 3003.7575247533377,
+            "kappa": -239.96452334358534,
+            "root_residual": 6.25282643319792e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999632395385,
+            "frequency_hz": 9999.991535594512,
+            "direction": -1,
+            "real_ohm": 3003.7575247533377,
+            "kappa": -239.96452334358534,
+            "root_residual": 1.2922507961942368e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9645233372375,
+              -239.964523344503
+            ],
+            "nodal_derivative_error": [
+              6.347846692733583e-09,
+              9.176517323794542e-10
+            ],
+            "nodal_step_ln_f": 4.167282671898057e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.991535594512,
+          "fit_real_ohm": 3003.7575247533377,
+          "fit_kappa": -239.96452334358534,
+          "shift_decades": -3.6760461519236287e-07,
+          "shift_tangent_scales": 0.00020314581769385935,
+          "real_ratio": 1.0012525082511126,
+          "real_db": 0.010872341011983387,
+          "kappa_ratio": 0.9998521805982723,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 42001,
+      "log_parameters": [
+        3.468836718249256,
+        -3.409049260782436,
+        -6.187307998598376
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999998761332291,
+            "frequency_hz": 9999.971478662657,
+            "direction": -1,
+            "real_ohm": 2943.3148273045244,
+            "kappa": -240.2909115935539,
+            "root_residual": 4.084669862492624e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999998761332291,
+            "frequency_hz": 9999.971478662657,
+            "direction": -1,
+            "real_ohm": 2943.3148273045244,
+            "kappa": -240.2909115935539,
+            "root_residual": 4.084669862492624e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.29091158920505,
+              -240.29091158611357
+            ],
+            "nodal_derivative_error": [
+              4.3488341816555476e-09,
+              7.440320359819452e-09
+            ],
+            "nodal_step_ln_f": 4.161622232685501e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.971478662657,
+          "fit_real_ohm": 2943.3148273045244,
+          "fit_kappa": -240.2909115935539,
+          "shift_decades": -1.2386677088471743e-06,
+          "shift_tangent_scales": 0.0006845130723755022,
+          "real_ratio": 0.9811049424348415,
+          "real_db": -0.16569072940812718,
+          "kappa_ratio": 1.001212131639808,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 42002,
+      "log_parameters": [
+        3.4770741642725445,
+        -3.4002873951553894,
+        -6.196072334732053
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999996585606,
+            "frequency_hz": 9999.999921380671,
+            "direction": -1,
+            "real_ohm": 2999.6747283502136,
+            "kappa": -240.0002478153445,
+            "root_residual": 4.162884937250774e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842366701334238e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999999996585606,
+            "frequency_hz": 9999.999921380671,
+            "direction": -1,
+            "real_ohm": 2999.6747283502136,
+            "kappa": -240.0002478153445,
+            "root_residual": 4.162884937250774e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.1842366701334238e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00024782922588,
+              -240.00024782108014
+            ],
+            "nodal_derivative_error": [
+              1.388139025948476e-08,
+              5.735643071602681e-09
+            ],
+            "nodal_step_ln_f": 4.166662364321378e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999921380671,
+          "fit_real_ohm": 2999.6747283502136,
+          "fit_kappa": -240.0002478153445,
+          "shift_decades": -3.4143941007869216e-09,
+          "shift_tangent_scales": 1.886863909938906e-06,
+          "real_ratio": 0.9998915761167378,
+          "real_db": -0.0009418089423596178,
+          "kappa_ratio": 1.0000010325639355,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_INTEGRAL",
+      "seed": 42003,
+      "log_parameters": [
+        3.4778371766133813,
+        -3.3995217382760314,
+        -6.196837871034576
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999936297189,
+            "frequency_hz": 9999.998533188676,
+            "direction": -1,
+            "real_ohm": 3004.949491666777,
+            "kappa": -239.99881970873503,
+            "root_residual": 2.0851025709275722e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999362971868,
+            "frequency_hz": 9999.998533188626,
+            "direction": -1,
+            "real_ohm": 3004.949491666777,
+            "kappa": -239.99881970873503,
+            "root_residual": 1.188508465428716e-12,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.9988196402444,
+              -239.99881978554674
+            ],
+            "nodal_derivative_error": [
+              6.849063538538758e-08,
+              7.681171609874582e-08
+            ],
+            "nodal_step_ln_f": 4.166687157935235e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.998533188626,
+          "fit_real_ohm": 3004.949491666777,
+          "fit_kappa": -239.99881970873503,
+          "shift_decades": -6.370281324663551e-08,
+          "shift_tangent_scales": 3.5203475559236774e-05,
+          "real_ratio": 1.0016498305555923,
+          "real_db": 0.014318437874377647,
+          "kappa_ratio": 0.9999950821197293,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MAX",
+      "seed": 42000,
+      "log_parameters": [
+        3.476927166590634,
+        -3.400047155373021,
+        -6.1963210385981995
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000004228627495,
+            "frequency_hz": 10000.09736822037,
+            "direction": -1,
+            "real_ohm": 2998.6595862428508,
+            "kappa": -239.78401101982607,
+            "root_residual": 2.080738072287349e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.185304612660517e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000004228627495,
+            "frequency_hz": 10000.09736822037,
+            "direction": -1,
+            "real_ohm": 2998.6595862428508,
+            "kappa": -239.78401101982607,
+            "root_residual": 2.080738072287349e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.185304612660517e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.78401102385823,
+              -239.78401100990177
+            ],
+            "nodal_derivative_error": [
+              4.032159495181986e-09,
+              9.924292498908471e-09
+            ],
+            "nodal_step_ln_f": 4.170419853045652e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.09736822037,
+          "fit_real_ohm": 2998.6595862428508,
+          "fit_kappa": -239.78401101982607,
+          "shift_decades": 4.228627495272974e-06,
+          "shift_tangent_scales": 0.002336825912265672,
+          "real_ratio": 0.9995531954142836,
+          "real_db": -0.00388176258056741,
+          "kappa_ratio": 0.9991000459159419,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MAX",
+      "seed": 42001,
+      "log_parameters": [
+        4.243525017387232,
+        -2.6337625799566275,
+        -6.962588109123608
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999995476182003,
+            "frequency_hz": 9999.895835783678,
+            "direction": -1,
+            "real_ohm": 17519.633525602014,
+            "kappa": -239.9618759527552,
+            "root_residual": 4.558757935105819e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999995476182003,
+            "frequency_hz": 9999.895835783678,
+            "direction": -1,
+            "real_ohm": 17519.633525602014,
+            "kappa": -239.9618759527552,
+            "root_residual": 4.558757935105819e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.96187594608057,
+              -239.96187595537663
+            ],
+            "nodal_derivative_error": [
+              6.674639507764368e-09,
+              2.621419525894453e-09
+            ],
+            "nodal_step_ln_f": 4.167328647642697e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.895835783678,
+          "fit_real_ohm": 17519.633525602014,
+          "fit_kappa": -239.9618759527552,
+          "shift_decades": -4.523817997093005e-06,
+          "shift_tangent_scales": 0.0024999542120458886,
+          "real_ratio": 5.839877841867338,
+          "real_db": 15.328075253351393,
+          "kappa_ratio": 0.9998411498031466,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MAX",
+      "seed": 42002,
+      "log_parameters": [
+        3.914436178579717,
+        -2.9655698614670363,
+        -6.630783009666154
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.99999656720848,
+            "frequency_hz": 9999.920957366578,
+            "direction": -1,
+            "real_ohm": 8211.758686825606,
+            "kappa": -241.46800841578528,
+            "root_residual": 4.2735391719278564e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.99999656720848,
+            "frequency_hz": 9999.920957366578,
+            "direction": -1,
+            "real_ohm": 8211.758686825606,
+            "kappa": -241.46800841578528,
+            "root_residual": 4.2735391719278564e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -241.46800835537283,
+              -241.46800837361266
+            ],
+            "nodal_derivative_error": [
+              6.041244660082157e-08,
+              4.217261562189378e-08
+            ],
+            "nodal_step_ln_f": 4.14133535353509e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.920957366578,
+          "fit_real_ohm": 8211.758686825606,
+          "fit_kappa": -241.46800841578528,
+          "shift_decades": -3.432791519930589e-06,
+          "shift_tangent_scales": 0.0018970306994756515,
+          "real_ratio": 2.737252895608535,
+          "real_db": 8.746298477201092,
+          "kappa_ratio": 1.0061167017324386,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MAX",
+      "seed": 42003,
+      "log_parameters": [
+        3.47699606574817,
+        -3.4003709444113173,
+        -6.195988763211641
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999985453364,
+            "frequency_hz": 9999.999665051337,
+            "direction": -1,
+            "real_ohm": 2999.1353498485655,
+            "kappa": -240.00326617491854,
+            "root_residual": 8.324272798422754e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999854533637,
+            "frequency_hz": 9999.999665051326,
+            "direction": -1,
+            "real_ohm": 2999.1353498485655,
+            "kappa": -240.0032661749185,
+            "root_residual": 3.3297091193691014e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00326623267767,
+              -240.00326608301887
+            ],
+            "nodal_derivative_error": [
+              5.775916633865563e-08,
+              9.189963634526066e-08
+            ],
+            "nodal_step_ln_f": 4.166609963012682e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999665051326,
+          "fit_real_ohm": 2999.1353498485655,
+          "fit_kappa": -240.0032661749185,
+          "shift_decades": -1.4546636339929364e-08,
+          "shift_tangent_scales": 8.038768317486437e-06,
+          "real_ratio": 0.9997117832828551,
+          "real_db": -0.002503779429844124,
+          "kappa_ratio": 1.0000136090621605,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MEAN",
+      "seed": 42000,
+      "log_parameters": [
+        3.476927166590634,
+        -3.400047155373021,
+        -6.1963210385981995
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.000004228627495,
+            "frequency_hz": 10000.09736822037,
+            "direction": -1,
+            "real_ohm": 2998.6595862428508,
+            "kappa": -239.78401101982607,
+            "root_residual": 2.080738072287349e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.185304612660517e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.000004228627495,
+            "frequency_hz": 10000.09736822037,
+            "direction": -1,
+            "real_ohm": 2998.6595862428508,
+            "kappa": -239.78401101982607,
+            "root_residual": 2.080738072287349e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.185304612660517e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.78401102385823,
+              -239.78401100990177
+            ],
+            "nodal_derivative_error": [
+              4.032159495181986e-09,
+              9.924292498908471e-09
+            ],
+            "nodal_step_ln_f": 4.170419853045652e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.09736822037,
+          "fit_real_ohm": 2998.6595862428508,
+          "fit_kappa": -239.78401101982607,
+          "shift_decades": 4.228627495272974e-06,
+          "shift_tangent_scales": 0.002336825912265672,
+          "real_ratio": 0.9995531954142836,
+          "real_db": -0.00388176258056741,
+          "kappa_ratio": 0.9991000459159419,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MEAN",
+      "seed": 42001,
+      "log_parameters": [
+        4.243525017387232,
+        -2.6337625799566275,
+        -6.962588109123608
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999995476182003,
+            "frequency_hz": 9999.895835783678,
+            "direction": -1,
+            "real_ohm": 17519.633525602014,
+            "kappa": -239.9618759527552,
+            "root_residual": 4.558757935105819e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.999995476182003,
+            "frequency_hz": 9999.895835783678,
+            "direction": -1,
+            "real_ohm": 17519.633525602014,
+            "kappa": -239.9618759527552,
+            "root_residual": 4.558757935105819e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -239.96187594608057,
+              -239.96187595537663
+            ],
+            "nodal_derivative_error": [
+              6.674639507764368e-09,
+              2.621419525894453e-09
+            ],
+            "nodal_step_ln_f": 4.167328647642697e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.895835783678,
+          "fit_real_ohm": 17519.633525602014,
+          "fit_kappa": -239.9618759527552,
+          "shift_decades": -4.523817997093005e-06,
+          "shift_tangent_scales": 0.0024999542120458886,
+          "real_ratio": 5.839877841867338,
+          "real_db": 15.328075253351393,
+          "kappa_ratio": 0.9998411498031466,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MEAN",
+      "seed": 42002,
+      "log_parameters": [
+        3.914436178579717,
+        -2.9655698614670363,
+        -6.630783009666154
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.99999656720848,
+            "frequency_hz": 9999.920957366578,
+            "direction": -1,
+            "real_ohm": 8211.758686825606,
+            "kappa": -241.46800841578528,
+            "root_residual": 4.2735391719278564e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.99999656720848,
+            "frequency_hz": 9999.920957366578,
+            "direction": -1,
+            "real_ohm": 8211.758686825606,
+            "kappa": -241.46800841578528,
+            "root_residual": 4.2735391719278564e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -241.46800835537283,
+              -241.46800837361266
+            ],
+            "nodal_derivative_error": [
+              6.041244660082157e-08,
+              4.217261562189378e-08
+            ],
+            "nodal_step_ln_f": 4.14133535353509e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.920957366578,
+          "fit_real_ohm": 8211.758686825606,
+          "fit_kappa": -241.46800841578528,
+          "shift_decades": -3.432791519930589e-06,
+          "shift_tangent_scales": 0.0018970306994756515,
+          "real_ratio": 2.737252895608535,
+          "real_db": 8.746298477201092,
+          "kappa_ratio": 1.0061167017324386,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "batch": "revision",
+      "target": "control0p25",
+      "method": "MAG_PHA_MEAN",
+      "seed": 42003,
+      "log_parameters": [
+        3.47699606574817,
+        -3.4003709444113173,
+        -6.195988763211641
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.999999985453364,
+            "frequency_hz": 9999.999665051337,
+            "direction": -1,
+            "real_ohm": 2999.1353498485655,
+            "kappa": -240.00326617491854,
+            "root_residual": 8.324272798422754e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.9999999854533637,
+            "frequency_hz": 9999.999665051326,
+            "direction": -1,
+            "real_ohm": 2999.1353498485655,
+            "kappa": -240.0032661749185,
+            "root_residual": 3.3297091193691014e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00326623267767,
+              -240.00326608301887
+            ],
+            "nodal_derivative_error": [
+              5.775916633865563e-08,
+              9.189963634526066e-08
+            ],
+            "nodal_step_ln_f": 4.166609963012682e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 9999.999665051326,
+          "fit_real_ohm": 2999.1353498485655,
+          "fit_kappa": -240.0032661749185,
+          "shift_decades": -1.4546636339929364e-08,
+          "shift_tangent_scales": 8.038768317486437e-06,
+          "real_ratio": 0.9997117832828551,
+          "real_db": -0.002503779429844124,
+          "kappa_ratio": 1.0000136090621605,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    }
+  ],
+  "probes": [
+    {
+      "target": "control0p25",
+      "kind": "damping",
+      "factor": 0.25,
+      "parameters": [
+        750.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 750.0,
+            "kappa": -60.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 750.0,
+            "kappa": -60.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -60.000000002848275,
+              -60.00000000213867
+            ],
+            "nodal_derivative_error": [
+              2.84827450514058e-09,
+              2.138669685791683e-09
+            ],
+            "nodal_step_ln_f": 1.6666666666666667e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 750.0,
+          "fit_kappa": -60.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 0.25,
+          "real_db": -12.041199826559248,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "damping",
+      "factor": 0.5,
+      "parameters": [
+        1500.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 1500.0,
+            "kappa": -120.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 1500.0,
+            "kappa": -120.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -120.00000000418736,
+              -120.00000000552635
+            ],
+            "nodal_derivative_error": [
+              4.187356239526707e-09,
+              5.526345603357186e-09
+            ],
+            "nodal_step_ln_f": 8.333333333333334e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 1500.0,
+          "fit_kappa": -120.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 0.5,
+          "real_db": -6.020599913279624,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "damping",
+      "factor": 1.0,
+      "parameters": [
+        3000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000001087264,
+              -240.00000000106067
+            ],
+            "nodal_derivative_error": [
+              1.0872639677472762e-08,
+              1.0606697742332472e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "damping",
+      "factor": 2.0,
+      "parameters": [
+        6000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 6000.0,
+            "kappa": -480.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 6000.0,
+            "kappa": -480.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -480.00000000176135,
+              -479.9999995008557
+            ],
+            "nodal_derivative_error": [
+              1.7613501768209971e-09,
+              4.991442779100908e-07
+            ],
+            "nodal_step_ln_f": 2.0833333333333334e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 6000.0,
+          "fit_kappa": -480.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 2.0,
+          "real_db": 6.020599913279624,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "damping",
+      "factor": 4.0,
+      "parameters": [
+        12000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 12000.0,
+            "kappa": -960.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 12000.0,
+            "kappa": -960.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -959.9999990009924,
+              -960.0000015996326
+            ],
+            "nodal_derivative_error": [
+              9.990076250687707e-07,
+              1.5996325828382396e-06
+            ],
+            "nodal_step_ln_f": 1.0416666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 12000.0,
+          "fit_kappa": -960.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 4.0,
+          "real_db": 12.041199826559248,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_reciprocal",
+      "factor": 0.25,
+      "parameters": [
+        3000.0,
+        9.947183943243458e-05,
+        2.5464790894703256e-06
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -960.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -960.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -959.9999990009924,
+              -960.0000015996326
+            ],
+            "nodal_derivative_error": [
+              9.990076250687707e-07,
+              1.5996325828382396e-06
+            ],
+            "nodal_step_ln_f": 1.0416666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -960.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_reciprocal",
+      "factor": 0.5,
+      "parameters": [
+        3000.0,
+        0.00019894367886486917,
+        1.2732395447351628e-06
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -480.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -480.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -480.00000000176135,
+              -479.9999995008557
+            ],
+            "nodal_derivative_error": [
+              1.7613501768209971e-09,
+              4.991442779100908e-07
+            ],
+            "nodal_step_ln_f": 2.0833333333333334e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -480.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_reciprocal",
+      "factor": 1.0,
+      "parameters": [
+        3000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000001087264,
+              -240.00000000106067
+            ],
+            "nodal_derivative_error": [
+              1.0872639677472762e-08,
+              1.0606697742332472e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_reciprocal",
+      "factor": 2.0,
+      "parameters": [
+        3000.0,
+        0.0007957747154594767,
+        3.183098861837907e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -120.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -120.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -120.00000000418736,
+              -120.00000000552635
+            ],
+            "nodal_derivative_error": [
+              4.187356239526707e-09,
+              5.526345603357186e-09
+            ],
+            "nodal_step_ln_f": 8.333333333333334e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -120.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_reciprocal",
+      "factor": 4.0,
+      "parameters": [
+        3000.0,
+        0.0015915494309189533,
+        1.5915494309189535e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -60.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -60.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -60.000000002848275,
+              -60.00000000213867
+            ],
+            "nodal_derivative_error": [
+              2.84827450514058e-09,
+              2.138669685791683e-09
+            ],
+            "nodal_step_ln_f": 1.6666666666666667e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -60.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_joint",
+      "factor": 0.25,
+      "parameters": [
+        3000.0,
+        9.947183943243458e-05,
+        1.5915494309189535e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.6020599913279625,
+            "frequency_hz": 40000.00000000001,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 4.163336342344337e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.6020599913279625,
+            "frequency_hz": 40000.00000000001,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 4.163336342344337e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000001337065,
+              -240.00000000688934
+            ],
+            "nodal_derivative_error": [
+              1.33706521410204e-08,
+              6.88933710080164e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 40000.00000000001,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.0,
+          "shift_decades": 0.6020599913279625,
+          "shift_tangent_scales": 332.71064666877385,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_joint",
+      "factor": 0.5,
+      "parameters": [
+        3000.0,
+        0.00019894367886486917,
+        3.183098861837907e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.301029995663981,
+            "frequency_hz": 20000.000000000004,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 4.163336342344337e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.301029995663981,
+            "frequency_hz": 20000.000000000004,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 4.163336342344337e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000000504397,
+              -240.00000000938735
+            ],
+            "nodal_derivative_error": [
+              5.043972350904369e-09,
+              9.387349564349279e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 20000.000000000004,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.0,
+          "shift_decades": 0.30102999566398125,
+          "shift_tangent_scales": 166.35532333438692,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_joint",
+      "factor": 1.0,
+      "parameters": [
+        3000.0,
+        0.00039788735772973834,
+        6.366197723675814e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.0,
+            "frequency_hz": 10000.0,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000001087264,
+              -240.00000000106067
+            ],
+            "nodal_derivative_error": [
+              1.0872639677472762e-08,
+              1.0606697742332472e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666667e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 10000.0,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_joint",
+      "factor": 2.0,
+      "parameters": [
+        3000.0,
+        0.0007957747154594767,
+        1.2732395447351628e-06
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.6989700043360187,
+            "frequency_hz": 4999.999999999999,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.00000000000003,
+            "root_residual": 6.245004513516506e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.6989700043360187,
+            "frequency_hz": 4999.999999999999,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.00000000000003,
+            "root_residual": 6.245004513516506e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.00000001004003,
+              -240.0000000010607
+            ],
+            "nodal_derivative_error": [
+              1.0039997277999646e-08,
+              1.0606697742332472e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666666e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 4999.999999999999,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.00000000000003,
+          "shift_decades": -0.30102999566398125,
+          "shift_tangent_scales": 166.35532333438692,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0000000000000002,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "control0p25",
+      "kind": "lc_joint",
+      "factor": 4.0,
+      "parameters": [
+        3000.0,
+        0.0015915494309189533,
+        2.5464790894703256e-06
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.397940008672038,
+            "frequency_hz": 2500.000000000002,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.0,
+            "root_residual": 1.6653345369377348e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.3979400086720375,
+            "frequency_hz": 2499.9999999999995,
+            "direction": -1,
+            "real_ohm": 3000.0,
+            "kappa": -240.00000000000003,
+            "root_residual": 6.245004513516506e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -240.0000000083748,
+              -240.0000000085547
+            ],
+            "nodal_derivative_error": [
+              8.374769322472275e-09,
+              8.554678743166733e-09
+            ],
+            "nodal_step_ln_f": 4.166666666666666e-06,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 10000.0,
+          "target_direction": -1,
+          "target_real_ohm": 3000.0,
+          "target_kappa": -240.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 2499.9999999999995,
+          "fit_real_ohm": 3000.0,
+          "fit_kappa": -240.00000000000003,
+          "shift_decades": -0.6020599913279625,
+          "shift_tangent_scales": 332.71064666877385,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0000000000000002,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    }
+  ]
+}

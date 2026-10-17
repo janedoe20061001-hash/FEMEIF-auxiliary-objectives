@@ -1,0 +1,407 @@
+{
+  "id": "case2",
+  "kind": "measured",
+  "circuit": {
+    "id": "case2",
+    "title": "Case2：实测目标与15元件模型",
+    "tree": [
+      "S",
+      [
+        "P",
+        "C1",
+        [
+          "S",
+          "L1",
+          "R1"
+        ],
+        "R2"
+      ],
+      [
+        "P",
+        "C2",
+        [
+          "S",
+          "L2",
+          "R3"
+        ],
+        "R4"
+      ],
+      [
+        "P",
+        "C3",
+        [
+          "S",
+          "L3",
+          "R5"
+        ],
+        "R6"
+      ],
+      "C4",
+      "R7",
+      "L4"
+    ],
+    "expression": "((C1 // (L1 + R1) // R2) + (C2 // (L2 + R3) // R4) + (C3 // (L3 + R5) // R6) + C4 + R7 + L4)",
+    "names": [
+      "C1",
+      "L1",
+      "R1",
+      "R2",
+      "C2",
+      "L2",
+      "R3",
+      "R4",
+      "C3",
+      "L3",
+      "R5",
+      "R6",
+      "C4",
+      "R7",
+      "L4"
+    ],
+    "parameters": [
+      3.1622776601683795e-10,
+      3.162277660168379e-07,
+      17.78279410038923,
+      17.78279410038923,
+      3.1622776601683795e-10,
+      3.162277660168379e-07,
+      17.78279410038923,
+      17.78279410038923,
+      3.1622776601683795e-10,
+      3.162277660168379e-07,
+      17.78279410038923,
+      17.78279410038923,
+      3.1622776601683795e-10,
+      17.78279410038923,
+      3.162277660168379e-07
+    ],
+    "units": [
+      "F",
+      "H",
+      "ohm",
+      "ohm",
+      "F",
+      "H",
+      "ohm",
+      "ohm",
+      "F",
+      "H",
+      "ohm",
+      "ohm",
+      "F",
+      "ohm",
+      "H"
+    ],
+    "netlist": [
+      {
+        "component": "C1",
+        "a": 1,
+        "b": 2
+      },
+      {
+        "component": "L1",
+        "a": 1,
+        "b": 3
+      },
+      {
+        "component": "R1",
+        "a": 3,
+        "b": 2
+      },
+      {
+        "component": "R2",
+        "a": 1,
+        "b": 2
+      },
+      {
+        "component": "C2",
+        "a": 2,
+        "b": 4
+      },
+      {
+        "component": "L2",
+        "a": 2,
+        "b": 5
+      },
+      {
+        "component": "R3",
+        "a": 5,
+        "b": 4
+      },
+      {
+        "component": "R4",
+        "a": 2,
+        "b": 4
+      },
+      {
+        "component": "C3",
+        "a": 4,
+        "b": 6
+      },
+      {
+        "component": "L3",
+        "a": 4,
+        "b": 7
+      },
+      {
+        "component": "R5",
+        "a": 7,
+        "b": 6
+      },
+      {
+        "component": "R6",
+        "a": 4,
+        "b": 6
+      },
+      {
+        "component": "C4",
+        "a": 6,
+        "b": 8
+      },
+      {
+        "component": "R7",
+        "a": 8,
+        "b": 9
+      },
+      {
+        "component": "L4",
+        "a": 9,
+        "b": 0
+      }
+    ]
+  },
+  "lower_log10": [
+    -12.0,
+    -9.0,
+    -2.0,
+    -2.0,
+    -12.0,
+    -9.0,
+    -2.0,
+    -2.0,
+    -12.0,
+    -9.0,
+    -2.0,
+    -2.0,
+    -12.0,
+    -2.0,
+    -9.0
+  ],
+  "upper_log10": [
+    -7.0,
+    -4.0,
+    4.5,
+    4.5,
+    -7.0,
+    -4.0,
+    4.5,
+    4.5,
+    -7.0,
+    -4.0,
+    4.5,
+    4.5,
+    -7.0,
+    4.5,
+    -4.0
+  ],
+  "known_true_parameters": false,
+  "adapter_parameters_note": "Circuit parameters here are adapter nominal values, NOT measured ground truth",
+  "source": "frozen/case2.csv",
+  "events": [
+    {
+      "event_id": "P1",
+      "kind": "peak",
+      "x": 6.079181246047625,
+      "frequency_hz": 1200000.0000000007,
+      "height_db": 46.14992075826426,
+      "prominence_db": 10.971682910304793,
+      "width_3db_decades": 0.260824110589958,
+      "width_3db_hz": 798017.7482514079,
+      "left_3db_x": 5.986529783093765,
+      "right_3db_x": 6.247353893683723
+    },
+    {
+      "event_id": "P2",
+      "kind": "peak",
+      "x": 6.946943270697825,
+      "frequency_hz": 8849999.999999994,
+      "height_db": 34.53454418053144,
+      "prominence_db": 2.0489022638180785,
+      "width_3db_decades": null,
+      "width_3db_hz": null,
+      "left_3db_x": null,
+      "right_3db_x": null
+    },
+    {
+      "event_id": "P3",
+      "kind": "peak",
+      "x": 7.235528446907549,
+      "frequency_hz": 17199999.999999993,
+      "height_db": 52.74979459025022,
+      "prominence_db": 33.24115842006496,
+      "width_3db_decades": 0.05777433182309544,
+      "width_3db_hz": 2213717.449336486,
+      "left_3db_x": 7.191964210446251,
+      "right_3db_x": 7.2497385422693466
+    },
+    {
+      "event_id": "P4",
+      "kind": "peak",
+      "x": 7.623249290397901,
+      "frequency_hz": 42000000.00000003,
+      "height_db": 63.63687175889545,
+      "prominence_db": 34.91361881808033,
+      "width_3db_decades": 0.009082347739369112,
+      "width_3db_hz": 877917.3151912987,
+      "left_3db_x": 7.618490712203893,
+      "right_3db_x": 7.627573059943262
+    },
+    {
+      "event_id": "P5",
+      "kind": "peak",
+      "x": 7.848189116991398,
+      "frequency_hz": 70499999.99999996,
+      "height_db": 44.29687696095396,
+      "prominence_db": 12.520242449069812,
+      "width_3db_decades": 0.05265904460057502,
+      "width_3db_hz": 8395762.127014518,
+      "left_3db_x": 7.813775929517915,
+      "right_3db_x": 7.86643497411849
+    },
+    {
+      "event_id": "P6",
+      "kind": "peak",
+      "x": 7.976808337338066,
+      "frequency_hz": 94799999.99999996,
+      "height_db": 43.69382861635198,
+      "prominence_db": 8.218099716728105,
+      "width_3db_decades": 0.02536972323668696,
+      "width_3db_hz": 5549543.7256953865,
+      "left_3db_x": 7.964979249761409,
+      "right_3db_x": 7.990348972998096
+    },
+    {
+      "event_id": "V1",
+      "kind": "valley",
+      "x": 5.819543935541868,
+      "frequency_hz": 659999.9999999995,
+      "height_db": 35.178237847959466,
+      "prominence_db": 10.971682910304793,
+      "width_3db_decades": 0.2053255423948377,
+      "width_3db_hz": 297813.0514013379,
+      "left_3db_x": 5.69258505708158,
+      "right_3db_x": 5.897910599476417
+    },
+    {
+      "event_id": "V2",
+      "kind": "valley",
+      "x": 6.753583058892906,
+      "frequency_hz": 5669999.999999998,
+      "height_db": 15.931486664208592,
+      "prominence_db": 47.70538509468686,
+      "width_3db_decades": 0.06872016147913484,
+      "width_3db_hz": 873954.462070209,
+      "left_3db_x": 6.707375879963834,
+      "right_3db_x": 6.776096041442969
+    },
+    {
+      "event_id": "V3",
+      "kind": "valley",
+      "x": 7.012837224705172,
+      "frequency_hz": 10299999.999999996,
+      "height_db": 32.48564191671336,
+      "prominence_db": 2.0489022638180785,
+      "width_3db_decades": null,
+      "width_3db_hz": null,
+      "left_3db_x": null,
+      "right_3db_x": null
+    },
+    {
+      "event_id": "V4",
+      "kind": "valley",
+      "x": 7.429752280002408,
+      "frequency_hz": 26899999.999999978,
+      "height_db": 19.50863617018526,
+      "prominence_db": 33.24115842006496,
+      "width_3db_decades": 0.034713699059151004,
+      "width_3db_hz": 2184165.1154139154,
+      "left_3db_x": 7.419096427344006,
+      "right_3db_x": 7.453810126403157
+    },
+    {
+      "event_id": "V5",
+      "kind": "valley",
+      "x": 7.751279103983342,
+      "frequency_hz": 56399999.999999985,
+      "height_db": 28.723252940815122,
+      "prominence_db": 15.573624020138837,
+      "width_3db_decades": 0.04379827476084941,
+      "width_3db_hz": 5578732.594145231,
+      "left_3db_x": 7.720779687979278,
+      "right_3db_x": 7.764577962740128
+    },
+    {
+      "event_id": "V6",
+      "kind": "valley",
+      "x": 7.912753303671323,
+      "frequency_hz": 81800000.00000003,
+      "height_db": 31.776634511884147,
+      "prominence_db": 11.917194104467832,
+      "width_3db_decades": 0.038599863339878304,
+      "width_3db_hz": 7371312.074610457,
+      "left_3db_x": 7.899300472688115,
+      "right_3db_x": 7.937900336027993
+    }
+  ],
+  "phase_events": [],
+  "blocks": [
+    {
+      "start": 0,
+      "end": 25,
+      "label": "rows_0_24",
+      "event": false
+    },
+    {
+      "start": 24,
+      "end": 49,
+      "label": "rows_24_48",
+      "event": false
+    },
+    {
+      "start": 48,
+      "end": 73,
+      "label": "rows_48_72",
+      "event": false
+    },
+    {
+      "start": 72,
+      "end": 97,
+      "label": "rows_72_96",
+      "event": false
+    },
+    {
+      "start": 96,
+      "end": 121,
+      "label": "rows_96_120",
+      "event": false
+    },
+    {
+      "start": 120,
+      "end": 145,
+      "label": "rows_120_144",
+      "event": false
+    },
+    {
+      "start": 144,
+      "end": 169,
+      "label": "rows_144_168",
+      "event": false
+    },
+    {
+      "start": 168,
+      "end": 201,
+      "label": "rows_168_200",
+      "event": false
+    }
+  ]
+}

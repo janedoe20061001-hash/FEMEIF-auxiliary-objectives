@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-15",
+  "purpose": "ARX implementation acceleration and target path-length scale ablation",
+  "methods": [
+    "MAG_PHA",
+    "G0",
+    "J0",
+    "J0_W",
+    "ARX_L",
+    "ARX_S_L"
+  ],
+  "seeds": [
+    47000,
+    47001,
+    47002,
+    47003,
+    47004,
+    47005,
+    47006,
+    47007,
+    47008,
+    47009,
+    47010,
+    47011
+  ],
+  "population": 200,
+  "generations": 300,
+  "save_every": 20,
+  "workers": 32,
+  "target_count": 3,
+  "circuit_count": 2,
+  "planned_jobs": 216,
+  "planned_evaluations": 12960000,
+  "theory_band_hz": [
+    100.0,
+    1000000.0
+  ],
+  "nested_lc_factors": [
+    0.25,
+    1.0,
+    8.0
+  ],
+  "features": {
+    "points_per_theory_block": 129,
+    "half_steps_normalized_block": [
+      0.03125,
+      0.0625,
+      0.125
+    ],
+    "measured_index_steps": [
+      1,
+      2,
+      4
+    ],
+    "increment_scale_floor": 0.01,
+    "product_scale_floor": 0.0001,
+    "area_scale_floor": 0.0001,
+    "ohm_scale_floor": 1e-06,
+    "event_half_window_widths": 3.0,
+    "aggregation": "equal mean across all fixed disjoint target event windows and intervening gaps; full band covered",
+    "combination": "arithmetic mean of named single features; one auxiliary objective, always 3 objectives total",
+    "reference_path_frequency_slack": 0.25,
+    "ptc_gamma": 0.41,
+    "ptc_prominence_db": 1.0,
+    "ptc_cost": "gamma*expm1(abs(log_frequency_shift)/full_log_frequency_span), sum same-type events in target-midpoint zones, gamma if none, mean target events",
+    "measured_blocks": "fixed overlapping groups of 25 original rows with stride 24, endpoint remainder merged; no new measured samples or interpolation",
+    "anchor_policy": "raw endpoints reported; MAG/PHA retained; no candidate rotation, translation, scaling or frequency registration"
+  },
+  "selection": "Frozen MAG/PHA 2D normalized convex knee; fixed nearest-ideal fallback from 20261011 selector, auxiliary not used for final selection",
+  "operators": {
+    "sbx_probability": 0.9,
+    "sbx_eta": 1.0,
+    "pm_probability": 1.0,
+    "pm_variable_probability": 0.1,
+    "pm_eta": 1.0
+  },
+  "audit": {
+    "levels": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "base_rtol": 0.01,
+    "base_atol": [
+      0.01,
+      7.615435494667714e-05
+    ],
+    "feature_rtol": 0.01,
+    "feature_atol": 0.01,
+    "nodal_rtol": 1e-08,
+    "nodal_atol": 1e-09,
+    "no_threshold_relaxation": true
+  },
+  "scope": "Three existing development conditions; twelve fresh paired seeds; numerical and speed engineering first, no independent generalization claim.",
+  "paired_budget": "60000 candidates per job, report actual frequency queries and wall/CPU time separately",
+  "resource_policy": "min(32,cgroup quota,affinity) single-thread worker processes; dynamic queue; no scheduled monitoring automation",
+  "failure_policy": "retain original failures and completed jobs; resume missing jobs only; no silent retry, budget extension or threshold change",
+  "publication": "Formal local Markdown reports; concise plain-language chat; no website",
+  "quadrature": {
+    "orders": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "atol": 0.0001,
+    "rtol": 0.001,
+    "max_panel_refinements": 3,
+    "audit_order": 32,
+    "audit_panel_refinement": 2,
+    "area_method": "Native RX-only analytic derivative Gauss prefix, same orders, anchors, convergence tolerance; reference Python retained for regression",
+    "anchors": "Target and candidate pole/zero scales, logarithmically spaced panels around all modes; Case1 uses all six exact branch poles",
+    "failure": "Raise and retain candidate; never substitute a finite bad fitness for unresolved integration"
+  },
+  "search_control": "Four NSGA-II islands of 50, initial 200 split in order, 300 generations, total60000; final knee on combined200; no migration, not guaranteed stronger",
+  "light": {
+    "scale_tau": 0.1,
+    "arclength_target_rtol": 1e-06,
+    "scale_formula": "b=L_target^2; d=max(b,0.1*rms(b_across_windows),1e-4)",
+    "matched_weight": "omega=(old_RX_area_den/new_den)^2 applied to J0",
+    "implementation": "RX only; batched native circuit and Gauss prefix integrals; same target/candidate modal panels and convergence thresholds as original",
+    "local_area": "Deferred until scale-only evidence; not optimized in this batch",
+    "speed_gate": "paired ARX_L vs original Python median auxiliary evaluation speedup >= 3 on each target; preflight only, identical hardware and quadrature",
+    "minimum_speedup": 3
+  }
+}

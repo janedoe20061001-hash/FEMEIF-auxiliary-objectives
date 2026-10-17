@@ -1,0 +1,33 @@
+{
+  "simple_target_core_3dB": [
+    {
+      "target": "series_Q10",
+      "endpoint_magnitude_ratio": [
+        1.4125375446227448,
+        1.412537544622736
+      ],
+      "expected_ratio": 1.4125375446227544,
+      "passed": true
+    },
+    {
+      "target": "notch_Q20",
+      "endpoint_magnitude_ratio": [
+        1.4125375446229058,
+        1.412537544622755
+      ],
+      "expected_ratio": 1.4125375446227544,
+      "passed": true
+    },
+    {
+      "target": "notch_Q2000",
+      "endpoint_magnitude_ratio": [
+        1.412537544622881,
+        1.412537544609999
+      ],
+      "expected_ratio": 1.4125375446227544,
+      "passed": true
+    }
+  ],
+  "exact_old_candidate_parameter_duplicates": [],
+  "scope": "Exact parameters checked; all targets and intervention design remain development, not held-out validation"
+}

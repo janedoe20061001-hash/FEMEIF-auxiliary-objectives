@@ -1,0 +1,23 @@
+{
+  "status": "exploratory diagnostic added while pilot running; not a preregistered primary test",
+  "scales": [
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    8
+  ],
+  "changes": [
+    "R2_half",
+    "R2_double",
+    "branch_width_half",
+    "branch_width_double",
+    "branch_center_0p1pct_up",
+    "branch_center_1pct_up",
+    "R2_to_lower_bound"
+  ],
+  "other_15_parameters": "held at their true target values; oracle scoring diagnostic only",
+  "purpose": "separate objective penalties from optimizer outcomes",
+  "network_confound": "all network effects rechecked; height/width/position/valley can couple"
+}

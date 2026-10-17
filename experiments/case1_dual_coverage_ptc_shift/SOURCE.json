@@ -1,0 +1,79 @@
+{
+  "source_directory": "D:\\develop\\FEMEIF\\experiments\\case1_dual_pdf18_combinations",
+  "config": {
+    "schema_version": 1,
+    "seeds": {
+      "start": 0,
+      "count": 100
+    },
+    "population": 200,
+    "generations": 300,
+    "algorithm": "NSGA-II",
+    "encoding": "log10",
+    "crossover_probability": 0.9,
+    "crossover_eta": 1,
+    "mutation_individual_probability": 1.0,
+    "mutation_variable_probability": 0.1,
+    "mutation_eta": 1,
+    "auxiliary_transform": "loss",
+    "reciprocal_epsilon": 1e-12,
+    "frequency": {
+      "points": 180,
+      "min_hz": 100,
+      "max_hz": 1000000,
+      "file": null
+    },
+    "features": {
+      "turn_quantile": 0.95,
+      "fit_turn_ratio": 0.2,
+      "event_min_gap": 4,
+      "ptc_neighbor_db": 0.2,
+      "ptc_gamma": 0.41,
+      "weak_location_weight": 0.1,
+      "excess_event_weight": 0.1,
+      "speed_epsilon_ratio": 0.05,
+      "dtw_window": 4,
+      "soft_dtw_window": 10,
+      "soft_dtw_gamma": 0.1,
+      "hausdorff_quantile": 0.95
+    },
+    "groups": [
+      [
+        "reactance_crossing_direction_consistency",
+        "characteristic_frequency_shift_error_decades"
+      ],
+      [
+        "reactance_crossing_direction_consistency",
+        "transition_speed_relative_error"
+      ],
+      [
+        "characteristic_frequency_shift_error_decades",
+        "transition_speed_relative_error"
+      ],
+      [
+        "reactance_crossing_direction_consistency",
+        "characteristic_frequency_shift_error_decades",
+        "transition_speed_relative_error"
+      ]
+    ],
+    "selection_objectives": "all",
+    "report_front": "wsmse_selected",
+    "final_selection": {
+      "method": "min_wsmse_final_population",
+      "phase_weight": 25.12,
+      "tie_break": "first_index"
+    }
+  },
+  "search_function_ast_sha256": {
+    "initial_population": "537dca838ff074cda681575ea929739c2eb3927d98845237762436584d76ab6b",
+    "stats": "52f7d424fb2fa6e108871fd17c054ced5f4f3d644c7b06d559e9cb13372351e6",
+    "Case1": "c2b505ddd6a7dafdb311e3969eefe46fc17549be8c3b8322b054a42b381d2904",
+    "Trace": "4e659a85b08fdfdd2b2a9eb5a6ff097a170c87a1c02dde77bad3ef2af8766e9d",
+    "run_one": "d45599d1f0997683f8bffc88a62015bc5b73fad879c2ef3aa8aaac600e052afc"
+  },
+  "files_sha256": {
+    "objectives.py": "7e94e82aec7e7e90f3383b765db55a1ee90e3894655b1bfa0bff99c5c2b02102",
+    "final_selection.py": "10c6e346b30921a81d7a985f3f73e2eb157eadd9180690c530f6c9b184f943d8",
+    "requirements-lock.txt": "11b9eec6ce0dbc32f6d55f6fc307d1e5d82268720fdaf4f1e78df0fd4f439714"
+  }
+}

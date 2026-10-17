@@ -1,0 +1,88 @@
+{
+  "scope": "Posthoc illustration: first fixed source-order unchanged sequence; not selection for scoring",
+  "item": {
+    "id": "setting_0014",
+    "target": "mixed_resonators/base",
+    "family": "extra",
+    "meta": {
+      "relative_R": 0.1,
+      "shift_widths": -0.1,
+      "width_fraction": 0.05,
+      "extra_R": 10.35876970145673,
+      "extra_f0": 51957.989243878495,
+      "extra_Q": 144.60921505314465
+    },
+    "model": {
+      "id": "setting_0014",
+      "tree": [
+        "S",
+        [
+          "S",
+          "Rs",
+          [
+            "P",
+            [
+              "S",
+              "R1",
+              "L1",
+              "C1"
+            ],
+            [
+              "S",
+              "L2",
+              [
+                "P",
+                "R2",
+                "C2",
+                [
+                  "S",
+                  "R3",
+                  "L3",
+                  "C3"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "P",
+          "Re",
+          "Le",
+          "Ce"
+        ]
+      ],
+      "values": {
+        "Rs": 5.0,
+        "R1": 2.0,
+        "L1": 0.0015915494309189533,
+        "C1": 1.5915494309189535e-07,
+        "L2": 0.0007234315595086153,
+        "R2": 1500.0,
+        "C2": 7.234315595086153e-08,
+        "R3": 7.0,
+        "L3": 0.00039788735772973834,
+        "C3": 3.978873577297384e-08,
+        "Re": 10.35876970145673,
+        "Le": 2.1942191703147387e-07,
+        "Ce": 4.2761761492113296e-05
+      }
+    }
+  },
+  "diagnostics": {
+    "id": "setting_0014",
+    "target": "mixed_resonators/base",
+    "family": "extra",
+    "scope": "core",
+    "meta": "{\"extra_Q\": 144.60921505314465, \"extra_R\": 10.35876970145673, \"extra_f0\": 51957.989243878495, \"relative_R\": 0.1, \"shift_widths\": -0.1, \"width_fraction\": 0.05}",
+    "state_error": 0.015525712584604405,
+    "length_ratio": 1.0539159102302658,
+    "arc80_ratio": 0.9813428261517751,
+    "cdf_L1": 0.010831350253799556,
+    "endpoint_efficiency": 0.7625159335682493,
+    "sequence": "valley",
+    "boundary_roots": 0,
+    "q50_error_widths": -0.008276231390516914,
+    "zero_motion": false,
+    "undefined_tangent_anchors": 0
+  }
+}

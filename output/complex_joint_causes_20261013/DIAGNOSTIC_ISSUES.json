@@ -1,0 +1,26 @@
+{
+  "scope": "Local postprocessing only; original experimental files unchanged",
+  "issues": [
+    {
+      "type": "descriptor_infinite_eigenvalue_classification",
+      "target": "mixed_resonators/base",
+      "initial_reconstruction_relative_error": 1.4279798632506995,
+      "initial_node_response_relative_error": 6.779414563529557e-14,
+      "initial_eigen_residual": 7.827289263785043e-17,
+      "initial_run_stopped": true,
+      "resolution": "Homogeneous generalized eigenvalues distinguish infinite eigenvalues; independent pole/zero count and roots, node response and reconstruction checked",
+      "final_analysis_tolerance": 1e-8,
+      "frozen_model_or_threshold_changed": false
+    },
+    {
+      "type": "intentional_local_cost_scope_reduction",
+      "initial_completed_deep_checks": 8,
+      "preserved_file": "CASE1_INITIAL_DEEP_D.csv",
+      "final_case1_coarse_checks": 56,
+      "final_stratified_deep_checks": 4,
+      "overlap_between_deep_sets": 1,
+      "historical_optimizer_interrupted": false,
+      "missing_values_imputed": false
+    }
+  ]
+}

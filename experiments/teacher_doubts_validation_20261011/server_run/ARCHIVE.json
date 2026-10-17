@@ -1,0 +1,32 @@
+{
+  "archive_sha256": "a991e7798a87cbbd5b419cc3ed00e9b673b3399c376e5336ad9b539d1c742371",
+  "bytes": 72465627,
+  "files_verified": 4854,
+  "validation": {
+    "passed": true,
+    "runs": 800,
+    "total_evaluations": 135000000,
+    "individuals_recomputed": 350000,
+    "initialization_matches": true,
+    "original300_replays": 400,
+    "original300_matched": 398,
+    "original300_mismatches": [
+      {
+        "case": "case2",
+        "method": "dual_nsga",
+        "seed": 2334
+      },
+      {
+        "case": "case2",
+        "method": "dual_nsga",
+        "seed": 2365
+      }
+    ],
+    "failed_attempt_extra_evaluations": 90000,
+    "replay_probe_evaluations": 360000,
+    "maximum_matched_replay_parameter_difference": 2.4353852268177434e-12,
+    "maximum_matched_replay_metric_difference": 7.584822014905512e-08
+  },
+  "server": "connect.westb.seetacloud.com:31944",
+  "workspace": "/root/autodl-tmp/wsmse_teacher_check_20261011_workspace"
+}

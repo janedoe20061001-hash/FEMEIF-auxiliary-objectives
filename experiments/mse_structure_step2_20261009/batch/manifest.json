@@ -1,0 +1,115 @@
+{
+  "config": {
+    "target_scales": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "run_scales": [
+      0.25,
+      1,
+      8
+    ],
+    "seeds": [
+      31000,
+      31001,
+      31002,
+      31003,
+      31004,
+      31005,
+      31006,
+      31007
+    ],
+    "generations": 300,
+    "population": 200,
+    "workers": 4,
+    "plot_seeds": [
+      31000,
+      31003,
+      31006
+    ],
+    "bootstrap_seed": 2026100902,
+    "old_stages": [
+      20,
+      100,
+      300,
+      1000
+    ],
+    "pair_window_hz": [
+      23000,
+      26000
+    ],
+    "broad_window_hz": [
+      10000,
+      31622.776601683792
+    ],
+    "core_rule": "P3 center +/- half target 3dB log-frequency width",
+    "close_scores": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "score_floors": [
+      0.01,
+      7.615435494667714e-05
+    ],
+    "meaningful_shape_rule": "matched status differs OR height difference >=6 dB OR width ratio between candidates >=2",
+    "match_rule": "same kind within .25 decade; complete shift <=.02 decade,height <=3dB,width ratio .5..2",
+    "primary_rule": "minimum MAG+25.12*PHA on nondominated front",
+    "secondary_rule": "minimum max(MAG,25.12*PHA) on nondominated front",
+    "primary_outcome": "P3 and V2 complete on SAME representative curve",
+    "scope": "Exploratory 8 paired seeds, no auxiliary objective",
+    "sampling": "Pure Python adaptive, original 180 log-cells each mass 1/180",
+    "source_step1": "D:\\develop\\FEMEIF\\experiments\\mse_structure_step1_20261008",
+    "protocol_frozen_before_new_results": true
+  },
+  "input_hashes": {
+    "frozen/circuits.json": "e1a2d2bb04a292c89280d56fb3b62d05a5cb414295e9431c8b8a99e4de53cb48",
+    "frozen/model.py": "91cef17585ac6b63826d4529fadfc3a4e5969ac7f77f1dbd054e860fcc05f45e",
+    "frozen/frozen/case1/legacy_objectives.py": "7e94e82aec7e7e90f3383b765db55a1ee90e3894655b1bfa0bff99c5c2b02102",
+    "analysis_toolkit/diagnostics.py": "b0da93b712f8667367d0fafb00affe0f12d394e730128cf2095e25b74198bccd",
+    "analysis_toolkit/refined_grid.py": "e928e18886ae78469465c4a2492b772396271e167d1fb54a2cbc237ab7776584",
+    "analysis_toolkit/frozen/population_source.py": "c4f5f15962b80bbf41861aa1d3be5161f6d402ef7d2e0ca1de3afd3583b762c1",
+    "targets/s0p25/events.json": "5e1e6215983c87ea1e1ed65c7e4998f0072b84b9191a0a2eb2b63a114abdc1ff",
+    "targets/s0p25/grid.npz": "b3e5ea4c3a2dff0c67b7caf8f347bda907f50a8c2509639be4b68925b23211ba",
+    "targets/s0p25/record.json": "090e6b703cbfae85811e63c57ad052b54c2193765f86cdfd959688703da40cc1",
+    "targets/s0p5/events.json": "dbdc406274407b40d7e33d590e1c54fa541284dfeeb1349be1208e74e70b525c",
+    "targets/s0p5/grid.npz": "736593af0493dd8c7a9b2dac3253f00087964c48d5a340936b7fa42c1ea2984b",
+    "targets/s0p5/record.json": "76a5f46ee21a2214f3cc7106534dc61b9a7c53c043f9c297301a1890c3504e66",
+    "targets/s1/events.json": "c7509893e43786ac7ed21dea7a3577d3ccdbc8c0d3748e1e110d784d7a3ab505",
+    "targets/s1/grid.npz": "1fe168653a54ea4d9fbc9e09cb280dd01f3ce456898845a51231455fdadaee07",
+    "targets/s1/record.json": "23e4e22d560d96892a1f31a05800e9cd2f1c6c1a343fb00952cc56357f76ca1e",
+    "targets/s2/events.json": "3f374138796b93e2d593d0b1fd4a6f022d9384037b2fbe10bafcbced91480532",
+    "targets/s2/grid.npz": "191ab632b24025328a4043a4b781938f175ac9908988e802fe5a1512fd941275",
+    "targets/s2/record.json": "1ab278849bbdc2471177730b1478c96fb5afa69ae578e93a6d7da98c3fb0a106",
+    "targets/s4/events.json": "2287d61ccbc98ace19e2693d07792fcf7261501f9e11e82ad8e9970beff5afd3",
+    "targets/s4/grid.npz": "77fb787dff8997d201c46871434404b1041c5c06bb014c42ea47cc8a4a7c4f37",
+    "targets/s4/record.json": "3f2e66b4829af6b1fcfb96966b3850a8fde1877da63d8575fd17e92d02eb46a6",
+    "targets/s8/events.json": "75522bdd02f0148afca639b6d19c479915fc477f4908d27eac2b8f973e354b99",
+    "targets/s8/grid.npz": "99c2c31938c2abe7fa9ff931964ad32112c53a4d6330f7147e365a5c5aeced97",
+    "targets/s8/record.json": "d6fa65e1f1768988da227b5c07c51233757f23a95c0d4bdb872fbfc21d771e3d",
+    "adaptive.py": "11c46fbd4f9611929186a5367883797c6546c8a84fcf7c03c282511168667da2",
+    "structure.py": "3faddd6cf858d1a79ebe036da516244df0e9d7aa09763ae9b0d246cb3ad632b2",
+    "common.py": "984bc317b5cf09a6965a86569b7657fa307da9b34c9ea339db4dc87b6ac91a24",
+    "CONFIG.json": "d87383cb4e690bbb46b94c136e160d0c916fd07ecb15a58eda1f245eddb4ef02"
+  },
+  "code_hashes": {
+    "run.py": "adec18066c503a6bb37c72b02260817242c0e2586d833f3e99df775d146b22a7",
+    "common.py": "984bc317b5cf09a6965a86569b7657fa307da9b34c9ea339db4dc87b6ac91a24"
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "pymoo": "0.6.1.6",
+    "moocore": "0.3.2",
+    "matplotlib": "3.11.2"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "workers": 4,
+  "mode": "batch",
+  "planned_evaluations": 1440000
+}

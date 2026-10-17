@@ -1,0 +1,472 @@
+[
+  {
+    "case": "case1",
+    "id": "Q-05-B",
+    "group": "symmetric_length_logpolar",
+    "label": "两端对称累计弧长",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      11.035629037005657,
+      0.10586021975322164,
+      13.694837757206592
+    ],
+    "auxiliary_mean": [
+      9.653083887036603,
+      0.08830452822353331,
+      11.87129363601176
+    ],
+    "reduction_pct": [
+      12.528013992976572,
+      16.583841948008104,
+      13.315558413499529
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -0.789405988548995,
+        23.940815391181832
+      ],
+      [
+        0.002229915234950485,
+        30.47777419773677
+      ],
+      [
+        0.573184519181469,
+        24.111491297046175
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.09608261214226986,
+      0.09677152330659382
+    ],
+    "both_lower_seeds": 41,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case1",
+    "id": "Q-05-A",
+    "group": "axis_variation_logpolar",
+    "label": "分轴累计变化量",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      11.035629037005657,
+      0.10586021975322164,
+      13.694837757206592
+    ],
+    "auxiliary_mean": [
+      10.183349608540276,
+      0.10890240873632133,
+      12.918978115996667
+    ],
+    "reduction_pct": [
+      7.722980045880867,
+      -2.8737792063832313,
+      5.665343795706135
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -7.102812218474031,
+        20.55305553746253
+      ],
+      [
+        -22.250356257072962,
+        13.122231430428704
+      ],
+      [
+        -8.847711613757122,
+        18.352119206472096
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.2565231689671972,
+      0.8338723094405576
+    ],
+    "both_lower_seeds": 40,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case1",
+    "id": "Q-05-D",
+    "group": "direction_variation_logpolar",
+    "label": "分轴上升／下降累计量",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      11.035629037005657,
+      0.10586021975322164,
+      13.694837757206592
+    ],
+    "auxiliary_mean": [
+      9.924596362254182,
+      0.10324739024747995,
+      12.518170805270875
+    ],
+    "reduction_pct": [
+      10.067687768643385,
+      2.4681882503481023,
+      8.592047403530012
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -4.157361939759311,
+        22.35157563379332
+      ],
+      [
+        -18.028398081076816,
+        19.025231469981616
+      ],
+      [
+        -5.4342185406780406,
+        20.723367971063457
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.23553461229179673,
+      0.35680454481095936
+    ],
+    "both_lower_seeds": 42,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case1",
+    "id": "Q-COMB",
+    "group": "cumulative_area_logpolar+cumulative_length_logpolar",
+    "label": "累计面积＋累计弧长（双辅助）",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      11.035629037005657,
+      0.10586021975322164,
+      13.694837757206592
+    ],
+    "auxiliary_mean": [
+      10.134743023605342,
+      0.09489161603742517,
+      12.518420418465464
+    ],
+    "reduction_pct": [
+      8.163431467108795,
+      10.361402745399706,
+      8.590224722611739
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -6.929222818506035,
+        20.980358210058068
+      ],
+      [
+        -8.476586112277841,
+        24.995609318908823
+      ],
+      [
+        -5.945725377750823,
+        20.915866543848598
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.36402735891799287,
+      0.14871185095600323
+    ],
+    "both_lower_seeds": 38,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case1",
+    "id": "Q-COMB",
+    "group": "cumulative_area_logpolar+cumulative_length_logpolar",
+    "label": "累计面积＋累计弧长（双辅助）",
+    "parent": "R-03-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      10.433052849516503,
+      0.1062628848977189,
+      13.102376518147203
+    ],
+    "auxiliary_mean": [
+      10.134743023605342,
+      0.09489161603742517,
+      12.518420418465464
+    ],
+    "reduction_pct": [
+      2.8592764765395184,
+      10.70107297692784,
+      4.456871613122559
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -11.313556980762197,
+        15.157939953951844
+      ],
+      [
+        -5.570507931153691,
+        24.270235506617812
+      ],
+      [
+        -9.113403790587776,
+        16.145767014352842
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.6132542176643868,
+      0.1555994829260015
+    ],
+    "both_lower_seeds": 43,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case2",
+    "id": "Q-05-B",
+    "group": "symmetric_length_logpolar",
+    "label": "两端对称累计弧长",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      4.153518021048407,
+      0.07692695743684869,
+      5.490508541300837
+    ],
+    "auxiliary_mean": [
+      3.9489621744168706,
+      0.07419534425746355,
+      5.238477257611585
+    ],
+    "reduction_pct": [
+      4.924881644787071,
+      3.5509180011800034,
+      4.590308562374801
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -3.8346476009997534,
+        13.201703708592566
+      ],
+      [
+        -2.4689972926574,
+        9.150460841571222
+      ],
+      [
+        -3.0568473901846467,
+        11.77496004143018
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.43307645328435596,
+      0.1303144795171302
+    ],
+    "both_lower_seeds": 34,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case2",
+    "id": "Q-05-A",
+    "group": "axis_variation_logpolar",
+    "label": "分轴累计变化量",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      4.153518021048407,
+      0.07692695743684869,
+      5.490508541300837
+    ],
+    "auxiliary_mean": [
+      4.21935211445019,
+      0.07730459148969515,
+      5.56290591454109
+    ],
+    "reduction_pct": [
+      -1.5850200497063538,
+      -0.4908995044506703,
+      -1.318591396328106
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -12.360567338769089,
+        7.574811093206899
+      ],
+      [
+        -7.516035753390262,
+        6.0653503571710194
+      ],
+      [
+        -10.81969689958018,
+        6.919109185623658
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.7753522914731348,
+      0.6900069147093293
+    ],
+    "both_lower_seeds": 36,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case2",
+    "id": "Q-05-D",
+    "group": "direction_variation_logpolar",
+    "label": "分轴上升／下降累计量",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      4.153518021048407,
+      0.07692695743684869,
+      5.490508541300837
+    ],
+    "auxiliary_mean": [
+      3.882307355676137,
+      0.07381855161518786,
+      5.165273782748105
+    ],
+    "reduction_pct": [
+      6.529661458018965,
+      4.0407237270661645,
+      5.923581688403612
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -3.0166242685011864,
+        15.17867444215451
+      ],
+      [
+        -1.8756127055267162,
+        9.660667223986108
+      ],
+      [
+        -2.4052550597402904,
+        13.572211534501557
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.19607673207783693,
+      0.5180170574396306
+    ],
+    "both_lower_seeds": 37,
+    "holm_adjusted_p_44_primary_comparisons": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "case": "case2",
+    "id": "Q-COMB",
+    "group": "cumulative_area_logpolar+cumulative_length_logpolar",
+    "label": "累计面积＋累计弧长（双辅助）",
+    "parent": "R-05-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      4.153518021048407,
+      0.07692695743684869,
+      5.490508541300837
+    ],
+    "auxiliary_mean": [
+      4.67736154756675,
+      0.08532169163628169,
+      6.160252548205324
+    ],
+    "reduction_pct": [
+      -12.612044148206625,
+      -10.91260395463378,
+      -12.198214461675484
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        -24.31028317889616,
+        -1.8562568437053184
+      ],
+      [
+        -18.35387670493981,
+        -3.8281714860223848
+      ],
+      [
+        -22.295583287579003,
+        -2.748783253732121
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.012073897894067653,
+      0.0016548196093500818
+    ],
+    "both_lower_seeds": 22,
+    "holm_adjusted_p_44_primary_comparisons": [
+      0.3380691410338943,
+      0.05626386671790278
+    ]
+  },
+  {
+    "case": "case2",
+    "id": "Q-COMB",
+    "group": "cumulative_area_logpolar+cumulative_length_logpolar",
+    "label": "累计面积＋累计弧长（双辅助）",
+    "parent": "R-03-C",
+    "comparator": "unchanged_parent_same_seeds",
+    "paired_seeds": 100,
+    "baseline_mean": [
+      5.8470709185346825,
+      0.08412743758090263,
+      7.309205783690767
+    ],
+    "auxiliary_mean": [
+      4.67736154756675,
+      0.08532169163628169,
+      6.160252548205324
+    ],
+    "reduction_pct": [
+      20.00504846383957,
+      -1.4195773575423454,
+      15.719262386197064
+    ],
+    "reduction_pct_bootstrap95": [
+      [
+        9.926045557016941,
+        28.821953349656816
+      ],
+      [
+        -8.873559061645429,
+        5.472373093566618
+      ],
+      [
+        6.416957078904457,
+        23.93786903412569
+      ]
+    ],
+    "wilcoxon_two_sided_p": [
+      0.00038765090504787276,
+      0.956127949633218
+    ],
+    "both_lower_seeds": 43,
+    "holm_adjusted_p_44_primary_comparisons": [
+      0.014730734391819164,
+      1.0
+    ]
+  }
+]

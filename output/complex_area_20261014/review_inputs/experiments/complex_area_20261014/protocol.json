@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-14",
+  "purpose": "Frequency-labelled Re/Im area ablation, weighting and search controls",
+  "methods": [
+    "MAG_PHA",
+    "MAG_PHA_ISLANDS",
+    "G0",
+    "J0",
+    "D",
+    "H",
+    "A",
+    "ARX"
+  ],
+  "seeds": [
+    46000,
+    46001,
+    46002,
+    46003,
+    46004,
+    46005,
+    46006,
+    46007
+  ],
+  "population": 200,
+  "generations": 300,
+  "save_every": 20,
+  "workers": 32,
+  "target_count": 3,
+  "circuit_count": 2,
+  "planned_jobs": 192,
+  "planned_evaluations": 11520000,
+  "theory_band_hz": [
+    100.0,
+    1000000.0
+  ],
+  "nested_lc_factors": [
+    0.25,
+    1.0,
+    8.0
+  ],
+  "features": {
+    "points_per_theory_block": 129,
+    "half_steps_normalized_block": [
+      0.03125,
+      0.0625,
+      0.125
+    ],
+    "measured_index_steps": [
+      1,
+      2,
+      4
+    ],
+    "increment_scale_floor": 0.01,
+    "product_scale_floor": 0.0001,
+    "area_scale_floor": 0.0001,
+    "ohm_scale_floor": 1e-06,
+    "event_half_window_widths": 3.0,
+    "aggregation": "equal mean across all fixed disjoint target event windows and intervening gaps; full band covered",
+    "combination": "arithmetic mean of named single features; one auxiliary objective, always 3 objectives total",
+    "reference_path_frequency_slack": 0.25,
+    "ptc_gamma": 0.41,
+    "ptc_prominence_db": 1.0,
+    "ptc_cost": "gamma*expm1(abs(log_frequency_shift)/full_log_frequency_span), sum same-type events in target-midpoint zones, gamma if none, mean target events",
+    "measured_blocks": "fixed overlapping groups of 25 original rows with stride 24, endpoint remainder merged; no new measured samples or interpolation",
+    "anchor_policy": "raw endpoints reported; MAG/PHA retained; no candidate rotation, translation, scaling or frequency registration"
+  },
+  "selection": "Frozen MAG/PHA 2D normalized convex knee; fixed nearest-ideal fallback from 20261011 selector, auxiliary not used for final selection",
+  "operators": {
+    "sbx_probability": 0.9,
+    "sbx_eta": 1.0,
+    "pm_probability": 1.0,
+    "pm_variable_probability": 0.1,
+    "pm_eta": 1.0
+  },
+  "audit": {
+    "levels": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "base_rtol": 0.01,
+    "base_atol": [
+      0.01,
+      7.615435494667714e-05
+    ],
+    "feature_rtol": 0.01,
+    "feature_atol": 0.01,
+    "nodal_rtol": 1e-08,
+    "nodal_atol": 1e-09,
+    "no_threshold_relaxation": true
+  },
+  "scope": "Three existing development targets. Eight fresh paired seeds. Case2 and other circuits deferred until numerical reliability and causal controls pass. No claim to outperform paper FEMEIF (no PTC group this focused round).",
+  "paired_budget": "60000 candidates per job, report actual frequency queries and wall/CPU time separately",
+  "resource_policy": "min(32, actual cgroup quota, CPU affinity) single-thread workers; longest predicted jobs first; no dummy load",
+  "failure_policy": "retain original failures and completed jobs; resume missing jobs only; no silent retry, budget extension or threshold change",
+  "publication": "local beginner-friendly Markdown only; no website",
+  "quadrature": {
+    "orders": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "atol": 0.0001,
+    "rtol": 0.001,
+    "max_panel_refinements": 3,
+    "audit_order": 32,
+    "audit_panel_refinement": 2,
+    "area_method": "Analytic derivative and panelwise Gauss-Legendre antiderivative; compare full cumulative profiles at frequency-labelled Gauss nodes",
+    "anchors": "Target and candidate pole/zero scales, logarithmically spaced panels around all modes; Case1 uses all six exact branch poles",
+    "failure": "Raise and retain candidate; never substitute a finite bad fitness for unresolved integration"
+  },
+  "search_control": "Four NSGA-II islands of 50, initial 200 split in order, 300 generations, total60000; final knee on combined200; no migration, not guaranteed stronger"
+}

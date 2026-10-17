@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-12",
+  "seed": 20260912,
+  "frequency_points": 65537,
+  "frequency_min_hz": 100,
+  "frequency_max_hz": 1000000.0,
+  "grid": "fixed log-uniform; newly constructed, NOT original 401-point grid",
+  "target_params_R_L_C": [
+    [
+      2000.0,
+      0.001585,
+      1e-05
+    ],
+    [
+      3000.0,
+      1e-05,
+      3.98e-06
+    ],
+    [
+      500.0,
+      0.0001,
+      1e-06
+    ],
+    [
+      1200.0,
+      2.512e-06,
+      6.31e-07
+    ],
+    [
+      800.0,
+      1.259e-06,
+      5.01e-07
+    ],
+    [
+      50.0,
+      2.51e-07,
+      1.58e-07
+    ]
+  ],
+  "levels_pct": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0
+  ],
+  "random_directions_per_family": 64,
+  "parameter_rule": "theta=theta_target*exp(log(1+p/100)*direction); max(abs(direction))=1",
+  "primary": "equal-point mean squared dB magnitude difference and direct radian phase difference",
+  "features": "terminal X crossings (down/up) and relative +45 to -45 phase bandwidth",
+  "refinement": "bracket roots using dense sampled spectrum, then 28 simultaneous bisections of the SAME circuit response; reference numerics, not an optimization algorithm",
+  "missing_penalty": 1,
+  "absolute_log_error_cap": 1,
+  "source": "English PDF Table III/Fig.10; Chinese PDF Sec.2 for primary formulas; original code and frequency CSV are absent"
+}

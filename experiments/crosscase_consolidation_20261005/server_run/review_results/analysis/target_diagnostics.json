@@ -1,0 +1,212 @@
+[
+  {
+    "case": "case1",
+    "points": 180,
+    "frequency_range": [
+      100.0,
+      1000000.0
+    ],
+    "magnitude_range": [
+      0.052597091866553286,
+      393.1570147418855
+    ],
+    "log_spacing_min": 0.02234636871508311,
+    "log_spacing_max": 0.022346368715083997,
+    "max_principal_phase_jump_deg": 177.66951114725052,
+    "jump_interval": [
+      24607.157699163294,
+      25906.445000902346
+    ],
+    "outside_positive_real_phase_count": 0,
+    "outside_phase_contribution_by_group": {
+      "baseline": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      },
+      "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      },
+      "reactance_crossing_direction_consistency+transition_speed_relative_error": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      },
+      "cumulative_length_logpolar": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      },
+      "all_interval_mean_residual_logpolar": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      },
+      "bidirectional_residual_logpolar": {
+        "absolute": 0.0,
+        "fraction": 0.0
+      }
+    },
+    "preflight": {
+      "frequency_points": 180,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        -25.580765353131927,
+        -1.5671652842336827
+      ],
+      "scale": [
+        77.47208592896365,
+        3.1374865965024887
+      ],
+      "target_total_length": 16.366227115796548,
+      "largest_segment_length_share": 0.0605542395540999,
+      "largest_segment_frequency_hz": [
+        24607.157699163294,
+        25906.445000902346
+      ],
+      "all_original_rows_retained": true,
+      "candidate_normalization": "fixed_target_only",
+      "auxiliary_tunable_parameters": {},
+      "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+      "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term",
+      "local_constants": {
+        "turn_quantile": 0.95,
+        "fit_turn_ratio": 0.2,
+        "event_min_gap": 4,
+        "ptc_neighbor_db": 0.2,
+        "ptc_gamma": 0.41,
+        "weak_location_weight": 0.1,
+        "excess_event_weight": 0.1,
+        "speed_epsilon_ratio": 0.05,
+        "dtw_window": 4,
+        "soft_dtw_window": 10,
+        "soft_dtw_gamma": 0.1,
+        "hausdorff_quantile": 0.95
+      },
+      "local_target": {
+        "frequency_points": 180,
+        "target_turns": 6,
+        "turn_u": [
+          0.2737430167597765,
+          0.553072625698324,
+          0.5977653631284916,
+          0.776536312849162,
+          0.8268156424581006,
+          0.9776536312849162
+        ],
+        "target_crossings": 11,
+        "target_amplitude_extrema": 11,
+        "path_scales": [
+          76.94159066852839,
+          561.2970149648013
+        ],
+        "impedance_median_scale": 4.685004101618588,
+        "speed_epsilon": 1.5022136544215163,
+        "target_turn_threshold": 1.7845793444622386,
+        "fit_turn_threshold": 0.421138303789703
+      },
+      "protocol": "crosscase_consolidation_20261005_v1"
+    }
+  },
+  {
+    "case": "case2",
+    "points": 201,
+    "frequency_range": [
+      40.0,
+      110000000.0
+    ],
+    "magnitude_range": [
+      6.259999999999999,
+      1460000.0
+    ],
+    "log_spacing_min": 0.02855546045305335,
+    "log_spacing_max": 0.03415427623430567,
+    "max_principal_phase_jump_deg": 184.9,
+    "jump_interval": [
+      16000000.0,
+      17200000.0
+    ],
+    "outside_positive_real_phase_count": 1,
+    "outside_phase_contribution_by_group": {
+      "baseline": {
+        "absolute": 0.0027595626427813357,
+        "fraction": 0.03132316648190014
+      },
+      "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades": {
+        "absolute": 0.002533622892144115,
+        "fraction": 0.030241281570706
+      },
+      "reactance_crossing_direction_consistency+transition_speed_relative_error": {
+        "absolute": 0.005411971066611329,
+        "fraction": 0.068277052933041
+      },
+      "cumulative_length_logpolar": {
+        "absolute": 0.0034161603959967676,
+        "fraction": 0.04367276254187433
+      },
+      "all_interval_mean_residual_logpolar": {
+        "absolute": 0.0020036901236238874,
+        "fraction": 0.024948850364734286
+      },
+      "bidirectional_residual_logpolar": {
+        "absolute": 0.001986620311307486,
+        "fraction": 0.02436402955440463
+      }
+    },
+    "preflight": {
+      "frequency_points": 201,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        15.931486664208592,
+        -1.567305668290908
+      ],
+      "scale": [
+        107.35557045148015,
+        3.4348079679248404
+      ],
+      "target_total_length": 8.629324946318668,
+      "largest_segment_length_share": 0.10888120541824328,
+      "largest_segment_frequency_hz": [
+        16000000.0,
+        17200000.0
+      ],
+      "all_original_rows_retained": true,
+      "candidate_normalization": "fixed_target_only",
+      "auxiliary_tunable_parameters": {},
+      "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+      "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term",
+      "local_constants": {
+        "turn_quantile": 0.95,
+        "fit_turn_ratio": 0.2,
+        "event_min_gap": 4,
+        "ptc_neighbor_db": 0.2,
+        "ptc_gamma": 0.41,
+        "weak_location_weight": 0.1,
+        "excess_event_weight": 0.1,
+        "speed_epsilon_ratio": 0.05,
+        "dtw_window": 4,
+        "soft_dtw_window": 10,
+        "soft_dtw_gamma": 0.1,
+        "hausdorff_quantile": 0.95
+      },
+      "local_target": {
+        "frequency_points": 201,
+        "target_turns": 2,
+        "turn_u": [
+          0.015049698100070081,
+          0.06002158669654864
+        ],
+        "target_crossings": 9,
+        "target_amplitude_extrema": 11,
+        "path_scales": [
+          73982.05645048112,
+          1459593.5529434802
+        ],
+        "impedance_median_scale": 1000.0000000000002,
+        "speed_epsilon": 180.44895382073818,
+        "target_turn_threshold": 2.09750309303674,
+        "fit_turn_threshold": 0.5126181292729822
+      },
+      "protocol": "crosscase_consolidation_20261005_v1"
+    }
+  }
+]

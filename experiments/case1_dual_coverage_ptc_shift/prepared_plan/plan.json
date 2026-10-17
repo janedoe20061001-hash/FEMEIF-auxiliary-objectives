@@ -1,0 +1,71 @@
+{
+  "status": "plan_only",
+  "seed_start": 200,
+  "seed_count": 100,
+  "population": 200,
+  "generations": 300,
+  "group_count": 8,
+  "groups": [
+    {
+      "name": "baseline",
+      "auxiliaries": [],
+      "objective_count": 2
+    },
+    {
+      "name": "turning_event_coverage_5_of_6",
+      "auxiliaries": [
+        "turning_event_coverage_5_of_6"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "paper_ptc",
+      "auxiliaries": [
+        "paper_ptc"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "characteristic_frequency_shift_error_decades",
+      "auxiliaries": [
+        "characteristic_frequency_shift_error_decades"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "turning_event_coverage_5_of_6+paper_ptc",
+      "auxiliaries": [
+        "turning_event_coverage_5_of_6",
+        "paper_ptc"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "turning_event_coverage_5_of_6+characteristic_frequency_shift_error_decades",
+      "auxiliaries": [
+        "turning_event_coverage_5_of_6",
+        "characteristic_frequency_shift_error_decades"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "paper_ptc+characteristic_frequency_shift_error_decades",
+      "auxiliaries": [
+        "paper_ptc",
+        "characteristic_frequency_shift_error_decades"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "turning_event_coverage_5_of_6+paper_ptc+characteristic_frequency_shift_error_decades",
+      "auxiliaries": [
+        "turning_event_coverage_5_of_6",
+        "paper_ptc",
+        "characteristic_frequency_shift_error_decades"
+      ],
+      "objective_count": 5
+    }
+  ],
+  "planned_runs": 800,
+  "planned_evaluations": 48000000
+}

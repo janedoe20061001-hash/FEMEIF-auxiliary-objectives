@@ -1,0 +1,283 @@
+{
+  "status": "plan_only",
+  "seed_start": 0,
+  "seed_count": 100,
+  "population": 200,
+  "generations": 300,
+  "group_count": 32,
+  "groups": [
+    {
+      "name": "baseline",
+      "auxiliaries": [],
+      "objective_count": 2
+    },
+    {
+      "name": "SS",
+      "auxiliaries": [
+        "SS"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "PTC",
+      "auxiliaries": [
+        "PTC"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "DTW",
+      "auxiliaries": [
+        "DTW"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "LFP",
+      "auxiliaries": [
+        "LFP"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "LMEP",
+      "auxiliaries": [
+        "LMEP"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "SS+PTC",
+      "auxiliaries": [
+        "SS",
+        "PTC"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "SS+DTW",
+      "auxiliaries": [
+        "SS",
+        "DTW"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "SS+LFP",
+      "auxiliaries": [
+        "SS",
+        "LFP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "SS+LMEP",
+      "auxiliaries": [
+        "SS",
+        "LMEP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "PTC+DTW",
+      "auxiliaries": [
+        "PTC",
+        "DTW"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "PTC+LFP",
+      "auxiliaries": [
+        "PTC",
+        "LFP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "PTC+LMEP",
+      "auxiliaries": [
+        "PTC",
+        "LMEP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "DTW+LFP",
+      "auxiliaries": [
+        "DTW",
+        "LFP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "DTW+LMEP",
+      "auxiliaries": [
+        "DTW",
+        "LMEP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "LFP+LMEP",
+      "auxiliaries": [
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "SS+PTC+DTW",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "DTW"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+PTC+LFP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "LFP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+PTC+LMEP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+DTW+LFP",
+      "auxiliaries": [
+        "SS",
+        "DTW",
+        "LFP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+DTW+LMEP",
+      "auxiliaries": [
+        "SS",
+        "DTW",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+LFP+LMEP",
+      "auxiliaries": [
+        "SS",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "PTC+DTW+LFP",
+      "auxiliaries": [
+        "PTC",
+        "DTW",
+        "LFP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "PTC+DTW+LMEP",
+      "auxiliaries": [
+        "PTC",
+        "DTW",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "PTC+LFP+LMEP",
+      "auxiliaries": [
+        "PTC",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "DTW+LFP+LMEP",
+      "auxiliaries": [
+        "DTW",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 5
+    },
+    {
+      "name": "SS+PTC+DTW+LFP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "DTW",
+        "LFP"
+      ],
+      "objective_count": 6
+    },
+    {
+      "name": "SS+PTC+DTW+LMEP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "DTW",
+        "LMEP"
+      ],
+      "objective_count": 6
+    },
+    {
+      "name": "SS+PTC+LFP+LMEP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 6
+    },
+    {
+      "name": "SS+DTW+LFP+LMEP",
+      "auxiliaries": [
+        "SS",
+        "DTW",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 6
+    },
+    {
+      "name": "PTC+DTW+LFP+LMEP",
+      "auxiliaries": [
+        "PTC",
+        "DTW",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 6
+    },
+    {
+      "name": "SS+PTC+DTW+LFP+LMEP",
+      "auxiliaries": [
+        "SS",
+        "PTC",
+        "DTW",
+        "LFP",
+        "LMEP"
+      ],
+      "objective_count": 7
+    }
+  ],
+  "planned_runs": 3200,
+  "planned_evaluations": 192000000
+}

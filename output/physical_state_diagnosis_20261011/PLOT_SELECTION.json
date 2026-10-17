@@ -1,0 +1,37 @@
+{
+  "simple": "analytic controlled example",
+  "examples": [
+    {
+      "target": "control0p25",
+      "batch": "revision",
+      "seed": 42002,
+      "methods": [
+        "MAG_PHA",
+        "MAG_PHA_MAX"
+      ],
+      "reason": "previously identified knee failure"
+    },
+    {
+      "target": "mixed0p25",
+      "batch": "family",
+      "seed": 43000,
+      "methods": [
+        "MAG_PHA",
+        "MAG_PHA_INTEGRAL"
+      ],
+      "reason": "fixed first seed; explain missing phase lobes"
+    },
+    {
+      "target": "three0p25",
+      "batch": "family",
+      "seed": 43000,
+      "methods": [
+        "MAG_PHA",
+        "MAG_PHA_BRIDGE"
+      ],
+      "reason": "fixed first seed; explain extra capacitive lobes"
+    }
+  ],
+  "all_final_representatives_retained": true,
+  "averaged_curves": false
+}

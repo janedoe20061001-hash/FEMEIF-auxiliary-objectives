@@ -1,0 +1,169 @@
+{
+  "id": "new_022",
+  "target": "mixed_resonators/lc_reciprocal_8p0",
+  "cohort": "new_control",
+  "levels": [
+    {
+      "n": 128,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 533.2538286173253,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.6310270833601095,
+          "frequency_hz": 42758.95505490737,
+          "kind": "peak",
+          "real_ohm": 142.92640094807308,
+          "imag_ohm": 171.0622191258477,
+          "magnitude_ohm": 222.91307476285206,
+          "phase_deg": 50.120470885496836,
+          "R_dR": 6371781.617009548,
+          "X_dX": -6371781.617009367,
+          "radial_balance_relative": 1.4177869733724638e-14,
+          "normalized_radial_dot": 1.395199950349414e-14
+        },
+        {
+          "x": 4.637471198297582,
+          "frequency_hz": 43398.14817456121,
+          "kind": "valley",
+          "real_ohm": 37.225683911769764,
+          "imag_ohm": 44.48909934143056,
+          "magnitude_ohm": 58.008891584917144,
+          "phase_deg": 50.07952378152191,
+          "R_dR": -334345.804546401,
+          "X_dX": 334345.80454643024,
+          "radial_balance_relative": 4.3697640857497485e-14,
+          "normalized_radial_dot": 4.3012546130122474e-14
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.637471198297582,
+            "frequency_hz": 43398.14817456121,
+            "kind": "valley",
+            "real_ohm": 37.225683911769764,
+            "imag_ohm": 44.48909934143056,
+            "magnitude_ohm": 58.008891584917144,
+            "phase_deg": 50.07952378152191,
+            "R_dR": -334345.804546401,
+            "X_dX": 334345.80454643024,
+            "radial_balance_relative": 4.3697640857497485e-14,
+            "normalized_radial_dot": 4.3012546130122474e-14
+          },
+          "location": "outside_core",
+          "frequency_offset_decades": 0.014177695468339024,
+          "frequency_offset_core_widths": 1.250000000000176,
+          "max_normalized_state_residual": 9.63272081924941e-13,
+          "mean_normalized_state_residual": 2.925262705266795e-13,
+          "max_normalized_derivative_residual": 5.723910127050781e-12,
+          "mean_normalized_derivative_residual": 1.1493062388684594e-12,
+          "state_numerically_consistent": true,
+          "derivative_numerically_consistent": true,
+          "translation_signature_consistent": true,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 0,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "no_valley_in_core",
+      "signature_relation": "one_signature_consistent_candidate",
+      "signature_consistent_count": 1,
+      "signature_center_location": "outside_core",
+      "signature_center_x": 4.637471198297582
+    },
+    {
+      "n": 256,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 533.2539596308748,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.631027083360111,
+          "frequency_hz": 42758.95505490754,
+          "kind": "peak",
+          "real_ohm": 142.92640094815286,
+          "imag_ohm": 171.06221912578098,
+          "magnitude_ohm": 222.91307476285203,
+          "phase_deg": 50.120470885470105,
+          "R_dR": 6371781.617009795,
+          "X_dX": -6371781.617019891,
+          "radial_balance_relative": 7.922067418218823e-13,
+          "normalized_radial_dot": -7.795859516381227e-13
+        },
+        {
+          "x": 4.637471198297583,
+          "frequency_hz": 43398.148174561386,
+          "kind": "valley",
+          "real_ohm": 37.225683911755084,
+          "imag_ohm": 44.48909934144287,
+          "magnitude_ohm": 58.00889158491717,
+          "phase_deg": 50.07952378154083,
+          "R_dR": -334345.8045460407,
+          "X_dX": 334345.80454645236,
+          "radial_balance_relative": 6.155970441123078e-13,
+          "normalized_radial_dot": 6.05945669785607e-13
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.637471198297583,
+            "frequency_hz": 43398.148174561386,
+            "kind": "valley",
+            "real_ohm": 37.225683911755084,
+            "imag_ohm": 44.48909934144287,
+            "magnitude_ohm": 58.00889158491717,
+            "phase_deg": 50.07952378154083,
+            "R_dR": -334345.8045460407,
+            "X_dX": 334345.80454645236,
+            "radial_balance_relative": 6.155970441123078e-13,
+            "normalized_radial_dot": 6.05945669785607e-13
+          },
+          "location": "outside_core",
+          "frequency_offset_decades": 0.0141776954683408,
+          "frequency_offset_core_widths": 1.2500000000003328,
+          "max_normalized_state_residual": 1.8049368055296749e-12,
+          "mean_normalized_state_residual": 5.535072919072931e-13,
+          "max_normalized_derivative_residual": 1.073007680049838e-11,
+          "mean_normalized_derivative_residual": 2.169971569279682e-12,
+          "state_numerically_consistent": true,
+          "derivative_numerically_consistent": true,
+          "translation_signature_consistent": true,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 0,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "no_valley_in_core",
+      "signature_relation": "one_signature_consistent_candidate",
+      "signature_consistent_count": 1,
+      "signature_center_location": "outside_core",
+      "signature_center_x": 4.637471198297583
+    }
+  ],
+  "stability_checks": {
+    "root_count_type_location": true,
+    "candidate_location_signature": true,
+    "categories": true
+  },
+  "numerical_passed": true
+}

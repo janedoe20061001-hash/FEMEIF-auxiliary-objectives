@@ -1,0 +1,344 @@
+{
+  "M-01": {
+    "images": [
+      "figures/metric_atlas/m_01.png"
+    ],
+    "caption": "均匀偏差和单点尖峰可以得到相同的幅值 MSE；右图显示实际被平均的平方误差。",
+    "talk": "先在每个频点求 dB 幅值差，平方后平均。大误差惩罚更重，但最后只有一个平均数，相同数值不代表误差分布相同。",
+    "limit": "主目标描述总体幅值误差，不能单靠它分辨最差点或峰谷错位。",
+    "values": {
+      "mse_db2": [
+        4.0,
+        3.9999999999999996
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "M-02": {
+    "images": [
+      "figures/metric_atlas/m_02.png"
+    ],
+    "caption": "左图说明逐点相位差的平方平均；右图展示 angle 的 ±π 分支边界。",
+    "talk": "这项是弧度相位直接相减，再平方平均。右图两个点其实只隔 0.1 rad，但直接相减约为 6.18 rad；当前实现没有对相位差做环绕修正。",
+    "limit": "跨 ±π 时需检查相位分支，不能把直接相位差与最短圆周相位差当作同一种计算。",
+    "values": {
+      "uniform_mse_rad2": 0.04,
+      "boundary_direct_mse_rad2": 38.23178054292152
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "I-03": {
+    "images": [
+      "figures/metric_atlas/i_03.png"
+    ],
+    "caption": "目标曲线有一次负到正的过零；候选 A 区域和方向都匹配，B 的方向相反。这个“一次”来自本例目标，不是规定数量。",
+    "talk": "用目标过零划区域，再查每个区域内是否存在同方向候选过零。没匹配到的比例就是损失。",
+    "limit": "区域内的精确零点偏差和额外过零不直接受罚；目标事件数由数据决定。",
+    "values": {
+      "loss": [
+        0.0,
+        1.0
+      ],
+      "target_crossings": 1
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "I-06": {
+    "images": [
+      "figures/metric_atlas/i_06.png"
+    ],
+    "caption": "黑点为目标峰谷；浅色区域按相邻目标事件的中点划分。比较位置错位与结构缺失。",
+    "talk": "I-06 在每个区域只取最近的同类峰谷，计算指数位置代价，最后对目标事件取平均。",
+    "limit": "0.2 dB 邻点突出量和 0.41 惩罚系数为当前设置，未证明最优；不比较峰高或谷深。",
+    "values": {
+      "loss": [
+        0.013760482451390131,
+        0.1025
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "P-02": {
+    "images": [
+      "figures/metric_atlas/p_02.png"
+    ],
+    "caption": "黑点为目标峰谷；浅色区域按相邻目标事件的中点划分。比较位置错位与结构缺失。",
+    "talk": "P-02 对每个区域内全部同类峰谷的指数位置代价求和；缺失也给惩罚，最终不除以目标事件数。",
+    "limit": "不比较峰高、谷深；可能忽略没有同类匹配的反类型事件。0.41 为当前设置。",
+    "values": {
+      "loss": [
+        0.06880241225695069,
+        0.82
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-02": {
+    "images": [
+      "figures/metric_atlas/ii_02.png"
+    ],
+    "caption": "幅值图帮助看到过渡宽度；右图画实际使用的复导数模，候选压窄后速度发生变化。",
+    "talk": "对完整复阻抗求 log 频率导数，取模得到变化速度；两者速度差除以目标速度加稳定项，再平均。",
+    "limit": "只比较速度大小，不比较方向；0.05 稳定项比例需要独立检验。",
+    "values": {
+      "loss": [
+        0.3217763182210863
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-03": {
+    "images": [
+      "figures/metric_atlas/ii_03.png"
+    ],
+    "caption": "左图连线是三维距离最优路径在幅值图上的投影；右图灰白带外区域不允许匹配，橙线为所选路径。",
+    "talk": "允许频点在窗口内错位匹配，以累计三维距离最小来选路径，再按路径步数归一化。",
+    "limit": "窗口 4 是采样索引差，随网格改变含义；图不能证明该窗口最优。",
+    "values": {
+      "loss": [
+        0.03762008634556387
+      ],
+      "path_steps": 42
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-04": {
+    "images": [
+      "figures/metric_atlas/ii_04.png"
+    ],
+    "caption": "左图固定另外两个前驱代价，展示普通 min 与平滑 min 的区别；右图展示交叉代价减去自相似项。",
+    "talk": "Soft-DTW 平滑地综合接近最优的路径。先算目标与候选的代价，再减去双方自匹配代价的一半，按点数归一化并开方。",
+    "limit": "软代价本身可为负，因此不直接当距离。γ=0.10 和窗口 10 都是当前设置。",
+    "values": {
+      "loss": [
+        0.06319618117131516
+      ],
+      "cross_per_point": -0.13695599482637372,
+      "self_correction": -0.14094975214101138
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-05": {
+    "images": [
+      "figures/metric_atlas/ii_05.png"
+    ],
+    "caption": "一个离群点占比不足 5%，95% 分位距离在本例为零，但最坏点距离很大。左图距离包含 u、实部和虚部三个坐标。",
+    "talk": "两个方向都找最近邻，各取 95% 分位数，再取较大的一个。它主要看大部分路径点有没有近邻。",
+    "limit": "忽略最差尾部是设计选择，不代表异常点已修复；不按序匹配。95% 尚需敏感性验证。",
+    "values": {
+      "loss": [
+        0.0
+      ],
+      "maximum_nearest_distance": 0.9379300280162033
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-06": {
+    "images": [
+      "figures/metric_atlas/ii_06.png"
+    ],
+    "caption": "两个候选的归一化位置平方误差相同，快速波动者导数误差更大；最终对两项之和开方。",
+    "talk": "先要求点的位置接近，再要求一阶导数接近。即使点误差相同，快速抖动也会得到更高损失。",
+    "limit": "导数项容易受噪声和采样影响；与主 MSE、速度误差可能重叠。",
+    "values": {
+      "loss": [
+        0.03441719726404311,
+        0.18225567965721903
+      ],
+      "E0": [
+        0.00027975553230856585,
+        0.00027975553230856585
+      ],
+      "E1": [
+        0.0009047879352034905,
+        0.03293737723500628
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-07": {
+    "images": [
+      "figures/metric_atlas/ii_07.png"
+    ],
+    "caption": "左图含整体平移，右图按实部、虚部残差中位数去掉平移。A 与目标重合；B 仍有形状差异。",
+    "talk": "把整条候选相对目标的恒定偏移先扣除，计算剩余残差长度的平均。",
+    "limit": "纯平移可得到零损失，即使绝对阻抗差很大；要结合主目标使用。",
+    "values": {
+      "loss": [
+        2.3986299914741035e-18,
+        0.023129697293673902
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-08": {
+    "images": [
+      "figures/metric_atlas/ii_08.png"
+    ],
+    "caption": "事件层示例：目标位置构成三个负责区域；中间区域缺失，另两个区域只按最近位置偏差轻罚。",
+    "talk": "不要求事先达到某个数量。每个实际目标区域都检查：没有事件罚 1，有事件再按相对距离乘 0.10。",
+    "limit": "0.10 表示存在性比位置更重要，是当前权衡系数；不检查转折强弱和类型。",
+    "values": {
+      "local_cost": [
+        0.008571428571428572,
+        1,
+        0.0142857142857143
+      ],
+      "loss": 0.34095238095238095
+    },
+    "example_kind": "explicit_event_layer_example"
+  },
+  "II-09": {
+    "images": [
+      "figures/metric_atlas/ii_09.png"
+    ],
+    "caption": "事件层示例：目标有三个事件是本例数据事实，不是门槛。A 漏一区域，B 全覆盖但总数多一个。",
+    "talk": "缺失比例看未覆盖区域，轻罚项看候选总数是否超过目标实际总数；两项相加。",
+    "limit": "总数比较不能保证一一配对。0.10 是当前轻罚权重，尚需检验。",
+    "values": {
+      "missing": [
+        0.3333333333333333,
+        0.0
+      ],
+      "excess": [
+        0.0,
+        0.03333333333333333
+      ],
+      "loss": [
+        0.3333333333333333,
+        0.03333333333333333
+      ]
+    },
+    "example_kind": "explicit_event_layer_example"
+  },
+  "II-10": {
+    "images": [
+      "figures/metric_atlas/ii_10.png"
+    ],
+    "caption": "沿切线与垂直切线的残差大小相同，扣除频移分量后，垂直形变仍被保留。",
+    "talk": "先按 II-01 算局部频移，再从复残差扣掉 gδx；剩余长度按目标典型阻抗归一化。",
+    "limit": "稳定项使切向残差不能被完全去掉；曲线相差大时不能严格解释为物理法向误差。",
+    "values": {
+      "loss": [
+        0.00042707227801335303,
+        0.489368103759212
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "P-01": {
+    "images": [
+      "figures/metric_atlas/p_01.png"
+    ],
+    "caption": "按论文 SS 的曲线对比与斜率色彩图画法，展示幅值偏移、趋势编码、编码规则与最终评分。",
+    "talk": "先求相邻 dB 斜率，再由连续两段斜率编码趋势；比较目标和候选编码的绝对差并平均。",
+    "limit": "幅值整体偏移不改变斜率，可得到零 SS；T=8、β=0.4、μ=0.5 为当前设置。",
+    "values": {
+      "loss": [
+        2.6881957497891084e-15,
+        1.9934419015593063
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "P-03": {
+    "images": [
+      "figures/metric_atlas/p_03.png"
+    ],
+    "caption": "沿用论文 DTW 的对齐连线与矩阵路径画法；距离只使用 dB 幅值。",
+    "talk": "目标和候选都在 log 频率上插值成 60 点，逐格计算幅值差，再找累计代价最小的路径。",
+    "limit": "无窗口，不比较相位，也不除路径长度；60 点影响计算成本和细节保留，需敏感性验证。",
+    "values": {
+      "loss": [
+        12.627118644067355
+      ],
+      "path_steps": 62
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "P-04": {
+    "images": [
+      "figures/metric_atlas/p_04.png"
+    ],
+    "caption": "两个候选总体幅值 MSE 相同；A 从低频连续达标，B 低频先失败，高频好段不能补回。",
+    "talk": "按实际目标峰谷分段，只累计从低频开始连续低于误差阈值的段数，再除以总段数转成损失。",
+    "limit": "没有规定必须达标几段，但 1.6 dB² 仍是经验阈值，需要验证；分段也影响结果。",
+    "values": {
+      "loss": [
+        0.4,
+        1.0
+      ],
+      "zone_mse_db2": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          4.0,
+          4.0
+        ],
+        [
+          3.0322580645161286,
+          3.0322580645161286,
+          0.18951612903225803,
+          0.18951612903225803,
+          0.18951612903225803
+        ]
+      ],
+      "global_mse_db2": 1.540983606557377
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "P-05": {
+    "images": [
+      "figures/metric_atlas/p_05.png"
+    ],
+    "caption": "复用 M-01 的等 MSE 示例，最大误差分别为 2 和约 15.62 dB，能看出单点严重失配。",
+    "talk": "不把所有点平均，只看最差那个频点有多大幅值偏差。",
+    "limit": "单点噪声或毛刺也能决定指标，因此不能说这个公式本身抗噪。",
+    "values": {
+      "loss": [
+        2.0000000000000036,
+        15.620499351813308
+      ],
+      "mse_db2": [
+        4.0,
+        3.9999999999999996
+      ]
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  },
+  "II-01": {
+    "images": [
+      "figures/ii01_explanation/01_frequency_shift.png",
+      "figures/ii01_explanation/02_complex_projection.png",
+      "figures/ii01_explanation/03_weighted_accumulation.png",
+      "figures/ii01_explanation/04_direction_counterexample.png"
+    ],
+    "caption": "特征左右错位 → 复平面切线投影 → 加权平均 → 垂直形变反例。",
+    "talk": "顺着目标切线的残差可以近似解释为局部频移；对各点频移绝对值加权平均。",
+    "limit": "右移对应负的 δx；一阶局部解释不能代替精确峰位检测，垂直形变可能不计入。",
+    "values": {
+      "example_kind": "synthetic_parallel_RLC_and_linearized_residuals",
+      "frequency_points": 501,
+      "frequency_Hz": [
+        100.0,
+        1000000.0
+      ],
+      "right_shift_decades": 0.08,
+      "left_shift_decades": 0.03,
+      "left_II01": 0.02928842664359151,
+      "right_II01": 0.07796531906407848,
+      "right_frequency_factor": 1.202264434617413,
+      "tangential_II01": 0.03417908082978173,
+      "normal_II01": 1.4570617510720714e-17,
+      "equal_complex_mse_ohm2": 62.20861624791662,
+      "tangent_magnitude_mse_db2": 0.6744384080064773,
+      "normal_magnitude_mse_db2": 0.28894007324803356,
+      "epsilon_v": 0.7434180979943212,
+      "score_source": "experiments/case2_dual_pdf18/objectives.py",
+      "weight_sum": 488.1297273844382,
+      "weighted_sum_check": 0.0779653190640785
+    },
+    "example_kind": "controlled_synthetic_spectrum"
+  }
+}

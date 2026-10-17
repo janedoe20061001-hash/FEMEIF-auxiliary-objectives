@@ -1,0 +1,187 @@
+{
+  "protocol": {
+    "date": "2026-10-15",
+    "purpose": "ARX implementation acceleration and target path-length scale ablation",
+    "methods": [
+      "MAG_PHA",
+      "G0",
+      "J0",
+      "J0_W",
+      "ARX_L",
+      "ARX_S_L"
+    ],
+    "seeds": [
+      47000,
+      47001,
+      47002,
+      47003,
+      47004,
+      47005,
+      47006,
+      47007,
+      47008,
+      47009,
+      47010,
+      47011
+    ],
+    "population": 200,
+    "generations": 300,
+    "save_every": 20,
+    "workers": 32,
+    "target_count": 3,
+    "circuit_count": 2,
+    "planned_jobs": 216,
+    "planned_evaluations": 12960000,
+    "theory_band_hz": [
+      100.0,
+      1000000.0
+    ],
+    "nested_lc_factors": [
+      0.25,
+      1.0,
+      8.0
+    ],
+    "features": {
+      "points_per_theory_block": 129,
+      "half_steps_normalized_block": [
+        0.03125,
+        0.0625,
+        0.125
+      ],
+      "measured_index_steps": [
+        1,
+        2,
+        4
+      ],
+      "increment_scale_floor": 0.01,
+      "product_scale_floor": 0.0001,
+      "area_scale_floor": 0.0001,
+      "ohm_scale_floor": 1e-06,
+      "event_half_window_widths": 3.0,
+      "aggregation": "equal mean across all fixed disjoint target event windows and intervening gaps; full band covered",
+      "combination": "arithmetic mean of named single features; one auxiliary objective, always 3 objectives total",
+      "reference_path_frequency_slack": 0.25,
+      "ptc_gamma": 0.41,
+      "ptc_prominence_db": 1.0,
+      "ptc_cost": "gamma*expm1(abs(log_frequency_shift)/full_log_frequency_span), sum same-type events in target-midpoint zones, gamma if none, mean target events",
+      "measured_blocks": "fixed overlapping groups of 25 original rows with stride 24, endpoint remainder merged; no new measured samples or interpolation",
+      "anchor_policy": "raw endpoints reported; MAG/PHA retained; no candidate rotation, translation, scaling or frequency registration"
+    },
+    "selection": "Frozen MAG/PHA 2D normalized convex knee; fixed nearest-ideal fallback from 20261011 selector, auxiliary not used for final selection",
+    "operators": {
+      "sbx_probability": 0.9,
+      "sbx_eta": 1.0,
+      "pm_probability": 1.0,
+      "pm_variable_probability": 0.1,
+      "pm_eta": 1.0
+    },
+    "audit": {
+      "levels": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "base_rtol": 0.01,
+      "base_atol": [
+        0.01,
+        7.615435494667714e-05
+      ],
+      "feature_rtol": 0.01,
+      "feature_atol": 0.01,
+      "nodal_rtol": 1e-08,
+      "nodal_atol": 1e-09,
+      "no_threshold_relaxation": true
+    },
+    "scope": "Three existing development conditions; twelve fresh paired seeds; numerical and speed engineering first, no independent generalization claim.",
+    "paired_budget": "60000 candidates per job, report actual frequency queries and wall/CPU time separately",
+    "resource_policy": "min(32,cgroup quota,affinity) single-thread worker processes; dynamic queue; no scheduled monitoring automation",
+    "failure_policy": "retain original failures and completed jobs; resume missing jobs only; no silent retry, budget extension or threshold change",
+    "publication": "Formal local Markdown reports; concise plain-language chat; no website",
+    "quadrature": {
+      "orders": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "atol": 0.0001,
+      "rtol": 0.001,
+      "max_panel_refinements": 3,
+      "audit_order": 32,
+      "audit_panel_refinement": 2,
+      "area_method": "Native RX-only analytic derivative Gauss prefix, same orders, anchors, convergence tolerance; reference Python retained for regression",
+      "anchors": "Target and candidate pole/zero scales, logarithmically spaced panels around all modes; Case1 uses all six exact branch poles",
+      "failure": "Raise and retain candidate; never substitute a finite bad fitness for unresolved integration"
+    },
+    "search_control": "Four NSGA-II islands of 50, initial 200 split in order, 300 generations, total60000; final knee on combined200; no migration, not guaranteed stronger",
+    "light": {
+      "scale_tau": 0.1,
+      "arclength_target_rtol": 1e-06,
+      "scale_formula": "b=L_target^2; d=max(b,0.1*rms(b_across_windows),1e-4)",
+      "matched_weight": "omega=(old_RX_area_den/new_den)^2 applied to J0",
+      "implementation": "RX only; batched native circuit and Gauss prefix integrals; same target/candidate modal panels and convergence thresholds as original",
+      "local_area": "Deferred until scale-only evidence; not optimized in this batch",
+      "speed_gate": "paired ARX_L vs original Python median auxiliary evaluation speedup >= 3 on each target; preflight only, identical hardware and quadrature",
+      "minimum_speedup": 3
+    }
+  },
+  "hashes": {
+    "experiments/arx_light_20261015/PROTOCOL.md": "35b4c0f255b93ac893546eb41c4c3b0659cab4c023a15406c530674d0034ec1d",
+    "experiments/arx_light_20261015/area_native.c": "77867fe4c742279a8be92474340103393442f82e3e37cb0f56285cc51bb95d02",
+    "experiments/arx_light_20261015/audit.py": "a9e1649089d162f12c370ec8fc0019d01c3308784d3e787e51e27d80e2e43d3d",
+    "experiments/arx_light_20261015/checks.py": "96f22414c2e9f0a6fbe22882825aa39eaaceaf0bdf42c6f616a2f2ac752d2785",
+    "experiments/arx_light_20261015/core.py": "7c325aa4fabb24daf61883083985c068968aea84af3527a790a49e395a7d8056",
+    "experiments/arx_light_20261015/development_report.py": "ef887f511179012e1b47d4fa83bcda7675beb1dafcc942978e80dc6482008ceb",
+    "experiments/arx_light_20261015/features.py": "4e6bb822a5893b0abe4680d8efbb4a14b4c1cc00b7e4352187c55f62876f9481",
+    "experiments/arx_light_20261015/frozen/PROVENANCE.json": "865a4dda936ad9e5b08379bb1eedd3b34aacedeb9da0566975c2230e469b101d",
+    "experiments/arx_light_20261015/frozen/case1_adaptive.py": "11c46fbd4f9611929186a5367883797c6546c8a84fcf7c03c282511168667da2",
+    "experiments/arx_light_20261015/frozen/case1_grid.npz": "1fe168653a54ea4d9fbc9e09cb280dd01f3ce456898845a51231455fdadaee07",
+    "experiments/arx_light_20261015/frozen/case1_record.json": "23e4e22d560d96892a1f31a05800e9cd2f1c6c1a343fb00952cc56357f76ca1e",
+    "experiments/arx_light_20261015/frozen/case2.csv": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725",
+    "experiments/arx_light_20261015/frozen/case2_legacy.py": "7fa5289f1eb42020d83a79bdf899c844da93d5ec9ecfffedb3c8fff582781790",
+    "experiments/arx_light_20261015/frozen/circuits.py": "8eba51429e8cd3c8042aa85d0ea3fb8bb6773bf1d394799bee903ac70f66819b",
+    "experiments/arx_light_20261015/frozen/diagnostics.py": "7476de6fb841104083b3b19e46fad34e3ec7416eb7674c060d9a5ae4659eb687",
+    "experiments/arx_light_20261015/frozen/native.c": "089f9fdd95b7d36d7eefb3ad7bf6474c1475f2b97cb5775d11f86e0aeeb3b8cb",
+    "experiments/arx_light_20261015/frozen/nested_config.json": "751a6e423430b395f468d434a2bd5601f1596520e55017aa20585b5f3699310e",
+    "experiments/arx_light_20261015/frozen/sampling.py": "3702ddd09447cfb56100b55929df5e7d7019e039da6cb99c22084c82dd7b5cd2",
+    "experiments/arx_light_20261015/frozen/schematic.py": "845f5a2461049171feff164a757453700fed33883d990ac59fedb24af512ac52",
+    "experiments/arx_light_20261015/frozen/selector.py": "66485c33751f2f3ce44d41b5fbf9c7b0a69af229cfecee5e45e14d8a3faec6d2",
+    "experiments/arx_light_20261015/inputs/case1/circuit.svg": "c0e67f87985d0e86135af5f0ba6216d6e0e11816f37039c1895f9153b74b9afc",
+    "experiments/arx_light_20261015/inputs/case1/feature_scales.json": "7fe9877de58a3ca8fa4674a389d10e459d587eb2b328add726be344fd0923055",
+    "experiments/arx_light_20261015/inputs/case1/target.json": "8cbc83ef2ff828a8f58740a67efb87de4b6d5252719a89e2c77175bb869e3b74",
+    "experiments/arx_light_20261015/inputs/case1/target_curve.npz": "8deaed57cace5ef45d98ba507f129a59eced8f1abee029c5de7ba1921e79c1cc",
+    "experiments/arx_light_20261015/inputs/development_candidates.json": "49002ba3acd05ddf3074dbb8222439aa7bddc6dd66b17c711e66685f3e064a8a",
+    "experiments/arx_light_20261015/inputs/manifest.json": "2046e317d74c71c9bc4ce3948eda63c4b5faa0e777d58eade201ac09566dcf61",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/circuit.svg": "121d90c1339f8ee89704bd55821de0fe414b41b222969125e390fa8c2da7784e",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/feature_scales.json": "e56fa7f60e34ab9b52e2dad2144b8a3665a95582240d8ab249b25ed4c9531e3d",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/target.json": "00973d7fc147e9d189fb793b737a2a1c0dc3cf2073e6737eb98938470c5cdf04",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/target_curve.npz": "c60e2fc1eb2ed75805c7d7047e93b0c05f07f32d755f18e00541d075f0b7d258",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/circuit.svg": "bf8fd5158151fa608bbcacf9b9eef80661cec3b9ab7d6821078ad025ab38384a",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/feature_scales.json": "39a0e6f05a3b2aaf19f74b1c713a5735d71a8ff78c84254acc27f0ed64b2c846",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/target.json": "617e066ed5e8eeededb958d17bf9dccb41a183e714b5a209dcb6f8d0bb9d045b",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/target_curve.npz": "f75069dce1870a3873c3dfab80b857a696a1a0408662a42b6c5950651d1c8ca3",
+    "experiments/arx_light_20261015/inputs/regression.json": "59af8354b0aead4380070e1f9083c4130dc4664bae1f703f467acfc6215ddaaa",
+    "experiments/arx_light_20261015/legacy_features.py": "35d7f8f6395664069fc2b3eebcc49d41f43a4023f4e71f44f5613ffef4440d46",
+    "experiments/arx_light_20261015/ops.py": "c70890b64fe27225f89c5e70191ce060c5cec25acacc2d72cf6c7409e16a0292",
+    "experiments/arx_light_20261015/pipeline.py": "8449d48c42a9963e40cadc6f3a11ebd9950c2e868bfd790f0fc038368927b818",
+    "experiments/arx_light_20261015/preflight.py": "3b0ca5798d83e86dc4b226db8f84ef789f5962c88ca5714a159b2abc02a351ee",
+    "experiments/arx_light_20261015/protocol.json": "e0881d0b042192ce3082ba5c075ad39f796214e51880a179bc61c0705db6fbf2",
+    "experiments/arx_light_20261015/reference_features.py": "9687d106a7aa4d067e0d99f60c8525c0fcc73b0332b1f46a5a13c20d15098c64",
+    "experiments/arx_light_20261015/run.py": "b877a9fe0232155f1e4f359da1ca9bff9f6041e60b6dd8f169fc8780d9d0a286"
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "pymoo": "0.6.1.6",
+    "moocore": "0.3.2",
+    "mpmath": "1.3.0"
+  },
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-86-generic-x86_64-with-glibc2.35",
+  "workers": 32,
+  "native_sha256": {
+    "frozen/native.so": "82e3b64bef6342fc4d0d55f144b1625dd1570b4c9110291624ff4d3cff326239",
+    "area_native.so": "20afe6ee8b2db5c19deb9f0248cb00cf4f2847aeda4aa6844a0c70ee32f5df65"
+  }
+}

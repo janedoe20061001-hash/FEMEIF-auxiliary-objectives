@@ -1,0 +1,67 @@
+{
+  "target_scales": [
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    8
+  ],
+  "run_scales": [
+    0.25,
+    1,
+    8
+  ],
+  "seeds": [
+    31000,
+    31001,
+    31002,
+    31003,
+    31004,
+    31005,
+    31006,
+    31007
+  ],
+  "generations": 300,
+  "population": 200,
+  "workers": 4,
+  "plot_seeds": [
+    31000,
+    31003,
+    31006
+  ],
+  "bootstrap_seed": 2026100902,
+  "old_stages": [
+    20,
+    100,
+    300,
+    1000
+  ],
+  "pair_window_hz": [
+    23000,
+    26000
+  ],
+  "broad_window_hz": [
+    10000,
+    31622.776601683792
+  ],
+  "core_rule": "P3 center +/- half target 3dB log-frequency width",
+  "close_scores": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "score_floors": [
+    0.01,
+    7.615435494667714e-05
+  ],
+  "meaningful_shape_rule": "matched status differs OR height difference >=6 dB OR width ratio between candidates >=2",
+  "match_rule": "same kind within .25 decade; complete shift <=.02 decade,height <=3dB,width ratio .5..2",
+  "primary_rule": "minimum MAG+25.12*PHA on nondominated front",
+  "secondary_rule": "minimum max(MAG,25.12*PHA) on nondominated front",
+  "primary_outcome": "P3 and V2 complete on SAME representative curve",
+  "scope": "Exploratory 8 paired seeds, no auxiliary objective",
+  "sampling": "Pure Python adaptive, original 180 log-cells each mass 1/180",
+  "source_step1": "D:\\develop\\FEMEIF\\experiments\\mse_structure_step1_20261008",
+  "protocol_frozen_before_new_results": true
+}

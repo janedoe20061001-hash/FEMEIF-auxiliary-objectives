@@ -1,0 +1,169 @@
+{
+  "id": "new_021",
+  "target": "mixed_resonators/lc_reciprocal_8p0",
+  "cohort": "new_control",
+  "levels": [
+    {
+      "n": 128,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 534.0795481171185,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.625356005172775,
+          "frequency_hz": 42204.23233531978,
+          "kind": "peak",
+          "real_ohm": 142.92640094809227,
+          "imag_ohm": 171.06221912583163,
+          "magnitude_ohm": 222.91307476285206,
+          "phase_deg": 50.120470885490406,
+          "R_dR": 6371781.617009603,
+          "X_dX": -6371781.617011892,
+          "radial_balance_relative": 1.7956198935955864e-13,
+          "normalized_radial_dot": -1.7670135453649856e-13
+        },
+        {
+          "x": 4.631800120110246,
+          "frequency_hz": 42835.13304125059,
+          "kind": "valley",
+          "real_ohm": 37.22568391177419,
+          "imag_ohm": 44.48909934142685,
+          "magnitude_ohm": 58.008891584917144,
+          "phase_deg": 50.0795237815162,
+          "R_dR": -334345.80454650946,
+          "X_dX": 334345.8045464234,
+          "radial_balance_relative": 1.2874265105224892e-13,
+          "normalized_radial_dot": -1.2672421459450562e-13
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.631800120110246,
+            "frequency_hz": 42835.13304125059,
+            "kind": "valley",
+            "real_ohm": 37.22568391177419,
+            "imag_ohm": 44.48909934142685,
+            "magnitude_ohm": 58.008891584917144,
+            "phase_deg": 50.0795237815162,
+            "R_dR": -334345.80454650946,
+            "X_dX": 334345.8045464234,
+            "radial_balance_relative": 1.2874265105224892e-13,
+            "normalized_radial_dot": -1.2672421459450562e-13
+          },
+          "location": "in_core",
+          "frequency_offset_decades": 0.00850661728100377,
+          "frequency_offset_core_widths": 0.750000000000137,
+          "max_normalized_state_residual": 7.833043852619639e-13,
+          "mean_normalized_state_residual": 2.3105458304550187e-13,
+          "max_normalized_derivative_residual": 4.651458863471677e-12,
+          "mean_normalized_derivative_residual": 9.115076603102813e-13,
+          "state_numerically_consistent": true,
+          "derivative_numerically_consistent": true,
+          "translation_signature_consistent": true,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 1,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "one_core_candidate",
+      "signature_relation": "one_signature_consistent_candidate",
+      "signature_consistent_count": 1,
+      "signature_center_location": "in_core",
+      "signature_center_x": 4.631800120110246
+    },
+    {
+      "n": 256,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 534.0796214052452,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.625356005172775,
+          "frequency_hz": 42204.23233531978,
+          "kind": "peak",
+          "real_ohm": 142.92640094809227,
+          "imag_ohm": 171.06221912583163,
+          "magnitude_ohm": 222.91307476285206,
+          "phase_deg": 50.120470885490406,
+          "R_dR": 6371781.617009603,
+          "X_dX": -6371781.617011892,
+          "radial_balance_relative": 1.7956198935955864e-13,
+          "normalized_radial_dot": -1.7670135453649856e-13
+        },
+        {
+          "x": 4.631800120110245,
+          "frequency_hz": 42835.13304125042,
+          "kind": "valley",
+          "real_ohm": 37.22568391179049,
+          "imag_ohm": 44.48909934141324,
+          "magnitude_ohm": 58.008891584917166,
+          "phase_deg": 50.079523781495226,
+          "R_dR": -334345.80454690976,
+          "X_dX": 334345.8045463994,
+          "radial_balance_relative": 7.632289144188528e-13,
+          "normalized_radial_dot": -7.512629571088717e-13
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.631800120110245,
+            "frequency_hz": 42835.13304125042,
+            "kind": "valley",
+            "real_ohm": 37.22568391179049,
+            "imag_ohm": 44.48909934141324,
+            "magnitude_ohm": 58.008891584917166,
+            "phase_deg": 50.079523781495226,
+            "R_dR": -334345.80454690976,
+            "X_dX": 334345.8045463994,
+            "radial_balance_relative": 7.632289144188528e-13,
+            "normalized_radial_dot": -7.512629571088717e-13
+          },
+          "location": "in_core",
+          "frequency_offset_decades": 0.008506617281001994,
+          "frequency_offset_core_widths": 0.7499999999999805,
+          "max_normalized_state_residual": 7.458352349529045e-14,
+          "mean_normalized_state_residual": 2.8175943024275637e-14,
+          "max_normalized_derivative_residual": 4.438471707833529e-13,
+          "mean_normalized_derivative_residual": 1.0927115335020204e-13,
+          "state_numerically_consistent": true,
+          "derivative_numerically_consistent": true,
+          "translation_signature_consistent": true,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 1,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "one_core_candidate",
+      "signature_relation": "one_signature_consistent_candidate",
+      "signature_consistent_count": 1,
+      "signature_center_location": "in_core",
+      "signature_center_x": 4.631800120110245
+    }
+  ],
+  "stability_checks": {
+    "root_count_type_location": true,
+    "candidate_location_signature": true,
+    "categories": true
+  },
+  "numerical_passed": true
+}

@@ -1,0 +1,135 @@
+"""Create readable protocol and portable source archive; no optimization."""
+import argparse
+import json
+from pathlib import Path
+import zipfile
+from circuits import library, expression
+from protocol import HERE, dump, plan, read_config, source_hashes
+from schematic import save_schematic
+
+
+def deliver(root, document):
+    root.mkdir(parents=True,exist_ok=True)
+    cfg = read_config()
+    validation = json.loads((root/"VALIDATION.json").read_text(encoding="utf-8"))
+    if not validation["passed"] or validation["hashes"] != source_hashes(cfg):
+        raise RuntimeError("Current code not validated")
+    lib = library()
+    dump(root/"PLAN_CORE.json",plan(cfg,"core",None))
+    dump(root/"PLAN_EXTENDED.json",plan(cfg,"extended",None))
+    text = """# 第二步补充：用嵌套电路检查困难结构
+
+2026年10月10日。**实验代码已准备；正式优化尚未运行。** 本轮只做电路计算和程序核验，没有使用服务器，没有更新网站。
+
+## 先说你的建议解决了什么
+
+这个补充有必要。之前主要观察 Case1 的特定峰谷，现在需要检查：换成元件嵌在其他支路里的电路，困难是否还出现，困难的样子会不会改变。
+
+可以把普通串联理解成“一个接一个”，并联理解成“分成几条路再汇合”。嵌套电路则是某条路里面又分路。这样一个元件改变，可能同时改变几个结构。Case1 的模块拼接也会发生响应联动；不能说它完全没有耦合，只是它的组织形式比本轮规则。
+
+增加拓扑能拓宽验证范围，但不能直接证明“电路越复杂，MSE越差”。电路种类、元件数量、参数范围、峰谷的多少都可能同时变化。因此这一轮仍是找线索，不急着宣布规律。
+
+## 你提出的电路怎样理解
+
+你写的是 `R+L//(R+(R+C)//L)`。代码采用下面这个**明确加括号的结构**：
+
+`R1 + [L1 // (R2 + ((R3 + C1) // L2))]`
+
+先让 R3 与 C1 串联；这一支与 L2 并联；整体再与 R2 串联；这一大支与 L1 并联；最后与 R1 串联。
+
+R1、R2、R3 是三个独立电阻，L1、L2 是两个独立电感。重复出现的字母不会被当成同一个参数。如果你原意是先把最外层 R 与 L 串联、再整体并联，需要改拓扑树；目前明确采用上面的解释。
+
+## 这次仍然在回答什么
+
+1. 哪类结构反复难以恢复？例如漏峰、漏谷、峰的位置偏了、宽度不对，或者相位转变没有恢复。
+2. 哪个条件使它更难？例如某对 L、C 改变后，实际峰更窄，或者相邻结构更接近。
+3. 针对性指标能否改善它？这一轮先找证据，仍然只优化 MAG/PHA，不加入新指标。
+4. 改善是否能推广、代价是什么？先扩大电路类型，后面再验证指标的泛化效果与开销。
+
+这里的 MAG/PHA，就是幅值与相位的平均平方误差：幅值先换成 dB，相位用弧度。分数越小表示整体越接近。我们的疑问是，在规定算法和次数下，整体分数下降时，哪些局部仍经常不对。
+
+所有目标仍由正确的电路生成，真参数也在搜索范围内。理论上两项误差可以同时为零；“这次搜索恢复得不好”不能写成“MSE理论上不可能恢复”。
+
+## 怎样延续上一次第二步的方法
+
+每种电路先设一个基准目标，再对指定的一对 L、C 做三档变化：L 乘 0.25、1、8，C 分别除以同一倍率。这样 L×C 保持不变。
+
+**保持 L×C 不变，不等于整个嵌套电路的峰位置不变。** 嵌入其他支路后，峰的位置、高度、宽度、附近的谷和相位都可能变。程序先测量每个目标实际有哪些峰谷，记录真实宽度，再比较优化结果。不会把倍率直接当作实际峰宽，更不会把 Case1 的 P3/V2 编号套到别的电路。
+
+同时备好两组补充条件：指定电阻乘 0.5、1、2，检查阻尼变化；背景电阻乘 0.25、1、4，检查背景影响。它们也可能连带影响多个结构，名字只是表示改了哪类参数，不保证只改一件事。对简单 RLC 对照，这两组都改变 R1，属于不同倍率的同类电阻对照。
+
+每个目标跑相同的 8 个 seed、每个 seed 300 代、种群 200。一个 seed 就是一轮随机起跑。同一电路不同条件的起跑参数完全相同；之后的搜索路线可以不同。搜索会调整该电路的**所有元件参数**，不是只调整生成目标时改动的那一对。
+
+不同电路的元件数不一样，不能声称相同 seed 在不同电路里就是同一起点。每种电路采用固定的基准参数上下约 31.6 倍的搜索范围；该电路所有条件共用它。
+
+## 怎样避免误判
+
+- 对目标与候选都做解析模型的自适应检查，减少细峰藏在测点之间的问题。它只提高数值分辨率，保留原频率单元权重，不偷偷增加尖峰的重要性。这不解决真实测量未采到尖峰的问题。
+- 用另一种更密的网格重新计算分数，并逐级加密检查结构判断是否稳定。没有检查清楚的样本单独标记。
+- 每 20 代保存整个保留种群。每个 seed 用固定规则各选一条代表曲线，再用另一规则核对；末代还检查全部保留候选，避免结论仅来自“选了哪条”。
+- 没有峰谷、找不到匹配事件、无法定义 3 dB 宽度，是不同情况。无法定义宽度不填零，也不强行算合格/失败。没有明显峰谷时仍检查分频段的幅相误差。
+- 峰谷之外单独检查相位转变和局部相位残差。相位检查门槛暂是探索性的；这轮没有噪声数据，不能宣称适用于实测噪声。
+- 总分接近而形状差很多的候选对，也由后台检查；不把同一 seed 的 200 条候选当成 200 次独立实验。
+
+## 怎样看结果，仍然围绕三维曲线
+
+每条曲线都可以写成 `(f, Re Z, Im Z)`：频率、电阻性分量、电抗性分量。代码保留这些原始三维数据，便于以后查看弯折、局部绕行和转变结构。
+
+展示时先用两张容易读的投影：`f—|Z|` 和 `f—相位`。固定三个 seed 33000、33003、33006，各自的代表曲线与目标叠在同一张图上，主要看第 20、100、300 代。曲线不取平均，避免把不同位置的尖峰平均掉。后台仍检查全部 seed，而不是只凭三张示例图判断。
+
+目前还没有结果图。输入目录里的目标曲线是根据预设参数计算出的**待拟合对象**，不是优化成果。
+
+## 服务器恢复后怎样排顺序
+
+建议先运行你提出的电路和简单 RLC 对照，确认目标结构、计算预算和分析都合适；然后运行其余嵌套电路。如果核心条件已经暴露有价值的困难结构，再补充阻尼与背景条件，不需要立即把所有条件铺开。
+
+|方案|电路数|每类目标数|seed总任务数|参数候选评价次数|
+|---|---:|---:|---:|---:|
+|只运行你提出的电路，三档 LC|1|3|24|1,440,000|
+|全部基础方案|7|3|168|10,080,000|
+|全部扩展方案|7|7|392|23,520,000|
+
+评价次数是预算，不是耗时估计。理论电路计算只需要 CPU，不强制 GPU；正式耗时要等服务器运行后测量。先用 2 个进程，按机器资源再调整。
+
+结果出来后先看四件事：目标到底改变了什么、相同 seed 的恢复情况怎样变化、困难是否在不止一种电路里出现、全体保留候选是否支持代表解的判断。证据够了再选最值得针对的结构，继续之前的三维辅助指标方向。
+
+## 已完成的核验，和还没做的事
+
+"""
+    text += (f"{validation['checks']} 组检查已通过：手工公式与拓扑一致、独立节点方程与递归阻抗一致、导数和有理函数一致、"
+             "所有 49 个预设目标可计算且真参数误差接近零、同 seed 初始化配对、随机/高 Q 候选的评分复算、资源耗尽报错、"
+             "输入准备不调用优化器、静态模拟数据的保存/分析/曲线导出、总分近似但形状不同的识别。\n\n"
+             "这些是代码和数值检查，不是拟合效果实验。尚未让 NSGA-II 做真实进化搜索；Linux 服务器上的完整运行与耗时也尚未验证。"
+             "服务器应重跑核验，再启动正式实验。\n\n## 电路、参数与结构图\n\n"
+             "下面采用常见电路原理图：锯齿形是电阻 R，线圈形是电感 L，两条平行短线是电容 C。"
+             "同一条支路上依次经过的元件是串联；两端都接在同一对节点上的不同支路是并联。"
+             "实心点表示分支连接。A、B 是测量阻抗的两个端子，元件名称与基准数值直接标在图上。\n\n")
+    for ident,c in lib.items():
+        stem = root/ident
+        save_schematic(c,stem)
+        text += f"### {c.title}（{ident}，{len(c.names)} 个参数）\n\n`{expression(c.tree)}`\n\n"
+        text += f"![{c.title}原理图]({stem.with_suffix('.png').resolve().as_posix()})\n\n|参数|基准值|单位|\n|---|---:|---|\n"
+        for name,value in zip(c.names,c.p):
+            text += f"|{name}|{value:.8g}|{dict(R='Ω',L='H',C='F')[name[0]]}|\n"
+        text += f"\nLC 对照改变 {c.lc[0]}、{c.lc[1]}；阻尼对照改变 {c.damping}；背景对照改变 {c.background}。\n\n"
+    text += (f"## 代码和运行入口\n\n[运行说明]({(HERE/'README.md').as_posix()})；"
+             f"[核验记录]({(root/'VALIDATION.json').resolve().as_posix()})；"
+             f"[完整基础预算]({(root/'PLAN_CORE.json').resolve().as_posix()})。\n\n"
+             "代码、配置、依赖锁、运行说明已打包，拿到服务器后可独立安装。正式运行要用显式 `run` 命令；"
+             "直接运行入口默认只列计划。所有新任务使用新目录，历史 Case1/Case2 数据不改动。\n")
+    document.parent.mkdir(parents=True,exist_ok=True)
+    document.write_text(text,encoding="utf-8")
+    with zipfile.ZipFile(root/"server_code.zip","w",compression=zipfile.ZIP_DEFLATED) as archive:
+        for p in sorted(HERE.iterdir()):
+            if p.is_file() and p.suffix in (".py",".json",".md",".txt"):
+                archive.write(p,arcname=HERE.name+"/"+p.name)
+    dump(root/"DELIVERY.json",dict(status="code_ready_not_optimized",hashes=source_hashes(cfg),
+                                 validation=validation,document=document.resolve().as_posix(),formal_optimization=False,website_updated=False))
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--out",type=Path,required=True)
+    p.add_argument("--document",type=Path,required=True)
+    args = p.parse_args()
+    deliver(args.out,args.document)

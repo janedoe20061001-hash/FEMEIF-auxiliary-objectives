@@ -1,0 +1,38 @@
+{
+  "status": "plan_only",
+  "seed_start": 0,
+  "seed_count": 100,
+  "population": 150,
+  "generations": 300,
+  "group_count": 4,
+  "groups": [
+    {
+      "name": "baseline",
+      "auxiliaries": [],
+      "objective_count": 2
+    },
+    {
+      "name": "bidirectional_cumulative_relative",
+      "auxiliaries": [
+        "bidirectional_cumulative_relative"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "max_interval_cumulative_relative",
+      "auxiliaries": [
+        "max_interval_cumulative_relative"
+      ],
+      "objective_count": 3
+    },
+    {
+      "name": "relative_complex_l2",
+      "auxiliaries": [
+        "relative_complex_l2"
+      ],
+      "objective_count": 3
+    }
+  ],
+  "planned_runs": 400,
+  "planned_evaluations": 18000000
+}

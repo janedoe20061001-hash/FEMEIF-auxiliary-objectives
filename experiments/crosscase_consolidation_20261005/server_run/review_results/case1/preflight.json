@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "case": "case1",
+  "no_trial_optimization": true,
+  "chosen_quadrature_order": 16,
+  "quadrature_convergence": [
+    {
+      "order": 4,
+      "seconds": 0.36747000366449356,
+      "max_relative_change": null,
+      "min_eigenvalue": 7.61969475592432e-06
+    },
+    {
+      "order": 8,
+      "seconds": 1.389734610915184,
+      "max_relative_change": 8.709974403990637e-07,
+      "min_eigenvalue": 7.617194590579287e-06
+    },
+    {
+      "order": 16,
+      "seconds": 9.824777089059353,
+      "max_relative_change": 1.958632278910435e-08,
+      "min_eigenvalue": 7.6171219631435116e-06
+    }
+  ],
+  "tolerance": 1e-06,
+  "independent_integral": 0.019154944284390765,
+  "kernel_integral": 0.019154944359021965,
+  "exact_constant_and_linear": true,
+  "nonuniform_grid_and_reversal_and_subdivision": true,
+  "unchanged_controls_bitwise": true,
+  "unchanged_primary_bitwise": true,
+  "zero_loss": true,
+  "kernel_sha256": "5b574368f114121460a9045a319a92d8a5e34bb61ef397d6fd5b0a4d2a9cd3f9",
+  "full_population_evaluation_seconds": {
+    "baseline": 0.0004461541771888733,
+    "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades": 0.012183721363544463,
+    "reactance_crossing_direction_consistency+transition_speed_relative_error": 0.012917043268680572,
+    "cumulative_length_logpolar": 0.0030279338359832765,
+    "all_interval_mean_residual_logpolar": 0.001985710859298706,
+    "bidirectional_residual_logpolar": 0.0032624930143356325
+  },
+  "target": {
+    "frequency_points": 180,
+    "frequency_coordinate": "normalized_log10_frequency",
+    "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+    "offset": [
+      -25.580765353131927,
+      -1.5671652842336827
+    ],
+    "scale": [
+      77.47208592896365,
+      3.1374865965024887
+    ],
+    "target_total_length": 16.366227115796548,
+    "largest_segment_length_share": 0.0605542395540999,
+    "largest_segment_frequency_hz": [
+      24607.157699163294,
+      25906.445000902346
+    ],
+    "all_original_rows_retained": true,
+    "candidate_normalization": "fixed_target_only",
+    "auxiliary_tunable_parameters": {},
+    "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+    "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term",
+    "local_constants": {
+      "turn_quantile": 0.95,
+      "fit_turn_ratio": 0.2,
+      "event_min_gap": 4,
+      "ptc_neighbor_db": 0.2,
+      "ptc_gamma": 0.41,
+      "weak_location_weight": 0.1,
+      "excess_event_weight": 0.1,
+      "speed_epsilon_ratio": 0.05,
+      "dtw_window": 4,
+      "soft_dtw_window": 10,
+      "soft_dtw_gamma": 0.1,
+      "hausdorff_quantile": 0.95
+    },
+    "local_target": {
+      "frequency_points": 180,
+      "target_turns": 6,
+      "turn_u": [
+        0.2737430167597765,
+        0.553072625698324,
+        0.5977653631284916,
+        0.776536312849162,
+        0.8268156424581006,
+        0.9776536312849162
+      ],
+      "target_crossings": 11,
+      "target_amplitude_extrema": 11,
+      "path_scales": [
+        76.94159066852839,
+        561.2970149648013
+      ],
+      "impedance_median_scale": 4.685004101618588,
+      "speed_epsilon": 1.5022136544215163,
+      "target_turn_threshold": 1.7845793444622386,
+      "fit_turn_threshold": 0.421138303789703
+    },
+    "protocol": "crosscase_consolidation_20261005_v1"
+  }
+}

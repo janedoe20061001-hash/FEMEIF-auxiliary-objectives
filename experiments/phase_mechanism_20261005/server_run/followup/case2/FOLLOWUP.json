@@ -1,0 +1,164 @@
+[
+  {
+    "group": "baseline",
+    "phase_mean": 0.08809973424544831,
+    "same_sign_contribution": 0.05444073005745313,
+    "wrong_sign_contribution": 0.03365900418799517,
+    "wrong_sign_point_fraction": 0.03328358208955224,
+    "phase_delta_partition": {
+      "both_correct": 0.0,
+      "both_wrong": 0.0,
+      "repaired": 0.0,
+      "introduced": 0.0
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.5482268226822682,
+        "partial_phase_rho": 0.10839601732157873,
+        "mean": 0.6975352583803381
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.5335853585358535,
+        "partial_phase_rho": 0.13571693801459528,
+        "mean": 0.695676643343239
+      }
+    ]
+  },
+  {
+    "group": "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades",
+    "phase_mean": 0.08378027519172251,
+    "same_sign_contribution": 0.054095952559138245,
+    "wrong_sign_contribution": 0.029684322632584265,
+    "wrong_sign_point_fraction": 0.030398009950248755,
+    "phase_delta_partition": {
+      "both_correct": -0.001113556467949672,
+      "both_wrong": 0.0022222307749098307,
+      "repaired": -0.015264744051343234,
+      "introduced": 0.009836610690657291
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.4797359735973597,
+        "partial_phase_rho": 0.46967124023095347,
+        "mean": 0.6469716101558918
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.4486648664866486,
+        "partial_phase_rho": 0.47761068265130685,
+        "mean": 0.648106643240366
+      }
+    ]
+  },
+  {
+    "group": "reactance_crossing_direction_consistency+transition_speed_relative_error",
+    "phase_mean": 0.07926486036119373,
+    "same_sign_contribution": 0.054108490275195854,
+    "wrong_sign_contribution": 0.02515637008599789,
+    "wrong_sign_point_fraction": 0.020696517412935322,
+    "phase_delta_partition": {
+      "both_correct": -0.0024000330593255694,
+      "both_wrong": 0.007815097611658377,
+      "repaired": -0.018643808292088084,
+      "introduced": 0.004393869855500732
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.7012541254125412,
+        "partial_phase_rho": 0.7266932259454774,
+        "mean": 0.7106156419433748
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.6885448544854484,
+        "partial_phase_rho": 0.7471296256320042,
+        "mean": 0.7178304814052686
+      }
+    ]
+  },
+  {
+    "group": "cumulative_length_logpolar",
+    "phase_mean": 0.0782217610512109,
+    "same_sign_contribution": 0.052706513110871565,
+    "wrong_sign_contribution": 0.025515247940339325,
+    "wrong_sign_point_fraction": 0.023781094527363184,
+    "phase_delta_partition": {
+      "both_correct": -0.003567077655871738,
+      "both_wrong": 0.006072170314336436,
+      "repaired": -0.01726714204781613,
+      "introduced": 0.004884076195114034
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.5177557755775577,
+        "partial_phase_rho": 0.8527395044022547,
+        "mean": 0.6493042639911182
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.4923252325232523,
+        "partial_phase_rho": 0.8537571398740168,
+        "mean": 0.6552089374363722
+      }
+    ]
+  },
+  {
+    "group": "all_interval_mean_residual_logpolar",
+    "phase_mean": 0.08031192196559665,
+    "same_sign_contribution": 0.051262312520013065,
+    "wrong_sign_contribution": 0.029049609445583574,
+    "wrong_sign_point_fraction": 0.03268656716417911,
+    "phase_delta_partition": {
+      "both_correct": -0.003797922151871019,
+      "both_wrong": -0.0008592710753546031,
+      "repaired": -0.012307758652274682,
+      "introduced": 0.009177139599648651
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.702934293429343,
+        "partial_phase_rho": 0.4623476336815732,
+        "mean": 0.6618847002843248
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.6799759975997599,
+        "partial_phase_rho": 0.4657541903294478,
+        "mean": 0.6585214387765806
+      }
+    ]
+  },
+  {
+    "group": "bidirectional_residual_logpolar",
+    "phase_mean": 0.08153906999954104,
+    "same_sign_contribution": 0.05224321166630999,
+    "wrong_sign_contribution": 0.029295858333231065,
+    "wrong_sign_point_fraction": 0.033980099502487565,
+    "phase_delta_partition": {
+      "both_correct": -0.002557688045272798,
+      "both_wrong": -0.001155757820182593,
+      "repaired": -0.013178819879781294,
+      "introduced": 0.01033160149932944
+    },
+    "diagnostic_correlations": [
+      {
+        "metric": "LP_signed_vector",
+        "phase_rho": 0.46861086108610855,
+        "partial_phase_rho": -0.12516066592408503,
+        "mean": 0.6596776344831125
+      },
+      {
+        "metric": "phase_secant",
+        "phase_rho": 0.4602460246024602,
+        "partial_phase_rho": -0.1194064166130023,
+        "mean": 0.6566660329476364
+      }
+    ]
+  }
+]

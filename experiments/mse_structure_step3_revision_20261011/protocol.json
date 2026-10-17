@@ -1,0 +1,18 @@
+{
+  "date":"2026-10-11",
+  "purpose":"Frozen exploratory paired revision of 3D curve objectives; all MAG/PHA retained; no website publication",
+  "targets":["case1","ladder8","mixed0p25","control0p25"],
+  "focus_events":{"case1":["P3","V2"],"ladder8":["P2","V1"],"mixed0p25":["P1","V1"],"control0p25":["P1"]},
+  "seeds":[42000,42001,42002,42003],
+  "population":200,"generations":300,"save_every":20,"workers":32,
+  "methods":["MAG_PHA","MAG_PHA_MAX","MAG_PHA_MEAN","MAG_PHA_CHORD","MAG_PHA_INTEGRAL"],
+  "planned_jobs":80,"planned_evaluations":4800000,
+  "geometry":{"points_per_window":129,"half_window_widths":3.0,"frequency_slack_widths":0.25,"ohm_floor":0.000001,"clip_at_neighbor_midpoints":true},
+  "chord":{"half_spans_widths":[0.125,0.25,0.5],"coefficient":1.0,"direction_coefficient":1.0,"log_length_coefficient":1.0,"no_candidate_normalization":true},
+  "integral":{"edge_measure":"(dt+ds)/2","edge_distance":"trapezoid of full normalized 3D squared link distance","normalization":"fixed target window span, never path point count","steps":[[1,0],[0,1],[1,1]],"no_free_frequency_alignment":true},
+  "selection":{"alpha":25.12,"primary":"MAG_plus_alpha_PHA over final retained population, no auxiliary score","secondary":"common original max Frechet score within paired baseline MAG/PHA allowance","relative_allowance":0.1,"absolute_floors":[0.01,0.00007615435494667714]},
+  "geometry_audit":{"points":[257,513,1025],"relative_tolerance":0.01,"absolute_tolerance":0.01,"candidate_mode_anchors":true},
+  "success_scope":"Independent structure, local phase, other events and global MAG/PHA; aux score reduction alone never defines success; all four targets development data, four seeds exploratory; compare mean vs max and chord vs mean to separate changes",
+  "cpu_policy":"32 allocated CPUs; BLAS threads 1 per worker; measure cgroup CPU consumption during useful computation; do not launch dummy work to inflate utilization; tail and IO may use less CPU",
+  "budget_policy":"No post-result tuning, extra seeds or website upload; fixed definitions, hashes, paired initializations, operators and budgets; final population rules do not guarantee globally optimal parameters"
+}

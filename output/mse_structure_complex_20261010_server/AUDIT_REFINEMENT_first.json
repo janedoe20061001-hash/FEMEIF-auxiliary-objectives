@@ -1,0 +1,440 @@
+{
+  "passed": true,
+  "original_audit_sha256": "5d6e73acda407d19a823d1b1df88c3a1cb9d49112659412504dbe7d6e5136099",
+  "original_hashes": {
+    "analyze.py": "64ad046560a9222643a3fbe6a22920bc062cfe9c7b5f456c6dd80373c8f7d15f",
+    "circuits.py": "8eba51429e8cd3c8042aa85d0ea3fb8bb6773bf1d394799bee903ac70f66819b",
+    "deliver.py": "2005bacfef7493d300cdc21d68bbeed5ddd159b09404385ef4cade61d99dec80",
+    "diagnostics.py": "7476de6fb841104083b3b19e46fad34e3ec7416eb7674c060d9a5ae4659eb687",
+    "prepare.py": "8a7a9a4f3cb63f5d25c59143a531781eb49461952e12fc60306514d71b527a7f",
+    "protocol.py": "670aef6c1c99e9430e5ea45db42dcf985b9c3a897f5188c0ac24b10f9b671676",
+    "run.py": "dcfc36cdffbebcd94f00d5ddc868b150a9a11fe01ddd547274c93f3fee3aefac",
+    "sampling.py": "3702ddd09447cfb56100b55929df5e7d7019e039da6cb99c22084c82dd7b5cd2",
+    "schematic.py": "845f5a2461049171feff164a757453700fed33883d990ac59fedb24af512ac52",
+    "test_validation.py": "6ea8bd1dca17b3cb944897a639501eabd0ff51fb96564a363d32b58386e40547",
+    "requirements-lock.txt": "11b9eec6ce0dbc32f6d55f6fc307d1e5d82268720fdaf4f1e78df0fd4f439714",
+    "config": "0d9b07acf3b58f6724af55f0155ba22f4c3a64bf5a30a5a8c34e9ccfe37828b0",
+    "circuits": "d78a4f1cee29d5689d62738ce9578406d03394d3823020d524dae6282dc7605d"
+  },
+  "helper_sha256": "05b6b6508513f90d52e98ce23c791decc32fe31888f99c17e88890db513ee249",
+  "original_audit_preserved": true,
+  "refinements": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "tolerances_unchanged": true,
+  "table_scope": "Original tables exclude originally unstable candidates. Representatives are unaffected; no historic table or score is rewritten.",
+  "records": [
+    {
+      "identity": {
+        "target": "user_nested/base",
+        "seed": 33003,
+        "generation": 300,
+        "index": 129,
+        "on_front": false,
+        "objective_ok": true,
+        "structure_stable": false
+      },
+      "representative": false,
+      "training_objective": [
+        0.013055408101907489,
+        0.00022038107636775597
+      ],
+      "objective_ok": true,
+      "high_objective_ok": true,
+      "high_converged": true,
+      "accepted": true,
+      "refined": {
+        "stable": true,
+        "refinement": 16,
+        "objective": [
+          0.013053744182352878,
+          0.00022038118949107096
+        ],
+        "uniform_log_objective": [
+          0.01310602724332469,
+          0.00021081702675807606
+        ],
+        "amplitude_rmse_db": 0.11448155852941858,
+        "phase_rmse_deg": 0.8319083327699079,
+        "events": [
+          {
+            "event_id": "P1",
+            "kind": "peak",
+            "matched": true,
+            "complete": true,
+            "fit_event_id": "P1",
+            "shift_decades": -9.217682746687217e-05,
+            "height_delta_db": 0.37966623731345805,
+            "width_ratio": 0.9547979779869499,
+            "width_evaluable": true,
+            "target_frequency_hz": 17892.907439491315,
+            "target_width_hz": 2329.9800259415315
+          }
+        ],
+        "extra_events": [],
+        "phase_events": [
+          {
+            "event_id": "U1",
+            "matched": true,
+            "complete": true,
+            "shift_decades": 0.019938451929669032,
+            "width_ratio": 0.8789310622645545,
+            "slope_ratio": 0.9747725729716029,
+            "target_frequency_hz": 1371.020567485886
+          },
+          {
+            "event_id": "U2",
+            "matched": true,
+            "complete": true,
+            "shift_decades": -0.006632187623349495,
+            "width_ratio": 1.0027277590710846,
+            "slope_ratio": 1.002562515025056,
+            "target_frequency_hz": 87182.57408245426
+          },
+          {
+            "event_id": "D1",
+            "matched": true,
+            "complete": true,
+            "shift_decades": -0.00018380713803445303,
+            "width_ratio": 0.9533163138412636,
+            "slope_ratio": 1.048027361610708,
+            "target_frequency_hz": 17892.907439491315
+          }
+        ],
+        "extra_phase_events": [],
+        "local": [
+          {
+            "event_id": "P1",
+            "mass": 0.014048841745394815,
+            "amp_contribution": 0.0012513861090693976,
+            "pha_contribution": 4.302850431429501e-06,
+            "amp_fraction": 0.0958641514333584,
+            "pha_fraction": 0.019524581210248148,
+            "phase_rmse_deg": 1.0027218930840474
+          }
+        ],
+        "bands": [
+          {
+            "low_hz": 100.0,
+            "high_hz": 316.22776601683796,
+            "amplitude_rmse_db": 0.26542067709790945,
+            "phase_rmse_deg": 2.064546915807653
+          },
+          {
+            "low_hz": 316.22776601683796,
+            "high_hz": 1000.0,
+            "amplitude_rmse_db": 0.10407835887679803,
+            "phase_rmse_deg": 0.805866878227363
+          },
+          {
+            "low_hz": 1000.0,
+            "high_hz": 3162.2776601683795,
+            "amplitude_rmse_db": 0.035062867756837576,
+            "phase_rmse_deg": 0.13161162812084778
+          },
+          {
+            "low_hz": 3162.2776601683795,
+            "high_hz": 10000.0,
+            "amplitude_rmse_db": 0.01507784423722128,
+            "phase_rmse_deg": 0.11682412583733355
+          },
+          {
+            "low_hz": 10000.0,
+            "high_hz": 31622.776601683792,
+            "amplitude_rmse_db": 0.10783266160625748,
+            "phase_rmse_deg": 0.6946166476116258
+          },
+          {
+            "low_hz": 31622.776601683792,
+            "high_hz": 100000.0,
+            "amplitude_rmse_db": 0.017384913006967692,
+            "phase_rmse_deg": 0.206887866608338
+          },
+          {
+            "low_hz": 100000.0,
+            "high_hz": 316227.7660168379,
+            "amplitude_rmse_db": 0.06173613692053401,
+            "phase_rmse_deg": 0.24094262461038807
+          },
+          {
+            "low_hz": 316227.7660168379,
+            "high_hz": 1000000.0,
+            "amplitude_rmse_db": 0.07980953912660727,
+            "phase_rmse_deg": 0.1023654149792472
+          }
+        ]
+      },
+      "levels": [
+        {
+          "level": 4,
+          "objective": [
+            0.013053743687228338,
+            0.00022038119768121825
+          ],
+          "events": [
+            {
+              "event_id": "P1",
+              "kind": "peak",
+              "matched": true,
+              "complete": true,
+              "fit_event_id": "P1",
+              "shift_decades": -0.00010508094858074912,
+              "height_delta_db": 0.3796665678999034,
+              "width_ratio": 0.9547978873448975,
+              "width_evaluable": true,
+              "target_frequency_hz": 17892.907439491315,
+              "target_width_hz": 2329.9800259415315
+            }
+          ],
+          "phase_events": [
+            {
+              "event_id": "U1",
+              "matched": true,
+              "complete": false,
+              "shift_decades": 0.0200127137929611,
+              "width_ratio": 0.8789310671370933,
+              "slope_ratio": 0.9747725682762984,
+              "target_frequency_hz": 1371.020567485886
+            },
+            {
+              "event_id": "U2",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.0065837906977312954,
+              "width_ratio": 1.0027277606296023,
+              "slope_ratio": 1.0025625110018093,
+              "target_frequency_hz": 87182.57408245426
+            },
+            {
+              "event_id": "D1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.00011667724587294259,
+              "width_ratio": 0.9533225035560188,
+              "slope_ratio": 1.0480221853795832,
+              "target_frequency_hz": 17892.907439491315
+            }
+          ],
+          "extras": [],
+          "phase_extras": []
+        },
+        {
+          "level": 8,
+          "objective": [
+            0.01305374409447153,
+            0.00022038119108532054
+          ],
+          "events": [
+            {
+              "event_id": "P1",
+              "kind": "peak",
+              "matched": true,
+              "complete": true,
+              "fit_event_id": "P1",
+              "shift_decades": -6.711893154243143e-05,
+              "height_delta_db": 0.37965995092307026,
+              "width_ratio": 0.9547993582415037,
+              "width_evaluable": true,
+              "target_frequency_hz": 17892.907439491315,
+              "target_width_hz": 2329.9800259415315
+            }
+          ],
+          "phase_events": [
+            {
+              "event_id": "U1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": 0.019938451929669032,
+              "width_ratio": 0.8789310630475088,
+              "slope_ratio": 0.9747725729716029,
+              "target_frequency_hz": 1371.020567485886
+            },
+            {
+              "event_id": "U2",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.006591796875,
+              "width_ratio": 1.0027277617037218,
+              "slope_ratio": 1.002562512641094,
+              "target_frequency_hz": 87182.57408245426
+            },
+            {
+              "event_id": "D1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.000166785529166269,
+              "width_ratio": 0.953316556380207,
+              "slope_ratio": 1.048027289485347,
+              "target_frequency_hz": 17892.907439491315
+            }
+          ],
+          "extras": [],
+          "phase_extras": []
+        },
+        {
+          "level": 16,
+          "objective": [
+            0.013053744182352878,
+            0.00022038118949107096
+          ],
+          "events": [
+            {
+              "event_id": "P1",
+              "kind": "peak",
+              "matched": true,
+              "complete": true,
+              "fit_event_id": "P1",
+              "shift_decades": -9.217682746687217e-05,
+              "height_delta_db": 0.37966623731345805,
+              "width_ratio": 0.9547979779869499,
+              "width_evaluable": true,
+              "target_frequency_hz": 17892.907439491315,
+              "target_width_hz": 2329.9800259415315
+            }
+          ],
+          "phase_events": [
+            {
+              "event_id": "U1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": 0.019938451929669032,
+              "width_ratio": 0.8789310622645545,
+              "slope_ratio": 0.9747725729716029,
+              "target_frequency_hz": 1371.020567485886
+            },
+            {
+              "event_id": "U2",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.006632187623349495,
+              "width_ratio": 1.0027277590710846,
+              "slope_ratio": 1.002562515025056,
+              "target_frequency_hz": 87182.57408245426
+            },
+            {
+              "event_id": "D1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.00018380713803445303,
+              "width_ratio": 0.9533163138412636,
+              "slope_ratio": 1.048027361610708,
+              "target_frequency_hz": 17892.907439491315
+            }
+          ],
+          "extras": [],
+          "phase_extras": []
+        },
+        {
+          "level": 32,
+          "objective": [
+            0.013053744188528563,
+            0.0002203811893440026
+          ],
+          "events": [
+            {
+              "event_id": "P1",
+              "kind": "peak",
+              "matched": true,
+              "complete": true,
+              "fit_event_id": "P1",
+              "shift_decades": -0.00010470289631481222,
+              "height_delta_db": 0.37966658631411576,
+              "width_ratio": 0.9547979012558029,
+              "width_evaluable": true,
+              "target_frequency_hz": 17892.907439491315,
+              "target_width_hz": 2329.9800259415315
+            }
+          ],
+          "phase_events": [
+            {
+              "event_id": "U1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": 0.019974664013616916,
+              "width_ratio": 0.8789310609040549,
+              "slope_ratio": 0.9747725749081755,
+              "target_frequency_hz": 1371.020567485886
+            },
+            {
+              "event_id": "U2",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.006615153551816633,
+              "width_ratio": 1.0027277590936932,
+              "slope_ratio": 1.0025625152176882,
+              "target_frequency_hz": 87182.57408245426
+            },
+            {
+              "event_id": "D1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.00017847391430425574,
+              "width_ratio": 0.9533161046447174,
+              "slope_ratio": 1.0480274296663958,
+              "target_frequency_hz": 17892.907439491315
+            }
+          ],
+          "extras": [],
+          "phase_extras": []
+        },
+        {
+          "level": 64,
+          "objective": [
+            0.013053744192341572,
+            0.00022038118927529158
+          ],
+          "events": [
+            {
+              "event_id": "P1",
+              "kind": "peak",
+              "matched": true,
+              "complete": true,
+              "fit_event_id": "P1",
+              "shift_decades": -9.909716566181004e-05,
+              "height_delta_db": 0.37966666031917384,
+              "width_ratio": 0.9547978849129783,
+              "width_evaluable": true,
+              "target_frequency_hz": 17892.907439491315,
+              "target_width_hz": 2329.9800259415315
+            }
+          ],
+          "phase_events": [
+            {
+              "event_id": "U1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": 0.019968969507794032,
+              "width_ratio": 0.8789310607014739,
+              "slope_ratio": 0.974772575136672,
+              "target_frequency_hz": 1371.020567485886
+            },
+            {
+              "event_id": "U2",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.006622314453125,
+              "width_ratio": 1.0027277589946124,
+              "slope_ratio": 1.0025625153496032,
+              "target_frequency_hz": 87182.57408245426
+            },
+            {
+              "event_id": "D1",
+              "matched": true,
+              "complete": true,
+              "shift_decades": -0.00017738232561193001,
+              "width_ratio": 0.9533160727710547,
+              "slope_ratio": 1.0480274333967259,
+              "target_frequency_hz": 17892.907439491315
+            }
+          ],
+          "extras": [],
+          "phase_extras": []
+        }
+      ]
+    }
+  ]
+}

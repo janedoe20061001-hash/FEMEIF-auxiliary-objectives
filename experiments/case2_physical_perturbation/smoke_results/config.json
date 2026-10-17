@@ -1,0 +1,26 @@
+{
+  "seed": 20260921,
+  "levels_pct": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0
+  ],
+  "random_directions_per_family": 64,
+  "total_spectra": 1765,
+  "reference_selection": "minimum WSMSE among 100 Case2 baseline selected individuals",
+  "reference_seed": 7,
+  "reference_wsmse": 3.768123091183819,
+  "source_file": "..\\case2_dual_pdf18\\server_run\\selected_individuals.csv",
+  "source_sha256": "172be07cfb746d9ef5c36fbc2d3afc88794bb556a3717058efd1af1704a3d0d5",
+  "target": {
+    "file": "data/targetImpedance_case2.csv",
+    "sha256": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725",
+    "magnitude_unit": "ohm",
+    "phase_unit": "degree",
+    "sampling": "all_rows",
+    "points": 201
+  }
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "issue": "Isolated server directory launched with base interpreter lacking scipy; failed at import before any candidate scan or scoring",
+    "impact": "No scientific evaluations or original files changed",
+    "status": "Resolved: original .venv interpreter, same package versions; import failure log retained on server"
+  },
+  {
+    "issue": "Pre-score selection reused only fully scanned Case1 candidates, omitting candidates with P3-only negative certificates",
+    "resolution": "Keep original unscored pool; complete full event checks for other candidates before selecting new bank; no thresholds changed",
+    "impact": "Selection source coverage corrected before any new candidate metric scores",
+    "status": "Resolved before scores; full coverage selected strict original 24 pairs"
+  },
+  {
+    "issue": "Finite backtracking cap is not proof of bank infeasibility",
+    "resolution": "Add independent MILP feasibility check with all original count, seed, distinct-parameter and allocation constraints before declaring no bank",
+    "impact": "Engineering selection solver; no new metric scores used",
+    "status": "Exact MILP check retained; strict source bank completed at generation 80"
+  },
+  {
+    "issue": "Original implementation used unmatched-only as missing-structure class; did not represent known severely attenuated but detected peaks",
+    "resolution": "Before new scores, write AMENDMENT_01: add matched peaks at least 6dB too low, keep unmatched subtype separately; rerun selection, preserve old source pools",
+    "impact": "No change to primary sample strata, metrics or gates; draft source preserved",
+    "status": "Draft only; NOT applied. Original definition retained for primary bank; complete preplanned historical search before judging shortage."
+  }
+]

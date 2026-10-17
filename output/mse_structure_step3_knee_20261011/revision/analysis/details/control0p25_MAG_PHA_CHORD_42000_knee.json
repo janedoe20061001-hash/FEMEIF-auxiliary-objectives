@@ -1,0 +1,348 @@
+{
+  "summary": {
+    "target": "control0p25",
+    "method": "MAG_PHA_CHORD",
+    "seed": 42000,
+    "rule": "knee",
+    "stable": true,
+    "base_score_ok": true,
+    "geometry_stable": true,
+    "geometry_training_ok": true,
+    "mag": 8.288687292229152e-06,
+    "pha": 3.065540891588011e-12,
+    "train_mag": 8.288689763671008e-06,
+    "train_pha": 3.070386157110839e-12,
+    "geometry_train": 0.0005149392325251785,
+    "geometry_reference": 0.0005148961027297983,
+    "focus_joint_ok": true,
+    "focus_missing": 0,
+    "all_amp_ok": true,
+    "local_phase_rmse_deg": 0.0013569075406493565,
+    "uniform_amp_rmse_db": 0.002879009394868186,
+    "uniform_phase_rmse_deg": 0.00010059720756790019,
+    "extra_amp": 0,
+    "extra_phase": 0,
+    "phase_pass": 1,
+    "phase_total": 1,
+    "all_phase_ok": true,
+    "batch": "revision"
+  },
+  "log_parameters": [
+    3.477272380476468,
+    -3.400096036840503,
+    -6.196263930636043
+  ],
+  "training_objective": [
+    8.288689763671008e-06,
+    3.070386157110839e-12
+  ],
+  "analyzer_sha256": "b7b3c9a983efecbee614c557860bc0e50c929314a22442543b93c968297d30b8",
+  "focus": [
+    {
+      "event_id": "P1",
+      "kind": "peak",
+      "matched": true,
+      "complete": true,
+      "fit_event_id": "P1",
+      "shift_decades": 0.0,
+      "height_delta_db": 0.0030224974791934756,
+      "width_ratio": 0.9999834540732737,
+      "width_evaluable": true,
+      "target_frequency_hz": 10000.0,
+      "target_width_hz": 83.13569454728167,
+      "shift_target_widths": 0.0
+    }
+  ],
+  "diagnostic": {
+    "stable": true,
+    "refinement": 2,
+    "objective": [
+      8.288687292229152e-06,
+      3.065540891588011e-12
+    ],
+    "uniform_log_objective": [
+      8.288695095739279e-06,
+      3.0826668074475344e-12
+    ],
+    "amplitude_rmse_db": 0.002879009394868186,
+    "phase_rmse_deg": 0.00010059720756790019,
+    "events": [
+      {
+        "event_id": "P1",
+        "kind": "peak",
+        "matched": true,
+        "complete": true,
+        "fit_event_id": "P1",
+        "shift_decades": 0.0,
+        "height_delta_db": 0.0030224974791934756,
+        "width_ratio": 0.9999834540732737,
+        "width_evaluable": true,
+        "target_frequency_hz": 10000.0,
+        "target_width_hz": 83.13569454728167
+      }
+    ],
+    "extra_events": [],
+    "phase_events": [
+      {
+        "event_id": "D1",
+        "matched": true,
+        "complete": true,
+        "shift_decades": 0.0,
+        "width_ratio": 1.0000029320789354,
+        "slope_ratio": 1.000016545973168,
+        "target_frequency_hz": 10000.0
+      }
+    ],
+    "extra_phase_events": [],
+    "local": [
+      {
+        "event_id": "P1",
+        "mass": 0.0008976171147253354,
+        "amp_contribution": 8.073895446497809e-09,
+        "pha_contribution": 2.3838332874140785e-12,
+        "amp_fraction": 0.0009740861443846825,
+        "pha_fraction": 0.7776224071763093,
+        "phase_rmse_deg": 0.002952670669900355
+      }
+    ],
+    "bands": [
+      {
+        "low_hz": 100.0,
+        "high_hz": 316.22776601683796,
+        "amplitude_rmse_db": 0.002876455110538428,
+        "phase_rmse_deg": 1.588216578671537e-07
+      },
+      {
+        "low_hz": 316.22776601683796,
+        "high_hz": 1000.0,
+        "amplitude_rmse_db": 0.002876438812461396,
+        "phase_rmse_deg": 5.048227116015223e-07
+      },
+      {
+        "low_hz": 1000.0,
+        "high_hz": 3162.2776601683795,
+        "amplitude_rmse_db": 0.0028762663239873714,
+        "phase_rmse_deg": 1.6848204307645827e-06
+      },
+      {
+        "low_hz": 3162.2776601683795,
+        "high_hz": 10000.0,
+        "amplitude_rmse_db": 0.0028679780951572937,
+        "phase_rmse_deg": 0.00023024189372920835
+      },
+      {
+        "low_hz": 10000.0,
+        "high_hz": 31622.776601683792,
+        "amplitude_rmse_db": 0.002891455010954133,
+        "phase_rmse_deg": 0.00016715571527106557
+      },
+      {
+        "low_hz": 31622.776601683792,
+        "high_hz": 100000.0,
+        "amplitude_rmse_db": 0.0028812635868802226,
+        "phase_rmse_deg": 1.6252443555882762e-06
+      },
+      {
+        "low_hz": 100000.0,
+        "high_hz": 316227.7660168379,
+        "amplitude_rmse_db": 0.0028810902957934854,
+        "phase_rmse_deg": 4.88696985371821e-07
+      },
+      {
+        "low_hz": 316227.7660168379,
+        "high_hz": 1000000.0,
+        "amplitude_rmse_db": 0.002881073926570149,
+        "phase_rmse_deg": 1.5379775035439282e-07
+      }
+    ]
+  },
+  "geometry_refinements": [
+    {
+      "points": 257,
+      "events": [
+        0.000515173421113722
+      ]
+    },
+    {
+      "points": 513,
+      "events": [
+        0.0005149523826940777
+      ]
+    },
+    {
+      "points": 1025,
+      "events": [
+        0.0005148961027297983
+      ]
+    }
+  ],
+  "chord_audit_shifted_endpoint_anchors": true,
+  "supplemental_base_refinements": [],
+  "selection_provenance": {
+    "reason": "convex_knee",
+    "front_indices": [
+      0,
+      1,
+      2,
+      5,
+      8,
+      12,
+      13,
+      20,
+      21,
+      23,
+      24,
+      28,
+      31,
+      33,
+      34,
+      38,
+      42,
+      45,
+      46,
+      56,
+      60,
+      63,
+      64,
+      67,
+      69,
+      75,
+      78,
+      79,
+      86,
+      87,
+      92,
+      95,
+      97,
+      99,
+      101,
+      106
+    ],
+    "unique_indices": [
+      0,
+      2,
+      97,
+      99,
+      56,
+      8,
+      5,
+      69,
+      33,
+      28,
+      95,
+      86,
+      46,
+      13,
+      63,
+      101,
+      45
+    ],
+    "minimum": [
+      4.46636001181708e-08,
+      3.002352789001875e-17
+    ],
+    "maximum": [
+      1.3223132773472926e-05,
+      2.6746238415537554e-10
+    ],
+    "normalized": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.6195353688724787,
+        0.29036688755983914
+      ],
+      [
+        0.6197723315180711,
+        0.2372090712030763
+      ],
+      [
+        0.6199461483827673,
+        0.22586869064962786
+      ],
+      [
+        0.6200153654277496,
+        0.2202567691316293
+      ],
+      [
+        0.6200207312679608,
+        0.21987364947677282
+      ],
+      [
+        0.6200323461639902,
+        0.21906916661049292
+      ],
+      [
+        0.6200377438740459,
+        0.21870677027584473
+      ],
+      [
+        0.6205383010935597,
+        0.21204158711219426
+      ],
+      [
+        0.6251533011513725,
+        0.02143095689471135
+      ],
+      [
+        0.625567814827935,
+        0.01147958240160181
+      ],
+      [
+        0.684823734273751,
+        0.0035162091450285753
+      ],
+      [
+        0.99970828820773,
+        0.003123039353531237
+      ],
+      [
+        0.9997664640182683,
+        0.0026452792492766774
+      ],
+      [
+        0.9998439644710442,
+        0.00014530371269973771
+      ],
+      [
+        0.9999817427614944,
+        2.195117636576539e-05
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "signed_distances": [
+      0.0,
+      0.06370872544631472,
+      0.10112941997166457,
+      0.10902537287853274,
+      0.11294465679751557,
+      0.11321176908147038,
+      0.1137724113998201,
+      0.11402484754814371,
+      0.1183838963567213,
+      0.24990266771368916,
+      0.25664624666830177,
+      0.22037693943356404,
+      -0.002002050918328203,
+      -0.0017053600189620769,
+      7.588540049139383e-06,
+      -2.612008510272089e-06,
+      0.0
+    ],
+    "selected_index": 95,
+    "distance": 0.25664624666830177,
+    "batch": "revision",
+    "target": "control0p25",
+    "method": "MAG_PHA_CHORD",
+    "seed": 42000,
+    "source": "output/mse_structure_step3_knee_20261011/source_populations/revision/control0p25/MAG_PHA_CHORD/seed_42000/generation_0300.npz",
+    "source_sha256": "e49b2f91015be785266c7f1c704ae17f34846f54c5316f39dbfe7a0d8b52b14e",
+    "original_source": "output/mse_structure_step3_revision_20261011/batch/control0p25/MAG_PHA_CHORD/seed_42000/generation_0300.npz"
+  },
+  "replacement_analyzer_sha256": "4156216965512b6c0273f0ec302bb48f407b52283eba82846202cd4a7406d621"
+}

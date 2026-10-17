@@ -1,0 +1,79 @@
+[
+  {
+    "stage": "G",
+    "label": "全局残差候选",
+    "directory": "global_objectives_20261003",
+    "seeds": {
+      "start": 0,
+      "count": 100
+    },
+    "groups_per_case": 4,
+    "runs": 800
+  },
+  {
+    "stage": "D1",
+    "label": "三维实虚部坐标",
+    "directory": "curve3d_objectives_20261003",
+    "seeds": {
+      "start": 0,
+      "count": 100
+    },
+    "groups_per_case": 11,
+    "runs": 2200
+  },
+  {
+    "stage": "D2",
+    "label": "改为幅相坐标",
+    "directory": "curve3d_logpolar_native_20261003",
+    "seeds": {
+      "start": 0,
+      "count": 100
+    },
+    "groups_per_case": 7,
+    "runs": 1400
+  },
+  {
+    "stage": "R",
+    "label": "全过程累计与尺度对照",
+    "directory": "curve3d_refinement_20261003",
+    "seeds": {
+      "start": 100,
+      "count": 100
+    },
+    "groups_per_case": 7,
+    "runs": 1400
+  },
+  {
+    "stage": "Q",
+    "label": "方向分解与组合",
+    "directory": "curve3d_directional_20261003",
+    "seeds": {
+      "start": 200,
+      "count": 100
+    },
+    "groups_per_case": 7,
+    "runs": 1400
+  },
+  {
+    "stage": "V",
+    "label": "固定少量候选复核",
+    "directory": "curve3d_shortlist_20261003",
+    "seeds": {
+      "start": 1000,
+      "count": 100
+    },
+    "groups_per_case": 3,
+    "runs": 600
+  },
+  {
+    "stage": "I",
+    "label": "全区间与逐段弧长",
+    "directory": "curve3d_interval_20261003",
+    "seeds": {
+      "start": 1100,
+      "count": 100
+    },
+    "groups_per_case": 4,
+    "runs": 800
+  }
+]

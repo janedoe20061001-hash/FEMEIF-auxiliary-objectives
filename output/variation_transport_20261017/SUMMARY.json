@@ -1,0 +1,110 @@
+{
+  "summary": [
+    {
+      "metric": "JM",
+      "development_correct": 11,
+      "development_extra_correct": 5,
+      "regression_correct": 19,
+      "regression_family_correct": {
+        "missing_structure": 6,
+        "existing_distortion": 5,
+        "extra_structure": 8
+      },
+      "two_known_correct": true,
+      "regression_direction_gate_passed": false
+    },
+    {
+      "metric": "JC",
+      "development_correct": 11,
+      "development_extra_correct": 5,
+      "regression_correct": 19,
+      "regression_family_correct": {
+        "missing_structure": 6,
+        "existing_distortion": 5,
+        "extra_structure": 8
+      },
+      "two_known_correct": true,
+      "regression_direction_gate_passed": false
+    },
+    {
+      "metric": "JV",
+      "development_correct": 11,
+      "development_extra_correct": 5,
+      "regression_correct": 19,
+      "regression_family_correct": {
+        "missing_structure": 6,
+        "existing_distortion": 5,
+        "extra_structure": 8
+      },
+      "two_known_correct": true,
+      "regression_direction_gate_passed": false
+    }
+  ],
+  "tasks": 756,
+  "numerical_passed": 756,
+  "windows": 2124,
+  "physical_translation": [
+    {
+      "id": "control_0364",
+      "label": "P_control",
+      "family": "controlled_grid",
+      "amplitude": 1,
+      "offset": 0,
+      "q_ratio": 1,
+      "JM": 0.0,
+      "JC": 0.0,
+      "JV": 0.0,
+      "numerical_passed": true
+    },
+    {
+      "id": "control_0373",
+      "label": "P_control",
+      "family": "controlled_grid",
+      "amplitude": 1,
+      "offset": 0.5,
+      "q_ratio": 1,
+      "JM": 0.00018346815233045478,
+      "JC": 0.015107052832275042,
+      "JV": 0.007645260492302748,
+      "numerical_passed": true
+    },
+    {
+      "id": "control_0382",
+      "label": "P_control",
+      "family": "controlled_grid",
+      "amplitude": 1,
+      "offset": 1,
+      "q_ratio": 1,
+      "JM": 0.00043940101448420503,
+      "JC": 0.03019985956788976,
+      "JV": 0.015319630291186982,
+      "numerical_passed": true
+    },
+    {
+      "id": "control_0391",
+      "label": "P_control",
+      "family": "controlled_grid",
+      "amplitude": 1,
+      "offset": 2,
+      "q_ratio": 1,
+      "JM": 0.001568255568399718,
+      "JC": 0.06045168707588497,
+      "JV": 0.031009971322142345,
+      "numerical_passed": true
+    },
+    {
+      "id": "control_0400",
+      "label": "P_control",
+      "family": "controlled_grid",
+      "amplitude": 1,
+      "offset": 4,
+      "q_ratio": 1,
+      "JM": 0.007245971380534255,
+      "JC": 0.12112946420186493,
+      "JV": 0.0641877177911996,
+      "numerical_passed": true
+    }
+  ],
+  "physical_translation_monotone": true,
+  "optimization_started": false
+}

@@ -1,0 +1,530 @@
+{
+  "passed": true,
+  "numerical_passed": true,
+  "cases": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "target": "mixed_resonators/base",
+      "truth": [
+        1.3438048108994966e-30,
+        1.673307920758469e-33,
+        1.499905195943046e-28,
+        1.2569771352527704e-31
+      ],
+      "scales": [
+        {
+          "label": "gap_0",
+          "frequency_hz": [
+            100.0,
+            8107.064168772462
+          ],
+          "scale_ohm": 1458.0572199687338,
+          "old_area_den": 0.11952543975911586,
+          "new_area_den": 1.780304436722774,
+          "matched_weight": 0.0045074628100610905
+        },
+        {
+          "label": "V1",
+          "frequency_hz": [
+            8107.064168772462,
+            11284.19798851866
+          ],
+          "scale_ohm": 37.58638171655398,
+          "old_area_den": 0.010983304126043418,
+          "new_area_den": 3.2885232285698187,
+          "matched_weight": 1.1154861718723645e-05
+        },
+        {
+          "label": "P1",
+          "frequency_hz": [
+            11284.19798851866,
+            14767.552291708102
+          ],
+          "scale_ohm": 232.43319573421007,
+          "old_area_den": 0.36998061054154174,
+          "new_area_den": 7.326634649716831,
+          "matched_weight": 0.0025500509539443535
+        },
+        {
+          "label": "V2",
+          "frequency_hz": [
+            14767.552291708102,
+            24453.81599480377
+          ],
+          "scale_ohm": 48.817654596350664,
+          "old_area_den": 0.02965107212903801,
+          "new_area_den": 2.751162857295118,
+          "matched_weight": 0.00011615775331293328
+        },
+        {
+          "label": "gap_4",
+          "frequency_hz": [
+            24453.81599480377,
+            32245.354579314164
+          ],
+          "scale_ohm": 85.25570862291121,
+          "old_area_den": 0.0001172905398542067,
+          "new_area_den": 0.31515572372465783,
+          "matched_weight": 1.38508227762118e-07
+        },
+        {
+          "label": "P2",
+          "frequency_hz": [
+            32245.354579314164,
+            51019.26408872809
+          ],
+          "scale_ohm": 210.99228450119386,
+          "old_area_den": 0.015777451007179432,
+          "new_area_den": 1.6308167888997198,
+          "matched_weight": 9.359730261799782e-05
+        },
+        {
+          "label": "V3",
+          "frequency_hz": [
+            51019.26408872809,
+            79770.03651807856
+          ],
+          "scale_ohm": 231.82945954314343,
+          "old_area_den": 0.0670997592755842,
+          "new_area_den": 0.893161249268061,
+          "matched_weight": 0.005643937284843276
+        },
+        {
+          "label": "end_gap",
+          "frequency_hz": [
+            79770.03651807856,
+            1000000.0
+          ],
+          "scale_ohm": 3123.865834883472,
+          "old_area_den": 0.0001,
+          "new_area_den": 0.8571226999320479,
+          "matched_weight": 1.3611751311778213e-08
+        }
+      ],
+      "target_arclength_passed": true
+    },
+    {
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "truth": [
+        9.188028486463181e-29,
+        1.4910268848860327e-31,
+        9.792634035093551e-27,
+        3.1021282782718476e-29
+      ],
+      "scales": [
+        {
+          "label": "gap_0",
+          "frequency_hz": [
+            100.0,
+            8111.587447397914
+          ],
+          "scale_ohm": 1468.946172862612,
+          "old_area_den": 0.1183342749415971,
+          "new_area_den": 1.8335156640286927,
+          "matched_weight": 0.004165353448535984
+        },
+        {
+          "label": "V1",
+          "frequency_hz": [
+            8111.587447397914,
+            12014.990596685524
+          ],
+          "scale_ohm": 54.5855828964242,
+          "old_area_den": 0.008798662947482529,
+          "new_area_den": 2.6356408951976595,
+          "matched_weight": 1.1144507676762532e-05
+        },
+        {
+          "label": "P1",
+          "frequency_hz": [
+            12014.990596685524,
+            17467.784282844503
+          ],
+          "scale_ohm": 377.46605423292124,
+          "old_area_den": 0.3565117340791313,
+          "new_area_den": 7.660972374654357,
+          "matched_weight": 0.002165608087550748
+        },
+        {
+          "label": "V2",
+          "frequency_hz": [
+            17467.784282844503,
+            29565.009722298517
+          ],
+          "scale_ohm": 55.60738915106923,
+          "old_area_den": 0.0381461933725203,
+          "new_area_den": 3.677608616102718,
+          "matched_weight": 0.00010758987316114323
+        },
+        {
+          "label": "gap_4",
+          "frequency_hz": [
+            29565.009722298517,
+            39289.08131308244
+          ],
+          "scale_ohm": 111.40524346346146,
+          "old_area_den": 0.00022669231409997787,
+          "new_area_den": 0.3433256052987308,
+          "matched_weight": 4.35974614983501e-07
+        },
+        {
+          "label": "P2",
+          "frequency_hz": [
+            39289.08131308244,
+            41693.891033999695
+          ],
+          "scale_ohm": 222.9130217196252,
+          "old_area_den": 0.0366176544158659,
+          "new_area_den": 2.804843966631016,
+          "matched_weight": 0.00017043690153943275
+        },
+        {
+          "label": "V3",
+          "frequency_hz": [
+            41693.891033999695,
+            45428.315162933315
+          ],
+          "scale_ohm": 107.80472743088494,
+          "old_area_den": 0.13563294230898992,
+          "new_area_den": 1.724483090253156,
+          "matched_weight": 0.0061860366089617775
+        },
+        {
+          "label": "end_gap",
+          "frequency_hz": [
+            45428.315162933315,
+            1000000.0
+          ],
+          "scale_ohm": 3123.866637806755,
+          "old_area_den": 0.0001,
+          "new_area_den": 0.9323247708764085,
+          "matched_weight": 1.150444186329835e-08
+        }
+      ],
+      "target_arclength_passed": true
+    },
+    {
+      "target": "case1",
+      "truth": [
+        9.23246278829949e-27,
+        2.0241652885597574e-29,
+        5.444586664417468e-25,
+        3.475325572295274e-29
+      ],
+      "scales": [
+        {
+          "label": "gap_0",
+          "frequency_hz": [
+            100.0,
+            1240.5845407066997
+          ],
+          "scale_ohm": 330.53321678931275,
+          "old_area_den": 0.00013209671107053552,
+          "new_area_den": 1.0027158993689664,
+          "matched_weight": 1.735514341611208e-08
+        },
+        {
+          "label": "P1",
+          "frequency_hz": [
+            1240.5845407066997,
+            1288.2210354068218
+          ],
+          "scale_ohm": 1999.99513937381,
+          "old_area_den": 0.37214447828690445,
+          "new_area_den": 7.8992495298276975,
+          "matched_weight": 0.002219481314066503
+        },
+        {
+          "label": "gap_2",
+          "frequency_hz": [
+            1288.2210354068218,
+            4604.551128681141
+          ],
+          "scale_ohm": 328.51043503154534,
+          "old_area_den": 0.022713546139457513,
+          "new_area_den": 1.00810610281629,
+          "matched_weight": 0.0005076418279394481
+        },
+        {
+          "label": "V1",
+          "frequency_hz": [
+            4604.551128681141,
+            4786.600713151685
+          ],
+          "scale_ohm": 0.16761591762202802,
+          "old_area_den": 0.0001,
+          "new_area_den": 3.8857018531329364,
+          "matched_weight": 6.623096015154601e-10
+        },
+        {
+          "label": "gap_4",
+          "frequency_hz": [
+            4786.600713151685,
+            14990.778732971052
+          ],
+          "scale_ohm": 83.10095835389849,
+          "old_area_den": 0.0007140969409204522,
+          "new_area_den": 1.005059144422326,
+          "matched_weight": 5.048136698311232e-07
+        },
+        {
+          "label": "P2",
+          "frequency_hz": [
+            14990.778732971052,
+            16896.80501011393
+          ],
+          "scale_ohm": 500.00360687404896,
+          "old_area_den": 0.3718624679190965,
+          "new_area_den": 7.9034801963478305,
+          "matched_weight": 0.00221374684682219
+        },
+        {
+          "label": "gap_6",
+          "frequency_hz": [
+            16896.80501011393,
+            23439.742699247774
+          ],
+          "scale_ohm": 80.9859356466006,
+          "old_area_den": 0.011943954669213991,
+          "new_area_den": 0.9616793809390574,
+          "matched_weight": 0.00015425373328855035
+        },
+        {
+          "label": "V2",
+          "frequency_hz": [
+            23439.742699247774,
+            23881.31772428908
+          ],
+          "scale_ohm": 2.437992023055137,
+          "old_area_den": 0.00041770320828114446,
+          "new_area_den": 3.1154911304105504,
+          "matched_weight": 1.797556639867462e-08
+        },
+        {
+          "label": "gap_8",
+          "frequency_hz": [
+            23881.31772428908,
+            25187.914975183085
+          ],
+          "scale_ohm": 484.30626654729156,
+          "old_area_den": 0.00038842892101289953,
+          "new_area_den": 0.9986315255260626,
+          "matched_weight": 1.512908186003339e-07
+        },
+        {
+          "label": "P3",
+          "frequency_hz": [
+            25187.914975183085,
+            25267.704334197457
+          ],
+          "scale_ohm": 3000.256363361662,
+          "old_area_den": 0.3721665249348579,
+          "new_area_den": 7.897813873961214,
+          "matched_weight": 0.0022205513743244454
+        },
+        {
+          "label": "gap_10",
+          "frequency_hz": [
+            25267.704334197457,
+            77880.5514914213
+          ],
+          "scale_ohm": 504.3489819276644,
+          "old_area_den": 0.010737220492432786,
+          "new_area_den": 1.0090835377096439,
+          "matched_weight": 0.00011322165555434325
+        },
+        {
+          "label": "V3",
+          "frequency_hz": [
+            77880.5514914213,
+            79302.881533795
+          ],
+          "scale_ohm": 0.0822140434486604,
+          "old_area_den": 0.0001,
+          "new_area_den": 3.8320809762907038,
+          "matched_weight": 6.80974178914633e-10
+        },
+        {
+          "label": "gap_12",
+          "frequency_hz": [
+            79302.881533795,
+            125786.96518106612
+          ],
+          "scale_ohm": 197.94018154561115,
+          "old_area_den": 0.00017474976726878201,
+          "new_area_den": 1.008352361461314,
+          "matched_weight": 3.003368162268528e-08
+        },
+        {
+          "label": "P4",
+          "frequency_hz": [
+            125786.96518106612,
+            127045.11949389694
+          ],
+          "scale_ohm": 1200.000793687643,
+          "old_area_den": 0.37221060656806804,
+          "new_area_den": 7.8991947159109985,
+          "matched_weight": 0.0022203009802302075
+        },
+        {
+          "label": "gap_14",
+          "frequency_hz": [
+            127045.11949389694,
+            167056.80551091963
+          ],
+          "scale_ohm": 197.47205565695842,
+          "old_area_den": 0.022448345864021488,
+          "new_area_den": 1.0068204834897232,
+          "matched_weight": 0.0004971238562211245
+        },
+        {
+          "label": "V4",
+          "frequency_hz": [
+            167056.80551091963,
+            168998.76684291553
+          ],
+          "scale_ohm": 0.23648869597436292,
+          "old_area_den": 0.00010298765145451817,
+          "new_area_den": 3.7842338283730648,
+          "matched_weight": 7.406523100751157e-10
+        },
+        {
+          "label": "gap_16",
+          "frequency_hz": [
+            168998.76684291553,
+            199211.38258369078
+          ],
+          "scale_ohm": 129.05839410512957,
+          "old_area_den": 0.0004718598775231925,
+          "new_area_den": 1.0050887049053807,
+          "matched_weight": 2.2040290600323174e-07
+        },
+        {
+          "label": "P5",
+          "frequency_hz": [
+            199211.38258369078,
+            201588.3346957493
+          ],
+          "scale_ohm": 800.0172033795081,
+          "old_area_den": 0.3721881195839011,
+          "new_area_den": 7.8990147207051535,
+          "matched_weight": 0.0022201338879183413
+        },
+        {
+          "label": "gap_18",
+          "frequency_hz": [
+            201588.3346957493,
+            514445.9890337026
+          ],
+          "scale_ohm": 134.51451115013478,
+          "old_area_den": 0.020939119381554336,
+          "new_area_den": 1.0052653700577152,
+          "matched_weight": 0.000433865764318648
+        },
+        {
+          "label": "V5",
+          "frequency_hz": [
+            514445.9890337026,
+            568187.109187105
+          ],
+          "scale_ohm": 0.33179943349062996,
+          "old_area_den": 0.0013086785648473076,
+          "new_area_den": 3.3766030664436784,
+          "matched_weight": 1.5021245948639807e-07
+        },
+        {
+          "label": "gap_20",
+          "frequency_hz": [
+            568187.109187105,
+            741289.4777521606
+          ],
+          "scale_ohm": 7.1699902999234215,
+          "old_area_den": 0.0019136660371660758,
+          "new_area_den": 0.9153207880182532,
+          "matched_weight": 4.371048717487283e-06
+        },
+        {
+          "label": "P6",
+          "frequency_hz": [
+            741289.4777521606,
+            862054.1733706727
+          ],
+          "scale_ohm": 50.02104248638672,
+          "old_area_den": 0.37275994367823573,
+          "new_area_den": 7.904420330201834,
+          "matched_weight": 0.0022239162176194206
+        },
+        {
+          "label": "end_gap",
+          "frequency_hz": [
+            862054.1733706727,
+            1000000.0
+          ],
+          "scale_ohm": 9.13016934812754,
+          "old_area_den": 0.002967906905372179,
+          "new_area_den": 0.4426812954131812,
+          "matched_weight": 4.4948810596723876e-05
+        }
+      ],
+      "target_arclength_passed": true
+    }
+  ],
+  "hashes": {
+    "experiments/arx_light_20261015/PROTOCOL.md": "984a0184ab2f6247a59570498797d437d3a15268c5618e7c1fcd3157218369e1",
+    "experiments/arx_light_20261015/area_native.c": "77867fe4c742279a8be92474340103393442f82e3e37cb0f56285cc51bb95d02",
+    "experiments/arx_light_20261015/audit.py": "a9e1649089d162f12c370ec8fc0019d01c3308784d3e787e51e27d80e2e43d3d",
+    "experiments/arx_light_20261015/checks.py": "96f22414c2e9f0a6fbe22882825aa39eaaceaf0bdf42c6f616a2f2ac752d2785",
+    "experiments/arx_light_20261015/core.py": "7c325aa4fabb24daf61883083985c068968aea84af3527a790a49e395a7d8056",
+    "experiments/arx_light_20261015/features.py": "4e6bb822a5893b0abe4680d8efbb4a14b4c1cc00b7e4352187c55f62876f9481",
+    "experiments/arx_light_20261015/frozen/PROVENANCE.json": "865a4dda936ad9e5b08379bb1eedd3b34aacedeb9da0566975c2230e469b101d",
+    "experiments/arx_light_20261015/frozen/case1_adaptive.py": "11c46fbd4f9611929186a5367883797c6546c8a84fcf7c03c282511168667da2",
+    "experiments/arx_light_20261015/frozen/case1_grid.npz": "1fe168653a54ea4d9fbc9e09cb280dd01f3ce456898845a51231455fdadaee07",
+    "experiments/arx_light_20261015/frozen/case1_record.json": "23e4e22d560d96892a1f31a05800e9cd2f1c6c1a343fb00952cc56357f76ca1e",
+    "experiments/arx_light_20261015/frozen/case2.csv": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725",
+    "experiments/arx_light_20261015/frozen/case2_legacy.py": "7fa5289f1eb42020d83a79bdf899c844da93d5ec9ecfffedb3c8fff582781790",
+    "experiments/arx_light_20261015/frozen/circuits.py": "8eba51429e8cd3c8042aa85d0ea3fb8bb6773bf1d394799bee903ac70f66819b",
+    "experiments/arx_light_20261015/frozen/diagnostics.py": "7476de6fb841104083b3b19e46fad34e3ec7416eb7674c060d9a5ae4659eb687",
+    "experiments/arx_light_20261015/frozen/native.c": "089f9fdd95b7d36d7eefb3ad7bf6474c1475f2b97cb5775d11f86e0aeeb3b8cb",
+    "experiments/arx_light_20261015/frozen/nested_config.json": "751a6e423430b395f468d434a2bd5601f1596520e55017aa20585b5f3699310e",
+    "experiments/arx_light_20261015/frozen/sampling.py": "3702ddd09447cfb56100b55929df5e7d7019e039da6cb99c22084c82dd7b5cd2",
+    "experiments/arx_light_20261015/frozen/schematic.py": "845f5a2461049171feff164a757453700fed33883d990ac59fedb24af512ac52",
+    "experiments/arx_light_20261015/frozen/selector.py": "66485c33751f2f3ce44d41b5fbf9c7b0a69af229cfecee5e45e14d8a3faec6d2",
+    "experiments/arx_light_20261015/inputs/case1/circuit.svg": "c0e67f87985d0e86135af5f0ba6216d6e0e11816f37039c1895f9153b74b9afc",
+    "experiments/arx_light_20261015/inputs/case1/feature_scales.json": "7fe9877de58a3ca8fa4674a389d10e459d587eb2b328add726be344fd0923055",
+    "experiments/arx_light_20261015/inputs/case1/target.json": "8cbc83ef2ff828a8f58740a67efb87de4b6d5252719a89e2c77175bb869e3b74",
+    "experiments/arx_light_20261015/inputs/case1/target_curve.npz": "8deaed57cace5ef45d98ba507f129a59eced8f1abee029c5de7ba1921e79c1cc",
+    "experiments/arx_light_20261015/inputs/development_candidates.json": "49002ba3acd05ddf3074dbb8222439aa7bddc6dd66b17c711e66685f3e064a8a",
+    "experiments/arx_light_20261015/inputs/manifest.json": "2046e317d74c71c9bc4ce3948eda63c4b5faa0e777d58eade201ac09566dcf61",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/circuit.svg": "121d90c1339f8ee89704bd55821de0fe414b41b222969125e390fa8c2da7784e",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/feature_scales.json": "e56fa7f60e34ab9b52e2dad2144b8a3665a95582240d8ab249b25ed4c9531e3d",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/target.json": "00973d7fc147e9d189fb793b737a2a1c0dc3cf2073e6737eb98938470c5cdf04",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/base/target_curve.npz": "c60e2fc1eb2ed75805c7d7047e93b0c05f07f32d755f18e00541d075f0b7d258",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/circuit.svg": "bf8fd5158151fa608bbcacf9b9eef80661cec3b9ab7d6821078ad025ab38384a",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/feature_scales.json": "39a0e6f05a3b2aaf19f74b1c713a5735d71a8ff78c84254acc27f0ed64b2c846",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/target.json": "617e066ed5e8eeededb958d17bf9dccb41a183e714b5a209dcb6f8d0bb9d045b",
+    "experiments/arx_light_20261015/inputs/mixed_resonators/lc_reciprocal_8p0/target_curve.npz": "f75069dce1870a3873c3dfab80b857a696a1a0408662a42b6c5950651d1c8ca3",
+    "experiments/arx_light_20261015/inputs/regression.json": "59af8354b0aead4380070e1f9083c4130dc4664bae1f703f467acfc6215ddaaa",
+    "experiments/arx_light_20261015/legacy_features.py": "35d7f8f6395664069fc2b3eebcc49d41f43a4023f4e71f44f5613ffef4440d46",
+    "experiments/arx_light_20261015/ops.py": "c70890b64fe27225f89c5e70191ce060c5cec25acacc2d72cf6c7409e16a0292",
+    "experiments/arx_light_20261015/pipeline.py": "bd4666b028737dcba90b3ea35ab2e23357cc6f6123a39336d73416237b05d64d",
+    "experiments/arx_light_20261015/preflight.py": "2bf8fdfd477be03a802895db434e0c435bc3ddfe76c4118af279f7e069391e47",
+    "experiments/arx_light_20261015/protocol.json": "b50eef7597f9c82aef79c2107aae467df076b782dfb1e9406ee716dc8fb66854",
+    "experiments/arx_light_20261015/reference_features.py": "9687d106a7aa4d067e0d99f60c8525c0fcc73b0332b1f46a5a13c20d15098c64",
+    "experiments/arx_light_20261015/run.py": "b877a9fe0232155f1e4f359da1ca9bff9f6041e60b6dd8f169fc8780d9d0a286"
+  },
+  "median_speedup_by_target": {
+    "mixed_resonators/base": 4.555912882301262,
+    "mixed_resonators/lc_reciprocal_8p0": 4.449420173600125,
+    "case1": 19.82078788540553
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.18.1",
+    "pymoo": "0.6.1.6",
+    "moocore": "0.3.2",
+    "mpmath": "1.3.0"
+  },
+  "scope": "Fixed historical counterexamples, 192 official finals, 8 diagnostic alternatives, 24 seeded random candidates",
+  "pilot": true
+}

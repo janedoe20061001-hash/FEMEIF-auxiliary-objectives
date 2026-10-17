@@ -1,0 +1,194 @@
+{
+  "id": "rlc_ladder/lc_reciprocal_0p25",
+  "kind": "theoretical",
+  "circuit": {
+    "id": "rlc_ladder",
+    "title": "两级RLC梯形网络",
+    "tree": [
+      "S",
+      "Rs",
+      [
+        "P",
+        "C1",
+        [
+          "S",
+          "R1",
+          "L1",
+          [
+            "P",
+            "C2",
+            [
+              "S",
+              "R2",
+              "L2"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "expression": "(Rs + (C1 // (R1 + L1 + (C2 // (R2 + L2)))))",
+    "names": [
+      "Rs",
+      "C1",
+      "R1",
+      "L1",
+      "C2",
+      "R2",
+      "L2"
+    ],
+    "parameters": [
+      5.0,
+      1.5915494309189535e-07,
+      2.0,
+      0.0015915494309189533,
+      2.893726238034461e-07,
+      3.0,
+      0.00018085788987715382
+    ],
+    "units": [
+      "ohm",
+      "F",
+      "ohm",
+      "H",
+      "F",
+      "ohm",
+      "H"
+    ],
+    "netlist": [
+      {
+        "component": "Rs",
+        "a": 1,
+        "b": 2
+      },
+      {
+        "component": "C1",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "component": "R1",
+        "a": 2,
+        "b": 3
+      },
+      {
+        "component": "L1",
+        "a": 3,
+        "b": 4
+      },
+      {
+        "component": "C2",
+        "a": 4,
+        "b": 0
+      },
+      {
+        "component": "R2",
+        "a": 4,
+        "b": 5
+      },
+      {
+        "component": "L2",
+        "a": 5,
+        "b": 0
+      }
+    ]
+  },
+  "lower_log10": [
+    -0.8010299956639811,
+    -8.298179868358115,
+    -1.1989700043360187,
+    -4.298179868358115,
+    -8.640602549180322,
+    -1.0228787452803376,
+    -4.640602549180321
+  ],
+  "upper_log10": [
+    2.1989700043360187,
+    -5.298179868358115,
+    1.8010299956639813,
+    -1.298179868358115,
+    -5.640602549180321,
+    1.9771212547196624,
+    -1.6406025491803211
+  ],
+  "events": [
+    {
+      "event_id": "P1",
+      "kind": "peak",
+      "x": 3.972070614312492,
+      "frequency_hz": 9377.144626487338,
+      "height_db": 64.93759989901542,
+      "prominence_db": 44.88339437583336,
+      "width_3db_decades": 0.02559822833569747,
+      "width_3db_hz": 552.8341989324199,
+      "left_3db_x": 3.95930732421803,
+      "right_3db_x": 3.9849055525537276
+    }
+  ],
+  "phase_events": [
+    {
+      "event_id": "U1",
+      "sign": 1,
+      "x": 2.953228153620449,
+      "frequency_hz": 897.900376408749,
+      "slope_deg_per_decade": 65.83524963999201,
+      "width_decades": 0.9264735085494817
+    },
+    {
+      "event_id": "U2",
+      "sign": 1,
+      "x": 4.3515625,
+      "frequency_hz": 22467.900918126445,
+      "slope_deg_per_decade": 310.07148803223436,
+      "width_decades": 0.29778515929425264
+    },
+    {
+      "event_id": "U3",
+      "sign": 1,
+      "x": 5.2978515625,
+      "frequency_hz": 198541.62060207067,
+      "slope_deg_per_decade": 66.29678551918687,
+      "width_decades": 0.7997444488838372
+    },
+    {
+      "event_id": "D1",
+      "sign": -1,
+      "x": 3.9721650610227104,
+      "frequency_hz": 9379.184110767985,
+      "slope_deg_per_decade": -4445.6610288480115,
+      "width_decades": 0.025937506798261456
+    },
+    {
+      "event_id": "D2",
+      "sign": -1,
+      "x": 4.3776590698347,
+      "frequency_hz": 23859.37537150152,
+      "slope_deg_per_decade": -430.1210675506235,
+      "width_decades": 0.026844118139496942
+    }
+  ],
+  "factor": 0.25,
+  "source": {
+    "path": "output/mse_structure_complex_20261010_server/retrieved/other/inputs_core/rlc_ladder/lc_reciprocal_0p25/target.json",
+    "sha256": "68ef53a31aab4d04daa2d6502419b652c04e767a0a2c20c62bf2c2f846226338"
+  },
+  "blocks": [
+    {
+      "lo": 2.0,
+      "hi": 3.8952759293053996,
+      "label": "gap_0",
+      "event": false
+    },
+    {
+      "lo": 3.8952759293053996,
+      "hi": 4.048865299319584,
+      "label": "P1",
+      "event": true
+    },
+    {
+      "lo": 4.048865299319584,
+      "hi": 6.0,
+      "label": "end_gap",
+      "event": false
+    }
+  ]
+}

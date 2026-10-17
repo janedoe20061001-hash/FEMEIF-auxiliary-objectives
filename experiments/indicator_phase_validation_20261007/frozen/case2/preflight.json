@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "case": "case2",
+  "no_trial_optimization": true,
+  "chosen_quadrature_order": 16,
+  "quadrature_convergence": [
+    {
+      "order": 4,
+      "seconds": 0.39761239290237427,
+      "max_relative_change": null,
+      "min_eigenvalue": 6.164602323875608e-06
+    },
+    {
+      "order": 8,
+      "seconds": 1.6139681413769722,
+      "max_relative_change": 6.770610611651408e-07,
+      "min_eigenvalue": 6.1625622354531825e-06
+    },
+    {
+      "order": 16,
+      "seconds": 14.962976649403572,
+      "max_relative_change": 1.5074329717243514e-08,
+      "min_eigenvalue": 6.162503336702211e-06
+    }
+  ],
+  "tolerance": 1e-06,
+  "independent_integral": 0.019154944284390765,
+  "kernel_integral": 0.019154944359021965,
+  "exact_constant_and_linear": true,
+  "nonuniform_grid_and_reversal_and_subdivision": true,
+  "unchanged_controls_bitwise": true,
+  "unchanged_primary_bitwise": true,
+  "zero_loss": true,
+  "kernel_sha256": "15c8c3ee9255661993d706b02decce60ea61e433ff0a4c61fbfd1b587e6f7516",
+  "full_population_evaluation_seconds": {
+    "baseline": 0.0003312453627586365,
+    "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades": 0.007988864183425903,
+    "reactance_crossing_direction_consistency+transition_speed_relative_error": 0.008935138583183289,
+    "cumulative_length_logpolar": 0.00264417827129364,
+    "all_interval_mean_residual_logpolar": 0.0018630355596542358,
+    "bidirectional_residual_logpolar": 0.0031537294387817385
+  },
+  "target": {
+    "frequency_points": 201,
+    "frequency_coordinate": "normalized_log10_frequency",
+    "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+    "offset": [
+      15.931486664208592,
+      -1.567305668290908
+    ],
+    "scale": [
+      107.35557045148015,
+      3.4348079679248404
+    ],
+    "target_total_length": 8.629324946318668,
+    "largest_segment_length_share": 0.10888120541824328,
+    "largest_segment_frequency_hz": [
+      16000000.0,
+      17200000.0
+    ],
+    "all_original_rows_retained": true,
+    "candidate_normalization": "fixed_target_only",
+    "auxiliary_tunable_parameters": {},
+    "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+    "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term",
+    "local_constants": {
+      "turn_quantile": 0.95,
+      "fit_turn_ratio": 0.2,
+      "event_min_gap": 4,
+      "ptc_neighbor_db": 0.2,
+      "ptc_gamma": 0.41,
+      "weak_location_weight": 0.1,
+      "excess_event_weight": 0.1,
+      "speed_epsilon_ratio": 0.05,
+      "dtw_window": 4,
+      "soft_dtw_window": 10,
+      "soft_dtw_gamma": 0.1,
+      "hausdorff_quantile": 0.95
+    },
+    "local_target": {
+      "frequency_points": 201,
+      "target_turns": 2,
+      "turn_u": [
+        0.015049698100070081,
+        0.06002158669654864
+      ],
+      "target_crossings": 9,
+      "target_amplitude_extrema": 11,
+      "path_scales": [
+        73982.05645048112,
+        1459593.5529434802
+      ],
+      "impedance_median_scale": 1000.0000000000002,
+      "speed_epsilon": 180.44895382073818,
+      "target_turn_threshold": 2.09750309303674,
+      "fit_turn_threshold": 0.5126181292729822
+    },
+    "protocol": "crosscase_consolidation_20261005_v1"
+  }
+}

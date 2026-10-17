@@ -1,0 +1,92 @@
+{
+  "synthetic_tallies": {
+    "mean_distance": {
+      "magnitude_mse_db2": 20,
+      "phase_mse_rad2": 19,
+      "amplitude_rmse_db": 21,
+      "phase_rmse_deg": 21,
+      "amp_missed": 3,
+      "phase_missed": 2
+    },
+    "dual_mse": {
+      "magnitude_mse_db2": 19,
+      "phase_mse_rad2": 15,
+      "amplitude_rmse_db": 20,
+      "phase_rmse_deg": 17,
+      "amp_missed": 2,
+      "phase_missed": 2
+    },
+    "dual_balanced": {
+      "magnitude_mse_db2": 13,
+      "phase_mse_rad2": 9,
+      "amplitude_rmse_db": 14,
+      "phase_rmse_deg": 15,
+      "amp_missed": 2,
+      "phase_missed": 2
+    }
+  },
+  "interaction_in_meaningful_error_samples": {
+    "wsmse": {
+      "active_seeds": 158,
+      "eta_median": 0.9311347177057043,
+      "eta_over_02": 157
+    },
+    "mean_distance": {
+      "active_seeds": 239,
+      "eta_median": 0.9602883200563767,
+      "eta_over_02": 239
+    },
+    "dual_mse": {
+      "active_seeds": 123,
+      "eta_median": 0.9202207848244647,
+      "eta_over_02": 122
+    }
+  },
+  "analytic_target_sampling_gap_above_3db": 8,
+  "analytic_target_circuits": 49,
+  "examples": [
+    {
+      "circuit": "case1",
+      "seed": 2302,
+      "reason": "四项结构诊断的组间平均秩最接近中位位置",
+      "page": "example_case1_2302.html",
+      "figure": "figures/case1_seed_2302.png"
+    },
+    {
+      "circuit": "case2",
+      "seed": 2316,
+      "reason": "四项结构诊断的组间平均秩最接近中位位置",
+      "page": "example_case2_2316.html",
+      "figure": "figures/case2_seed_2316.png"
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "seed": 2304,
+      "reason": "明显误差样本中的非加和剩余较大；电路按条件均值选取，seed 接近条件中位数",
+      "page": "example_two_series_units_c2_2304.html",
+      "figure": "figures/two_series_units_c2_seed_2304.png"
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "seed": 2307,
+      "reason": "拟合曲线在原频点之间偏离采样折线较大；电路按条件均值选取，seed 接近条件中位数",
+      "page": "example_three_series_units_c3_2307.html",
+      "figure": "figures/three_series_units_c3_seed_2307.png"
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "seed": 2304,
+      "reason": "显著幅值峰谷漏失较多；电路按条件均值选取，seed 接近条件中位数",
+      "page": "example_rlc_ladder_c3_2304.html",
+      "figure": "figures/rlc_ladder_c3_seed_2304.png"
+    },
+    {
+      "circuit": "rc_series_c1",
+      "seed": 2305,
+      "reason": "可加的 RC 串联对照，检验非线性解释的边界",
+      "page": "example_rc_series_c1_2305.html",
+      "figure": "figures/rc_series_c1_seed_2305.png"
+    }
+  ],
+  "figure_count": 7
+}

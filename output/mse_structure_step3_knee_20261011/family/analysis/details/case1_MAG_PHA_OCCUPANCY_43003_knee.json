@@ -1,0 +1,601 @@
+{
+  "summary": {
+    "target": "case1",
+    "method": "MAG_PHA_OCCUPANCY",
+    "seed": 43003,
+    "rule": "knee",
+    "stable": true,
+    "base_score_ok": true,
+    "geometry_stable": true,
+    "geometry_training_ok": true,
+    "mag": 32.431266757604405,
+    "pha": 0.31233005835287164,
+    "train_mag": 32.45225383501365,
+    "train_pha": 0.31234746385109136,
+    "geometry_train": 0.5014767343375333,
+    "geometry_reference": 0.5014767437821097,
+    "focus_joint_ok": false,
+    "focus_missing": 0,
+    "all_amp_ok": false,
+    "local_phase_rmse_deg": 56.62001590890728,
+    "uniform_amp_rmse_db": 5.697632635935435,
+    "uniform_phase_rmse_deg": 32.10990916566044,
+    "extra_amp": 2,
+    "extra_phase": 2,
+    "phase_pass": 2,
+    "phase_total": 11,
+    "all_phase_ok": false,
+    "batch": "family"
+  },
+  "log_parameters": [
+    2.6971756361642716,
+    -2.953388965674735,
+    -4.842109720961531,
+    4.783594006940239,
+    -5.500986163154201,
+    -6.290122597810162,
+    1.196250624920167,
+    -6.879145441983551,
+    -6.486694512322902,
+    1.9972816747437339,
+    -4.427114714441136,
+    -5.57921380216394,
+    1.5311920221599589,
+    -4.654306604888984,
+    -5.797803706912711,
+    1.5736353664099891,
+    -4.899813337193392,
+    -5.148654496720521
+  ],
+  "training_objective": [
+    32.45225383501365,
+    0.31234746385109136
+  ],
+  "analyzer_sha256": "9ed8093ffcd349198ca25fa5a7d91772ab4dd6160f9bc82cb25afaea423288e0",
+  "focus": [
+    {
+      "event_id": "P3",
+      "kind": "peak",
+      "matched": true,
+      "complete": false,
+      "fit_event_id": "P4",
+      "shift_decades": 0.029063215876020898,
+      "height_delta_db": -38.72029636576277,
+      "width_ratio": 207.4496941186505,
+      "width_evaluable": true,
+      "target_frequency_hz": 25227.75447286831,
+      "target_width_hz": 13.298394228801044,
+      "shift_target_widths": 126.95200113737818
+    },
+    {
+      "event_id": "V2",
+      "kind": "valley",
+      "matched": true,
+      "complete": false,
+      "fit_event_id": "V3",
+      "shift_decades": -0.0381871237754261,
+      "height_delta_db": 17.773810772223058,
+      "width_ratio": 23.423943721982322,
+      "width_evaluable": true,
+      "target_frequency_hz": 23659.630828980426,
+      "target_width_hz": 73.59381145000589,
+      "shift_target_widths": -28.267209206612108
+    }
+  ],
+  "diagnostic": {
+    "stable": true,
+    "refinement": 2,
+    "objective": [
+      32.431266757604405,
+      0.31233005835287164
+    ],
+    "uniform_log_objective": [
+      32.463017654076566,
+      0.3140746534206247
+    ],
+    "amplitude_rmse_db": 5.697632635935435,
+    "phase_rmse_deg": 32.10990916566044,
+    "events": [
+      {
+        "event_id": "P1",
+        "kind": "peak",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "P1",
+        "shift_decades": -0.002236023404980525,
+        "height_delta_db": -12.077051358310953,
+        "width_ratio": 2.8066535925399085,
+        "width_evaluable": true,
+        "target_frequency_hz": 1264.1700538131731,
+        "target_width_hz": 7.938832630124352
+      },
+      {
+        "event_id": "P2",
+        "kind": "peak",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "P2",
+        "shift_decades": 0.0023073048032360433,
+        "height_delta_db": -13.490254439018564,
+        "width_ratio": 1.8961693016566774,
+        "width_evaluable": true,
+        "target_frequency_hz": 15915.494309189522,
+        "target_width_hz": 317.4787153153502
+      },
+      {
+        "event_id": "P3",
+        "kind": "peak",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "P4",
+        "shift_decades": 0.029063215876020898,
+        "height_delta_db": -38.72029636576277,
+        "width_ratio": 207.4496941186505,
+        "width_evaluable": true,
+        "target_frequency_hz": 25227.75447286831,
+        "target_width_hz": 13.298394228801044
+      },
+      {
+        "event_id": "P4",
+        "kind": "peak",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "P5",
+        "shift_decades": -0.004421122363172714,
+        "height_delta_db": 34.08820366840744,
+        "width_ratio": 0.02455634636065788,
+        "width_evaluable": true,
+        "target_frequency_hz": 126414.13417806893,
+        "target_width_hz": 209.6885299225396
+      },
+      {
+        "event_id": "P5",
+        "kind": "peak",
+        "matched": false,
+        "complete": false,
+        "fit_event_id": null,
+        "shift_decades": null,
+        "height_delta_db": null,
+        "width_ratio": null,
+        "width_evaluable": true,
+        "target_frequency_hz": 200395.70242391602,
+        "target_width_hz": 396.1628716989653
+      },
+      {
+        "event_id": "P6",
+        "kind": "peak",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "P6",
+        "shift_decades": -0.0177058792845326,
+        "height_delta_db": -10.042308057444902,
+        "width_ratio": 1.609367964579499,
+        "width_evaluable": true,
+        "target_frequency_hz": 799356.0440475345,
+        "target_width_hz": 20114.663552619168
+      },
+      {
+        "event_id": "V1",
+        "kind": "valley",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "V1",
+        "shift_decades": 0.012139667158312939,
+        "height_delta_db": 4.558344979919745,
+        "width_ratio": 2.55059111023069,
+        "width_evaluable": true,
+        "target_frequency_hz": 4694.662257203466,
+        "target_width_hz": 30.33939573515545
+      },
+      {
+        "event_id": "V2",
+        "kind": "valley",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "V3",
+        "shift_decades": -0.0381871237754261,
+        "height_delta_db": 17.773810772223058,
+        "width_ratio": 23.423943721982322,
+        "width_evaluable": true,
+        "target_frequency_hz": 23659.630828980426,
+        "target_width_hz": 73.59381145000589
+      },
+      {
+        "event_id": "V3",
+        "kind": "valley",
+        "matched": true,
+        "complete": false,
+        "fit_event_id": "V4",
+        "shift_decades": 0.0018875800819868616,
+        "height_delta_db": 14.25031540478097,
+        "width_ratio": 4.9677555021845885,
+        "width_evaluable": true,
+        "target_frequency_hz": 78589.02569632926,
+        "target_width_hz": 237.05071861401666
+      },
+      {
+        "event_id": "V4",
+        "kind": "valley",
+        "matched": false,
+        "complete": false,
+        "fit_event_id": null,
+        "shift_decades": null,
+        "height_delta_db": null,
+        "width_ratio": null,
+        "width_evaluable": true,
+        "target_frequency_hz": 168025.6557127537,
+        "target_width_hz": 323.6592340008938
+      },
+      {
+        "event_id": "V5",
+        "kind": "valley",
+        "matched": true,
+        "complete": true,
+        "fit_event_id": "V5",
+        "shift_decades": 0.008166697995487304,
+        "height_delta_db": 1.21612118132445,
+        "width_ratio": 1.7607444914235881,
+        "width_evaluable": true,
+        "target_frequency_hz": 540647.2502652087,
+        "target_width_hz": 8952.571416552993
+      }
+    ],
+    "extra_events": [
+      "P3",
+      "V2"
+    ],
+    "phase_events": [
+      {
+        "event_id": "U1",
+        "matched": true,
+        "complete": false,
+        "shift_decades": 0.012139667158312939,
+        "width_ratio": 2.766389784158416,
+        "slope_ratio": 0.3919898983791285,
+        "target_frequency_hz": 4694.662257203466
+      },
+      {
+        "event_id": "U2",
+        "matched": true,
+        "complete": false,
+        "shift_decades": -0.03777783090282405,
+        "width_ratio": 27.6021020141161,
+        "slope_ratio": 0.038941242060498316,
+        "target_frequency_hz": 23660.206816508915
+      },
+      {
+        "event_id": "U3",
+        "matched": true,
+        "complete": false,
+        "shift_decades": 0.001920652771123521,
+        "width_ratio": 0.032775238782204834,
+        "slope_ratio": 0.20123563646139608,
+        "target_frequency_hz": 78589.02569632926
+      },
+      {
+        "event_id": "U4",
+        "matched": false,
+        "complete": false,
+        "shift_decades": null,
+        "width_ratio": null,
+        "slope_ratio": null,
+        "target_frequency_hz": 168025.6557127537
+      },
+      {
+        "event_id": "U5",
+        "matched": true,
+        "complete": true,
+        "shift_decades": 0.008296740060649732,
+        "width_ratio": 1.9670989038100384,
+        "slope_ratio": 0.5672001399310815,
+        "target_frequency_hz": 540717.3693666335
+      },
+      {
+        "event_id": "D1",
+        "matched": true,
+        "complete": false,
+        "shift_decades": -0.002236023404980525,
+        "width_ratio": 2.8067214716133084,
+        "slope_ratio": 0.35628193893126614,
+        "target_frequency_hz": 1264.1700538131731
+      },
+      {
+        "event_id": "D2",
+        "matched": true,
+        "complete": false,
+        "shift_decades": 0.0027853942416333766,
+        "width_ratio": 1.7209644243367868,
+        "slope_ratio": 0.4776942451912625,
+        "target_frequency_hz": 15915.494309189522
+      },
+      {
+        "event_id": "D3",
+        "matched": true,
+        "complete": false,
+        "shift_decades": 0.026237435722001656,
+        "width_ratio": 1881.8451785940572,
+        "slope_ratio": 0.004611436862214706,
+        "target_frequency_hz": 25227.75447286831
+      },
+      {
+        "event_id": "D4",
+        "matched": true,
+        "complete": false,
+        "shift_decades": -0.004421122363172714,
+        "width_ratio": 0.01325157705247864,
+        "slope_ratio": 40.72339986529004,
+        "target_frequency_hz": 126414.13417806893
+      },
+      {
+        "event_id": "D5",
+        "matched": false,
+        "complete": false,
+        "shift_decades": null,
+        "width_ratio": null,
+        "slope_ratio": null,
+        "target_frequency_hz": 200395.70242391602
+      },
+      {
+        "event_id": "D6",
+        "matched": true,
+        "complete": true,
+        "shift_decades": -0.017914618629042423,
+        "width_ratio": 1.6002988984503341,
+        "slope_ratio": 0.6210510143645616,
+        "target_frequency_hz": 799198.6238916398
+      }
+    ],
+    "extra_phase_events": [
+      "U2",
+      "D3"
+    ],
+    "local": [
+      {
+        "event_id": "P1",
+        "mass": 0.000678041884304892,
+        "amp_contribution": 0.10312580436601829,
+        "pha_contribution": 0.0002584559161367504,
+        "amp_fraction": 0.003179826589469793,
+        "pha_fraction": 0.0008275089419819655,
+        "phase_rmse_deg": 35.37428009208662
+      },
+      {
+        "event_id": "P2",
+        "mass": 0.0021538255812819313,
+        "amp_contribution": 0.3625695615911588,
+        "pha_contribution": 0.0005907375901825068,
+        "amp_fraction": 0.011179629963302138,
+        "pha_fraction": 0.0018913888509414273,
+        "phase_rmse_deg": 30.006453628293706
+      },
+      {
+        "event_id": "P3",
+        "mass": 5.691472624823562e-05,
+        "amp_contribution": 0.10344887932416429,
+        "pha_contribution": 3.691196467188415e-05,
+        "amp_fraction": 0.003189788425390687,
+        "pha_fraction": 0.00011818255619246508,
+        "phase_rmse_deg": 46.14173148214056
+      },
+      {
+        "event_id": "P4",
+        "mass": 0.000179095187114635,
+        "amp_contribution": 0.06222551021080381,
+        "pha_contribution": 0.00048459508514441034,
+        "amp_fraction": 0.0019186888589917113,
+        "pha_fraction": 0.0015515480248683366,
+        "phase_rmse_deg": 94.24757345087008
+      },
+      {
+        "event_id": "P5",
+        "mass": 0.0002134455478508032,
+        "amp_contribution": 0.46065295970868986,
+        "pha_contribution": 0.0005705548475065129,
+        "amp_fraction": 0.014203976771911849,
+        "pha_fraction": 0.0018267689332094254,
+        "phase_rmse_deg": 93.67588007243126
+      },
+      {
+        "event_id": "P6",
+        "mass": 0.0027159991570789507,
+        "amp_contribution": 0.6457743261212204,
+        "pha_contribution": 0.0037440830259084434,
+        "amp_fraction": 0.01991209072861148,
+        "pha_fraction": 0.011987584690546706,
+        "phase_rmse_deg": 67.27141338300662
+      },
+      {
+        "event_id": "V1",
+        "mass": 0.0006977612319202699,
+        "amp_contribution": 0.14458327599643214,
+        "pha_contribution": 0.0013133627577163517,
+        "amp_fraction": 0.004458144576253119,
+        "pha_fraction": 0.004205047585373642,
+        "phase_rmse_deg": 78.60706171401199
+      },
+      {
+        "event_id": "V2",
+        "mass": 0.0003358571128318322,
+        "amp_contribution": 0.23349011795263194,
+        "pha_contribution": 0.0002996075167568245,
+        "amp_fraction": 0.007199537400058039,
+        "pha_fraction": 0.0009592657150479152,
+        "phase_rmse_deg": 54.1155042767253
+      },
+      {
+        "event_id": "V3",
+        "mass": 0.000325676105044057,
+        "amp_contribution": 0.06769161924780527,
+        "pha_contribution": 0.0001360208596458379,
+        "amp_fraction": 0.0020872332787288707,
+        "pha_fraction": 0.0004355035834948714,
+        "phase_rmse_deg": 37.02818648697121
+      },
+      {
+        "event_id": "V4",
+        "mass": 0.00020797887997194405,
+        "amp_contribution": 0.35749887383196466,
+        "pha_contribution": 0.0005577615874623645,
+        "amp_fraction": 0.011023278137852546,
+        "pha_fraction": 0.0017858082260920382,
+        "phase_rmse_deg": 93.82904922517304
+      },
+      {
+        "event_id": "V5",
+        "mass": 0.0017879988098000988,
+        "amp_contribution": 0.03452429050008375,
+        "pha_contribution": 0.001725975628571364,
+        "amp_fraction": 0.0010645372182999475,
+        "pha_fraction": 0.005526127192731961,
+        "phase_rmse_deg": 56.293253442714324
+      }
+    ],
+    "bands": [
+      {
+        "low_hz": 100.0,
+        "high_hz": 316.22776601683796,
+        "amplitude_rmse_db": 3.0993324192980567,
+        "phase_rmse_deg": 0.1012506105398372
+      },
+      {
+        "low_hz": 316.22776601683796,
+        "high_hz": 1000.0,
+        "amplitude_rmse_db": 3.0609168872382444,
+        "phase_rmse_deg": 0.538392166770701
+      },
+      {
+        "low_hz": 1000.0,
+        "high_hz": 3162.2776601683795,
+        "amplitude_rmse_db": 3.3974462350609134,
+        "phase_rmse_deg": 6.6290232872974855
+      },
+      {
+        "low_hz": 3162.2776601683795,
+        "high_hz": 10000.0,
+        "amplitude_rmse_db": 4.835137570106816,
+        "phase_rmse_deg": 20.375589634879773
+      },
+      {
+        "low_hz": 10000.0,
+        "high_hz": 31622.776601683792,
+        "amplitude_rmse_db": 7.504521756240828,
+        "phase_rmse_deg": 46.242494995499364
+      },
+      {
+        "low_hz": 31622.776601683792,
+        "high_hz": 100000.0,
+        "amplitude_rmse_db": 1.4658623153386607,
+        "phase_rmse_deg": 8.780094674072068
+      },
+      {
+        "low_hz": 100000.0,
+        "high_hz": 316227.7660168379,
+        "amplitude_rmse_db": 10.653487765820119,
+        "phase_rmse_deg": 70.74454871049736
+      },
+      {
+        "low_hz": 316227.7660168379,
+        "high_hz": 1000000.0,
+        "amplitude_rmse_db": 5.817600077422937,
+        "phase_rmse_deg": 23.847679852459535
+      }
+    ]
+  },
+  "geometry_refinements": [
+    {
+      "points": 257,
+      "events": [
+        0.4991066706577707,
+        0.5038470207784563
+      ]
+    },
+    {
+      "points": 513,
+      "events": [
+        0.49910666761805816,
+        0.503846755509921
+      ]
+    },
+    {
+      "points": 1025,
+      "events": [
+        0.4991066669746244,
+        0.5038468205895951
+      ]
+    }
+  ],
+  "chord_audit_shifted_endpoint_anchors": false,
+  "supplemental_base_refinements": [],
+  "selection_provenance": {
+    "reason": "no_convex_knee",
+    "front_indices": [
+      23,
+      41,
+      58,
+      59,
+      70,
+      89,
+      90
+    ],
+    "unique_indices": [
+      23,
+      58,
+      41,
+      89,
+      59,
+      70
+    ],
+    "minimum": [
+      31.309638607549264,
+      0.2870683450010002
+    ],
+    "maximum": [
+      35.82720940010139,
+      0.3151709236981487
+    ],
+    "normalized": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.25292691137196,
+        0.8995302218531344
+      ],
+      [
+        0.5200303019900395,
+        0.8624206113929301
+      ],
+      [
+        0.9608255749534499,
+        0.21487292248702292
+      ],
+      [
+        0.9699473817268252,
+        0.04228802707921026
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "signed_distances": [
+      0.0,
+      -0.1078034727437251,
+      -0.27043363432408674,
+      -0.12423759898444552,
+      -0.008651740537337275,
+      0.0
+    ],
+    "selected_index": 58,
+    "distance": -0.1078034727437251,
+    "batch": "family",
+    "target": "case1",
+    "method": "MAG_PHA_OCCUPANCY",
+    "seed": 43003,
+    "source": "output/mse_structure_step3_knee_20261011/source_populations/family/case1/MAG_PHA_OCCUPANCY/seed_43003/generation_0300.npz",
+    "source_sha256": "2de672603670f1aa06005f9ff22612c37e13cab0f616192b2fe2390344bacf6f",
+    "original_source": "output/mse_structure_metric_family_20261011/batch/case1/MAG_PHA_OCCUPANCY/seed_43003/generation_0300.npz"
+  },
+  "replacement_analyzer_sha256": "4156216965512b6c0273f0ec302bb48f407b52283eba82846202cd4a7406d621"
+}

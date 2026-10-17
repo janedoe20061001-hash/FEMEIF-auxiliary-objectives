@@ -1,0 +1,49 @@
+{
+  "protocol": "curve3d_interval_20261003_v1",
+  "groups": [
+    [],
+    [
+      "cumulative_length_logpolar"
+    ],
+    [
+      "interval_length_logpolar"
+    ],
+    [
+      "hellinger_length_logpolar"
+    ]
+  ],
+  "seeds": {
+    "start": 1100,
+    "count": 100
+  },
+  "comparisons": [
+    [
+      "cumulative_length_logpolar",
+      "baseline"
+    ],
+    [
+      "interval_length_logpolar",
+      "baseline"
+    ],
+    [
+      "hellinger_length_logpolar",
+      "baseline"
+    ],
+    [
+      "interval_length_logpolar",
+      "cumulative_length_logpolar"
+    ],
+    [
+      "hellinger_length_logpolar",
+      "cumulative_length_logpolar"
+    ]
+  ],
+  "holm_primary_tests": 20,
+  "planned_runs": 800,
+  "planned_evaluations": 42000000,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 20261003,
+  "source_frozen_sha256": "11e2be7d8c235dc8f6ab991ffa9af7d5588e0cfb114947cf3a6bf36c3ccfa070",
+  "local_verifier_sha256": "cf74ab2b56240362113cd4e2464a61f0ea723728f56bf56416a5fcc99e10c823",
+  "new_measurement_validation": false
+}

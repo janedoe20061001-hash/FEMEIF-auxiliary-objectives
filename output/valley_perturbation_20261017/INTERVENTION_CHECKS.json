@@ -1,0 +1,357 @@
+{
+  "tasks": 266,
+  "numerical_passed": 266,
+  "family_counts": {
+    "Q": 21,
+    "background": 5,
+    "baseline": 5,
+    "combined": 24,
+    "damping": 16,
+    "extra": 135,
+    "offset": 20,
+    "shift": 40
+  },
+  "analytic_identity_checks": 250,
+  "analytic_identity_max_relative": 1.8083655760817606e-10,
+  "offset_max_length_ratio_error": 3.3306690738754696e-15,
+  "offset_max_cdf": 7.838008676910551e-16,
+  "offset_max_state_reference_error": 2.220446049250313e-16,
+  "series_Q_max_cdf": 1.4477461618333153e-15,
+  "series_Q_max_arc80_ratio_error": 3.1086244689504383e-15,
+  "series_Q_max_length_ratio_error": 5.329070518200751e-15,
+  "extra_same_single_valley_sequence": 8,
+  "extra_total": 135,
+  "extra_sequence_counts": {
+    "mixed_resonators/base": {
+      "valley": 4,
+      "valley peak valley": 23
+    },
+    "mixed_resonators/lc_reciprocal_8p0": {
+      "valley": 4,
+      "valley peak valley": 23
+    },
+    "series_Q10": {
+      "valley peak valley": 27
+    },
+    "notch_Q20": {
+      "valley peak valley": 27
+    },
+    "notch_Q2000": {
+      "valley peak valley": 27
+    }
+  },
+  "background": [
+    {
+      "id": "setting_0040",
+      "target": "mixed_resonators/base",
+      "family": "background",
+      "scope": "core",
+      "meta": "{}",
+      "state_error": 0.37469641377375695,
+      "length_ratio": 0.102372952968931,
+      "arc80_ratio": 1.10608663616137,
+      "cdf_L1": 0.19643933844926648,
+      "endpoint_efficiency": 1.0,
+      "sequence": "",
+      "boundary_roots": 0,
+      "q50_error_widths": 0.28662618551102886,
+      "zero_motion": false,
+      "undefined_tangent_anchors": 0
+    },
+    {
+      "id": "setting_0089",
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "family": "background",
+      "scope": "core",
+      "meta": "{}",
+      "state_error": 0.5045966836176088,
+      "length_ratio": 0.013038767354663854,
+      "arc80_ratio": 1.1655174056619495,
+      "cdf_L1": 0.20413680489564748,
+      "endpoint_efficiency": 1.0,
+      "sequence": "",
+      "boundary_roots": 0,
+      "q50_error_widths": 0.2860745621736972,
+      "zero_motion": false,
+      "undefined_tangent_anchors": 0
+    },
+    {
+      "id": "setting_0145",
+      "target": "series_Q10",
+      "family": "background",
+      "scope": "core",
+      "meta": "{}",
+      "state_error": 0.6650855634073105,
+      "length_ratio": 0.0,
+      "arc80_ratio": null,
+      "cdf_L1": null,
+      "endpoint_efficiency": null,
+      "sequence": "",
+      "boundary_roots": 0,
+      "q50_error_widths": null,
+      "zero_motion": true,
+      "undefined_tangent_anchors": 3
+    },
+    {
+      "id": "setting_0201",
+      "target": "notch_Q20",
+      "family": "background",
+      "scope": "core",
+      "meta": "{}",
+      "state_error": 0.5936844283963406,
+      "length_ratio": 0.0,
+      "arc80_ratio": null,
+      "cdf_L1": null,
+      "endpoint_efficiency": null,
+      "sequence": "",
+      "boundary_roots": 0,
+      "q50_error_widths": null,
+      "zero_motion": true,
+      "undefined_tangent_anchors": 3
+    },
+    {
+      "id": "setting_0257",
+      "target": "notch_Q2000",
+      "family": "background",
+      "scope": "core",
+      "meta": "{}",
+      "state_error": 0.5936844283930095,
+      "length_ratio": 0.0,
+      "arc80_ratio": null,
+      "cdf_L1": null,
+      "endpoint_efficiency": null,
+      "sequence": "",
+      "boundary_roots": 0,
+      "q50_error_widths": null,
+      "zero_motion": true,
+      "undefined_tangent_anchors": 3
+    }
+  ],
+  "cdf_shift_reversals": [
+    {
+      "target": "mixed_resonators/base",
+      "scope": "core",
+      "from_id": "setting_0007",
+      "to_id": "setting_0008",
+      "from_offset": 1,
+      "to_offset": 2,
+      "from_cdf": 0.38241153312690673,
+      "to_cdf": 0.23813138479810747
+    },
+    {
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "scope": "core",
+      "from_id": "setting_0056",
+      "to_id": "setting_0057",
+      "from_offset": 1,
+      "to_offset": 2,
+      "from_cdf": 0.3591164323113279,
+      "to_cdf": 0.31792972144932613
+    }
+  ],
+  "nodal_modes": {
+    "double": 266
+  },
+  "max_polygon_level": 256,
+  "developed_new_score": false,
+  "optimized": false,
+  "state_shift_reversals": [
+    {
+      "target": "mixed_resonators/base",
+      "from_id": "setting_0007",
+      "to_id": "setting_0008",
+      "from_offset": 1,
+      "to_offset": 2,
+      "from_state": 0.916808634003207,
+      "to_state": 0.4887574399450461
+    },
+    {
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "from_id": "setting_0055",
+      "to_id": "setting_0056",
+      "from_offset": 0.5,
+      "to_offset": 1,
+      "from_state": 1.9515414447199304,
+      "to_state": 1.9252072507133224
+    },
+    {
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "from_id": "setting_0056",
+      "to_id": "setting_0057",
+      "from_offset": 1,
+      "to_offset": 2,
+      "from_state": 1.9252072507133224,
+      "to_state": 1.4839315094628398
+    }
+  ],
+  "physical_Q_widths": [
+    {
+      "target": "series_Q10",
+      "factor": 0.125,
+      "physical_3dB_width_ratio": 7.804822968166992,
+      "arc80_ratio": 1.0,
+      "length_ratio": 0.125,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "series_Q10",
+      "factor": 0.25,
+      "physical_3dB_width_ratio": 3.9755709606472127,
+      "arc80_ratio": 1.0,
+      "length_ratio": 0.25,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "series_Q10",
+      "factor": 0.5,
+      "physical_3dB_width_ratio": 1.9975246623664036,
+      "arc80_ratio": 1.0,
+      "length_ratio": 0.5,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "series_Q10",
+      "factor": 1.5,
+      "physical_3dB_width_ratio": 0.6668200720914422,
+      "arc80_ratio": 1.0,
+      "length_ratio": 1.4999999999999991,
+      "cdf_L1": 4.070775140404896e-16
+    },
+    {
+      "target": "series_Q10",
+      "factor": 2,
+      "physical_3dB_width_ratio": 0.5001553567783801,
+      "arc80_ratio": 1.0,
+      "length_ratio": 2.0,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "series_Q10",
+      "factor": 4,
+      "physical_3dB_width_ratio": 0.250097118359975,
+      "arc80_ratio": 1.0,
+      "length_ratio": 4.0,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "series_Q10",
+      "factor": 8,
+      "physical_3dB_width_ratio": 0.12505098981393503,
+      "arc80_ratio": 1.0,
+      "length_ratio": 8.0,
+      "cdf_L1": 0.0
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 0.125,
+      "physical_3dB_width_ratio": 7.999314502814515,
+      "arc80_ratio": 1.0015381376879833,
+      "length_ratio": 0.12553375370518155,
+      "cdf_L1": 0.0005323822402022771
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 0.25,
+      "physical_3dB_width_ratio": 3.999918378806126,
+      "arc80_ratio": 1.0014645852816209,
+      "length_ratio": 0.25101630108859985,
+      "cdf_L1": 0.0005068861799438816
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 0.5,
+      "physical_3dB_width_ratio": 1.9999918375208559,
+      "arc80_ratio": 1.0011706846323865,
+      "length_ratio": 0.5016237019035285,
+      "cdf_L1": 0.00040504741654571314
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 1.5,
+      "physical_3dB_width_ratio": 0.6666671705299843,
+      "arc80_ratio": 0.9980660953943425,
+      "length_ratio": 1.4920058864010577,
+      "cdf_L1": 0.0006670154327632871
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 2,
+      "physical_3dB_width_ratio": 0.5000005101619734,
+      "arc80_ratio": 0.9953939682774053,
+      "length_ratio": 1.9747554667563756,
+      "cdf_L1": 0.0015843940830449733
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 4,
+      "physical_3dB_width_ratio": 0.2500003188514531,
+      "arc80_ratio": 0.9780856344467685,
+      "length_ratio": 3.7681019687432182,
+      "cdf_L1": 0.0074122524478415115
+    },
+    {
+      "target": "notch_Q20",
+      "factor": 8,
+      "physical_3dB_width_ratio": 0.1250001673970417,
+      "arc80_ratio": 0.9218530505250836,
+      "length_ratio": 6.508904296714806,
+      "cdf_L1": 0.025161198350746927
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 0.125,
+      "physical_3dB_width_ratio": 7.99999993143401,
+      "arc80_ratio": 1.0015381406977921,
+      "length_ratio": 0.12553375371587736,
+      "cdf_L1": 0.0005323822179441968
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 0.25,
+      "physical_3dB_width_ratio": 3.9999999918373828,
+      "arc80_ratio": 1.0014645881778577,
+      "length_ratio": 0.2510163010823259,
+      "cdf_L1": 0.0005068861855424978
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 0.5,
+      "physical_3dB_width_ratio": 1.9999999991837383,
+      "arc80_ratio": 1.001170687231185,
+      "length_ratio": 0.5016237018876493,
+      "cdf_L1": 0.00040504742390489617
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 1.5,
+      "physical_3dB_width_ratio": 0.6666666667170531,
+      "arc80_ratio": 0.9980660902504591,
+      "length_ratio": 1.492005886620813,
+      "cdf_L1": 0.0006670154673612573
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 2,
+      "physical_3dB_width_ratio": 0.5000000000510164,
+      "arc80_ratio": 0.9953939571644896,
+      "length_ratio": 1.9747554662090554,
+      "cdf_L1": 0.0015843939966184938
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 4,
+      "physical_3dB_width_ratio": 0.2500000000318852,
+      "arc80_ratio": 0.9780855983723613,
+      "length_ratio": 3.7681019626155807,
+      "cdf_L1": 0.007412251769452024
+    },
+    {
+      "target": "notch_Q2000",
+      "factor": 8,
+      "physical_3dB_width_ratio": 0.12500000001673975,
+      "arc80_ratio": 0.9218529497148156,
+      "length_ratio": 6.508904272897694,
+      "cdf_L1": 0.02516119478438532
+    }
+  ]
+}

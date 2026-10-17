@@ -1,0 +1,64 @@
+{
+  "stage": "validation / 新 seed 验证",
+  "settings": {
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260915,
+    "confidence_level": 0.95,
+    "familywise_components": 14,
+    "trim_fraction": 0.05,
+    "remove_best_fraction": 0.05,
+    "primary_comparison": "all seven nonbaseline groups vs paired baseline; four combinations are the main research question",
+    "confirmatory_seed_range": [
+      100,
+      199
+    ]
+  },
+  "seed_start": 100,
+  "seed_end": 199,
+  "records": 800,
+  "findings": {
+    "reactance_crossing_direction_consistency": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": false,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": true
+    },
+    "characteristic_frequency_shift_error_decades": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": true,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": true
+    },
+    "transition_speed_relative_error": {
+      "both_means_lower": false,
+      "both_marginal_ci_below_zero": false,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": false
+    },
+    "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": true,
+      "both_family_ci_below_zero": true,
+      "both_means_lower_after_removing_best": true
+    },
+    "reactance_crossing_direction_consistency+transition_speed_relative_error": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": false,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": false
+    },
+    "characteristic_frequency_shift_error_decades+transition_speed_relative_error": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": false,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": true
+    },
+    "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades+transition_speed_relative_error": {
+      "both_means_lower": true,
+      "both_marginal_ci_below_zero": false,
+      "both_family_ci_below_zero": false,
+      "both_means_lower_after_removing_best": true
+    }
+  },
+  "interpretation": "Discovery intervals are exploratory after candidate selection; bootstrap coverage is approximate."
+}

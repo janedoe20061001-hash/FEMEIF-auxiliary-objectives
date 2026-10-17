@@ -1,0 +1,5155 @@
+{
+  "means": [
+    {
+      "circuit": "case1",
+      "title": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "group": "wsmse",
+      "seeds": 100,
+      "alpha": 25.12,
+      "magnitude_mse_db2": 11.244795009158313,
+      "phase_mse_rad2": 0.14842730423351153,
+      "wsmse": 14.973288891504119,
+      "mean_distance_ohm": 4.099922148902308
+    },
+    {
+      "circuit": "case1",
+      "title": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "group": "mean_distance",
+      "seeds": 100,
+      "alpha": 25.12,
+      "magnitude_mse_db2": 62.478807872945,
+      "phase_mse_rad2": 0.7229570250425391,
+      "wsmse": 80.63948834201359,
+      "mean_distance_ohm": 2.5193083316900093
+    },
+    {
+      "circuit": "case2",
+      "title": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "group": "wsmse",
+      "seeds": 100,
+      "alpha": 17.38,
+      "magnitude_mse_db2": 6.241046286786033,
+      "phase_mse_rad2": 0.09273570461863594,
+      "wsmse": 7.852792833057923,
+      "mean_distance_ohm": 3594.2304216222733
+    },
+    {
+      "circuit": "case2",
+      "title": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "group": "mean_distance",
+      "seeds": 100,
+      "alpha": 17.38,
+      "magnitude_mse_db2": 31.79352015716303,
+      "phase_mse_rad2": 0.3632343011315928,
+      "wsmse": 38.106532310830104,
+      "mean_distance_ohm": 1474.9078785802758
+    },
+    {
+      "circuit": "rc_series_c1",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 333.70750777112414,
+      "magnitude_mse_db2": 3.3946967189212583e-26,
+      "phase_mse_rad2": 9.205043423082723e-30,
+      "wsmse": 3.7018759288854485e-26,
+      "mean_distance_ohm": 5.220929987061415e-12
+    },
+    {
+      "circuit": "rc_series_c1",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 333.70750777112414,
+      "magnitude_mse_db2": 4.215062625067717e-27,
+      "phase_mse_rad2": 3.850168171079766e-30,
+      "wsmse": 5.4998926499384506e-27,
+      "mean_distance_ohm": 2.886821124889275e-12
+    },
+    {
+      "circuit": "rc_series_c2",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 273.24050923877815,
+      "magnitude_mse_db2": 3.00401663252991e-14,
+      "phase_mse_rad2": 1.9170689251813e-18,
+      "wsmse": 3.0563987214661465e-14,
+      "mean_distance_ohm": 5.7316590600416925e-06
+    },
+    {
+      "circuit": "rc_series_c2",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 273.24050923877815,
+      "magnitude_mse_db2": 1.627167611981277e-27,
+      "phase_mse_rad2": 1.387229250882629e-30,
+      "wsmse": 2.006214838923375e-27,
+      "mean_distance_ohm": 3.897124331819018e-12
+    },
+    {
+      "circuit": "rc_series_c3",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 622.8272522034473,
+      "magnitude_mse_db2": 6.605511012650038e-27,
+      "phase_mse_rad2": 2.6951473043006754e-30,
+      "wsmse": 8.284122202471156e-27,
+      "mean_distance_ohm": 4.231750151424699e-12
+    },
+    {
+      "circuit": "rc_series_c3",
+      "title": "RC 串联",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 622.8272522034473,
+      "magnitude_mse_db2": 8.278516702297357e-28,
+      "phase_mse_rad2": 1.0126457793974784e-30,
+      "wsmse": 1.458555058467285e-27,
+      "mean_distance_ohm": 1.0702137480814154e-12
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1860.4061477040764,
+      "magnitude_mse_db2": 4.592643779390367e-09,
+      "phase_mse_rad2": 3.584992268305659e-14,
+      "wsmse": 4.6593391959446415e-09,
+      "mean_distance_ohm": 0.000143667962060323
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1860.4061477040764,
+      "magnitude_mse_db2": 4.244904182196453e-28,
+      "phase_mse_rad2": 4.0360412380279535e-31,
+      "wsmse": 1.1753580113810832e-27,
+      "mean_distance_ohm": 8.222576472389941e-14
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 2498.294697823831,
+      "magnitude_mse_db2": 5.610701892364373e-07,
+      "phase_mse_rad2": 3.5376285153507085e-11,
+      "wsmse": 6.49450574864148e-07,
+      "mean_distance_ohm": 0.0006611598511134639
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 2498.294697823831,
+      "magnitude_mse_db2": 1.0448563215170691e-27,
+      "phase_mse_rad2": 9.846264366611922e-31,
+      "wsmse": 3.5047433275648986e-27,
+      "mean_distance_ohm": 5.4148995601614305e-14
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 3718.134296036409,
+      "magnitude_mse_db2": 1.2535144551388043e-07,
+      "phase_mse_rad2": 7.616634732600001e-13,
+      "wsmse": 1.2818341259584667e-07,
+      "mean_distance_ohm": 0.0006945581390295865
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "title": "RC 并联",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 3718.134296036409,
+      "magnitude_mse_db2": 2.7340093337817734e-27,
+      "phase_mse_rad2": 2.1785865448588144e-30,
+      "wsmse": 1.0834286683104795e-26,
+      "mean_distance_ohm": 1.2813117912438857e-13
+    },
+    {
+      "circuit": "rl_series_c1",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 3720.763116264241,
+      "magnitude_mse_db2": 2.723960490319136e-07,
+      "phase_mse_rad2": 5.359307604453399e-13,
+      "wsmse": 2.743901204382501e-07,
+      "mean_distance_ohm": 131.15903845673546
+    },
+    {
+      "circuit": "rl_series_c1",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 3720.763116264241,
+      "magnitude_mse_db2": 2.950024241164496e-28,
+      "phase_mse_rad2": 3.0705613681595697e-31,
+      "wsmse": 1.4374855726038484e-27,
+      "mean_distance_ohm": 6.373815752241714e-09
+    },
+    {
+      "circuit": "rl_series_c2",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 2654.2418493392915,
+      "magnitude_mse_db2": 6.586644861706885e-08,
+      "phase_mse_rad2": 6.4491311322166325e-12,
+      "wsmse": 8.298400236007513e-08,
+      "mean_distance_ohm": 0.3226146401066755
+    },
+    {
+      "circuit": "rl_series_c2",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 2654.2418493392915,
+      "magnitude_mse_db2": 2.13034516991285e-28,
+      "phase_mse_rad2": 2.4774754108721506e-31,
+      "wsmse": 8.706164086158767e-28,
+      "mean_distance_ohm": 4.394947291683509e-11
+    },
+    {
+      "circuit": "rl_series_c3",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 2488.867826661327,
+      "magnitude_mse_db2": 9.784759329016166e-11,
+      "phase_mse_rad2": 7.737622676592942e-15,
+      "wsmse": 1.1710551342477894e-10,
+      "mean_distance_ohm": 0.07516133994090979
+    },
+    {
+      "circuit": "rl_series_c3",
+      "title": "RL 串联",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 2488.867826661327,
+      "magnitude_mse_db2": 1.0379139130623166e-15,
+      "phase_mse_rad2": 8.087540219880533e-19,
+      "wsmse": 3.0507957780713307e-15,
+      "mean_distance_ohm": 0.0002187496148749239
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 233.96309180655402,
+      "magnitude_mse_db2": 4.466756585487532e-27,
+      "phase_mse_rad2": 4.948672781558247e-31,
+      "wsmse": 4.582537263918764e-27,
+      "mean_distance_ohm": 7.806619456676405e-13
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 233.96309180655402,
+      "magnitude_mse_db2": 5.471533979540235e-27,
+      "phase_mse_rad2": 1.5577515029912882e-29,
+      "wsmse": 9.116097558601717e-27,
+      "mean_distance_ohm": 4.521406842055608e-13
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 402.0653444109989,
+      "magnitude_mse_db2": 2.763470823036663e-19,
+      "phase_mse_rad2": 3.5103205410968844e-22,
+      "wsmse": 4.1748490603857872e-19,
+      "mean_distance_ohm": 9.453410262644943e-10
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 402.0653444109989,
+      "magnitude_mse_db2": 1.058424332731317e-16,
+      "phase_mse_rad2": 7.164055671350729e-20,
+      "wsmse": 1.3464661838194373e-16,
+      "mean_distance_ohm": 3.8158001953158235e-08
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1394.7445498581071,
+      "magnitude_mse_db2": 1.8566340191116772e-10,
+      "phase_mse_rad2": 2.0311139266017766e-14,
+      "wsmse": 2.13992252703855e-10,
+      "mean_distance_ohm": 0.00019144789027727196
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "title": "RL 并联",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1394.7445498581071,
+      "magnitude_mse_db2": 5.864723330474759e-28,
+      "phase_mse_rad2": 4.3706297676860874e-31,
+      "wsmse": 1.1960635378402535e-27,
+      "mean_distance_ohm": 8.076636629771421e-13
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1105.5102639874294,
+      "magnitude_mse_db2": 1.5544159755884403e-05,
+      "phase_mse_rad2": 3.3079231075294265e-09,
+      "wsmse": 1.9201102703739378e-05,
+      "mean_distance_ohm": 169.83384912189257
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1105.5102639874294,
+      "magnitude_mse_db2": 1.2804790213547464e-27,
+      "phase_mse_rad2": 6.69826690497574e-30,
+      "wsmse": 8.685481835732739e-27,
+      "mean_distance_ohm": 2.8446197334636024e-09
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1572.3995257641523,
+      "magnitude_mse_db2": 0.04784131642567901,
+      "phase_mse_rad2": 4.175619402003757e-07,
+      "wsmse": 0.04849789062242724,
+      "mean_distance_ohm": 36063.370976349805
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1572.3995257641523,
+      "magnitude_mse_db2": 1.1335878617298923e-27,
+      "phase_mse_rad2": 1.4148779496799367e-29,
+      "wsmse": 2.338112203263878e-26,
+      "mean_distance_ohm": 2.6652628903636884e-09
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 832.8624690116749,
+      "magnitude_mse_db2": 0.013458339230037506,
+      "phase_mse_rad2": 2.333963453775913e-07,
+      "wsmse": 0.013652726286506989,
+      "mean_distance_ohm": 9.346719023478569
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "title": "单串联 RLC",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 832.8624690116749,
+      "magnitude_mse_db2": 1.748659850198449e-12,
+      "phase_mse_rad2": 1.7422452580858003e-13,
+      "wsmse": 1.4685372857752067e-10,
+      "mean_distance_ohm": 3.9434239399070267e-07
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 736.3081570934141,
+      "magnitude_mse_db2": 6.511698682041974e-10,
+      "phase_mse_rad2": 5.564264715403058e-13,
+      "wsmse": 1.060871218022031e-09,
+      "mean_distance_ohm": 0.0006179671594052302
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 736.3081570934141,
+      "magnitude_mse_db2": 1.0790145109666106e-12,
+      "phase_mse_rad2": 8.553081363467976e-16,
+      "wsmse": 1.7087848685871233e-12,
+      "mean_distance_ohm": 7.727639214543918e-06
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 862.5737345780974,
+      "magnitude_mse_db2": 0.02828206024022653,
+      "phase_mse_rad2": 1.408950151814648e-07,
+      "wsmse": 0.02840359257965506,
+      "mean_distance_ohm": 0.08937768379614904
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 862.5737345780974,
+      "magnitude_mse_db2": 0.8768422874463138,
+      "phase_mse_rad2": 2.34739937557634e-05,
+      "wsmse": 0.8970903379056854,
+      "mean_distance_ohm": 0.3306164399726831
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 800.4542296377513,
+      "magnitude_mse_db2": 0.0017400511578604973,
+      "phase_mse_rad2": 8.803433258199479e-09,
+      "wsmse": 0.001747097903247357,
+      "mean_distance_ohm": 0.02367806003708476
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "title": "单并联 RLC",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 800.4542296377513,
+      "magnitude_mse_db2": 0.710060781459638,
+      "phase_mse_rad2": 5.884241553177675e-06,
+      "wsmse": 0.7147708474990895,
+      "mean_distance_ohm": 0.41410458643985865
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 485.0582794432407,
+      "magnitude_mse_db2": 0.000922341923548005,
+      "phase_mse_rad2": 9.386422372417862e-06,
+      "wsmse": 0.005475303809640553,
+      "mean_distance_ohm": 0.0746706579020762
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 485.0582794432407,
+      "magnitude_mse_db2": 0.0037973931928289755,
+      "phase_mse_rad2": 1.124915648099729e-05,
+      "wsmse": 0.0092538896806893,
+      "mean_distance_ohm": 0.051518710650335545
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1077.6705693804786,
+      "magnitude_mse_db2": 0.3605928876583037,
+      "phase_mse_rad2": 0.0012709744140426984,
+      "wsmse": 1.7302846081077186,
+      "mean_distance_ohm": 40.31145575017684
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1077.6705693804786,
+      "magnitude_mse_db2": 0.17083366635999075,
+      "phase_mse_rad2": 0.000654959290676431,
+      "wsmse": 0.8766640180642945,
+      "mean_distance_ohm": 29.13277802189797
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1279.7068971105173,
+      "magnitude_mse_db2": 7.165645062635195,
+      "phase_mse_rad2": 4.7771799773640015e-05,
+      "wsmse": 7.226778964292905,
+      "mean_distance_ohm": 9.504606614266812
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "title": "两个并联 RLC 单元串联",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1279.7068971105173,
+      "magnitude_mse_db2": 41.30486111743037,
+      "phase_mse_rad2": 0.19586767560214458,
+      "wsmse": 291.9580765065002,
+      "mean_distance_ohm": 5.743646587983923
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 391.94458983612157,
+      "magnitude_mse_db2": 0.00016420042833156077,
+      "phase_mse_rad2": 1.5523880551753806e-06,
+      "wsmse": 0.0007726505278837697,
+      "mean_distance_ohm": 0.03851679652544287
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 391.94458983612157,
+      "magnitude_mse_db2": 0.0003291265650397641,
+      "phase_mse_rad2": 1.3167088636124587e-06,
+      "wsmse": 0.0008452034805219352,
+      "mean_distance_ohm": 0.030178897691812378
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 772.8621818044898,
+      "magnitude_mse_db2": 0.41585767565172416,
+      "phase_mse_rad2": 0.001257109156181295,
+      "wsmse": 1.387429800864401,
+      "mean_distance_ohm": 66.25815568640915
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 772.8621818044898,
+      "magnitude_mse_db2": 0.5618508476602369,
+      "phase_mse_rad2": 0.0051587902728454935,
+      "wsmse": 4.5488847534033825,
+      "mean_distance_ohm": 53.78226289693241
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 661.4012870348045,
+      "magnitude_mse_db2": 5.60416084617434,
+      "phase_mse_rad2": 0.0006578968294928941,
+      "wsmse": 6.0392946559370575,
+      "mean_distance_ohm": 5.738355575848397
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "title": "三个并联 RLC 单元串联",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 661.4012870348045,
+      "magnitude_mse_db2": 78.88716108527387,
+      "phase_mse_rad2": 0.39577352027396556,
+      "wsmse": 340.65227676877004,
+      "mean_distance_ohm": 5.858703270269754
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 467.6043861093849,
+      "magnitude_mse_db2": 0.02807758864430727,
+      "phase_mse_rad2": 0.0003166746796779097,
+      "wsmse": 0.17615605783148236,
+      "mean_distance_ohm": 2.493460368589707
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 467.6043861093849,
+      "magnitude_mse_db2": 0.4357442620802896,
+      "phase_mse_rad2": 0.005279550769642585,
+      "wsmse": 2.9044853586523405,
+      "mean_distance_ohm": 0.3407157460063335
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 802.9939383464739,
+      "magnitude_mse_db2": 0.06932180993253641,
+      "phase_mse_rad2": 0.00039713721118095823,
+      "wsmse": 0.38822058320266944,
+      "mean_distance_ohm": 445.3186394660759
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 802.9939383464739,
+      "magnitude_mse_db2": 0.5099088752982754,
+      "phase_mse_rad2": 0.00671101615001909,
+      "wsmse": 5.898814163908897,
+      "mean_distance_ohm": 2.5586697476776257
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 812.849021504944,
+      "magnitude_mse_db2": 4.205327691474883,
+      "phase_mse_rad2": 4.146227812041777e-05,
+      "wsmse": 4.239030263674431,
+      "mean_distance_ohm": 2116.171582079968
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "title": "两个串联 RLC 支路并联",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 812.849021504944,
+      "magnitude_mse_db2": 61.34010725015143,
+      "phase_mse_rad2": 0.7326460549213981,
+      "wsmse": 656.8707361024673,
+      "mean_distance_ohm": 231.10060657727814
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 466.52330384944264,
+      "magnitude_mse_db2": 0.0049525512996648055,
+      "phase_mse_rad2": 5.381917786234419e-05,
+      "wsmse": 0.030060451966466395,
+      "mean_distance_ohm": 7.3864711084665045
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 466.52330384944264,
+      "magnitude_mse_db2": 1.0266033328053674,
+      "phase_mse_rad2": 0.012209727989087643,
+      "wsmse": 6.722725973377545,
+      "mean_distance_ohm": 2.7614714720055518
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1025.2770455909917,
+      "magnitude_mse_db2": 0.428717285492349,
+      "phase_mse_rad2": 0.0022917179050094194,
+      "wsmse": 2.7783630484683832,
+      "mean_distance_ohm": 3421.196462145187
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1025.2770455909917,
+      "magnitude_mse_db2": 9.782158420568663,
+      "phase_mse_rad2": 0.12403230121717265,
+      "wsmse": 136.94962977036343,
+      "mean_distance_ohm": 15.282163379511086
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 776.771818660459,
+      "magnitude_mse_db2": 8.128617005152837,
+      "phase_mse_rad2": 0.00031823663631016277,
+      "wsmse": 8.375814255903869,
+      "mean_distance_ohm": 1176.6606086889212
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "title": "三个串联 RLC 支路并联",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 776.771818660459,
+      "magnitude_mse_db2": 110.98666409427521,
+      "phase_mse_rad2": 1.1792225788324473,
+      "wsmse": 1026.9735312594316,
+      "mean_distance_ohm": 156.38913871460232
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 313.25599967181444,
+      "magnitude_mse_db2": 3.735967760009142e-07,
+      "phase_mse_rad2": 5.2049841899520006e-09,
+      "wsmse": 2.0040893017003176e-06,
+      "mean_distance_ohm": 0.005884968424311293
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 313.25599967181444,
+      "magnitude_mse_db2": 3.230972497363437e-07,
+      "phase_mse_rad2": 4.365311435696267e-09,
+      "wsmse": 1.6905572474041812e-06,
+      "mean_distance_ohm": 0.004496304821803646
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 514.5849534826593,
+      "magnitude_mse_db2": 0.0014114105482729866,
+      "phase_mse_rad2": 1.7151851495443307e-05,
+      "wsmse": 0.010237495252197162,
+      "mean_distance_ohm": 1.3043631023498805
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 514.5849534826593,
+      "magnitude_mse_db2": 0.003201407731544843,
+      "phase_mse_rad2": 3.514778150561758e-05,
+      "wsmse": 0.02128792724263174,
+      "mean_distance_ohm": 1.3379217025362293
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 632.03179550962,
+      "magnitude_mse_db2": 2.151076574740439e-06,
+      "phase_mse_rad2": 1.1948182425947743e-08,
+      "wsmse": 9.702707766488678e-06,
+      "mean_distance_ohm": 0.0014255305116444377
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "title": "串联电阻与两个 RC 过程",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 632.03179550962,
+      "magnitude_mse_db2": 0.0627478481388831,
+      "phase_mse_rad2": 0.0005826809307142573,
+      "wsmse": 0.43102072298743155,
+      "mean_distance_ohm": 0.22455975251523003
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 307.1601869101386,
+      "magnitude_mse_db2": 1.7238112303372989e-06,
+      "phase_mse_rad2": 1.6748959951426426e-08,
+      "wsmse": 6.868424899567866e-06,
+      "mean_distance_ohm": 0.013467981159761337
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 307.1601869101386,
+      "magnitude_mse_db2": 0.01655384490212398,
+      "phase_mse_rad2": 6.343654688340796e-05,
+      "wsmse": 0.036039026499765335,
+      "mean_distance_ohm": 0.39695828947842593
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 380.00003749977554,
+      "magnitude_mse_db2": 0.0010301815084266018,
+      "phase_mse_rad2": 1.1303676561426003e-05,
+      "wsmse": 0.005325579025653817,
+      "mean_distance_ohm": 14.361119080881759
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 380.00003749977554,
+      "magnitude_mse_db2": 0.002972804146303257,
+      "phase_mse_rad2": 3.40111965377134e-05,
+      "wsmse": 0.015897060106046586,
+      "mean_distance_ohm": 18.752885124385564
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 388.7615363077392,
+      "magnitude_mse_db2": 0.0011149228851976265,
+      "phase_mse_rad2": 1.0013359903249785e-05,
+      "wsmse": 0.005007732064787327,
+      "mean_distance_ohm": 0.05284480436363047
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "title": "串联电阻与两个 RL 过程",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 388.7615363077392,
+      "magnitude_mse_db2": 0.0601030079995933,
+      "phase_mse_rad2": 0.00039231336698951737,
+      "wsmse": 0.21261935526450002,
+      "mean_distance_ohm": 0.4663511491545168
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 336.3157408666686,
+      "magnitude_mse_db2": 0.0002726584305785566,
+      "phase_mse_rad2": 2.248738694337929e-06,
+      "wsmse": 0.0010289446505803625,
+      "mean_distance_ohm": 1.9252867152188073
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 336.3157408666686,
+      "magnitude_mse_db2": 0.0004285963879964778,
+      "phase_mse_rad2": 4.073602386596302e-06,
+      "wsmse": 0.0017986129926408426,
+      "mean_distance_ohm": 1.7741971163486483
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 309.04256664545335,
+      "magnitude_mse_db2": 3.263337669198137e-05,
+      "phase_mse_rad2": 1.8850942164550137e-07,
+      "wsmse": 9.08908121941571e-05,
+      "mean_distance_ohm": 1.5018884406237742
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 309.04256664545335,
+      "magnitude_mse_db2": 4.052581245345511e-05,
+      "phase_mse_rad2": 2.900395862006544e-07,
+      "wsmse": 0.00013016039060169055,
+      "mean_distance_ohm": 1.2251556680778177
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 345.9422381911853,
+      "magnitude_mse_db2": 6.889892773065116e-05,
+      "phase_mse_rad2": 6.493998843067386e-07,
+      "wsmse": 0.00029355377718882117,
+      "mean_distance_ohm": 0.012263244383264829
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "title": "RC 梯形网络",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 345.9422381911853,
+      "magnitude_mse_db2": 2.0167068900230557e-06,
+      "phase_mse_rad2": 1.3169566058541108e-08,
+      "wsmse": 6.572616048321434e-06,
+      "mean_distance_ohm": 0.004270408077740492
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 105.025431509604,
+      "magnitude_mse_db2": 0.06842420231594512,
+      "phase_mse_rad2": 0.0006163766598868094,
+      "wsmse": 0.13315942699300568,
+      "mean_distance_ohm": 6.680099429783316
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 105.025431509604,
+      "magnitude_mse_db2": 0.05068692514510172,
+      "phase_mse_rad2": 0.0006496683580495372,
+      "wsmse": 0.11891862478739028,
+      "mean_distance_ohm": 4.140989174377694
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 137.4564043806089,
+      "magnitude_mse_db2": 0.014847487336815757,
+      "phase_mse_rad2": 0.0001827505786848601,
+      "wsmse": 0.03996772478131218,
+      "mean_distance_ohm": 0.11253012939197604
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 137.4564043806089,
+      "magnitude_mse_db2": 0.05940988332605986,
+      "phase_mse_rad2": 0.000452992893612382,
+      "wsmse": 0.12167665769198555,
+      "mean_distance_ohm": 0.27876788194742363
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 318.77412593448423,
+      "magnitude_mse_db2": 0.004230855582255391,
+      "phase_mse_rad2": 3.783737794046308e-05,
+      "wsmse": 0.016292432662879244,
+      "mean_distance_ohm": 0.23062219750201712
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "title": "RLC 梯形网络",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 318.77412593448423,
+      "magnitude_mse_db2": 0.3584785227763557,
+      "phase_mse_rad2": 0.0006576159806377083,
+      "wsmse": 0.5681094822046899,
+      "mean_distance_ohm": 2.4437521292420965
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 595.7802619747391,
+      "magnitude_mse_db2": 0.004935405235442799,
+      "phase_mse_rad2": 2.2544592894684438e-05,
+      "wsmse": 0.018367028696351734,
+      "mean_distance_ohm": 17.542568416295214
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 595.7802619747391,
+      "magnitude_mse_db2": 0.0019125528468909702,
+      "phase_mse_rad2": 2.464808602366414e-05,
+      "wsmse": 0.016597395995245498,
+      "mean_distance_ohm": 0.09840663789398296
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 1194.8494333175638,
+      "magnitude_mse_db2": 0.22780822256544786,
+      "phase_mse_rad2": 0.0007875394207080465,
+      "wsmse": 1.1687992531137,
+      "mean_distance_ohm": 4330.548372405608
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 1194.8494333175638,
+      "magnitude_mse_db2": 0.04730893771109149,
+      "phase_mse_rad2": 0.0006279994015666707,
+      "wsmse": 0.7976736667967973,
+      "mean_distance_ohm": 1.7346744307661752
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 353.61826566213944,
+      "magnitude_mse_db2": 0.19861358408621538,
+      "phase_mse_rad2": 0.0016381986600645403,
+      "wsmse": 0.7779105530682789,
+      "mean_distance_ohm": 38.53433299092054
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "title": "两个谐振单元与串联 RLC 背景",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 353.61826566213944,
+      "magnitude_mse_db2": 0.35051150833610023,
+      "phase_mse_rad2": 0.004419252965875647,
+      "wsmse": 1.9132400776513125,
+      "mean_distance_ohm": 1.1441391962953449
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 86.5595914716223,
+      "magnitude_mse_db2": 9.240761860428398e-07,
+      "phase_mse_rad2": 1.1741160593495681e-08,
+      "wsmse": 1.9403862504185367e-06,
+      "mean_distance_ohm": 0.006311232542679307
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 86.5595914716223,
+      "magnitude_mse_db2": 1.017305464992028e-05,
+      "phase_mse_rad2": 1.478652417681981e-07,
+      "wsmse": 2.2972209570228165e-05,
+      "mean_distance_ohm": 0.01335883091016243
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 212.3042074573037,
+      "magnitude_mse_db2": 3.3036228333716583e-13,
+      "phase_mse_rad2": 2.2053692170314607e-15,
+      "wsmse": 7.985714471097644e-13,
+      "mean_distance_ohm": 1.5550082572684895e-06
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 212.3042074573037,
+      "magnitude_mse_db2": 4.506025697705034e-05,
+      "phase_mse_rad2": 8.03035628710008e-07,
+      "wsmse": 0.00021554809969030617,
+      "mean_distance_ohm": 0.006288147045915675
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "group": "wsmse",
+      "seeds": 20,
+      "alpha": 142.33792712725082,
+      "magnitude_mse_db2": 5.837920919061119e-22,
+      "phase_mse_rad2": 5.3861869607379435e-24,
+      "wsmse": 1.3504507790173779e-21,
+      "mean_distance_ohm": 3.898310543546102e-12
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "title": "RLC 桥式网络",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "group": "mean_distance",
+      "seeds": 20,
+      "alpha": 142.33792712725082,
+      "magnitude_mse_db2": 1.078108785522678e-10,
+      "phase_mse_rad2": 1.5490232673850732e-11,
+      "wsmse": 2.3126584880669925e-09,
+      "mean_distance_ohm": 5.501371384212284e-07
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "circuit": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "metric": "magnitude_mse_db2",
+      "seeds": 100,
+      "wsmse_group_mean": 11.244795009158317,
+      "distance_group_mean": 62.478807872945005,
+      "distance_minus_wsmse_mean": 51.23401286378668,
+      "bootstrap95": [
+        45.576500187083546,
+        56.98175733280748
+      ],
+      "relative_change_pct": 455.6242494599428,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 100,
+      "ties": 0
+    },
+    {
+      "circuit": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "metric": "phase_mse_rad2",
+      "seeds": 100,
+      "wsmse_group_mean": 0.14842730423351153,
+      "distance_group_mean": 0.7229570250425393,
+      "distance_minus_wsmse_mean": 0.574529720809028,
+      "bootstrap95": [
+        0.5218168442482997,
+        0.6272507842746541
+      ],
+      "relative_change_pct": 387.0781887307983,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 98,
+      "ties": 0
+    },
+    {
+      "circuit": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "metric": "wsmse",
+      "seeds": 100,
+      "wsmse_group_mean": 14.97328889150412,
+      "distance_group_mean": 80.63948834201359,
+      "distance_minus_wsmse_mean": 65.66619945050947,
+      "bootstrap95": [
+        58.70305649314799,
+        72.67866682996761
+      ],
+      "relative_change_pct": 438.5556167808171,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 100,
+      "ties": 0
+    },
+    {
+      "circuit": "case1",
+      "family": "case1",
+      "condition": "paper",
+      "metric": "mean_distance_ohm",
+      "seeds": 100,
+      "wsmse_group_mean": 4.099922148902308,
+      "distance_group_mean": 2.5193083316900102,
+      "distance_minus_wsmse_mean": -1.5806138172122968,
+      "bootstrap95": [
+        -1.8763174029018654,
+        -1.2959812769311894
+      ],
+      "relative_change_pct": -38.55228855102732,
+      "distance_lower_seeds": 88,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "metric": "magnitude_mse_db2",
+      "seeds": 100,
+      "wsmse_group_mean": 6.24104628678603,
+      "distance_group_mean": 31.79352015716303,
+      "distance_minus_wsmse_mean": 25.552473870377,
+      "bootstrap95": [
+        24.931726302085803,
+        26.15601601669894
+      ],
+      "relative_change_pct": 409.42612338060115,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 100,
+      "ties": 0
+    },
+    {
+      "circuit": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "metric": "phase_mse_rad2",
+      "seeds": 100,
+      "wsmse_group_mean": 0.09273570461863591,
+      "distance_group_mean": 0.36323430113159266,
+      "distance_minus_wsmse_mean": 0.2704985965129569,
+      "bootstrap95": [
+        0.26436498976867834,
+        0.27645266129999746
+      ],
+      "relative_change_pct": 291.68764892157634,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 100,
+      "ties": 0
+    },
+    {
+      "circuit": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "metric": "wsmse",
+      "seeds": 100,
+      "wsmse_group_mean": 7.852792833057923,
+      "distance_group_mean": 38.10653231083011,
+      "distance_minus_wsmse_mean": 30.25373947777218,
+      "bootstrap95": [
+        29.53904337378754,
+        30.947289768207355
+      ],
+      "relative_change_pct": 385.2608889720475,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 100,
+      "ties": 0
+    },
+    {
+      "circuit": "case2",
+      "family": "case2",
+      "condition": "paper",
+      "metric": "mean_distance_ohm",
+      "seeds": 100,
+      "wsmse_group_mean": 3594.230421622272,
+      "distance_group_mean": 1474.9078785802767,
+      "distance_minus_wsmse_mean": -2119.322543041996,
+      "bootstrap95": [
+        -2217.6181458349038,
+        -2024.2085069961256
+      ],
+      "relative_change_pct": -58.96457083809974,
+      "distance_lower_seeds": 100,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c1",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.394696718921258e-26,
+      "distance_group_mean": 4.215062625067717e-27,
+      "distance_minus_wsmse_mean": -2.9731904564144865e-26,
+      "bootstrap95": [
+        -9.714943006468894e-26,
+        7.066302285283176e-27
+      ],
+      "relative_change_pct": -87.58338969848492,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c1",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 9.205043423082723e-30,
+      "distance_group_mean": 3.850168171079765e-30,
+      "distance_minus_wsmse_mean": -5.35487525200296e-30,
+      "bootstrap95": [
+        -2.4988961644042007e-29,
+        7.54514999702935e-30
+      ],
+      "relative_change_pct": -58.173275300092364,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c1",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 3.7018759288854485e-26,
+      "distance_group_mean": 5.4998926499384506e-27,
+      "distance_minus_wsmse_mean": -3.151886663891604e-26,
+      "bootstrap95": [
+        -1.055048906968555e-25,
+        9.611835459099642e-27
+      ],
+      "relative_change_pct": -85.142957906765,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c1",
+      "family": "rc_series",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 5.220929987061416e-12,
+      "distance_group_mean": 2.886821124889275e-12,
+      "distance_minus_wsmse_mean": -2.3341088621721402e-12,
+      "bootstrap95": [
+        -7.438698254436336e-12,
+        1.0052376999128063e-12
+      ],
+      "relative_change_pct": -44.706764272965984,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c2",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.00401663252991e-14,
+      "distance_group_mean": 1.6271676119812765e-27,
+      "distance_minus_wsmse_mean": -3.004016632529747e-14,
+      "bootstrap95": [
+        -9.012049897589453e-14,
+        2.5288577147542354e-27
+      ],
+      "relative_change_pct": -99.99999999999459,
+      "distance_lower_seeds": 16,
+      "wsmse_lower_seeds": 4,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c2",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.9170689251813e-18,
+      "distance_group_mean": 1.387229250882629e-30,
+      "distance_minus_wsmse_mean": -1.917068925179912e-18,
+      "bootstrap95": [
+        -5.751206775541115e-18,
+        1.6981153181489084e-30
+      ],
+      "relative_change_pct": -99.99999999992764,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c2",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 3.056398721466147e-14,
+      "distance_group_mean": 2.006214838923375e-27,
+      "distance_minus_wsmse_mean": -3.0563987214659465e-14,
+      "bootstrap95": [
+        -9.16919616439809e-14,
+        3.012090210487819e-27
+      ],
+      "relative_change_pct": -99.99999999999343,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c2",
+      "family": "rc_series",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 5.731659060041692e-06,
+      "distance_group_mean": 3.897124331819018e-12,
+      "distance_minus_wsmse_mean": -5.73165516291736e-06,
+      "bootstrap95": [
+        -1.7194963928159414e-05,
+        1.3798092718372404e-13
+      ],
+      "relative_change_pct": -99.99993200704559,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c3",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.605511012650038e-27,
+      "distance_group_mean": 8.278516702297357e-28,
+      "distance_minus_wsmse_mean": -5.777659342420303e-27,
+      "bootstrap95": [
+        -1.074426054851485e-26,
+        -1.7074352609020557e-27
+      ],
+      "relative_change_pct": -87.46725773911604,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c3",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.6951473043006757e-30,
+      "distance_group_mean": 1.0126457793974784e-30,
+      "distance_minus_wsmse_mean": -1.6825015249031977e-30,
+      "bootstrap95": [
+        -4.077086765728963e-30,
+        7.590251599554163e-32
+      ],
+      "relative_change_pct": -62.427071137017684,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c3",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 8.284122202471156e-27,
+      "distance_group_mean": 1.458555058467285e-27,
+      "distance_minus_wsmse_mean": -6.825567144003871e-27,
+      "bootstrap95": [
+        -1.3048691590170998e-26,
+        -1.7355056044539735e-27
+      ],
+      "relative_change_pct": -82.39336621528594,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_series_c3",
+      "family": "rc_series",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 4.231750151424699e-12,
+      "distance_group_mean": 1.0702137480814152e-12,
+      "distance_minus_wsmse_mean": -3.1615364033432845e-12,
+      "bootstrap95": [
+        -5.237475792374399e-12,
+        -1.2928002310548658e-12
+      ],
+      "relative_change_pct": -74.70990229134611,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.592643779390367e-09,
+      "distance_group_mean": 4.244904182196453e-28,
+      "distance_minus_wsmse_mean": -4.592643779390367e-09,
+      "bootstrap95": [
+        -1.2310504398347895e-08,
+        -1.212576354606214e-15
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.5849922683056604e-14,
+      "distance_group_mean": 4.0360412380279535e-31,
+      "distance_minus_wsmse_mean": -3.5849922683056604e-14,
+      "bootstrap95": [
+        -9.52308430327065e-14,
+        -8.911572684487646e-20
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 18,
+      "wsmse_lower_seeds": 2,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 4.659339195944642e-09,
+      "distance_group_mean": 1.1753580113810832e-27,
+      "distance_minus_wsmse_mean": -4.659339195944642e-09,
+      "bootstrap95": [
+        -1.2486773501631541e-08,
+        -1.3509156202078533e-15
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c1",
+      "family": "rc_parallel",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.000143667962060323,
+      "distance_group_mean": 8.222576472389941e-14,
+      "distance_minus_wsmse_mean": -0.00014366796197809722,
+      "bootstrap95": [
+        -0.00034178851986022544,
+        -1.2219853456499628e-07
+      ],
+      "relative_change_pct": -99.9999999427668,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.610701892364373e-07,
+      "distance_group_mean": 1.0448563215170691e-27,
+      "distance_minus_wsmse_mean": -5.610701892364373e-07,
+      "bootstrap95": [
+        -1.6336531423874475e-06,
+        -1.0979447954864917e-10
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.5376285153507085e-11,
+      "distance_group_mean": 9.846264366611922e-31,
+      "distance_minus_wsmse_mean": -3.5376285153507085e-11,
+      "bootstrap95": [
+        -1.0521772062851002e-10,
+        -3.63723686075189e-15
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 6.494505748641479e-07,
+      "distance_group_mean": 3.5047433275648986e-27,
+      "distance_minus_wsmse_mean": -6.494505748641479e-07,
+      "bootstrap95": [
+        -1.8965195640283237e-06,
+        -1.196094519647835e-10
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c2",
+      "family": "rc_parallel",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0006611598511134641,
+      "distance_group_mean": 5.4148995601614305e-14,
+      "distance_minus_wsmse_mean": -0.0006611598510593151,
+      "bootstrap95": [
+        -0.001773883633150159,
+        -1.4636683103336232e-05
+      ],
+      "relative_change_pct": -99.99999999181,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.2535144551388043e-07,
+      "distance_group_mean": 2.7340093337817734e-27,
+      "distance_minus_wsmse_mean": -1.2535144551388043e-07,
+      "bootstrap95": [
+        -3.3508004658845805e-07,
+        -8.741599087063196e-09
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 7.6166347326e-13,
+      "distance_group_mean": 2.1785865448588147e-30,
+      "distance_minus_wsmse_mean": -7.6166347326e-13,
+      "bootstrap95": [
+        -1.508397278739202e-12,
+        -1.4671436031840707e-13
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.2818341259584667e-07,
+      "distance_group_mean": 1.0834286683104795e-26,
+      "distance_minus_wsmse_mean": -1.2818341259584667e-07,
+      "bootstrap95": [
+        -3.3943809264184804e-07,
+        -9.858922523521601e-09
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_parallel_c3",
+      "family": "rc_parallel",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0006945581390295865,
+      "distance_group_mean": 1.2813117912438857e-13,
+      "distance_minus_wsmse_mean": -0.0006945581389014553,
+      "bootstrap95": [
+        -0.0013763857926821093,
+        -0.00022894002551847572
+      ],
+      "relative_change_pct": -99.99999998155214,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c1",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.723960490319136e-07,
+      "distance_group_mean": 2.9500242411644956e-28,
+      "distance_minus_wsmse_mean": -2.723960490319136e-07,
+      "bootstrap95": [
+        -7.566984011029486e-07,
+        -1.82459203138103e-08
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c1",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.359307604453398e-13,
+      "distance_group_mean": 3.0705613681595692e-31,
+      "distance_minus_wsmse_mean": -5.359307604453398e-13,
+      "bootstrap95": [
+        -1.0125196040369566e-12,
+        -1.5553708833437257e-13
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c1",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 2.743901204382501e-07,
+      "distance_group_mean": 1.4374855726038484e-27,
+      "distance_minus_wsmse_mean": -2.743901204382501e-07,
+      "bootstrap95": [
+        -7.592429231883483e-07,
+        -1.9047713543692053e-08
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c1",
+      "family": "rl_series",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 131.1590384567355,
+      "distance_group_mean": 6.373815752241714e-09,
+      "distance_minus_wsmse_mean": -131.15903845036172,
+      "bootstrap95": [
+        -270.90411491986157,
+        -42.65295957925789
+      ],
+      "relative_change_pct": -99.99999999514039,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c2",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.586644861706885e-08,
+      "distance_group_mean": 2.13034516991285e-28,
+      "distance_minus_wsmse_mean": -6.586644861706885e-08,
+      "bootstrap95": [
+        -1.889954555328891e-07,
+        -5.877815663340034e-10
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c2",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.4491311322166325e-12,
+      "distance_group_mean": 2.477475410872151e-31,
+      "distance_minus_wsmse_mean": -6.4491311322166325e-12,
+      "bootstrap95": [
+        -1.910595293572549e-11,
+        -1.747036052904851e-15
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c2",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 8.298400236007513e-08,
+      "distance_group_mean": 8.706164086158769e-28,
+      "distance_minus_wsmse_mean": -8.298400236007513e-08,
+      "bootstrap95": [
+        -2.397025992079366e-07,
+        -6.700023642413705e-10
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c2",
+      "family": "rl_series",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.32261464010667545,
+      "distance_group_mean": 4.3949472916835093e-11,
+      "distance_minus_wsmse_mean": -0.322614640062726,
+      "bootstrap95": [
+        -0.7692591008909074,
+        -0.04483600200533257
+      ],
+      "relative_change_pct": -99.99999998637709,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c3",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 9.784759329016166e-11,
+      "distance_group_mean": 1.0379139130623166e-15,
+      "distance_minus_wsmse_mean": -9.78465553762486e-11,
+      "bootstrap95": [
+        -2.6688931388510415e-10,
+        -1.4669884434054525e-12
+      ],
+      "relative_change_pct": -99.99893925453027,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c3",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 7.73762267659294e-15,
+      "distance_group_mean": 8.087540219880533e-19,
+      "distance_minus_wsmse_mean": -7.736813922570953e-15,
+      "bootstrap95": [
+        -2.2093824693832073e-14,
+        -1.0015461417855091e-16
+      ],
+      "relative_change_pct": -99.98954777124976,
+      "distance_lower_seeds": 18,
+      "wsmse_lower_seeds": 2,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c3",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.1710551342477892e-10,
+      "distance_group_mean": 3.0507957780713307e-15,
+      "distance_minus_wsmse_mean": -1.1710246262900083e-10,
+      "bootstrap95": [
+        -3.22006573356485e-10,
+        -1.952877106480838e-12
+      ],
+      "relative_change_pct": -99.99739483164468,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_series_c3",
+      "family": "rl_series",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0751613399409098,
+      "distance_group_mean": 0.0002187496148749239,
+      "distance_minus_wsmse_mean": -0.07494259032603487,
+      "bootstrap95": [
+        -0.16885211482614298,
+        -0.010834287394517842
+      ],
+      "relative_change_pct": -99.70895993199842,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.466756585487533e-27,
+      "distance_group_mean": 5.471533979540235e-27,
+      "distance_minus_wsmse_mean": 1.0047773940527048e-27,
+      "bootstrap95": [
+        -9.726696705264641e-27,
+        1.390925030668979e-26
+      ],
+      "relative_change_pct": 22.49456344492149,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.948672781558248e-31,
+      "distance_group_mean": 1.5577515029912884e-29,
+      "distance_minus_wsmse_mean": 1.508264775175706e-29,
+      "bootstrap95": [
+        -3.4980655654306615e-31,
+        4.534713471827927e-29
+      ],
+      "relative_change_pct": 3047.8167414835225,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 4.582537263918763e-27,
+      "distance_group_mean": 9.11609755860172e-27,
+      "distance_minus_wsmse_mean": 4.533560294682959e-27,
+      "bootstrap95": [
+        -9.663022360176533e-27,
+        2.448153090292624e-26
+      ],
+      "relative_change_pct": 98.93122594721851,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c1",
+      "family": "rl_parallel",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 7.806619456676403e-13,
+      "distance_group_mean": 4.5214068420556083e-13,
+      "distance_minus_wsmse_mean": -3.2852126146207944e-13,
+      "bootstrap95": [
+        -8.320581598776931e-13,
+        8.51247055785709e-14
+      ],
+      "relative_change_pct": -42.08239728927998,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.7634708230366635e-19,
+      "distance_group_mean": 1.058424332731317e-16,
+      "distance_minus_wsmse_mean": 1.0556608619082805e-16,
+      "bootstrap95": [
+        -8.289042278991252e-19,
+        3.1752725414468023e-16
+      ],
+      "relative_change_pct": 38200.543067368395,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.5103205410968835e-22,
+      "distance_group_mean": 7.16405567135073e-20,
+      "distance_minus_wsmse_mean": 7.12895246593976e-20,
+      "bootstrap95": [
+        -1.0530359312848823e-21,
+        2.1492165006153537e-19
+      ],
+      "relative_change_pct": 20308.551263276233,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 4.174849060385786e-19,
+      "distance_group_mean": 1.3464661838194373e-16,
+      "distance_minus_wsmse_mean": 1.3422913347590515e-16,
+      "bootstrap95": [
+        -1.2522934823135324e-18,
+        4.0393980139794593e-16
+      ],
+      "relative_change_pct": 32151.853045317388,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c2",
+      "family": "rl_parallel",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 9.453410262644945e-10,
+      "distance_group_mean": 3.815800195315823e-08,
+      "distance_minus_wsmse_mean": 3.721266092689373e-08,
+      "bootstrap95": [
+        -2.7826173292825763e-09,
+        1.1445556567092672e-07
+      ],
+      "relative_change_pct": 3936.427161522777,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.8566340191116772e-10,
+      "distance_group_mean": 5.864723330474759e-28,
+      "distance_minus_wsmse_mean": -1.8566340191116772e-10,
+      "bootstrap95": [
+        -5.55615349698278e-10,
+        -2.4836013174675188e-17
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.0311139266017766e-14,
+      "distance_group_mean": 4.3706297676860874e-31,
+      "distance_minus_wsmse_mean": -2.0311139266017766e-14,
+      "bootstrap95": [
+        -6.063413077174248e-14,
+        -1.9860607623003245e-21
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 2.13992252703855e-10,
+      "distance_group_mean": 1.1960635378402533e-27,
+      "distance_minus_wsmse_mean": -2.13992252703855e-10,
+      "bootstrap95": [
+        -6.401844748769185e-10,
+        -2.841757865767808e-17
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 18,
+      "wsmse_lower_seeds": 2,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_parallel_c3",
+      "family": "rl_parallel",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00019144789027727196,
+      "distance_group_mean": 8.076636629771423e-13,
+      "distance_minus_wsmse_mean": -0.00019144788946960832,
+      "bootstrap95": [
+        -0.0005571965430255975,
+        -7.087301429213498e-08
+      ],
+      "relative_change_pct": -99.99999957812872,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.5544159755884403e-05,
+      "distance_group_mean": 1.2804790213547464e-27,
+      "distance_minus_wsmse_mean": -1.5544159755884403e-05,
+      "bootstrap95": [
+        -4.515149030665569e-05,
+        -8.167441912826368e-08
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.3079231075294273e-09,
+      "distance_group_mean": 6.69826690497574e-30,
+      "distance_minus_wsmse_mean": -3.3079231075294273e-09,
+      "bootstrap95": [
+        -9.816349380524713e-09,
+        -7.707285770492232e-12
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.9201102703739378e-05,
+      "distance_group_mean": 8.685481835732739e-27,
+      "distance_minus_wsmse_mean": -1.9201102703739378e-05,
+      "bootstrap95": [
+        -5.597072200395764e-05,
+        -9.222340087528572e-08
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c1",
+      "family": "rlc_series",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 169.83384912189257,
+      "distance_group_mean": 2.844619733463603e-09,
+      "distance_minus_wsmse_mean": -169.83384911904793,
+      "bootstrap95": [
+        -409.60673592303004,
+        -20.877627748062796
+      ],
+      "relative_change_pct": -99.99999999832507,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.04784131642567901,
+      "distance_group_mean": 1.1335878617298925e-27,
+      "distance_minus_wsmse_mean": -0.04784131642567901,
+      "bootstrap95": [
+        -0.08564140725265042,
+        -0.017455840955909775
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.1756194020037574e-07,
+      "distance_group_mean": 1.414877949679937e-29,
+      "distance_minus_wsmse_mean": -4.1756194020037574e-07,
+      "bootstrap95": [
+        -9.382602432655201e-07,
+        -8.983305131111486e-08
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.04849789062242724,
+      "distance_group_mean": 2.3381122032638777e-26,
+      "distance_minus_wsmse_mean": -0.04849789062242724,
+      "bootstrap95": [
+        -0.08709768985295523,
+        -0.01765781674410152
+      ],
+      "relative_change_pct": -100.0,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c2",
+      "family": "rlc_series",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 36063.370976349805,
+      "distance_group_mean": 2.6652628903636884e-09,
+      "distance_minus_wsmse_mean": -36063.37097634714,
+      "bootstrap95": [
+        -55806.964133726135,
+        -18091.528102776414
+      ],
+      "relative_change_pct": -99.99999999999261,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.013458339230037508,
+      "distance_group_mean": 1.748659850198449e-12,
+      "distance_minus_wsmse_mean": -0.01345833922828885,
+      "bootstrap95": [
+        -0.03205781037149605,
+        -0.002250949577502144
+      ],
+      "relative_change_pct": -99.99999998700687,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.3339634537759126e-07,
+      "distance_group_mean": 1.7422452580858003e-13,
+      "distance_minus_wsmse_mean": -2.3339617115306544e-07,
+      "bootstrap95": [
+        -5.685255479969628e-07,
+        -2.75381024070342e-08
+      ],
+      "relative_change_pct": -99.99992535250476,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.013652726286506992,
+      "distance_group_mean": 1.4685372857752067e-10,
+      "distance_minus_wsmse_mean": -0.013652726139653262,
+      "bootstrap95": [
+        -0.03255127179552617,
+        -0.0022750881317654655
+      ],
+      "relative_change_pct": -99.99999892436334,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_series_c3",
+      "family": "rlc_series",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 9.346719023478569,
+      "distance_group_mean": 3.9434239399070267e-07,
+      "distance_minus_wsmse_mean": -9.346718629136175,
+      "bootstrap95": [
+        -15.844585487134072,
+        -4.571206274373681
+      ],
+      "relative_change_pct": -99.9999957809538,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.511698682041973e-10,
+      "distance_group_mean": 1.0790145109666103e-12,
+      "distance_minus_wsmse_mean": -6.500908536932308e-10,
+      "bootstrap95": [
+        -1.6060602865253672e-09,
+        -3.10642750381506e-11
+      ],
+      "relative_change_pct": -99.83429600114295,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.564264715403058e-13,
+      "distance_group_mean": 8.553081363467977e-16,
+      "distance_minus_wsmse_mean": -5.555711634039591e-13,
+      "bootstrap95": [
+        -1.5404235708915795e-12,
+        -8.05304495176983e-15
+      ],
+      "relative_change_pct": -99.84628550579573,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.0608712180220312e-09,
+      "distance_group_mean": 1.708784868587123e-12,
+      "distance_minus_wsmse_mean": -1.059162433153444e-09,
+      "bootstrap95": [
+        -2.744814063444446e-09,
+        -3.70050378684609e-11
+      ],
+      "relative_change_pct": -99.83892626743393,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c1",
+      "family": "rlc_parallel",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0006179671594052302,
+      "distance_group_mean": 7.727639214543917e-06,
+      "distance_minus_wsmse_mean": -0.0006102395201906863,
+      "bootstrap95": [
+        -0.0013240942527616936,
+        -9.290204398708768e-05
+      ],
+      "relative_change_pct": -98.7495064912541,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.02828206024022653,
+      "distance_group_mean": 0.8768422874463135,
+      "distance_minus_wsmse_mean": 0.8485602272060866,
+      "bootstrap95": [
+        0.2626109042538721,
+        1.542113767835335
+      ],
+      "relative_change_pct": 3000.3479944475584,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.408950151814648e-07,
+      "distance_group_mean": 2.3473993755763406e-05,
+      "distance_minus_wsmse_mean": 2.3333098740581936e-05,
+      "bootstrap95": [
+        7.901213994504963e-06,
+        4.150344584010932e-05
+      ],
+      "relative_change_pct": 16560.627578293122,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.02840359257965506,
+      "distance_group_mean": 0.8970903379056854,
+      "distance_minus_wsmse_mean": 0.86868674532603,
+      "bootstrap95": [
+        0.26924767590815835,
+        1.5779977087596635
+      ],
+      "relative_change_pct": 3058.3692639932237,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c2",
+      "family": "rlc_parallel",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.08937768379614904,
+      "distance_group_mean": 0.3306164399726831,
+      "distance_minus_wsmse_mean": 0.24123875617653404,
+      "bootstrap95": [
+        0.07892216894483477,
+        0.41719647458602455
+      ],
+      "relative_change_pct": 269.9093844574748,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0017400511578604973,
+      "distance_group_mean": 0.710060781459638,
+      "distance_minus_wsmse_mean": 0.7083207303017776,
+      "bootstrap95": [
+        0.33738242402336954,
+        1.1478264443073696
+      ],
+      "relative_change_pct": 40706.891122253124,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 8.803433258199479e-09,
+      "distance_group_mean": 5.884241553177673e-06,
+      "distance_minus_wsmse_mean": 5.875438119919475e-06,
+      "bootstrap95": [
+        2.96270607699855e-06,
+        9.214603705935798e-06
+      ],
+      "relative_change_pct": 66740.30401090525,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.001747097903247357,
+      "distance_group_mean": 0.7147708474990894,
+      "distance_minus_wsmse_mean": 0.7130237495958422,
+      "bootstrap95": [
+        0.33979995554667997,
+        1.1553515545457664
+      ],
+      "relative_change_pct": 40811.894300287015,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_parallel_c3",
+      "family": "rlc_parallel",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.02367806003708476,
+      "distance_group_mean": 0.41410458643985865,
+      "distance_minus_wsmse_mean": 0.39042652640277387,
+      "bootstrap95": [
+        0.22034313791187274,
+        0.5667670800515591
+      ],
+      "relative_change_pct": 1648.8957532470347,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0009223419235480049,
+      "distance_group_mean": 0.0037973931928289755,
+      "distance_minus_wsmse_mean": 0.002875051269280969,
+      "bootstrap95": [
+        0.0007372634093315902,
+        0.0067217989468327305
+      ],
+      "relative_change_pct": 311.7120880965066,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 9.386422372417862e-06,
+      "distance_group_mean": 1.1249156480997287e-05,
+      "distance_minus_wsmse_mean": 1.8627341085794265e-06,
+      "bootstrap95": [
+        -3.3958971189509168e-06,
+        1.0189006320318848e-05
+      ],
+      "relative_change_pct": 19.844984965231237,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.005475303809640553,
+      "distance_group_mean": 0.0092538896806893,
+      "distance_minus_wsmse_mean": 0.0037785858710487454,
+      "bootstrap95": [
+        -0.000873607174590334,
+        0.011638410124957513
+      ],
+      "relative_change_pct": 69.01143758261709,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c1",
+      "family": "two_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.07467065790207619,
+      "distance_group_mean": 0.05151871065033555,
+      "distance_minus_wsmse_mean": -0.023151947251740655,
+      "bootstrap95": [
+        -0.036086314308243474,
+        -0.009892997712264585
+      ],
+      "relative_change_pct": -31.00541484729159,
+      "distance_lower_seeds": 15,
+      "wsmse_lower_seeds": 5,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.3605928876583038,
+      "distance_group_mean": 0.17083366635999075,
+      "distance_minus_wsmse_mean": -0.18975922129831302,
+      "bootstrap95": [
+        -0.3931513527924631,
+        -0.012821302132977844
+      ],
+      "relative_change_pct": -52.62422743016718,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0012709744140426984,
+      "distance_group_mean": 0.000654959290676431,
+      "distance_minus_wsmse_mean": -0.0006160151233662672,
+      "bootstrap95": [
+        -0.0017962536281598599,
+        0.00027203149348691615
+      ],
+      "relative_change_pct": -48.46794054703704,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.7302846081077186,
+      "distance_group_mean": 0.8766640180642945,
+      "distance_minus_wsmse_mean": -0.8536205900434239,
+      "bootstrap95": [
+        -2.306639390094618,
+        0.25461353645071755
+      ],
+      "relative_change_pct": -49.33411451755121,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c2",
+      "family": "two_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 40.31145575017684,
+      "distance_group_mean": 29.132778021897963,
+      "distance_minus_wsmse_mean": -11.178677728278874,
+      "bootstrap95": [
+        -31.488791635284784,
+        5.973378041887789
+      ],
+      "relative_change_pct": -27.730771613798243,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 7.165645062635195,
+      "distance_group_mean": 41.304861117430356,
+      "distance_minus_wsmse_mean": 34.13921605479517,
+      "bootstrap95": [
+        16.525167012109424,
+        52.2499198296379
+      ],
+      "relative_change_pct": 476.4290689307506,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.7771799773640015e-05,
+      "distance_group_mean": 0.19586767560214458,
+      "distance_minus_wsmse_mean": 0.1958199038023709,
+      "bootstrap95": [
+        0.12797942664381415,
+        0.2643203901626991
+      ],
+      "relative_change_pct": 409906.9005778223,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 7.226778964292905,
+      "distance_group_mean": 291.9580765065002,
+      "distance_minus_wsmse_mean": 284.73129754220724,
+      "bootstrap95": [
+        181.43985801032318,
+        390.5895903436699
+      ],
+      "relative_change_pct": 3939.9475056459883,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "two_parallel_units_c3",
+      "family": "two_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 9.50460661426681,
+      "distance_group_mean": 5.743646587983923,
+      "distance_minus_wsmse_mean": -3.760960026282889,
+      "bootstrap95": [
+        -7.57739898530558,
+        -0.7478800878893448
+      ],
+      "relative_change_pct": -39.569865212911914,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00016420042833156077,
+      "distance_group_mean": 0.0003291265650397641,
+      "distance_minus_wsmse_mean": 0.00016492613670820335,
+      "bootstrap95": [
+        1.83599491237818e-05,
+        0.000339273186376167
+      ],
+      "relative_change_pct": 100.44196497172177,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.5523880551753806e-06,
+      "distance_group_mean": 1.3167088636124591e-06,
+      "distance_minus_wsmse_mean": -2.3567919156292145e-07,
+      "bootstrap95": [
+        -9.451403179513214e-07,
+        5.436004603802586e-07
+      ],
+      "relative_change_pct": -15.181718950826095,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0007726505278837697,
+      "distance_group_mean": 0.0008452034805219352,
+      "distance_minus_wsmse_mean": 7.255295263816541e-05,
+      "bootstrap95": [
+        -0.0003336148492747943,
+        0.0005367734723677239
+      ],
+      "relative_change_pct": 9.390138234536959,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c1",
+      "family": "three_parallel_units",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.03851679652544287,
+      "distance_group_mean": 0.030178897691812378,
+      "distance_minus_wsmse_mean": -0.008337898833630489,
+      "bootstrap95": [
+        -0.017873541318561437,
+        0.001736570726492031
+      ],
+      "relative_change_pct": -21.647435887153186,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.41585767565172416,
+      "distance_group_mean": 0.5618508476602369,
+      "distance_minus_wsmse_mean": 0.14599317200851275,
+      "bootstrap95": [
+        -0.14543530022818504,
+        0.4907819492202763
+      ],
+      "relative_change_pct": 35.10652335073894,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.001257109156181295,
+      "distance_group_mean": 0.005158790272845493,
+      "distance_minus_wsmse_mean": 0.0039016811166641984,
+      "bootstrap95": [
+        0.0008314070479115715,
+        0.00819071302169808
+      ],
+      "relative_change_pct": 310.3693181677466,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.387429800864401,
+      "distance_group_mean": 4.548884753403383,
+      "distance_minus_wsmse_mean": 3.161454952538983,
+      "bootstrap95": [
+        0.5505467856485504,
+        6.807646460167946
+      ],
+      "relative_change_pct": 227.86413774371303,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c2",
+      "family": "three_parallel_units",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 66.25815568640915,
+      "distance_group_mean": 53.78226289693241,
+      "distance_minus_wsmse_mean": -12.475892789476738,
+      "bootstrap95": [
+        -31.21877593494263,
+        6.952310810011564
+      ],
+      "relative_change_pct": -18.82921832072032,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.60416084617434,
+      "distance_group_mean": 78.88716108527387,
+      "distance_minus_wsmse_mean": 73.28300023909952,
+      "bootstrap95": [
+        51.59315366337317,
+        98.58173152320461
+      ],
+      "relative_change_pct": 1307.6534070060804,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0006578968294928941,
+      "distance_group_mean": 0.39577352027396556,
+      "distance_minus_wsmse_mean": 0.3951156234444727,
+      "bootstrap95": [
+        0.3056904563779585,
+        0.494555192011105
+      ],
+      "relative_change_pct": 60057.383731280046,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 6.039294655937059,
+      "distance_group_mean": 340.65227676877004,
+      "distance_minus_wsmse_mean": 334.612982112833,
+      "bootstrap95": [
+        254.66591220942857,
+        424.0882209281147
+      ],
+      "relative_change_pct": 5540.597059358322,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_parallel_units_c3",
+      "family": "three_parallel_units",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 5.738355575848397,
+      "distance_group_mean": 5.858703270269754,
+      "distance_minus_wsmse_mean": 0.12034769442135687,
+      "bootstrap95": [
+        -2.2554483314080236,
+        2.074573976363903
+      ],
+      "relative_change_pct": 2.0972505595135527,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.028077588644307278,
+      "distance_group_mean": 0.4357442620802896,
+      "distance_minus_wsmse_mean": 0.4076666734359824,
+      "bootstrap95": [
+        0.28245978438392166,
+        0.540090391425589
+      ],
+      "relative_change_pct": 1451.9290762479227,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0003166746796779097,
+      "distance_group_mean": 0.005279550769642585,
+      "distance_minus_wsmse_mean": 0.004962876089964674,
+      "bootstrap95": [
+        0.0034336933840436075,
+        0.006572877690672945
+      ],
+      "relative_change_pct": 1567.1843719909734,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.17615605783148233,
+      "distance_group_mean": 2.9044853586523405,
+      "distance_minus_wsmse_mean": 2.728329300820858,
+      "bootstrap95": [
+        1.888195079614203,
+        3.6123230560744806
+      ],
+      "relative_change_pct": 1548.81378160204,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c1",
+      "family": "two_series_units",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 2.493460368589707,
+      "distance_group_mean": 0.34071574600633353,
+      "distance_minus_wsmse_mean": -2.152744622583374,
+      "bootstrap95": [
+        -2.856671373111986,
+        -1.5171280119788204
+      ],
+      "relative_change_pct": -86.33562617243275,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.06932180993253638,
+      "distance_group_mean": 0.5099088752982754,
+      "distance_minus_wsmse_mean": 0.44058706536573916,
+      "bootstrap95": [
+        0.3487735543901491,
+        0.5529725646379585
+      ],
+      "relative_change_pct": 635.5677467084545,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0003971372111809581,
+      "distance_group_mean": 0.006711016150019092,
+      "distance_minus_wsmse_mean": 0.0063138789388381324,
+      "bootstrap95": [
+        0.005237570450056886,
+        0.00767791128710922
+      ],
+      "relative_change_pct": 1589.8482340807832,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.38822058320266933,
+      "distance_group_mean": 5.898814163908897,
+      "distance_minus_wsmse_mean": 5.510593580706226,
+      "bootstrap95": [
+        4.557208470398993,
+        6.718258482210552
+      ],
+      "relative_change_pct": 1419.4491016540046,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c2",
+      "family": "two_series_units",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 445.318639466076,
+      "distance_group_mean": 2.5586697476776257,
+      "distance_minus_wsmse_mean": -442.75996971839834,
+      "bootstrap95": [
+        -594.4874854894776,
+        -301.2016424541026
+      ],
+      "relative_change_pct": -99.42542945187621,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.205327691474883,
+      "distance_group_mean": 61.34010725015143,
+      "distance_minus_wsmse_mean": 57.134779558676556,
+      "bootstrap95": [
+        45.66861334974842,
+        67.35136279040681
+      ],
+      "relative_change_pct": 1358.6284767891266,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 4.146227812041777e-05,
+      "distance_group_mean": 0.7326460549213982,
+      "distance_minus_wsmse_mean": 0.7326045926432777,
+      "bootstrap95": [
+        0.597485851064861,
+        0.8507930386878044
+      ],
+      "relative_change_pct": 1766918.3312011804,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 4.239030263674431,
+      "distance_group_mean": 656.8707361024673,
+      "distance_minus_wsmse_mean": 652.6317058387929,
+      "bootstrap95": [
+        531.3833652388129,
+        758.7612390318615
+      ],
+      "relative_change_pct": 15395.778403173877,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "two_series_units_c3",
+      "family": "two_series_units",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 2116.1715820799677,
+      "distance_group_mean": 231.10060657727814,
+      "distance_minus_wsmse_mean": -1885.0709755026896,
+      "bootstrap95": [
+        -2843.8073353091168,
+        -1095.7562960268122
+      ],
+      "relative_change_pct": -89.07930677577046,
+      "distance_lower_seeds": 19,
+      "wsmse_lower_seeds": 1,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.004952551299664805,
+      "distance_group_mean": 1.0266033328053679,
+      "distance_minus_wsmse_mean": 1.021650781505703,
+      "bootstrap95": [
+        0.49857814012002394,
+        1.6998978963391085
+      ],
+      "relative_change_pct": 20628.777365210728,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.381917786234418e-05,
+      "distance_group_mean": 0.012209727989087643,
+      "distance_minus_wsmse_mean": 0.0121559088112253,
+      "bootstrap95": [
+        0.005948996551088343,
+        0.02027537350141983
+      ],
+      "relative_change_pct": 22586.574700782374,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.030060451966466388,
+      "distance_group_mean": 6.722725973377545,
+      "distance_minus_wsmse_mean": 6.692665521411081,
+      "bootstrap95": [
+        3.276943339739494,
+        11.156474104524161
+      ],
+      "relative_change_pct": 22264.02160844757,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c1",
+      "family": "three_series_units",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 7.3864711084665045,
+      "distance_group_mean": 2.7614714720055518,
+      "distance_minus_wsmse_mean": -4.624999636460954,
+      "bootstrap95": [
+        -7.410978889798844,
+        -2.1757175853002844
+      ],
+      "relative_change_pct": -62.614468648766476,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.428717285492349,
+      "distance_group_mean": 9.782158420568663,
+      "distance_minus_wsmse_mean": 9.353441135076313,
+      "bootstrap95": [
+        7.371115086491201,
+        11.218573852940382
+      ],
+      "relative_change_pct": 2181.7270848630706,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.002291717905009419,
+      "distance_group_mean": 0.12403230121717265,
+      "distance_minus_wsmse_mean": 0.12174058331216327,
+      "bootstrap95": [
+        0.0970607639144948,
+        0.14506356297490774
+      ],
+      "relative_change_pct": 5312.197589679472,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 2.7783630484683832,
+      "distance_group_mean": 136.94962977036343,
+      "distance_minus_wsmse_mean": 134.17126672189508,
+      "bootstrap95": [
+        106.91947892784017,
+        159.98231935987428
+      ],
+      "relative_change_pct": 4829.148112801856,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c2",
+      "family": "three_series_units",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 3421.196462145187,
+      "distance_group_mean": 15.282163379511086,
+      "distance_minus_wsmse_mean": -3405.9142987656755,
+      "bootstrap95": [
+        -4240.980861496329,
+        -2642.37826175828
+      ],
+      "relative_change_pct": -99.55330938902208,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 8.128617005152837,
+      "distance_group_mean": 110.9866640942752,
+      "distance_minus_wsmse_mean": 102.85804708912238,
+      "bootstrap95": [
+        88.54274640211506,
+        115.50351640395446
+      ],
+      "relative_change_pct": 1265.3818850601438,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00031823663631016266,
+      "distance_group_mean": 1.1792225788324473,
+      "distance_minus_wsmse_mean": 1.178904342196137,
+      "bootstrap95": [
+        1.0422057232430288,
+        1.2959672042466033
+      ],
+      "relative_change_pct": 370448.97025845345,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 8.375814255903869,
+      "distance_group_mean": 1026.9735312594316,
+      "distance_minus_wsmse_mean": 1018.5977170035276,
+      "bootstrap95": [
+        899.3031743983162,
+        1121.1969845592268
+      ],
+      "relative_change_pct": 12161.178434509191,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "three_series_units_c3",
+      "family": "three_series_units",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 1176.6606086889212,
+      "distance_group_mean": 156.38913871460232,
+      "distance_minus_wsmse_mean": -1020.2714699743188,
+      "bootstrap95": [
+        -1448.1795914272168,
+        -624.8555671257501
+      ],
+      "relative_change_pct": -86.7090699255364,
+      "distance_lower_seeds": 18,
+      "wsmse_lower_seeds": 2,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.735967760009142e-07,
+      "distance_group_mean": 3.230972497363437e-07,
+      "distance_minus_wsmse_mean": -5.049952626457055e-08,
+      "bootstrap95": [
+        -1.6910267173998e-07,
+        7.238238965709956e-08
+      ],
+      "relative_change_pct": -13.51712046477802,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.204984189951999e-09,
+      "distance_group_mean": 4.365311435696267e-09,
+      "distance_minus_wsmse_mean": -8.396727542557331e-10,
+      "bootstrap95": [
+        -2.5429500644674367e-09,
+        9.534055431291352e-10
+      ],
+      "relative_change_pct": -16.132090388990704,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 2.0040893017003176e-06,
+      "distance_group_mean": 1.6905572474041812e-06,
+      "distance_minus_wsmse_mean": -3.135320542961361e-07,
+      "bootstrap95": [
+        -9.65029771526023e-07,
+        3.705123656551808e-07
+      ],
+      "relative_change_pct": -15.644614939570223,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c1",
+      "family": "rc_two_process",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0058849684243112935,
+      "distance_group_mean": 0.0044963048218036455,
+      "distance_minus_wsmse_mean": -0.0013886636025076471,
+      "bootstrap95": [
+        -0.0023931993769654167,
+        -0.00034717216240199363
+      ],
+      "relative_change_pct": -23.596789351850443,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0014114105482729866,
+      "distance_group_mean": 0.0032014077315448432,
+      "distance_minus_wsmse_mean": 0.0017899971832718564,
+      "bootstrap95": [
+        0.001036102844862707,
+        0.002682510846971992
+      ],
+      "relative_change_pct": 126.82328224499328,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.715185149544331e-05,
+      "distance_group_mean": 3.514778150561758e-05,
+      "distance_minus_wsmse_mean": 1.7995930010174265e-05,
+      "bootstrap95": [
+        1.146231336570314e-05,
+        2.5299247698829522e-05
+      ],
+      "relative_change_pct": 104.92120932224256,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.010237495252197163,
+      "distance_group_mean": 0.021287927242631736,
+      "distance_minus_wsmse_mean": 0.011050431990434574,
+      "bootstrap95": [
+        0.006946090464117759,
+        0.01569437938961826
+      ],
+      "relative_change_pct": 107.94077768253847,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c2",
+      "family": "rc_two_process",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 1.3043631023498807,
+      "distance_group_mean": 1.3379217025362293,
+      "distance_minus_wsmse_mean": 0.03355860018634858,
+      "bootstrap95": [
+        -0.1562335840872339,
+        0.2562348707804712
+      ],
+      "relative_change_pct": 2.5727958822118646,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.151076574740439e-06,
+      "distance_group_mean": 0.0627478481388831,
+      "distance_minus_wsmse_mean": 0.06274569706230836,
+      "bootstrap95": [
+        0.02401306762579868,
+        0.1124612837856388
+      ],
+      "relative_change_pct": 2916943.9060940733,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.1948182425947743e-08,
+      "distance_group_mean": 0.0005826809307142572,
+      "distance_minus_wsmse_mean": 0.0005826689825318313,
+      "bootstrap95": [
+        0.00022199411276048827,
+        0.001040925079620019
+      ],
+      "relative_change_pct": 4876632.794511532,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 9.702707766488678e-06,
+      "distance_group_mean": 0.43102072298743155,
+      "distance_minus_wsmse_mean": 0.43101102027966504,
+      "bootstrap95": [
+        0.16420865037393623,
+        0.7708204802317797
+      ],
+      "relative_change_pct": 4442172.542476192,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_two_process_c3",
+      "family": "rc_two_process",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0014255305116444377,
+      "distance_group_mean": 0.22455975251523003,
+      "distance_minus_wsmse_mean": 0.2231342220035856,
+      "bootstrap95": [
+        0.1431314683627588,
+        0.31363653330729985
+      ],
+      "relative_change_pct": 15652.714563519687,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.723811230337299e-06,
+      "distance_group_mean": 0.01655384490212398,
+      "distance_minus_wsmse_mean": 0.016552121090893646,
+      "bootstrap95": [
+        0.0022505672640238837,
+        0.040467835544052304
+      ],
+      "relative_change_pct": 960204.9690588732,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.674895995142643e-08,
+      "distance_group_mean": 6.343654688340796e-05,
+      "distance_minus_wsmse_mean": 6.341979792345654e-05,
+      "bootstrap95": [
+        1.0353622474493246e-05,
+        0.00014877439600720482
+      ],
+      "relative_change_pct": 378649.17050001887,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 6.868424899567867e-06,
+      "distance_group_mean": 0.03603902649976534,
+      "distance_minus_wsmse_mean": 0.036032158074865775,
+      "bootstrap95": [
+        0.005473938636833983,
+        0.08616552887721256
+      ],
+      "relative_change_pct": 524605.8390641029,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c1",
+      "family": "rl_two_process",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.013467981159761337,
+      "distance_group_mean": 0.39695828947842593,
+      "distance_minus_wsmse_mean": 0.38349030831866454,
+      "bootstrap95": [
+        0.14146932814346677,
+        0.7158115798403853
+      ],
+      "relative_change_pct": 2847.4223699126437,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.001030181508426602,
+      "distance_group_mean": 0.002972804146303257,
+      "distance_minus_wsmse_mean": 0.0019426226378766562,
+      "bootstrap95": [
+        0.0007635725928155175,
+        0.0032951231376986533
+      ],
+      "relative_change_pct": 188.57090929962683,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.1303676561426003e-05,
+      "distance_group_mean": 3.40111965377134e-05,
+      "distance_minus_wsmse_mean": 2.270751997628739e-05,
+      "bootstrap95": [
+        9.290961483688494e-06,
+        3.803609176573015e-05
+      ],
+      "relative_change_pct": 200.8861440159851,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.005325579025653817,
+      "distance_group_mean": 0.015897060106046582,
+      "distance_minus_wsmse_mean": 0.010571481080392766,
+      "bootstrap95": [
+        0.0042843241995938405,
+        0.017717640868877633
+      ],
+      "relative_change_pct": 198.50388153980893,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c2",
+      "family": "rl_two_process",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 14.361119080881759,
+      "distance_group_mean": 18.752885124385564,
+      "distance_minus_wsmse_mean": 4.391766043503803,
+      "bootstrap95": [
+        -1.0487044086595356,
+        10.407981744552384
+      ],
+      "relative_change_pct": 30.580945807700633,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0011149228851976267,
+      "distance_group_mean": 0.0601030079995933,
+      "distance_minus_wsmse_mean": 0.05898808511439568,
+      "bootstrap95": [
+        0.020579493936502366,
+        0.12110443548146323
+      ],
+      "relative_change_pct": 5290.777137823275,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.0013359903249785e-05,
+      "distance_group_mean": 0.00039231336698951737,
+      "distance_minus_wsmse_mean": 0.00038230000708626763,
+      "bootstrap95": [
+        0.0001490082608552526,
+        0.0007660241834582625
+      ],
+      "relative_change_pct": 3817.89939421027,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.005007732064787328,
+      "distance_group_mean": 0.21261935526450002,
+      "distance_minus_wsmse_mean": 0.20761162319971263,
+      "bootstrap95": [
+        0.07859919457774077,
+        0.41859936831141115
+      ],
+      "relative_change_pct": 4145.821312197733,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rl_two_process_c3",
+      "family": "rl_two_process",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.05284480436363048,
+      "distance_group_mean": 0.46635114915451686,
+      "distance_minus_wsmse_mean": 0.4135063447908863,
+      "bootstrap95": [
+        0.2843736943717457,
+        0.5562953672622354
+      ],
+      "relative_change_pct": 782.4919588035696,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0002726584305785566,
+      "distance_group_mean": 0.0004285963879964778,
+      "distance_minus_wsmse_mean": 0.00015593795741792116,
+      "bootstrap95": [
+        3.744649971553313e-05,
+        0.00027082841445448346
+      ],
+      "relative_change_pct": 57.19168744829746,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.248738694337929e-06,
+      "distance_group_mean": 4.073602386596302e-06,
+      "distance_minus_wsmse_mean": 1.8248636922583735e-06,
+      "bootstrap95": [
+        7.402872481429163e-07,
+        2.8867229208756995e-06
+      ],
+      "relative_change_pct": 81.15054438531139,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0010289446505803625,
+      "distance_group_mean": 0.0017986129926408426,
+      "distance_minus_wsmse_mean": 0.0007696683420604804,
+      "bootstrap95": [
+        0.00028636830225101144,
+        0.0012374714061751905
+      ],
+      "relative_change_pct": 74.80172442962396,
+      "distance_lower_seeds": 6,
+      "wsmse_lower_seeds": 14,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c1",
+      "family": "rc_ladder",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 1.9252867152188078,
+      "distance_group_mean": 1.7741971163486483,
+      "distance_minus_wsmse_mean": -0.15108959887015921,
+      "bootstrap95": [
+        -0.6361410213669972,
+        0.3328966527156335
+      ],
+      "relative_change_pct": -7.847641479881517,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.263337669198137e-05,
+      "distance_group_mean": 4.052581245345511e-05,
+      "distance_minus_wsmse_mean": 7.892435761473738e-06,
+      "bootstrap95": [
+        -2.4015393464237714e-06,
+        1.8659421958163765e-05
+      ],
+      "relative_change_pct": 24.18516427511792,
+      "distance_lower_seeds": 9,
+      "wsmse_lower_seeds": 11,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.8850942164550137e-07,
+      "distance_group_mean": 2.900395862006544e-07,
+      "distance_minus_wsmse_mean": 1.0153016455515299e-07,
+      "bootstrap95": [
+        3.9289156111202865e-08,
+        1.658457697955879e-07
+      ],
+      "relative_change_pct": 53.85946424793775,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 9.089081219415708e-05,
+      "distance_group_mean": 0.00013016039060169052,
+      "distance_minus_wsmse_mean": 3.9269578407533444e-05,
+      "bootstrap95": [
+        1.0139239554450987e-05,
+        6.978718157559493e-05
+      ],
+      "relative_change_pct": 43.20522334385948,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c2",
+      "family": "rc_ladder",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 1.5018884406237745,
+      "distance_group_mean": 1.2251556680778177,
+      "distance_minus_wsmse_mean": -0.2767327725459567,
+      "bootstrap95": [
+        -0.5080863495146435,
+        -0.0405353869195135
+      ],
+      "relative_change_pct": -18.425654333621623,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.889892773065118e-05,
+      "distance_group_mean": 2.0167068900230557e-06,
+      "distance_minus_wsmse_mean": -6.688222084062812e-05,
+      "bootstrap95": [
+        -0.00019831919452761534,
+        4.35896062311485e-07
+      ],
+      "relative_change_pct": -97.07294880131222,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 6.493998843067387e-07,
+      "distance_group_mean": 1.3169566058541104e-08,
+      "distance_minus_wsmse_mean": -6.362303182481976e-07,
+      "bootstrap95": [
+        -1.9038102835764722e-06,
+        4.364615578565411e-09
+      ],
+      "relative_change_pct": -97.97204059058308,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00029355377718882117,
+      "distance_group_mean": 6.572616048321432e-06,
+      "distance_minus_wsmse_mean": -0.00028698116114049966,
+      "bootstrap95": [
+        -0.0008569337498950197,
+        1.948792821714017e-06
+      ],
+      "relative_change_pct": -97.76101806242686,
+      "distance_lower_seeds": 5,
+      "wsmse_lower_seeds": 15,
+      "ties": 0
+    },
+    {
+      "circuit": "rc_ladder_c3",
+      "family": "rc_ladder",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.012263244383264829,
+      "distance_group_mean": 0.004270408077740492,
+      "distance_minus_wsmse_mean": -0.007992836305524338,
+      "bootstrap95": [
+        -0.01985937531400836,
+        -0.0012081293172686574
+      ],
+      "relative_change_pct": -65.17717543354064,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0684242023159451,
+      "distance_group_mean": 0.050686925145101716,
+      "distance_minus_wsmse_mean": -0.01773727717084337,
+      "bootstrap95": [
+        -0.07184174672241103,
+        0.03677993258302125
+      ],
+      "relative_change_pct": -25.922519474823336,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0006163766598868094,
+      "distance_group_mean": 0.0006496683580495374,
+      "distance_minus_wsmse_mean": 3.3291698162727944e-05,
+      "bootstrap95": [
+        -0.0005659025533039755,
+        0.0006747074022434352
+      ],
+      "relative_change_pct": 5.4011938363859535,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.1331594269930057,
+      "distance_group_mean": 0.11891862478739028,
+      "distance_minus_wsmse_mean": -0.014240802205615377,
+      "bootstrap95": [
+        -0.12622901028509062,
+        0.1094876477099017
+      ],
+      "relative_change_pct": -10.694550530292856,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c1",
+      "family": "rlc_ladder",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 6.680099429783314,
+      "distance_group_mean": 4.140989174377694,
+      "distance_minus_wsmse_mean": -2.53911025540562,
+      "bootstrap95": [
+        -5.892657605386117,
+        0.6482765099691461
+      ],
+      "relative_change_pct": -38.01006679758332,
+      "distance_lower_seeds": 17,
+      "wsmse_lower_seeds": 3,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.014847487336815757,
+      "distance_group_mean": 0.059409883326059856,
+      "distance_minus_wsmse_mean": 0.044562395989244115,
+      "bootstrap95": [
+        0.021848706180251618,
+        0.07285316328582846
+      ],
+      "relative_change_pct": 300.1342582643422,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00018275057868486012,
+      "distance_group_mean": 0.000452992893612382,
+      "distance_minus_wsmse_mean": 0.0002702423149275218,
+      "bootstrap95": [
+        0.00012063417751888686,
+        0.00045033781648528133
+      ],
+      "relative_change_pct": 147.87494347338557,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.03996772478131217,
+      "distance_group_mean": 0.12167665769198555,
+      "distance_minus_wsmse_mean": 0.08170893291067341,
+      "bootstrap95": [
+        0.03861969728066412,
+        0.13478793662481206
+      ],
+      "relative_change_pct": 204.43728873172753,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c2",
+      "family": "rlc_ladder",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.11253012939197604,
+      "distance_group_mean": 0.27876788194742363,
+      "distance_minus_wsmse_mean": 0.16623775255544754,
+      "bootstrap95": [
+        0.08669842908403595,
+        0.2532843306934604
+      ],
+      "relative_change_pct": 147.7273272977336,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.004230855582255391,
+      "distance_group_mean": 0.3584785227763557,
+      "distance_minus_wsmse_mean": 0.35424766719410034,
+      "bootstrap95": [
+        0.022736989908202193,
+        0.99028962591854
+      ],
+      "relative_change_pct": 8372.955784164522,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.783737794046308e-05,
+      "distance_group_mean": 0.0006576159806377084,
+      "distance_minus_wsmse_mean": 0.0006197786026972453,
+      "bootstrap95": [
+        6.761289345354215e-05,
+        0.0015284384133899156
+      ],
+      "relative_change_pct": 1638.006216161341,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.016292432662879244,
+      "distance_group_mean": 0.56810948220469,
+      "distance_minus_wsmse_mean": 0.5518170495418107,
+      "bootstrap95": [
+        0.04777566484963432,
+        1.4775176505715284
+      ],
+      "relative_change_pct": 3386.953077910049,
+      "distance_lower_seeds": 0,
+      "wsmse_lower_seeds": 20,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_ladder_c3",
+      "family": "rlc_ladder",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.23062219750201715,
+      "distance_group_mean": 2.4437521292420956,
+      "distance_minus_wsmse_mean": 2.2131299317400788,
+      "bootstrap95": [
+        0.6894098604434777,
+        4.6758820454888115
+      ],
+      "relative_change_pct": 959.6343958697736,
+      "distance_lower_seeds": 4,
+      "wsmse_lower_seeds": 16,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0049354052354428,
+      "distance_group_mean": 0.0019125528468909702,
+      "distance_minus_wsmse_mean": -0.00302285238855183,
+      "bootstrap95": [
+        -0.005751376871415162,
+        -0.0006445374117309494
+      ],
+      "relative_change_pct": -61.248311827440496,
+      "distance_lower_seeds": 14,
+      "wsmse_lower_seeds": 6,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.2544592894684438e-05,
+      "distance_group_mean": 2.4648086023664146e-05,
+      "distance_minus_wsmse_mean": 2.1034931289797053e-06,
+      "bootstrap95": [
+        -1.5002797129028092e-05,
+        2.0667538728317003e-05
+      ],
+      "relative_change_pct": 9.330366437779713,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.018367028696351737,
+      "distance_group_mean": 0.0165973959952455,
+      "distance_minus_wsmse_mean": -0.0017696327011062357,
+      "bootstrap95": [
+        -0.01373196315951683,
+        0.011082520172135487
+      ],
+      "relative_change_pct": -9.63483386650199,
+      "distance_lower_seeds": 13,
+      "wsmse_lower_seeds": 7,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c1",
+      "family": "rlc_background",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 17.542568416295214,
+      "distance_group_mean": 0.09840663789398293,
+      "distance_minus_wsmse_mean": -17.44416177840123,
+      "bootstrap95": [
+        -23.058826771601048,
+        -12.261256475489962
+      ],
+      "relative_change_pct": -99.43904087726074,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.22780822256544786,
+      "distance_group_mean": 0.04730893771109149,
+      "distance_minus_wsmse_mean": -0.18049928485435643,
+      "bootstrap95": [
+        -0.2914851646734787,
+        -0.08490006075752046
+      ],
+      "relative_change_pct": -79.23299818666557,
+      "distance_lower_seeds": 15,
+      "wsmse_lower_seeds": 5,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.0007875394207080465,
+      "distance_group_mean": 0.0006279994015666707,
+      "distance_minus_wsmse_mean": -0.0001595400191413756,
+      "bootstrap95": [
+        -0.0005658707185513407,
+        0.00023795491033851563
+      ],
+      "relative_change_pct": -20.25803597208372,
+      "distance_lower_seeds": 11,
+      "wsmse_lower_seeds": 9,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.1687992531136997,
+      "distance_group_mean": 0.7976736667967972,
+      "distance_minus_wsmse_mean": -0.37112558631690235,
+      "bootstrap95": [
+        -0.9244273100932723,
+        0.1583031854829073
+      ],
+      "relative_change_pct": -31.75272274757347,
+      "distance_lower_seeds": 12,
+      "wsmse_lower_seeds": 8,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c2",
+      "family": "rlc_background",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 4330.5483724056085,
+      "distance_group_mean": 1.7346744307661752,
+      "distance_minus_wsmse_mean": -4328.8136979748415,
+      "bootstrap95": [
+        -5803.888538471206,
+        -2939.631233694996
+      ],
+      "relative_change_pct": -99.95994330783095,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.19861358408621538,
+      "distance_group_mean": 0.35051150833610023,
+      "distance_minus_wsmse_mean": 0.15189792424988485,
+      "bootstrap95": [
+        0.0064299137447394435,
+        0.2972892215866942
+      ],
+      "relative_change_pct": 76.47912148040594,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 0.00163819866006454,
+      "distance_group_mean": 0.004419252965875648,
+      "distance_minus_wsmse_mean": 0.002781054305811107,
+      "bootstrap95": [
+        0.0013865927349675507,
+        0.0041967827293720025
+      ],
+      "relative_change_pct": 169.76294594829807,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 0.7779105530682788,
+      "distance_group_mean": 1.913240077651313,
+      "distance_minus_wsmse_mean": 1.135329524583034,
+      "bootstrap95": [
+        0.5145837842531803,
+        1.773933170977001
+      ],
+      "relative_change_pct": 145.94602427040013,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_background_c3",
+      "family": "rlc_background",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 38.53433299092053,
+      "distance_group_mean": 1.1441391962953449,
+      "distance_minus_wsmse_mean": -37.39019379462519,
+      "bootstrap95": [
+        -46.50562925786403,
+        -28.224307217523414
+      ],
+      "relative_change_pct": -97.03085765993426,
+      "distance_lower_seeds": 20,
+      "wsmse_lower_seeds": 0,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 9.240761860428398e-07,
+      "distance_group_mean": 1.017305464992028e-05,
+      "distance_minus_wsmse_mean": 9.248978463877442e-06,
+      "bootstrap95": [
+        3.790673065072339e-07,
+        2.283418051720853e-05
+      ],
+      "relative_change_pct": 1000.889169483333,
+      "distance_lower_seeds": 8,
+      "wsmse_lower_seeds": 12,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 1.1741160593495684e-08,
+      "distance_group_mean": 1.478652417681981e-07,
+      "distance_minus_wsmse_mean": 1.3612408117470238e-07,
+      "bootstrap95": [
+        1.00308125943081e-08,
+        3.523130772059056e-07
+      ],
+      "relative_change_pct": 1159.3750046320959,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.9403862504185367e-06,
+      "distance_group_mean": 2.2972209570228172e-05,
+      "distance_minus_wsmse_mean": 2.103182331980963e-05,
+      "bootstrap95": [
+        1.2631184155435953e-06,
+        5.351571482360473e-05
+      ],
+      "relative_change_pct": 1083.8988018634498,
+      "distance_lower_seeds": 7,
+      "wsmse_lower_seeds": 13,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c1",
+      "family": "rlc_bridge",
+      "condition": "lowQ_close",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 0.006311232542679307,
+      "distance_group_mean": 0.01335883091016243,
+      "distance_minus_wsmse_mean": 0.007047598367483127,
+      "bootstrap95": [
+        -0.0014320213588279501,
+        0.01719734231818699
+      ],
+      "relative_change_pct": 111.66754385651596,
+      "distance_lower_seeds": 10,
+      "wsmse_lower_seeds": 10,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 3.3036228333716593e-13,
+      "distance_group_mean": 4.506025697705035e-05,
+      "distance_minus_wsmse_mean": 4.506025664668807e-05,
+      "bootstrap95": [
+        1.9261147159989448e-07,
+        0.00013379799968623454
+      ],
+      "relative_change_pct": 13639649233.414402,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 2.2053692170314607e-15,
+      "distance_group_mean": 8.030356287100083e-07,
+      "distance_minus_wsmse_mean": 8.030356265046391e-07,
+      "bootstrap95": [
+        3.4571161493013336e-09,
+        2.38382527571693e-06
+      ],
+      "relative_change_pct": 36412752127.98907,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 7.985714471097646e-13,
+      "distance_group_mean": 0.00021554809969030614,
+      "distance_minus_wsmse_mean": 0.00021554809889173478,
+      "bootstrap95": [
+        9.278432469794295e-07,
+        0.0006398881404892607
+      ],
+      "relative_change_pct": 26991711220.312057,
+      "distance_lower_seeds": 1,
+      "wsmse_lower_seeds": 19,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c2",
+      "family": "rlc_bridge",
+      "condition": "midQ_mid",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 1.5550082572684897e-06,
+      "distance_group_mean": 0.006288147045915675,
+      "distance_minus_wsmse_mean": 0.0062865920376584065,
+      "bootstrap95": [
+        0.0006289379862102491,
+        0.01649363635077648
+      ],
+      "relative_change_pct": 404280.2993664718,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "metric": "magnitude_mse_db2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.837920919061119e-22,
+      "distance_group_mean": 1.0781087855226779e-10,
+      "distance_minus_wsmse_mean": 1.0781087855168396e-10,
+      "bootstrap95": [
+        2.1056990672394147e-13,
+        3.2121870130280957e-10
+      ],
+      "relative_change_pct": 18467341378276.605,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "metric": "phase_mse_rad2",
+      "seeds": 20,
+      "wsmse_group_mean": 5.3861869607379435e-24,
+      "distance_group_mean": 1.5490232673850732e-11,
+      "distance_minus_wsmse_mean": 1.5490232673845342e-11,
+      "bootstrap95": [
+        2.1929362935350178e-14,
+        4.622876553834487e-11
+      ],
+      "relative_change_pct": 287591811921119.8,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "metric": "wsmse",
+      "seeds": 20,
+      "wsmse_group_mean": 1.3504507790173779e-21,
+      "distance_group_mean": 2.312658488066993e-09,
+      "distance_minus_wsmse_mean": 2.312658488065642e-09,
+      "bootstrap95": [
+        3.3196204445093526e-12,
+        6.901314874141101e-09
+      ],
+      "relative_change_pct": 171250853714815.97,
+      "distance_lower_seeds": 2,
+      "wsmse_lower_seeds": 18,
+      "ties": 0
+    },
+    {
+      "circuit": "rlc_bridge_c3",
+      "family": "rlc_bridge",
+      "condition": "highQ_wide",
+      "metric": "mean_distance_ohm",
+      "seeds": 20,
+      "wsmse_group_mean": 3.898310543546102e-12,
+      "distance_group_mean": 5.501371384212284e-07,
+      "distance_minus_wsmse_mean": 5.501332401106849e-07,
+      "bootstrap95": [
+        3.682201427092549e-08,
+        1.4644038908096759e-06
+      ],
+      "relative_change_pct": 14112093.78948696,
+      "distance_lower_seeds": 3,
+      "wsmse_lower_seeds": 17,
+      "ties": 0
+    }
+  ],
+  "synthetic_tally": {
+    "magnitude_mse_db2": {
+      "distance_lower_mean": 20,
+      "wsmse_lower_mean": 28
+    },
+    "phase_mse_rad2": {
+      "distance_lower_mean": 19,
+      "wsmse_lower_mean": 29
+    },
+    "wsmse": {
+      "distance_lower_mean": 20,
+      "wsmse_lower_mean": 28
+    },
+    "mean_distance_ohm": {
+      "distance_lower_mean": 34,
+      "wsmse_lower_mean": 14
+    }
+  },
+  "synthetic_distance_both_components_lower": 18,
+  "synthetic_wsmse_both_components_lower": 27,
+  "topology_summary": [
+    {
+      "family": "rc_series",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 9.446255886524808e-06
+    },
+    {
+      "family": "rc_series",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 4.84484409381702e-05
+    },
+    {
+      "family": "rc_parallel",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 1.554193371051956e-20
+    },
+    {
+      "family": "rc_parallel",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 9.641533369451068e-19
+    },
+    {
+      "family": "rl_series",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 3.336879814255144e-16
+    },
+    {
+      "family": "rl_series",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 1.3201057294376104e-14
+    },
+    {
+      "family": "rl_parallel",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 1.1401123685021843e-05
+    },
+    {
+      "family": "rl_parallel",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 5.170633841342883e-05
+    },
+    {
+      "family": "rlc_series",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 6.329805760439242e-20
+    },
+    {
+      "family": "rlc_series",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 3,
+      "geometric_mean_error_ratio": 3.7136997185002296e-17
+    },
+    {
+      "family": "rlc_parallel",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 2.757352652792395
+    },
+    {
+      "family": "rlc_parallel",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 5.552410043789462
+    },
+    {
+      "family": "two_parallel_units",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 2.2402609003297225
+    },
+    {
+      "family": "two_parallel_units",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 13.630010074882861
+    },
+    {
+      "family": "three_parallel_units",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 3.3655307941670918
+    },
+    {
+      "family": "three_parallel_units",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 12.793354372867437
+    },
+    {
+      "family": "two_series_units",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 11.852585003754264
+    },
+    {
+      "family": "two_series_units",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 170.74872230530661
+    },
+    {
+      "family": "three_series_units",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 40.12026939013774
+    },
+    {
+      "family": "three_series_units",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 356.99548861097537
+    },
+    {
+      "family": "rc_two_process",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 38.53484170838698
+    },
+    {
+      "family": "rc_two_process",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 43.76267861698945
+    },
+    {
+      "family": "rl_two_process",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 114.31530181416089
+    },
+    {
+      "family": "rl_two_process",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 76.43091396597868
+    },
+    {
+      "family": "rc_ladder",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 0.38516179653684307
+    },
+    {
+      "family": "rc_ladder",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 0.383772960599743
+    },
+    {
+      "family": "rlc_ladder",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 6.309219345951723
+    },
+    {
+      "family": "rlc_ladder",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 3.567602787012151
+    },
+    {
+      "family": "rlc_background",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 2,
+      "geometric_mean_error_ratio": 0.5217381416031196
+    },
+    {
+      "family": "rlc_background",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 1,
+      "geometric_mean_error_ratio": 1.3298520970939154
+    },
+    {
+      "family": "rlc_bridge",
+      "metric": "magnitude_mse_db2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 6521042.94849367
+    },
+    {
+      "family": "rlc_bridge",
+      "metric": "phase_mse_rad2",
+      "circuits": 3,
+      "distance_lower_circuits": 0,
+      "geometric_mean_error_ratio": 23626262.821381822
+    }
+  ],
+  "runs": 2320,
+  "synthetic_circuits": 48,
+  "synthetic_topologies": 16
+}

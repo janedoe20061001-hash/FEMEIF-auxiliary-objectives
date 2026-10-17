@@ -1,0 +1,106 @@
+{
+  "id": "control_rlc/base",
+  "kind": "theoretical",
+  "circuit": {
+    "id": "control_rlc",
+    "title": "单并联RLC对照",
+    "tree": [
+      "P",
+      "R1",
+      "L1",
+      "C1"
+    ],
+    "expression": "(R1 // L1 // C1)",
+    "names": [
+      "R1",
+      "L1",
+      "C1"
+    ],
+    "parameters": [
+      3000.0,
+      0.0015915494309189533,
+      1.5915494309189535e-07
+    ],
+    "units": [
+      "ohm",
+      "H",
+      "F"
+    ],
+    "netlist": [
+      {
+        "component": "R1",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "component": "L1",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "component": "C1",
+        "a": 1,
+        "b": 0
+      }
+    ]
+  },
+  "lower_log10": [
+    1.9771212547196626,
+    -4.298179868358115,
+    -8.298179868358115
+  ],
+  "upper_log10": [
+    4.977121254719663,
+    -1.298179868358115,
+    -5.298179868358115
+  ],
+  "events": [
+    {
+      "event_id": "P1",
+      "kind": "peak",
+      "x": 4.0,
+      "frequency_hz": 10000.0,
+      "height_db": 69.54242509439325,
+      "prominence_db": 69.54155694464302,
+      "width_3db_decades": 0.014441484047727382,
+      "width_3db_hz": 332.542779551075,
+      "left_3db_x": 3.992779257985402,
+      "right_3db_x": 4.007220742033129
+    }
+  ],
+  "phase_events": [
+    {
+      "event_id": "D1",
+      "sign": -1,
+      "x": 4.0,
+      "frequency_hz": 10000.0,
+      "slope_deg_per_decade": -7915.704467897821,
+      "width_decades": 0.014477830702556371
+    }
+  ],
+  "factor": 1.0,
+  "source": {
+    "path": "output/mse_structure_complex_20261010_server/retrieved/other/inputs_core/control_rlc/base/target.json",
+    "sha256": "4207682705cbbd67feb7863942b5ea5792530e787aae43faec8da4f515bda66f"
+  },
+  "blocks": [
+    {
+      "lo": 2.0,
+      "hi": 3.956675547856818,
+      "label": "gap_0",
+      "event": false
+    },
+    {
+      "lo": 3.956675547856818,
+      "hi": 4.043324452143182,
+      "label": "P1",
+      "event": true
+    },
+    {
+      "lo": 4.043324452143182,
+      "hi": 6.0,
+      "label": "end_gap",
+      "event": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "band_hz": [100.0, 1000000.0],
+  "original_points": 180,
+  "bound_log10_half_width": 1.5,
+  "alpha_selection_only": 25.12,
+  "population": 200,
+  "generations": 300,
+  "save_every": 20,
+  "seeds": [33000, 33001, 33002, 33003, 33004, 33005, 33006, 33007],
+  "plot_seeds": [33000, 33003, 33006],
+  "profiles": {"core": ["lc_reciprocal"], "extended": ["lc_reciprocal", "damping", "background"]},
+  "factors": {"lc_reciprocal": [0.25, 1.0, 8.0], "damping": [0.5, 1.0, 2.0], "background": [0.25, 1.0, 4.0]},
+  "adaptive": {"amplitude_db": 0.1, "phase_deg": 0.5, "max_depth": 32, "max_points": 20000},
+  "events": {"prominence_db": 1.0, "match_decades": 0.25, "position_decades": 0.02, "height_db": 3.0, "width_ratio": 2.0},
+  "phase_events": {"min_slope_deg_per_decade": 30.0, "prominence_deg_per_decade": 15.0},
+  "audit": {"objective_rtol": 0.01, "objective_atol": [0.01, 0.00007615435494667714], "refinements": [1, 2, 4, 8]},
+  "close_scores": {"thresholds": [0.02, 0.05, 0.1], "floors": [0.01, 0.00007615435494667714], "height_difference_db": 6.0, "width_ratio_between_fits": 2.0},
+  "operators": {"sbx_probability": 0.9, "sbx_eta": 1.0, "pm_probability": 1.0, "pm_variable_probability": 0.1, "pm_eta": 1.0},
+  "notes": "Exploratory paired seeds; pure MAG/PHA objectives. LC product is held fixed, port peak position/width is NOT assumed fixed. No auxiliary objective."
+}

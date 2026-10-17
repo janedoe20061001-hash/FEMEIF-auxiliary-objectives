@@ -1,0 +1,100 @@
+[
+  {
+    "circuit": "case1",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 4.028825657450302,
+      "phase_mse_rad2": 0.04168882382773291,
+      "wsmse": 5.076048912002952,
+      "mean_distance_ohm": 6.382053766601021
+    },
+    "narrow_peak_core": {
+      "center_hz": 25227.754472868324,
+      "quality_factor": 1892.6172354705006,
+      "half_power_bandwidth_hz": 13.329559722939308,
+      "training_points_in_core": 10,
+      "weight_in_core": 5.749390448520332e-05,
+      "target_peak_ohm": 3000.238173976897
+    }
+  },
+  {
+    "circuit": "rlc_background_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.035053307281764735,
+      "phase_mse_rad2": 0.0012380772102486659,
+      "wsmse": 0.47286002312571795,
+      "mean_distance_ohm": 0.6855026668193598
+    }
+  },
+  {
+    "circuit": "rlc_parallel_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.16907303576125926,
+      "phase_mse_rad2": 0.0005304477539214902,
+      "wsmse": 0.5936721839895611,
+      "mean_distance_ohm": 1.578068907485629
+    }
+  },
+  {
+    "circuit": "rlc_series_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.13744702305147405,
+      "phase_mse_rad2": 0.0008965219670480885,
+      "wsmse": 0.8841265220503485,
+      "mean_distance_ohm": 0.0029458501336209943
+    }
+  },
+  {
+    "circuit": "three_parallel_units_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.44395781433638537,
+      "phase_mse_rad2": 0.009891205867566095,
+      "wsmse": 6.986014105470811,
+      "mean_distance_ohm": 6.156883548975116
+    }
+  },
+  {
+    "circuit": "three_series_units_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.44897480991310074,
+      "phase_mse_rad2": 0.004326664525690076,
+      "wsmse": 3.809805882267073,
+      "mean_distance_ohm": 46.40376890839769
+    }
+  },
+  {
+    "circuit": "two_parallel_units_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.32266522825622707,
+      "phase_mse_rad2": 0.006931253504842272,
+      "wsmse": 9.192638144024329,
+      "mean_distance_ohm": 9.175482445560903
+    }
+  },
+  {
+    "circuit": "two_series_units_c3",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 0.3274289099611523,
+      "phase_mse_rad2": 0.003542288105285032,
+      "wsmse": 3.206774330230693,
+      "mean_distance_ohm": 69.63458057871856
+    }
+  },
+  {
+    "circuit": "rc_series_c1",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 1.581036903553238e-07,
+      "phase_mse_rad2": 1.0430304964987414e-09,
+      "wsmse": 5.06170797871197e-07,
+      "mean_distance_ohm": 0.01862374924289232
+    }
+  },
+  {
+    "circuit": "rlc_bridge_c2",
+    "weighted_true_vs_interpolated_target": {
+      "magnitude_mse_db2": 2.748971771770952e-07,
+      "phase_mse_rad2": 2.7512395247627186e-09,
+      "wsmse": 8.58996904007053e-07,
+      "mean_distance_ohm": 0.003523663961819604
+    }
+  }
+]

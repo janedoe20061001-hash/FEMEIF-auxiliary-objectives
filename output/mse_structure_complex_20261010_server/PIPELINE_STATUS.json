@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "pid": 1809,
+  "started_unix": 1791644727.9073803,
+  "workers": 8,
+  "first_circuits": [
+    "user_nested",
+    "control_rlc"
+  ],
+  "remaining_circuits": [
+    "rlc_ladder",
+    "loaded_tank",
+    "dual_nested",
+    "three_level",
+    "mixed_resonators"
+  ],
+  "planned_total_jobs": 168,
+  "planned_evaluations": 10080000,
+  "stage": "complete",
+  "updated_unix": 1791651372.17451,
+  "child_pid": null,
+  "command": [
+    "/root/autodl-tmp/femeif_nested_20261010_01/.venv/bin/python",
+    "/root/autodl-tmp/femeif_nested_20261010_01/inspect_audit.py",
+    "--group",
+    "other"
+  ],
+  "last_successful_stage": "run_other",
+  "resumed_unix": 1791646694.4825983,
+  "first_supplemental_audit_passed": true,
+  "original_first_audit_preserved": true,
+  "archive_first": "/root/autodl-tmp/femeif_nested_20261010_01/results_first.zip",
+  "archive_first_sha256": "cee00d2f1d24e45c82a618489bd66773cd8ab7a4c0b7bb27a7cd053e458e93bb",
+  "analysis_workers": 24,
+  "parallel_analysis_verified": true,
+  "original_grid_analysis_preserved": true,
+  "other_supplemental_audit_passed": true,
+  "archive_other": "/root/autodl-tmp/femeif_nested_20261010_01/results_other_core.zip",
+  "archive_other_sha256": "f77645e6a02b6b95e86aec85b5737472efee7710fe9c7513304270764e76eb99",
+  "finished_unix": 1791651196.5056624,
+  "elapsed_seconds": 6468.598284006119,
+  "full_archive_other": {
+    "path": "/root/autodl-tmp/femeif_nested_20261010_01/results_other.zip",
+    "sha256": "3cba929013adc231e6a28a7ca862c4903f228a633e6ab62f0049963241392fc5"
+  },
+  "core_archive_omits_only_derived_plots": true
+}

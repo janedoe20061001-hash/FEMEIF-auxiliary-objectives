@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-10-16T04:41:09.380729+00:00",
+  "phase": "complete_at_predeclared_direction_gate",
+  "candidate_gates": {
+    "Root": {
+      "metric": "Root",
+      "dev_total": 12,
+      "dev_correct": 10,
+      "dev_wrong": 2,
+      "dev_uncertain": 0,
+      "dev_extra_correct": 4,
+      "dev_extra_total": 6,
+      "held_total": 24,
+      "held_correct": 17,
+      "held_wrong": 7,
+      "held_uncertain": 0,
+      "held_extra_correct": 8,
+      "held_extra_total": 8,
+      "two_P3_counterexamples_correct": true,
+      "held_family_correct": {
+        "missing_structure": 3,
+        "existing_distortion": 6,
+        "extra_structure": 8
+      },
+      "direction_gates_passed": false
+    },
+    "B": {
+      "metric": "B",
+      "dev_total": 12,
+      "dev_correct": 9,
+      "dev_wrong": 3,
+      "dev_uncertain": 0,
+      "dev_extra_correct": 4,
+      "dev_extra_total": 6,
+      "held_total": 24,
+      "held_correct": 13,
+      "held_wrong": 11,
+      "held_uncertain": 0,
+      "held_extra_correct": 8,
+      "held_extra_total": 8,
+      "two_P3_counterexamples_correct": false,
+      "held_family_correct": {
+        "missing_structure": 1,
+        "existing_distortion": 4,
+        "extra_structure": 8
+      },
+      "direction_gates_passed": false
+    }
+  },
+  "numerical_checks_passed": true,
+  "holdout_bank_complete": true,
+  "strict_strata_retained": true,
+  "optimization_started": false,
+  "formal_new_optimization_tasks": 0,
+  "cost_admission_benchmark_executed": false,
+  "optimization_trace_logging_executed": false,
+  "reason": "Both proposed candidates failed predeclared structural-direction requirements; no optimization or threshold change",
+  "main_delta": 0.01,
+  "sensitivity_delta_not_selected": true,
+  "website_published": false,
+  "automation_created": false,
+  "server_shutdown_requested": false
+}

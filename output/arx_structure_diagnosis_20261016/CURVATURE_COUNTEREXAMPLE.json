@@ -1,0 +1,124 @@
+{
+  "pair_id": "pair_001",
+  "bank_sha256": "05d5ae622fc7139a3070ff24026940c1d052a8330c4931e785bbb8a41e75ea43",
+  "formula": "a_local(t,h)=(2/3)*h^3*Im(conj(z_prime)*z_second)+higher-order terms; derived by Taylor expansion",
+  "evaluation": "Same target-centered frequency; no candidate alignment; fixed original h values",
+  "rows": [
+    {
+      "side": "target",
+      "h": 0.03125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -0.055189753927011254,
+      "derivative_cross": -3430.94805492349,
+      "small_h_approximation": -0.0698028168726296,
+      "direct_polygon_area": -0.05518975301367714,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "target",
+      "h": 0.0625,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -0.25346229580619795,
+      "derivative_cross": -3430.94805492349,
+      "small_h_approximation": -0.5584225349810368,
+      "direct_polygon_area": -0.2534622902708682,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "target",
+      "h": 0.125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -0.579124103580305,
+      "derivative_cross": -3430.94805492349,
+      "small_h_approximation": -4.467380279848294,
+      "direct_polygon_area": -0.5791240779113331,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "better",
+      "h": 0.03125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -0.15471896228769083,
+      "derivative_cross": -9050.253233501604,
+      "small_h_approximation": -0.18412787340294604,
+      "direct_polygon_area": -0.15471895912618353,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "better",
+      "h": 0.0625,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -0.6766065715328822,
+      "derivative_cross": -9050.253233501604,
+      "small_h_approximation": -1.4730229872235683,
+      "direct_polygon_area": -0.6766065482527321,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "better",
+      "h": 0.125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -1.204222193248941,
+      "derivative_cross": -9050.253233501604,
+      "small_h_approximation": -11.784183897788546,
+      "direct_polygon_area": -1.2042220862955897,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "worse",
+      "h": 0.03125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -1.5856148174170502e-09,
+      "derivative_cross": -7.790071001428225e-05,
+      "small_h_approximation": -1.584894002569219e-09,
+      "direct_polygon_area": -1.5856147954075345e-09,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "worse",
+      "h": 0.0625,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -1.2702234536204154e-08,
+      "derivative_cross": -7.790071001428225e-05,
+      "small_h_approximation": -1.2679152020553752e-08,
+      "direct_polygon_area": -1.270223434537023e-08,
+      "second_derivative_finite_difference_passed": true
+    },
+    {
+      "side": "worse",
+      "h": 0.125,
+      "center_t": 0.5,
+      "center_hz": 25227.77811040502,
+      "signed_local_area": -1.0217395802194136e-07,
+      "derivative_cross": -7.790071001428225e-05,
+      "small_h_approximation": -1.0143321616443001e-07,
+      "direct_polygon_area": -1.0217395648454393e-07,
+      "second_derivative_finite_difference_passed": true
+    }
+  ],
+  "ratios": [
+    {
+      "h": 0.03125,
+      "better_area_over_target": 2.803400111047922,
+      "worse_area_over_target": 2.873023894098231e-08
+    },
+    {
+      "h": 0.0625,
+      "better_area_over_target": 2.6694564940350274,
+      "worse_area_over_target": 5.011488788027282e-08
+    },
+    {
+      "h": 0.125,
+      "better_area_over_target": 2.079385378374181,
+      "worse_area_over_target": 1.76428432852775e-07
+    }
+  ]
+}

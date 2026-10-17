@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-11",
+  "purpose": "Exploratory paired MAG/PHA versus MAG/PHA plus one local three-dimensional trajectory bottleneck objective; no website publication",
+  "targets": ["case1", "ladder8", "mixed0p25", "control0p25"],
+  "focus_events": {"case1": ["P3", "V2"], "ladder8": ["P2", "V1"], "mixed0p25": ["P1", "V1"], "control0p25": ["P1"]},
+  "seeds": [41000, 41001, 41002, 41003],
+  "population": 200,
+  "generations": 300,
+  "save_every": 20,
+  "workers": 4,
+  "methods": ["MAG_PHA", "MAG_PHA_GEOMETRY"],
+  "planned_jobs": 32,
+  "planned_evaluations": 1920000,
+  "geometry": {"points_per_window": 129, "half_window_widths": 3.0, "frequency_slack_widths": 0.25, "ohm_floor": 0.000001, "aggregation": "maximum_over_focus_events", "clip_at_neighbor_midpoints": true},
+  "selection": {"alpha": 25.12, "primary": "minimize_MAG_plus_alpha_PHA_over_retained_population", "secondary": "minimize_geometry_within_1.10_times_paired_baseline_primary_scores_plus_fixed_floors", "relative_allowance": 0.1, "absolute_floors": [0.01, 0.00007615435494667714]},
+  "geometry_audit": {"points": [257, 513, 1025], "relative_tolerance": 0.01, "absolute_tolerance": 0.01, "candidate_mode_anchors": true},
+  "success_scope": "No universal claim from four paired seeds. Primary uses identical MAG/PHA-only selection in both arms. Secondary explicitly permits limited MAG/PHA tradeoff. Training geometry is a discrete sampled score; independently refine and expose sampling instability, never relax tolerances to pass.",
+  "held_out_policy": "All four targets are development examples, not unseen validation circuits. No parameter tuning after looking at pilot results."
+}

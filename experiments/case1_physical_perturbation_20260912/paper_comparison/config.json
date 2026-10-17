@@ -1,0 +1,18 @@
+{
+  "primary": "Copied unchanged from original dense study",
+  "amplitude": "20log10(abs(Z)), dB",
+  "frequency": "log10(f/Hz), [2,6]",
+  "dense_points": 65537,
+  "coarse_points": 180,
+  "DTW_points": 60,
+  "THk": 8,
+  "beta": 0.4,
+  "mu": 0.5,
+  "gamma": 0.41,
+  "THlf": 1.6,
+  "SS_endpoint_rule": "sum over N-2 available patterns, divide by N",
+  "PTC": "sum all same-type within target peak/trough midpoint zones; missing .41; no peak refinement",
+  "LFP": "consecutive magnitude-MSE zones <1.6; report loss 1-count/11",
+  "DTW": "unconstrained absolute-dB-cost path sum; direct evaluation at log-uniform 60 points",
+  "limitations": "Paper does not provide author code or exact frequency coordinates; not exact replication. Auxiliary formulas interpreted on magnitude dB. Coarse grid is a sensitivity check."
+}

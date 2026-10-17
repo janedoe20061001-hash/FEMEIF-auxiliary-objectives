@@ -1,0 +1,143 @@
+{
+  "id": "reg_setting_0208",
+  "target": "notch_Q20",
+  "cohort": "physical_regression",
+  "levels": [
+    {
+      "n": 128,
+      "search": [
+        4.388013684769312,
+        4.407866332574763
+      ],
+      "core": [
+        4.396699218184197,
+        4.399180799159878
+      ],
+      "path_length_in_search": 154.45215121176602,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.400421589647719,
+          "frequency_hz": 25143.260192298498,
+          "kind": "valley",
+          "real_ohm": 34.77272727272728,
+          "imag_ohm": -7.516485138619244e-13,
+          "magnitude_ohm": 34.77272727272728,
+          "phase_deg": -1.2385076149993646e-12,
+          "R_dR": -2.4072945769818835e-09,
+          "X_dX": -6.293580593416711e-09,
+          "radial_balance_relative": 1.0,
+          "normalized_radial_dot": -2.988416934524236e-14
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.400421589647719,
+            "frequency_hz": 25143.260192298498,
+            "kind": "valley",
+            "real_ohm": 34.77272727272728,
+            "imag_ohm": -7.516485138619244e-13,
+            "magnitude_ohm": 34.77272727272728,
+            "phase_deg": -1.2385076149993646e-12,
+            "R_dR": -2.4072945769818835e-09,
+            "X_dX": -6.293580593416711e-09,
+            "radial_balance_relative": 1.0,
+            "normalized_radial_dot": -2.988416934524236e-14
+          },
+          "location": "outside_core",
+          "frequency_offset_decades": 0.0024815809756812968,
+          "frequency_offset_core_widths": 1.0,
+          "max_normalized_state_residual": 0.6099399740553114,
+          "mean_normalized_state_residual": 0.5428131193473255,
+          "max_normalized_derivative_residual": 0.8963217822213918,
+          "mean_normalized_derivative_residual": 0.893057014632538,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 17
+        }
+      ],
+      "core_valley_count": 0,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "no_valley_in_core",
+      "signature_relation": "no_strict_translation_evidence",
+      "signature_consistent_count": 0,
+      "signature_center_location": null,
+      "signature_center_x": null
+    },
+    {
+      "n": 256,
+      "search": [
+        4.388013684769312,
+        4.407866332574763
+      ],
+      "core": [
+        4.396699218184197,
+        4.399180799159878
+      ],
+      "path_length_in_search": 154.45215338996377,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.400421589647719,
+          "frequency_hz": 25143.260192298498,
+          "kind": "valley",
+          "real_ohm": 34.77272727272728,
+          "imag_ohm": -7.516485138619244e-13,
+          "magnitude_ohm": 34.77272727272728,
+          "phase_deg": -1.2385076149993646e-12,
+          "R_dR": -2.4072945769818835e-09,
+          "X_dX": -6.293580593416711e-09,
+          "radial_balance_relative": 1.0,
+          "normalized_radial_dot": -2.988416934524236e-14
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.400421589647719,
+            "frequency_hz": 25143.260192298498,
+            "kind": "valley",
+            "real_ohm": 34.77272727272728,
+            "imag_ohm": -7.516485138619244e-13,
+            "magnitude_ohm": 34.77272727272728,
+            "phase_deg": -1.2385076149993646e-12,
+            "R_dR": -2.4072945769818835e-09,
+            "X_dX": -6.293580593416711e-09,
+            "radial_balance_relative": 1.0,
+            "normalized_radial_dot": -2.988416934524236e-14
+          },
+          "location": "outside_core",
+          "frequency_offset_decades": 0.0024815809756812968,
+          "frequency_offset_core_widths": 1.0,
+          "max_normalized_state_residual": 0.6099399740553114,
+          "mean_normalized_state_residual": 0.5428131193473255,
+          "max_normalized_derivative_residual": 0.8963217822213918,
+          "mean_normalized_derivative_residual": 0.893057014632538,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 17
+        }
+      ],
+      "core_valley_count": 0,
+      "boundary_valley_count": 0,
+      "search_valley_count": 1,
+      "occupancy": "no_valley_in_core",
+      "signature_relation": "no_strict_translation_evidence",
+      "signature_consistent_count": 0,
+      "signature_center_location": null,
+      "signature_center_x": null
+    }
+  ],
+  "stability_checks": {
+    "root_count_type_location": true,
+    "candidate_location_signature": true,
+    "categories": true
+  },
+  "numerical_passed": true
+}

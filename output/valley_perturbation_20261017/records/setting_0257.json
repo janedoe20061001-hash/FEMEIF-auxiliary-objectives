@@ -1,0 +1,192 @@
+{
+  "id": "setting_0257",
+  "target": "notch_Q2000",
+  "family": "background",
+  "meta": {},
+  "levels": [
+    {
+      "n": 128,
+      "scopes": {
+        "core": {
+          "length": 0.0,
+          "target_length": 41.37728494349073,
+          "length_ratio": 0.0,
+          "endpoint_displacement": 0.0,
+          "endpoint_efficiency": null,
+          "arc_quantiles": null,
+          "target_arc_quantiles": [
+            4.397930097821964,
+            4.3979400086720375,
+            4.397949919522104
+          ],
+          "arc80_width": null,
+          "target_arc80_width": 1.982170013992146e-05,
+          "cdf_L1": null,
+          "zero_motion": true,
+          "radial_extrema": [],
+          "boundary_extrema": []
+        },
+        "window": {
+          "length": 0.0,
+          "target_length": 269.32076753371655,
+          "length_ratio": 0.0,
+          "endpoint_displacement": 0.0,
+          "endpoint_efficiency": null,
+          "arc_quantiles": null,
+          "target_arc_quantiles": [
+            4.397866917895097,
+            4.397940008672031,
+            4.398013099448736
+          ],
+          "arc80_width": null,
+          "target_arc80_width": 0.00014618155363876895,
+          "cdf_L1": null,
+          "zero_motion": true,
+          "radial_extrema": [],
+          "boundary_extrema": []
+        }
+      }
+    },
+    {
+      "n": 256,
+      "scopes": {
+        "core": {
+          "length": 0.0,
+          "target_length": 41.377285049825645,
+          "length_ratio": 0.0,
+          "endpoint_displacement": 0.0,
+          "endpoint_efficiency": null,
+          "arc_quantiles": null,
+          "target_arc_quantiles": [
+            4.397930097821971,
+            4.3979400086720375,
+            4.3979499195221035
+          ],
+          "arc80_width": null,
+          "target_arc80_width": 1.9821700132816034e-05,
+          "cdf_L1": null,
+          "zero_motion": true,
+          "radial_extrema": [],
+          "boundary_extrema": []
+        },
+        "window": {
+          "length": 0.0,
+          "target_length": 269.3207890269014,
+          "length_ratio": 0.0,
+          "endpoint_displacement": 0.0,
+          "endpoint_efficiency": null,
+          "arc_quantiles": null,
+          "target_arc_quantiles": [
+            4.397866917900643,
+            4.397940008672036,
+            4.39801309944333
+          ],
+          "arc80_width": null,
+          "target_arc80_width": 0.00014618154268664085,
+          "cdf_L1": null,
+          "zero_motion": true,
+          "radial_extrema": [],
+          "boundary_extrema": []
+        }
+      }
+    }
+  ],
+  "convergence": {
+    "core": {
+      "length": true,
+      "root_sequence": true,
+      "arc_quantiles": true,
+      "cdf": true,
+      "zero_motion": true
+    },
+    "window": {
+      "length": true,
+      "root_sequence": true,
+      "arc_quantiles": true,
+      "cdf": true,
+      "zero_motion": true
+    }
+  },
+  "gauss": {
+    "core": {
+      "levels": [
+        {
+          "order": 32,
+          "refinement": 1,
+          "length": 0.0
+        },
+        {
+          "order": 64,
+          "refinement": 2,
+          "length": 0.0
+        }
+      ],
+      "passed": true
+    },
+    "window": {
+      "levels": [
+        {
+          "order": 32,
+          "refinement": 1,
+          "length": 0.0
+        },
+        {
+          "order": 64,
+          "refinement": 2,
+          "length": 0.0
+        }
+      ],
+      "passed": true
+    }
+  },
+  "analytic_identity": {
+    "applicable": true,
+    "passed": true,
+    "max_absolute": 0.0,
+    "max_relative": 0.0
+  },
+  "anchors": {
+    "x": [
+      4.397927600750281,
+      4.3979400086720375,
+      4.397952416593794
+    ],
+    "real": [
+      23.181818181818183,
+      23.181818181818183,
+      23.181818181818183
+    ],
+    "imag": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_real": [
+      25.525785296301148,
+      23.181818181818183,
+      25.525785296215442
+    ],
+    "target_imag": [
+      -20.51052552137866,
+      -1.4431651466148945e-10,
+      20.51052552100857
+    ],
+    "error_complex": [
+      20.64402671469166,
+      1.4431651466148945e-10,
+      20.644026714314233
+    ],
+    "mean_error_over_target_scale": 0.5936844283930095,
+    "tangent_cosines": [
+      null,
+      null,
+      null
+    ]
+  },
+  "nodal": {
+    "mode": "double",
+    "double_max_relative_error": 0.0
+  },
+  "numerical_passed": true,
+  "seconds": 0.009814977645874023
+}

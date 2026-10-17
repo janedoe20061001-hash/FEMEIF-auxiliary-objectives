@@ -1,0 +1,26 @@
+{
+  "time_unix": 1791829006.3535564,
+  "source": "read-only inspect_remote.sh via pinned SSH",
+  "pipeline_pid": 1412,
+  "running_worker_count": 32,
+  "completed_phase": 48,
+  "total_phase": 1840,
+  "allocated_cpu_usage_percent": 99.63500967075274,
+  "pipeline_failure": false,
+  "optimization_failures": 0,
+  "active_generation_ranges": {
+    "case1/PTC_ref": [160, 160],
+    "mixed_resonators/base/PTC_ref": [140, 160],
+    "mixed_resonators/lc_reciprocal_8p0/PTC_ref": [140, 140],
+    "mixed_resonators/lc_reciprocal_0p25/PTC_ref": [80, 80]
+  },
+  "completed_conditions": [
+    "three_level/base/PTC_ref",
+    "three_level/lc_reciprocal_0p25/PTC_ref",
+    "three_level/lc_reciprocal_8p0/PTC_ref",
+    "dual_nested/base/PTC_ref",
+    "dual_nested/lc_reciprocal_0p25/PTC_ref",
+    "dual_nested/lc_reciprocal_8p0/PTC_ref"
+  ],
+  "note": "Existing jobs advancing; no additional optimization or audit was launched."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "no_optimization_performed": true,
+  "control_equivalence": [
+    {
+      "case": "case1",
+      "full_initial_population": 200,
+      "frequency_points": 180,
+      "old_controls_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "case": "case2",
+      "full_initial_population": 150,
+      "frequency_points": 201,
+      "old_controls_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "primary_objectives_bitwise_unchanged": true,
+  "zero_error": true,
+  "interval_double_integral_identity": true,
+  "interval_reversal_and_subdivision_invariance": true,
+  "hellinger_subdivision_invariance": true,
+  "hellinger_total_mass_shape_identity": true,
+  "srvf_length_direction_identity": true,
+  "length_cannot_distinguish_direction_counterexample": true,
+  "independent_max_abs_difference": 2.220446049250313e-16,
+  "target_only_diagnostics": [
+    {
+      "case": "case1",
+      "frequency_points": 180,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        -25.580765353131927,
+        -1.5671652842336827
+      ],
+      "scale": [
+        77.47208592896365,
+        3.1374865965024887
+      ],
+      "target_total_length": 16.366227115796548,
+      "largest_segment_length_share": 0.0605542395540999,
+      "largest_segment_frequency_hz": [
+        24607.157699163294,
+        25906.445000902346
+      ],
+      "all_original_rows_retained": true,
+      "candidate_normalization": "fixed_target_only",
+      "auxiliary_tunable_parameters": {},
+      "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+      "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term"
+    },
+    {
+      "case": "case2",
+      "frequency_points": 201,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        15.931486664208592,
+        -1.567305668290908
+      ],
+      "scale": [
+        107.35557045148015,
+        3.4348079679248404
+      ],
+      "target_total_length": 8.629324946318668,
+      "largest_segment_length_share": 0.10888120541824328,
+      "largest_segment_frequency_hz": [
+        16000000.0,
+        17200000.0
+      ],
+      "all_original_rows_retained": true,
+      "candidate_normalization": "fixed_target_only",
+      "auxiliary_tunable_parameters": {},
+      "interval_comparison": "all_continuous_frequency_pairs_exact_integral",
+      "hellinger_comparison": "unnormalized_length_measure_target_total_scale_no_direction_term"
+    }
+  ]
+}

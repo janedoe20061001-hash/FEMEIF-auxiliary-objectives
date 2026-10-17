@@ -1,0 +1,332 @@
+{
+  "target": "mixed_resonators/lc_reciprocal_8p0",
+  "method": "ARX_S_L",
+  "seed": 47005,
+  "proposals": [
+    {
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "method": "ARX_S_L",
+      "seed": 47005,
+      "generation": 80,
+      "region": "P2",
+      "family": "existing_distortion",
+      "better_index": 65,
+      "worse_index": 0,
+      "better_primary": [
+        13.29946341683809,
+        0.14734204178084404
+      ],
+      "worse_primary": [
+        13.09228657222966,
+        0.15383900798228153
+      ],
+      "better": {
+        "log_parameters": [
+          1.3608243613198692,
+          0.2325406420246081,
+          -2.706713999348443,
+          -7.279533322072756,
+          -3.1251782677961852,
+          3.15610836099144,
+          -6.55783593725924,
+          -0.2782149029068797,
+          -3.3233125792425886,
+          -7.458841783132677
+        ],
+        "events": [
+          {
+            "event_id": "P1",
+            "kind": "peak",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "P1",
+            "shift_decades": -0.0018052964488166623,
+            "height_delta_db": 1.445256690380397,
+            "width_ratio": 0.14745335986887553,
+            "width_evaluable": true,
+            "target_frequency_hz": 14446.554517220917,
+            "target_width_hz": 1024.2710756091146
+          },
+          {
+            "event_id": "P2",
+            "kind": "peak",
+            "matched": true,
+            "complete": true,
+            "fit_event_id": "P2",
+            "shift_decades": 0.0016995071097536396,
+            "height_delta_db": 0.37488265733681203,
+            "width_ratio": 0.6848864655974717,
+            "width_evaluable": true,
+            "target_frequency_hz": 41385.16519964329,
+            "target_width_hz": 714.2645039091731
+          },
+          {
+            "event_id": "V1",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V1",
+            "shift_decades": 0.017420542758725954,
+            "height_delta_db": 10.932277515741955,
+            "width_ratio": 6.515992368892334,
+            "width_evaluable": true,
+            "target_frequency_hz": 9992.694027240756,
+            "target_width_hz": 693.7947614118602
+          },
+          {
+            "event_id": "V2",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V2",
+            "shift_decades": -0.1276898747885964,
+            "height_delta_db": 6.943191109408062,
+            "width_ratio": 1.407837529715429,
+            "width_evaluable": true,
+            "target_frequency_hz": 21120.848392484848,
+            "target_width_hz": 2378.051298967359
+          },
+          {
+            "event_id": "V3",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V3",
+            "shift_decades": -0.0018849382612611265,
+            "height_delta_db": 3.8358102906893947,
+            "width_ratio": 1.3410213787885075,
+            "width_evaluable": true,
+            "target_frequency_hz": 42004.91990714643,
+            "target_width_hz": 1105.160364749623
+          }
+        ],
+        "extra_ids": [],
+        "fit": [
+          {
+            "event_id": "P1",
+            "kind": "peak",
+            "x": 4.157958984375,
+            "frequency_hz": 14386.627017047482,
+            "height_db": 52.98286309636305,
+            "prominence_db": 25.15633337609502,
+            "width_3db_decades": 0.00453883316925463,
+            "width_3db_hz": 150.32327752475976,
+            "left_3db_x": 4.1555949344550775,
+            "right_3db_x": 4.160133767624332
+          },
+          {
+            "event_id": "P2",
+            "kind": "peak",
+            "x": 4.618544200247382,
+            "frequency_hz": 41547.43339201754,
+            "height_db": 47.337582458861164,
+            "prominence_db": 8.231867475740543,
+            "width_3db_decades": 0.005153272788661845,
+            "width_3db_hz": 491.30602355270094,
+            "left_3db_x": 4.614474083357934,
+            "right_3db_x": 4.619627356146596
+          },
+          {
+            "event_id": "V1",
+            "kind": "valley",
+            "x": 4.017103132429614,
+            "frequency_hz": 10401.671462377828,
+            "height_db": 27.826529720268027,
+            "prominence_db": 25.15633337609502,
+            "width_3db_decades": 0.19673243843423505,
+            "width_3db_hz": 4572.170640367173,
+            "left_3db_x": 3.9019576080187366,
+            "right_3db_x": 4.098690046452972
+          },
+          {
+            "event_id": "V2",
+            "kind": "valley",
+            "x": 4.197021484375,
+            "frequency_hz": 15740.607306974513,
+            "height_db": 27.81404909852753,
+            "prominence_db": 35.00256178181371,
+            "width_3db_decades": 0.06855718180010673,
+            "width_3db_hz": 2584.6372964330258,
+            "left_3db_x": 4.179401533036796,
+            "right_3db_x": 4.247958714836903
+          },
+          {
+            "event_id": "V3",
+            "kind": "valley",
+            "x": 4.621415222693506,
+            "frequency_hz": 41823.00392670425,
+            "height_db": 39.10571498312062,
+            "prominence_db": 8.231867475740543,
+            "width_3db_decades": 0.015210074179994315,
+            "width_3db_hz": 1486.0172074210132,
+            "left_3db_x": 4.620049585091914,
+            "right_3db_x": 4.635259659271909
+          }
+        ],
+        "stable": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "level": 8
+      },
+      "worse": {
+        "log_parameters": [
+          1.4234086700566737,
+          0.2602205502516851,
+          -2.7082046038375607,
+          -7.274098938602877,
+          -3.1251782677961852,
+          3.2143131185270426,
+          -6.557417416926714,
+          0.18748390768505357,
+          -3.323297898087172,
+          -7.46634874197877
+        ],
+        "events": [
+          {
+            "event_id": "P1",
+            "kind": "peak",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "P1",
+            "shift_decades": -0.0035371584312917648,
+            "height_delta_db": 1.1828798451786824,
+            "width_ratio": 0.15032234271492304,
+            "width_evaluable": true,
+            "target_frequency_hz": 14446.554517220917,
+            "target_width_hz": 1024.2710756091146
+          },
+          {
+            "event_id": "P2",
+            "kind": "peak",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "P2",
+            "shift_decades": 0.0037279578311810724,
+            "height_delta_db": -2.378495087190956,
+            "width_ratio": 6.931346266468183,
+            "width_evaluable": true,
+            "target_frequency_hz": 41385.16519964329,
+            "target_width_hz": 714.2645039091731
+          },
+          {
+            "event_id": "V1",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V1",
+            "shift_decades": 0.017651394704112366,
+            "height_delta_db": 12.044939969929814,
+            "width_ratio": 7.251093908642797,
+            "width_evaluable": true,
+            "target_frequency_hz": 9992.694027240756,
+            "target_width_hz": 693.7947614118602
+          },
+          {
+            "event_id": "V2",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V2",
+            "shift_decades": -0.1291530633147211,
+            "height_delta_db": 8.14453316896234,
+            "width_ratio": 1.7069692707470243,
+            "width_evaluable": true,
+            "target_frequency_hz": 21120.848392484848,
+            "target_width_hz": 2378.051298967359
+          },
+          {
+            "event_id": "V3",
+            "kind": "valley",
+            "matched": true,
+            "complete": false,
+            "fit_event_id": "V3",
+            "shift_decades": 0.0032454286115530806,
+            "height_delta_db": 5.938365796961278,
+            "width_ratio": 7.19317734561182,
+            "width_evaluable": true,
+            "target_frequency_hz": 42004.91990714643,
+            "target_width_hz": 1105.160364749623
+          }
+        ],
+        "extra_ids": [],
+        "fit": [
+          {
+            "event_id": "P1",
+            "kind": "peak",
+            "x": 4.156227122392525,
+            "frequency_hz": 14329.37084507853,
+            "height_db": 52.72048625116133,
+            "prominence_db": 23.705095093079525,
+            "width_3db_decades": 0.0046271447174977,
+            "width_3db_hz": 152.6376311808781,
+            "left_3db_x": 4.153817219690518,
+            "right_3db_x": 4.158444364408016
+          },
+          {
+            "event_id": "P2",
+            "kind": "peak",
+            "x": 4.62057265096881,
+            "frequency_hz": 41741.94206486012,
+            "height_db": 44.584204714333396,
+            "prominence_db": 3.3759342249408917,
+            "width_3db_decades": 0.05215334204717159,
+            "width_3db_hz": 4769.620019503702,
+            "left_3db_x": 4.572648352562204,
+            "right_3db_x": 4.624801694609376
+          },
+          {
+            "event_id": "V1",
+            "kind": "valley",
+            "x": 4.017333984375,
+            "frequency_hz": 10407.202005601888,
+            "height_db": 28.939192174455886,
+            "prominence_db": 34.91436454636566,
+            "width_3db_decades": 0.2189268042690209,
+            "width_3db_hz": 5040.957734678367,
+            "left_3db_x": 3.8859463730458392,
+            "right_3db_x": 4.10487317731486
+          },
+          {
+            "event_id": "V2",
+            "kind": "valley",
+            "x": 4.195558295848875,
+            "frequency_hz": 15687.664608781153,
+            "height_db": 29.01539115808181,
+            "prominence_db": 23.705095093079525,
+            "width_3db_decades": 0.08312394019319402,
+            "width_3db_hz": 3164.962054040294,
+            "left_3db_x": 4.176202016472956,
+            "right_3db_x": 4.25932595666615
+          },
+          {
+            "event_id": "V3",
+            "kind": "valley",
+            "x": 4.62654558956632,
+            "frequency_hz": 42319.99323136415,
+            "height_db": 41.208270489392504,
+            "prominence_db": 3.3759342249408917,
+            "width_3db_decades": 0.08158614228466021,
+            "width_3db_hz": 8653.036422120967,
+            "left_3db_x": 4.621904948899586,
+            "right_3db_x": 4.7034910911842465
+          }
+        ],
+        "stable": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "level": 8
+      },
+      "source_stage": "jobs/mixed_resonators/lc_reciprocal_8p0/ARX_S_L/seed_47005/generation_0080.npz",
+      "source_stage_sha256": "7e193d601dd7186593055123a52f494f60b3709a2500dcf8db305a9a69945038",
+      "max_primary_relative": 0.04223224191738021
+    }
+  ]
+}

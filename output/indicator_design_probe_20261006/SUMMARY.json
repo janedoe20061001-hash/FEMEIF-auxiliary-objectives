@@ -1,0 +1,118 @@
+{
+  "saved_final_populations": 1200,
+  "evaluated_individuals": 245000,
+  "saved_primary_score_checks": 210000,
+  "saved_auxiliary_score_checks": 105000,
+  "matched_pairs": 15078,
+  "ranking": [
+    {
+      "case": "case1",
+      "context": "initial",
+      "eligible_seeds": 100,
+      "matched_pairs": 1517,
+      "II02_seed_mean": 0.4793679178148993,
+      "D_phi_seed_mean": 0.5332961339915674,
+      "D_LP_seed_mean": 0.5409248349259959,
+      "phase_MSE_seed_mean": 0.7238244742014092,
+      "candidate_minus_speed": 0.05392821617666819,
+      "paired_seed_bootstrap95": [
+        0.02041741777529317,
+        0.08630980183065126
+      ]
+    },
+    {
+      "case": "case1",
+      "context": "final",
+      "eligible_seeds": 100,
+      "matched_pairs": 7844,
+      "II02_seed_mean": 0.46036986139329095,
+      "D_phi_seed_mean": 0.35785235228766155,
+      "D_LP_seed_mean": 0.3449700772608355,
+      "phase_MSE_seed_mean": 0.7078206937099888,
+      "candidate_minus_speed": -0.10251750910562936,
+      "paired_seed_bootstrap95": [
+        -0.14724352632414045,
+        -0.05942654201048191
+      ]
+    },
+    {
+      "case": "case2",
+      "context": "initial",
+      "eligible_seeds": 100,
+      "matched_pairs": 1236,
+      "II02_seed_mean": 0.8953007588816413,
+      "D_phi_seed_mean": 0.6159598375480728,
+      "D_LP_seed_mean": 0.6120223583605937,
+      "phase_MSE_seed_mean": 0.6029829067990833,
+      "candidate_minus_speed": -0.27934092133356836,
+      "paired_seed_bootstrap95": [
+        -0.31400617899257605,
+        -0.24376342079081048
+      ]
+    },
+    {
+      "case": "case2",
+      "context": "final",
+      "eligible_seeds": 96,
+      "matched_pairs": 4474,
+      "II02_seed_mean": 0.4457578569825191,
+      "D_phi_seed_mean": 0.8932317752311639,
+      "D_LP_seed_mean": 0.8995659438860368,
+      "phase_MSE_seed_mean": 0.7908167809262255,
+      "candidate_minus_speed": 0.44747391824864485,
+      "paired_seed_bootstrap95": [
+        0.38774384908884624,
+        0.5036275202030067
+      ]
+    }
+  ],
+  "real_failure_summary": [
+    {
+      "case": "case1",
+      "seeds": 100,
+      "speed_improves_phase_worsens": 33,
+      "phase_mean_baseline": 0.13370812483106748,
+      "phase_mean_old_pair": 0.14603758340671213,
+      "same_sign_mean_change": 0.011098010071056971,
+      "wrong_sign_mean_change": 0.0012314485045876531
+    },
+    {
+      "case": "case2",
+      "seeds": 100,
+      "speed_improves_phase_worsens": 46,
+      "phase_mean_baseline": 0.08809973424544831,
+      "phase_mean_old_pair": 0.07926486036119373,
+      "same_sign_mean_change": -0.0003322397822572648,
+      "wrong_sign_mean_change": -0.008502634101997275
+    }
+  ],
+  "definition_checks": [
+    {
+      "case": "case1",
+      "target_zero": true,
+      "positive_scale_phase_invariance": true,
+      "constant_phase_offset_blind": true,
+      "max_target_phase_step_rad": 3.1009179499282893
+    },
+    {
+      "case": "case2",
+      "target_zero": true,
+      "positive_scale_phase_invariance": true,
+      "constant_phase_offset_blind": true,
+      "max_target_phase_step_rad": 3.2271137869375153
+    }
+  ],
+  "gate": {
+    "passed": false,
+    "reasons": [
+      "Case1最终阶段相对速度项的排序率增量未达到5个百分点。",
+      "case2 / initial 的差值区间下界低于-5个百分点，存在排序退步。"
+    ],
+    "primary_candidate": "D_phi",
+    "candidate_definition_unchanged": true,
+    "new_optimizations": 0
+  },
+  "elapsed_seconds": 32.29636449995451,
+  "local_only": true,
+  "new_optimizations": 0
+}

@@ -1,0 +1,1226 @@
+{
+  "target": {
+    "circuit": {
+      "id": "simple_parallel",
+      "title": "simple_parallel",
+      "tree": [
+        "P",
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "expression": "(R1 // L1 // C1)",
+      "names": [
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "units": [
+        "ohm",
+        "H",
+        "F"
+      ],
+      "netlist": [
+        {
+          "component": "R1",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "component": "L1",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "component": "C1",
+          "a": 1,
+          "b": 0
+        }
+      ]
+    },
+    "damping_component": "R1",
+    "lc_components": [
+      "L1",
+      "C1"
+    ],
+    "focus_log10_span": [
+      2.0,
+      6.0
+    ],
+    "amplitude_catalog": [],
+    "reference": {
+      "stable": true,
+      "passed": true,
+      "level4": [
+        {
+          "index": 0,
+          "x": 4.201820131641885,
+          "frequency_hz": 15915.494309189522,
+          "direction": -1,
+          "real_ohm": 10.0,
+          "kappa": -0.19999999999999998,
+          "root_residual": 1.5612511283791264e-16,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0
+        }
+      ],
+      "events": [
+        {
+          "index": 0,
+          "x": 4.201820131641885,
+          "frequency_hz": 15915.494309189522,
+          "direction": -1,
+          "real_ohm": 10.0,
+          "kappa": -0.19999999999999998,
+          "root_residual": 1.5612511283791264e-16,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0,
+          "nodal_relative_error": 0.0,
+          "nodal_kappa": [
+            -0.19999999999950613,
+            -0.19999999999965068
+          ],
+          "nodal_derivative_error": [
+            4.938549569288853e-13,
+            3.493039191226899e-13
+          ],
+          "nodal_step_ln_f": 0.0001,
+          "nodal_passed": true
+        }
+      ]
+    }
+  },
+  "representatives": [],
+  "probes": [
+    {
+      "target": "simple_parallel",
+      "kind": "damping",
+      "factor": 0.25,
+      "parameters": [
+        2.5,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 2.5,
+            "kappa": -0.049999999999999996,
+            "root_residual": 3.903127820947816e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 2.5,
+            "kappa": -0.049999999999999996,
+            "root_residual": 3.903127820947816e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.049999999999876525,
+              -0.04999999999991267
+            ],
+            "nodal_derivative_error": [
+              1.2347067812612522e-13,
+              8.732597978067247e-14
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 2.5,
+          "fit_kappa": -0.049999999999999996,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 0.25,
+          "real_db": -12.041199826559248,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "damping",
+      "factor": 0.5,
+      "parameters": [
+        5.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 5.0,
+            "kappa": -0.09999999999999999,
+            "root_residual": 7.806255641895632e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 5.0,
+            "kappa": -0.09999999999999999,
+            "root_residual": 7.806255641895632e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.09999999999975306,
+              -0.09999999999982533
+            ],
+            "nodal_derivative_error": [
+              2.4692747846444263e-13,
+              1.7466583734915275e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 5.0,
+          "fit_kappa": -0.09999999999999999,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 0.5,
+          "real_db": -6.020599913279624,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "damping",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999950613,
+              -0.19999999999965068
+            ],
+            "nodal_derivative_error": [
+              4.938549569288853e-13,
+              3.493039191226899e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999998,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "damping",
+      "factor": 2.0,
+      "parameters": [
+        20.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 20.0,
+            "kappa": -0.39999999999999997,
+            "root_residual": 3.122502256758253e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 20.0,
+            "kappa": -0.39999999999999997,
+            "root_residual": 3.122502256758253e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.3999999999990122,
+              -0.39999999999930136
+            ],
+            "nodal_derivative_error": [
+              9.877654250090018e-13,
+              6.986078382453798e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 20.0,
+          "fit_kappa": -0.39999999999999997,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 2.0,
+          "real_db": 6.020599913279624,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "damping",
+      "factor": 4.0,
+      "parameters": [
+        40.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 40.0,
+            "kappa": -0.7999999999999999,
+            "root_residual": 6.245004513516506e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 40.0,
+            "kappa": -0.7999999999999999,
+            "root_residual": 6.245004513516506e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.7999999999980246,
+              -0.7999999999986027
+            ],
+            "nodal_derivative_error": [
+              1.9753088054130785e-12,
+              1.3972156764907595e-12
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 40.0,
+          "fit_kappa": -0.7999999999999999,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 4.0,
+          "real_db": 12.041199826559248,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_reciprocal",
+      "factor": 0.25,
+      "parameters": [
+        10.0,
+        0.00025,
+        4e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.7999999999999999,
+            "root_residual": 6.245004513516506e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.7999999999999999,
+            "root_residual": 6.245004513516506e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.7999999999980246,
+              -0.7999999999986027
+            ],
+            "nodal_derivative_error": [
+              1.9753088054130785e-12,
+              1.3972156764907595e-12
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.7999999999999999,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_reciprocal",
+      "factor": 0.5,
+      "parameters": [
+        10.0,
+        0.0005,
+        2e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.39999999999999997,
+            "root_residual": 3.122502256758253e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.39999999999999997,
+            "root_residual": 3.122502256758253e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.3999999999990122,
+              -0.39999999999930136
+            ],
+            "nodal_derivative_error": [
+              9.877654250090018e-13,
+              6.986078382453798e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.39999999999999997,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_reciprocal",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999950613,
+              -0.19999999999965068
+            ],
+            "nodal_derivative_error": [
+              4.938549569288853e-13,
+              3.493039191226899e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999998,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_reciprocal",
+      "factor": 2.0,
+      "parameters": [
+        10.0,
+        0.002,
+        5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.09999999999999999,
+            "root_residual": 7.806255641895632e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.09999999999999999,
+            "root_residual": 7.806255641895632e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.09999999999975306,
+              -0.09999999999982533
+            ],
+            "nodal_derivative_error": [
+              2.4692747846444263e-13,
+              1.7466583734915275e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.09999999999999999,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_reciprocal",
+      "factor": 4.0,
+      "parameters": [
+        10.0,
+        0.004,
+        2.5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.049999999999999996,
+            "root_residual": 3.903127820947816e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.049999999999999996,
+            "root_residual": 3.903127820947816e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.049999999999876525,
+              -0.04999999999991267
+            ],
+            "nodal_derivative_error": [
+              1.2347067812612522e-13,
+              8.732597978067247e-14
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.049999999999999996,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_joint",
+      "factor": 0.25,
+      "parameters": [
+        10.0,
+        0.00025,
+        2.5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.803880122969847,
+            "frequency_hz": 63661.9772367581,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999996,
+            "root_residual": 1.214306433183765e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.387778780781446e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.80388012296985,
+            "frequency_hz": 63661.977236758496,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999996,
+            "root_residual": 1.1275702593849246e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.387778780781446e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999970852,
+              -0.19999999999959286
+            ],
+            "nodal_derivative_error": [
+              2.914335439641036e-13,
+              4.0709102755442927e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 63661.977236758496,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999996,
+          "shift_decades": 0.6020599913279652,
+          "shift_tangent_scales": 0.27725887222397944,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.9999999999999999,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_joint",
+      "factor": 0.5,
+      "parameters": [
+        10.0,
+        0.0005,
+        5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.502850127305866,
+            "frequency_hz": 31830.988618379048,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999996,
+            "root_residual": 1.214306433183765e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.387778780781446e-16
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.502850127305866,
+            "frequency_hz": 31830.988618379048,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999996,
+            "root_residual": 1.214306433183765e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.387778780781446e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999959286,
+              -0.19999999999962179
+            ],
+            "nodal_derivative_error": [
+              4.0709102755442927e-13,
+              3.7816971776294395e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 31830.988618379048,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999996,
+          "shift_decades": 0.30102999566398125,
+          "shift_tangent_scales": 0.13862943611198908,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.9999999999999999,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_joint",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 1.5612511283791264e-16,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999950613,
+              -0.19999999999965068
+            ],
+            "nodal_derivative_error": [
+              4.938549569288853e-13,
+              3.493039191226899e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999998,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_joint",
+      "factor": 2.0,
+      "parameters": [
+        10.0,
+        0.002,
+        2e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.900790135977904,
+            "frequency_hz": 7957.747154594767,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.900790135977904,
+            "frequency_hz": 7957.747154594767,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999970852,
+              -0.19999999999936158
+            ],
+            "nodal_derivative_error": [
+              2.914612995397192e-13,
+              6.384059947350806e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 7957.747154594767,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999998,
+          "shift_decades": -0.3010299956639808,
+          "shift_tangent_scales": 0.13862943611198889,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_parallel",
+      "kind": "lc_joint",
+      "factor": 4.0,
+      "parameters": [
+        10.0,
+        0.004,
+        4e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.5997601403139226,
+            "frequency_hz": 3978.8735772973832,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999998,
+            "root_residual": 3.469446951953614e-17,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.59976014031392,
+            "frequency_hz": 3978.873577297359,
+            "direction": -1,
+            "real_ohm": 10.0,
+            "kappa": -0.19999999999999996,
+            "root_residual": 1.231653667943533e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 1.387778780781446e-16,
+            "nodal_relative_error": 0.0,
+            "nodal_kappa": [
+              -0.19999999999950613,
+              -0.1999999999994194
+            ],
+            "nodal_derivative_error": [
+              4.938272013532696e-13,
+              5.8056337515211e-13
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": -1,
+          "target_real_ohm": 10.0,
+          "target_kappa": -0.19999999999999998,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 3978.873577297359,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": -0.19999999999999996,
+          "shift_decades": -0.6020599913279647,
+          "shift_tangent_scales": 0.2772588722239792,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.9999999999999999,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    }
+  ]
+}

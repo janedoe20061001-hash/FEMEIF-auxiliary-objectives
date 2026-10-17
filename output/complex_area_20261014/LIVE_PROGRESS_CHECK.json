@@ -1,0 +1,319 @@
+{
+  "status": {
+    "phase": "finished",
+    "completed": 192,
+    "audited": 192,
+    "accepted": 191,
+    "failed": 0,
+    "total": 192,
+    "updated_unix": 1791942768.566125,
+    "workers": 32
+  },
+  "preflight": {
+    "passed": true,
+    "cases": 112,
+    "failed": 0,
+    "checks": [
+      {
+        "target": "mixed_resonators/base",
+        "truth": [
+          1.3518778193273349e-30,
+          1.2558960517975137e-28,
+          3.102958595643841e-28,
+          7.954783463474321e-28,
+          2.2567127085079028e-28
+        ],
+        "derivative_passed": true
+      },
+      {
+        "target": "mixed_resonators/lc_reciprocal_8p0",
+        "truth": [
+          9.188249221806746e-29,
+          8.871383628544343e-27,
+          2.0744950219959284e-26,
+          8.184089612503072e-27,
+          9.830098744930108e-27
+        ],
+        "derivative_passed": true
+      },
+      {
+        "target": "case1",
+        "truth": [
+          9.313889143116994e-27,
+          3.9836448128125594e-25,
+          4.695030156261272e-25,
+          4.175406489242315e-25,
+          5.416705427492749e-25
+        ],
+        "derivative_passed": true
+      }
+    ],
+    "hashes": {
+      "experiments/complex_area_20261014/PROTOCOL.md": "ce2b545d3d1a396d3c774b4d27777e4c3942f7eb45ffa751f16ecdb6192a2f48",
+      "experiments/complex_area_20261014/audit.py": "145a67f5711427ac28b2400256f86fa261bcf31be53217ce53ac57f3706e3d3c",
+      "experiments/complex_area_20261014/checks.py": "926ebbe17f58aabb82cd40d64a684c777e074176f4843a6398610758397778b5",
+      "experiments/complex_area_20261014/core.py": "785a8bdd4409a7c9729f66168065baa6d3dbcd1320300118f94bc2720c646c7e",
+      "experiments/complex_area_20261014/features.py": "9687d106a7aa4d067e0d99f60c8525c0fcc73b0332b1f46a5a13c20d15098c64",
+      "experiments/complex_area_20261014/frozen/PROVENANCE.json": "865a4dda936ad9e5b08379bb1eedd3b34aacedeb9da0566975c2230e469b101d",
+      "experiments/complex_area_20261014/frozen/case1_adaptive.py": "11c46fbd4f9611929186a5367883797c6546c8a84fcf7c03c282511168667da2",
+      "experiments/complex_area_20261014/frozen/case1_grid.npz": "1fe168653a54ea4d9fbc9e09cb280dd01f3ce456898845a51231455fdadaee07",
+      "experiments/complex_area_20261014/frozen/case1_record.json": "23e4e22d560d96892a1f31a05800e9cd2f1c6c1a343fb00952cc56357f76ca1e",
+      "experiments/complex_area_20261014/frozen/case2.csv": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725",
+      "experiments/complex_area_20261014/frozen/case2_legacy.py": "7fa5289f1eb42020d83a79bdf899c844da93d5ec9ecfffedb3c8fff582781790",
+      "experiments/complex_area_20261014/frozen/circuits.py": "8eba51429e8cd3c8042aa85d0ea3fb8bb6773bf1d394799bee903ac70f66819b",
+      "experiments/complex_area_20261014/frozen/diagnostics.py": "7476de6fb841104083b3b19e46fad34e3ec7416eb7674c060d9a5ae4659eb687",
+      "experiments/complex_area_20261014/frozen/native.c": "089f9fdd95b7d36d7eefb3ad7bf6474c1475f2b97cb5775d11f86e0aeeb3b8cb",
+      "experiments/complex_area_20261014/frozen/nested_config.json": "751a6e423430b395f468d434a2bd5601f1596520e55017aa20585b5f3699310e",
+      "experiments/complex_area_20261014/frozen/sampling.py": "3702ddd09447cfb56100b55929df5e7d7019e039da6cb99c22084c82dd7b5cd2",
+      "experiments/complex_area_20261014/frozen/schematic.py": "845f5a2461049171feff164a757453700fed33883d990ac59fedb24af512ac52",
+      "experiments/complex_area_20261014/frozen/selector.py": "66485c33751f2f3ce44d41b5fbf9c7b0a69af229cfecee5e45e14d8a3faec6d2",
+      "experiments/complex_area_20261014/inputs/case1/circuit.svg": "c0e67f87985d0e86135af5f0ba6216d6e0e11816f37039c1895f9153b74b9afc",
+      "experiments/complex_area_20261014/inputs/case1/feature_scales.json": "7fe9877de58a3ca8fa4674a389d10e459d587eb2b328add726be344fd0923055",
+      "experiments/complex_area_20261014/inputs/case1/target.json": "8cbc83ef2ff828a8f58740a67efb87de4b6d5252719a89e2c77175bb869e3b74",
+      "experiments/complex_area_20261014/inputs/case1/target_curve.npz": "8deaed57cace5ef45d98ba507f129a59eced8f1abee029c5de7ba1921e79c1cc",
+      "experiments/complex_area_20261014/inputs/manifest.json": "2046e317d74c71c9bc4ce3948eda63c4b5faa0e777d58eade201ac09566dcf61",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/base/circuit.svg": "121d90c1339f8ee89704bd55821de0fe414b41b222969125e390fa8c2da7784e",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/base/feature_scales.json": "e56fa7f60e34ab9b52e2dad2144b8a3665a95582240d8ab249b25ed4c9531e3d",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/base/target.json": "00973d7fc147e9d189fb793b737a2a1c0dc3cf2073e6737eb98938470c5cdf04",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/base/target_curve.npz": "c60e2fc1eb2ed75805c7d7047e93b0c05f07f32d755f18e00541d075f0b7d258",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/lc_reciprocal_8p0/circuit.svg": "bf8fd5158151fa608bbcacf9b9eef80661cec3b9ab7d6821078ad025ab38384a",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/lc_reciprocal_8p0/feature_scales.json": "39a0e6f05a3b2aaf19f74b1c713a5735d71a8ff78c84254acc27f0ed64b2c846",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/lc_reciprocal_8p0/target.json": "617e066ed5e8eeededb958d17bf9dccb41a183e714b5a209dcb6f8d0bb9d045b",
+      "experiments/complex_area_20261014/inputs/mixed_resonators/lc_reciprocal_8p0/target_curve.npz": "f75069dce1870a3873c3dfab80b857a696a1a0408662a42b6c5950651d1c8ca3",
+      "experiments/complex_area_20261014/inputs/regression.json": "59af8354b0aead4380070e1f9083c4130dc4664bae1f703f467acfc6215ddaaa",
+      "experiments/complex_area_20261014/legacy_features.py": "35d7f8f6395664069fc2b3eebcc49d41f43a4023f4e71f44f5613ffef4440d46",
+      "experiments/complex_area_20261014/make_report.py": "b3c32d74903a865e72ccf36007f757f66f8ab6b1428e5605a57d72efc5577bc6",
+      "experiments/complex_area_20261014/pipeline.py": "3f630e7192acc74189525ee1de7244d425d5cc1214ea8347714a96fd8b361bae",
+      "experiments/complex_area_20261014/preflight.py": "13cd70a4374b677d5909b41c5bacb33f2a1e1fdd24330f3a83ae720c147487ce",
+      "experiments/complex_area_20261014/protocol.json": "3cf381e4028ec841a161319ea45b4333b1ddd1b1d72f2f702d6bdab37b379a6f",
+      "experiments/complex_area_20261014/remote.py": "85c6ee36e8fc3291fc4dfc86d392e3e141e5f481b40d475dc2d93cba1a5fe771",
+      "experiments/complex_area_20261014/run.py": "b877a9fe0232155f1e4f359da1ca9bff9f6041e60b6dd8f169fc8780d9d0a286",
+      "experiments/complex_area_20261014/transport.py": "9723e87c4247b9ed8d1cb00a71fb0e67965a9aa82b450c94a2c4308238319b75"
+    },
+    "versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.18.1",
+      "pymoo": "0.6.1.6",
+      "moocore": "0.3.2",
+      "mpmath": "1.3.0"
+    },
+    "timings_seconds_per_job": {},
+    "scope": "88 historical candidates plus24 seeded random candidates"
+  },
+  "smoke_cost": {
+    "rough_seconds_per_job": {
+      "mixed_resonators/base": {
+        "MAG_PHA": 405.9044271707535,
+        "MAG_PHA_ISLANDS": 395.39478719234467,
+        "G0": 902.1940641105175,
+        "J0": 1353.2721810042858,
+        "D": 8427.38889157772,
+        "H": 8803.452029824257,
+        "A": 2262.978982180357,
+        "ARX": 2342.2165773808956
+      },
+      "mixed_resonators/lc_reciprocal_8p0": {
+        "MAG_PHA": 704.4783048331738,
+        "MAG_PHA_ISLANDS": 428.5403713583946,
+        "G0": 993.1416623294353,
+        "J0": 1356.784999370575,
+        "D": 9550.506193190813,
+        "H": 8779.74545583129,
+        "A": 1953.254360705614,
+        "ARX": 2240.12840539217
+      },
+      "case1": {
+        "MAG_PHA": 252.87345051765442,
+        "MAG_PHA_ISLANDS": 194.572564214468,
+        "G0": 1038.2959432899952,
+        "J0": 4294.281899929047,
+        "D": 26328.82546633482,
+        "H": 26527.642216533422,
+        "A": 6927.876751869917,
+        "ARX": 7582.482416182756
+      }
+    },
+    "warning": "24 candidates only; initialization and convergence alter actual costs",
+    "rough_core_hours": 275.6582942273882
+  },
+  "process": {
+    "pid": 1419,
+    "start_unix": 1791909711.07595,
+    "workers": 32
+  },
+  "groups": {
+    "mixed_resonators/base / A": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 15496.158513565002
+    },
+    "mixed_resonators/base / ARX": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 15550.349085056005
+    },
+    "mixed_resonators/base / D": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 84055.420367446
+    },
+    "mixed_resonators/base / G0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 5942.047709816001
+    },
+    "mixed_resonators/base / H": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 84208.88440111099
+    },
+    "mixed_resonators/base / J0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 10718.298656559004
+    },
+    "mixed_resonators/base / MAG_PHA": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 2545.336758677997
+    },
+    "mixed_resonators/base / MAG_PHA_ISLANDS": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 2279.9002275420025
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / A": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 15643.926709674
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / ARX": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 15571.309138067994
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / D": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 88059.726899255
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / G0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 6074.0560585929925
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / H": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 87777.950251215
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / J0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 10816.025157946999
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / MAG_PHA": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 2595.6470464759986
+    },
+    "mixed_resonators/lc_reciprocal_8p0 / MAG_PHA_ISLANDS": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 2603.0550124999972
+    },
+    "case1 / A": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 45078.529635545005
+    },
+    "case1 / ARX": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 43903.012565868004
+    },
+    "case1 / D": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 238006.85085075098
+    },
+    "case1 / G0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 5165.229459989005
+    },
+    "case1 / H": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 237613.19654469204
+    },
+    "case1 / J0": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 26036.011609856
+    },
+    "case1 / MAG_PHA": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 489.1432371910014
+    },
+    "case1 / MAG_PHA_ISLANDS": {
+      "started": 8,
+      "complete": 8,
+      "audit": 8,
+      "generations": [],
+      "completed_cpu_seconds": 463.16842190699754
+    }
+  },
+  "running": [],
+  "failures": [],
+  "pipeline_failure": null,
+  "live_children": [],
+  "checked_unix": 1791944548.842822
+}

@@ -1,0 +1,67 @@
+{
+  "records": 1840,
+  "accepted": 1627,
+  "gates": {
+    "converged": 59,
+    "aux_training_agrees": 212,
+    "diagnostic_stable": 1
+  },
+  "gate_method": {
+    "A": {
+      "converged": 7,
+      "aux_training_agrees": 28
+    },
+    "D_A": {
+      "aux_training_agrees": 27,
+      "converged": 5
+    },
+    "H_A": {
+      "converged": 6,
+      "aux_training_agrees": 36
+    },
+    "D_H_A": {
+      "aux_training_agrees": 33,
+      "converged": 6
+    },
+    "D": {
+      "aux_training_agrees": 17,
+      "diagnostic_stable": 1,
+      "converged": 7
+    },
+    "H": {
+      "converged": 13,
+      "aux_training_agrees": 34
+    },
+    "D_H": {
+      "converged": 15,
+      "aux_training_agrees": 36
+    },
+    "C_ref": {
+      "aux_training_agrees": 1
+    }
+  },
+  "selection_reasons": {
+    "convex_knee": 1635,
+    "no_convex_knee": 53,
+    "degenerate_span": 43,
+    "insufficient_front_points": 49,
+    "unique_front_point": 60
+  },
+  "accepted_by_method": {
+    "MAG_PHA": 184,
+    "D": 166,
+    "H": 150,
+    "A": 156,
+    "D_H": 148,
+    "D_A": 157,
+    "H_A": 148,
+    "D_H_A": 151,
+    "PTC_ref": 184,
+    "C_ref": 183
+  },
+  "cpu_seconds_total": 817939.142166316,
+  "job_seconds_total": 822297.7590750009,
+  "nodal_fallbacks": 81,
+  "generated_unix": 1791846526.6638312,
+  "note": "Post-run descriptive tables preserve both complete and failed-gate results; strict subset is not a new experiment."
+}

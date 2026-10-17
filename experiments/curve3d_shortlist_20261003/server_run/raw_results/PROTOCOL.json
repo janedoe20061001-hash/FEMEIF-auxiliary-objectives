@@ -1,0 +1,40 @@
+{
+  "protocol": "curve3d_shortlist_20261003_v1",
+  "groups": [
+    [],
+    [
+      "cumulative_length_logpolar"
+    ],
+    [
+      "symmetric_length_logpolar"
+    ]
+  ],
+  "seeds": {
+    "start": 1000,
+    "count": 100
+  },
+  "comparisons": [
+    [
+      "cumulative_length_logpolar",
+      "baseline"
+    ],
+    [
+      "symmetric_length_logpolar",
+      "baseline"
+    ],
+    [
+      "symmetric_length_logpolar",
+      "cumulative_length_logpolar"
+    ]
+  ],
+  "holm_primary_tests": 12,
+  "planned_runs": 600,
+  "planned_evaluations": 31500000,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 20261003,
+  "new_measurement_validation": false,
+  "noise_levels_not_invented": true,
+  "source_protocol": "curve3d_directional_20261003_v1",
+  "source_frozen_sha256": "04eb34aee5dec99f97253623c7a68d52c62fe20eac54d0134a30ebbc37b1e9e2",
+  "local_verifier_sha256": "c4903f521a41f3265371871083f747c6662768ab84a1403f8da9d578a8a11955"
+}

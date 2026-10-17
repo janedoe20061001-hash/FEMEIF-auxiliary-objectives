@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "no_optimization_performed": true,
+  "zero_error": true,
+  "axis_exchange_counterexample": true,
+  "direction_counterexample": true,
+  "positive_negative_identity": true,
+  "reversal_identity": true,
+  "independent_gaussian_integrals": true,
+  "control_equivalence": [
+    {
+      "case": "case1",
+      "full_initial_population": 200,
+      "frequency_points": 180,
+      "old_controls_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "case": "case2",
+      "full_initial_population": 150,
+      "frequency_points": 201,
+      "old_controls_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "target_only_diagnostics": [
+    {
+      "case": "case1",
+      "frequency_points": 180,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        -25.580765353131927,
+        -1.5671652842336827
+      ],
+      "scale": [
+        77.47208592896365,
+        3.1374865965024887
+      ],
+      "target_total_length": 16.366227115796548,
+      "target_axis_total_variations": [
+        7.3709137899343915,
+        10.840495214465513
+      ],
+      "largest_segment_length_share": 0.060554239554099894,
+      "largest_segment_frequency_hz": [
+        24607.157699163294,
+        25906.445000902346
+      ],
+      "all_original_rows_retained": true,
+      "auxiliary_tunable_parameters": {},
+      "candidate_normalization": "fixed_target_only",
+      "direction_split": "zero_separates_increase_and_decrease_not_tuned_threshold"
+    },
+    {
+      "case": "case2",
+      "frequency_points": 201,
+      "frequency_coordinate": "normalized_log10_frequency",
+      "magnitude_phase_coordinates": "unchanged_target_range_principal_phase",
+      "offset": [
+        15.931486664208592,
+        -1.567305668290908
+      ],
+      "scale": [
+        107.35557045148015,
+        3.4348079679248404
+      ],
+      "target_total_length": 8.629324946318668,
+      "target_axis_total_variations": [
+        3.0806712725959686,
+        6.734959349593497
+      ],
+      "largest_segment_length_share": 0.10888120541824327,
+      "largest_segment_frequency_hz": [
+        16000000.0,
+        17200000.0
+      ],
+      "all_original_rows_retained": true,
+      "auxiliary_tunable_parameters": {},
+      "candidate_normalization": "fixed_target_only",
+      "direction_split": "zero_separates_increase_and_decrease_not_tuned_threshold"
+    }
+  ]
+}

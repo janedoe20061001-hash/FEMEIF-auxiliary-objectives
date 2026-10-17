@@ -1,0 +1,1226 @@
+{
+  "target": {
+    "circuit": {
+      "id": "simple_series",
+      "title": "simple_series",
+      "tree": [
+        "S",
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "expression": "(R1 + L1 + C1)",
+      "names": [
+        "R1",
+        "L1",
+        "C1"
+      ],
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "units": [
+        "ohm",
+        "H",
+        "F"
+      ],
+      "netlist": [
+        {
+          "component": "R1",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "component": "L1",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "component": "C1",
+          "a": 3,
+          "b": 0
+        }
+      ]
+    },
+    "damping_component": "R1",
+    "lc_components": [
+      "L1",
+      "C1"
+    ],
+    "focus_log10_span": [
+      2.0,
+      6.0
+    ],
+    "amplitude_catalog": [],
+    "reference": {
+      "stable": true,
+      "passed": true,
+      "level4": [
+        {
+          "index": 0,
+          "x": 4.201820131641885,
+          "frequency_hz": 15915.494309189522,
+          "direction": 1,
+          "real_ohm": 10.0,
+          "kappa": 20.0,
+          "root_residual": 1.5631940186722205e-14,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0
+        }
+      ],
+      "events": [
+        {
+          "index": 0,
+          "x": 4.201820131641885,
+          "frequency_hz": 15915.494309189522,
+          "direction": 1,
+          "real_ohm": 10.0,
+          "kappa": 20.0,
+          "root_residual": 1.5631940186722205e-14,
+          "root_residual_ok": true,
+          "identity_relative_error": 0.0,
+          "nodal_relative_error": 1.8194244225050229e-16,
+          "nodal_kappa": [
+            19.99999999994843,
+            20.00000000091621
+          ],
+          "nodal_derivative_error": [
+            5.157119176146807e-11,
+            9.162093306258612e-10
+          ],
+          "nodal_step_ln_f": 5e-05,
+          "nodal_passed": true
+        }
+      ]
+    }
+  },
+  "representatives": [],
+  "probes": [
+    {
+      "target": "simple_series",
+      "kind": "damping",
+      "factor": 0.25,
+      "parameters": [
+        2.5,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 2.5,
+            "kappa": 80.0,
+            "root_residual": 6.252776074688882e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 2.5,
+            "kappa": 80.0,
+            "root_residual": 6.252776074688882e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 7.788897571882681e-17,
+            "nodal_kappa": [
+              80.00000000228242,
+              80.00000000229508
+            ],
+            "nodal_derivative_error": [
+              2.282419586663309e-09,
+              2.295081458214554e-09
+            ],
+            "nodal_step_ln_f": 1.25e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 2.5,
+          "fit_kappa": 80.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 0.25,
+          "real_db": -12.041199826559248,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "damping",
+      "factor": 0.5,
+      "parameters": [
+        5.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 5.0,
+            "kappa": 40.0,
+            "root_residual": 3.126388037344441e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641886,
+            "frequency_hz": 15915.494309189586,
+            "direction": 1,
+            "real_ohm": 5.0,
+            "kappa": 40.0,
+            "root_residual": 1.2789769243681803e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 4.81188931869525e-16,
+            "nodal_kappa": [
+              40.00000000171926,
+              40.00000000156423
+            ],
+            "nodal_derivative_error": [
+              1.7192576251545688e-09,
+              1.5642314110664302e-09
+            ],
+            "nodal_step_ln_f": 2.5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189586,
+          "fit_real_ohm": 5.0,
+          "fit_kappa": 40.0,
+          "shift_decades": 1.7763568394002505e-15,
+          "shift_tangent_scales": 8.180425556482071e-14,
+          "real_ratio": 0.5,
+          "real_db": -6.020599913279624,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "damping",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 1.8194244225050229e-16,
+            "nodal_kappa": [
+              19.99999999994843,
+              20.00000000091621
+            ],
+            "nodal_derivative_error": [
+              5.157119176146807e-11,
+              9.162093306258612e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "damping",
+      "factor": 2.0,
+      "parameters": [
+        20.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 20.0,
+            "kappa": 10.0,
+            "root_residual": 7.815970093361103e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 20.0,
+            "kappa": 10.0,
+            "root_residual": 7.815970093361103e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 5.354059352447061e-16,
+            "nodal_kappa": [
+              9.999999999967416,
+              9.999999999982242
+            ],
+            "nodal_derivative_error": [
+              3.2583713505118794e-11,
+              1.7758239323484304e-11
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 20.0,
+          "fit_kappa": 10.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 2.0,
+          "real_db": 6.020599913279624,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "damping",
+      "factor": 4.0,
+      "parameters": [
+        40.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 40.0,
+            "kappa": 5.0,
+            "root_residual": 3.907985046680551e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 40.0,
+            "kappa": 5.0,
+            "root_residual": 3.907985046680551e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 3.0626842058606727e-18,
+            "nodal_kappa": [
+              4.999999999987241,
+              4.999999999990962
+            ],
+            "nodal_derivative_error": [
+              1.2758682998992299e-11,
+              9.038103598868474e-12
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 40.0,
+          "fit_kappa": 5.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 4.0,
+          "real_db": 12.041199826559248,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": true,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_reciprocal",
+      "factor": 0.25,
+      "parameters": [
+        10.0,
+        0.00025,
+        4e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 5.0,
+            "root_residual": 3.907985046680551e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 5.0,
+            "root_residual": 3.907985046680551e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 3.0626842058606727e-18,
+            "nodal_kappa": [
+              4.999999999987241,
+              4.999999999990962
+            ],
+            "nodal_derivative_error": [
+              1.2758682998992299e-11,
+              9.038103598868474e-12
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 5.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.25,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_reciprocal",
+      "factor": 0.5,
+      "parameters": [
+        10.0,
+        0.0005,
+        2e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 10.0,
+            "root_residual": 7.815970093361103e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 10.0,
+            "root_residual": 7.815970093361103e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 5.354059352447061e-16,
+            "nodal_kappa": [
+              9.999999999967416,
+              9.999999999982242
+            ],
+            "nodal_derivative_error": [
+              3.2583713505118794e-11,
+              1.7758239323484304e-11
+            ],
+            "nodal_step_ln_f": 0.0001,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 10.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 0.5,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_reciprocal",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 1.8194244225050229e-16,
+            "nodal_kappa": [
+              19.99999999994843,
+              20.00000000091621
+            ],
+            "nodal_derivative_error": [
+              5.157119176146807e-11,
+              9.162093306258612e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_reciprocal",
+      "factor": 2.0,
+      "parameters": [
+        10.0,
+        0.002,
+        5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 40.0,
+            "root_residual": 3.126388037344441e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641886,
+            "frequency_hz": 15915.494309189586,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 40.0,
+            "root_residual": 1.2789769243681803e-13,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 4.81188931869525e-16,
+            "nodal_kappa": [
+              40.00000000171926,
+              40.00000000156423
+            ],
+            "nodal_derivative_error": [
+              1.7192576251545688e-09,
+              1.5642314110664302e-09
+            ],
+            "nodal_step_ln_f": 2.5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189586,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 40.0,
+          "shift_decades": 1.7763568394002505e-15,
+          "shift_tangent_scales": 8.180425556482071e-14,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 2.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_reciprocal",
+      "factor": 4.0,
+      "parameters": [
+        10.0,
+        0.004,
+        2.5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 80.0,
+            "root_residual": 6.252776074688882e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 80.0,
+            "root_residual": 6.252776074688882e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 7.788897571882681e-17,
+            "nodal_kappa": [
+              80.00000000228242,
+              80.00000000229508
+            ],
+            "nodal_derivative_error": [
+              2.282419586663309e-09,
+              2.295081458214554e-09
+            ],
+            "nodal_step_ln_f": 1.25e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 80.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 4.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": true
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_joint",
+      "factor": 0.25,
+      "parameters": [
+        10.0,
+        0.00025,
+        2.5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.803880122969847,
+            "frequency_hz": 63661.9772367581,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.2789769243681804e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.803880122969847,
+            "frequency_hz": 63661.9772367581,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.2789769243681804e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 6.806003518046949e-16,
+            "nodal_kappa": [
+              19.999999999951942,
+              20.00000000096135
+            ],
+            "nodal_derivative_error": [
+              4.8057557933134376e-11,
+              9.613501106287003e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 63661.9772367581,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": 0.6020599913279625,
+          "shift_tangent_scales": 27.72588722239782,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_joint",
+      "factor": 0.5,
+      "parameters": [
+        10.0,
+        0.0005,
+        5e-08
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.502850127305866,
+            "frequency_hz": 31830.988618379048,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.2789769243681804e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.502850127305866,
+            "frequency_hz": 31830.988618379048,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.2789769243681804e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 6.806003518046949e-16,
+            "nodal_kappa": [
+              19.99999999994609,
+              20.00000000086858
+            ],
+            "nodal_derivative_error": [
+              5.39088773621188e-11,
+              8.685816510478617e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 31830.988618379048,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": 0.30102999566398125,
+          "shift_tangent_scales": 13.86294361119891,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_joint",
+      "factor": 1.0,
+      "parameters": [
+        10.0,
+        0.001,
+        1e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 4.201820131641885,
+            "frequency_hz": 15915.494309189522,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 1.5631940186722205e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 1.8194244225050229e-16,
+            "nodal_kappa": [
+              19.99999999994843,
+              20.00000000091621
+            ],
+            "nodal_derivative_error": [
+              5.157119176146807e-11,
+              9.162093306258612e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 15915.494309189522,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": 0.0,
+          "shift_tangent_scales": 0.0,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": false,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_joint",
+      "factor": 2.0,
+      "parameters": [
+        10.0,
+        0.002,
+        2e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.900790135977903,
+            "frequency_hz": 7957.747154594751,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 4.121147867408581e-14,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.900790135977904,
+            "frequency_hz": 7957.747154594767,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 0.0,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 3.552819961121384e-16,
+            "nodal_kappa": [
+              19.99999999991983,
+              20.000000000830184
+            ],
+            "nodal_derivative_error": [
+              8.01705368758121e-11,
+              8.301839216073859e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 7957.747154594767,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": -0.3010299956639808,
+          "shift_tangent_scales": 13.86294361119889,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    },
+    {
+      "target": "simple_series",
+      "kind": "lc_joint",
+      "factor": 4.0,
+      "parameters": [
+        10.0,
+        0.004,
+        4e-07
+      ],
+      "physical": {
+        "stable": true,
+        "passed": true,
+        "level4": [
+          {
+            "index": 0,
+            "x": 3.5997601403139226,
+            "frequency_hz": 3978.8735772973832,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 2.842170943040401e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0
+          }
+        ],
+        "events": [
+          {
+            "index": 0,
+            "x": 3.5997601403139226,
+            "frequency_hz": 3978.8735772973832,
+            "direction": 1,
+            "real_ohm": 10.0,
+            "kappa": 20.0,
+            "root_residual": 2.842170943040401e-15,
+            "root_residual_ok": true,
+            "identity_relative_error": 0.0,
+            "nodal_relative_error": 6.374137151443598e-16,
+            "nodal_kappa": [
+              19.999999999925613,
+              20.000000000830184
+            ],
+            "nodal_derivative_error": [
+              7.438671900672489e-11,
+              8.301839216073859e-10
+            ],
+            "nodal_step_ln_f": 5e-05,
+            "nodal_passed": true
+          }
+        ]
+      },
+      "matches": [
+        {
+          "event_index": 0,
+          "target_frequency_hz": 15915.494309189522,
+          "target_direction": 1,
+          "target_real_ohm": 10.0,
+          "target_kappa": 20.0,
+          "zone_low_hz": 100.0,
+          "zone_high_hz": 1000000.0,
+          "matched": true,
+          "fit_frequency_hz": 3978.8735772973832,
+          "fit_real_ohm": 10.0,
+          "fit_kappa": 20.0,
+          "shift_decades": -0.6020599913279621,
+          "shift_tangent_scales": 27.725887222397798,
+          "real_ratio": 1.0,
+          "real_db": 0.0,
+          "kappa_ratio": 1.0,
+          "position_flag": true,
+          "real_flag": false,
+          "kappa_flag": false
+        }
+      ],
+      "extra_crossings": []
+    }
+  ]
+}

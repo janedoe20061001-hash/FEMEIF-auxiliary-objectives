@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-11",
+  "purpose": "Paired exploratory screen of all five structure-feature candidates; MAG/PHA baseline and original C reference",
+  "targets": [
+    "case1",
+    "ladder8",
+    "mixed0p25",
+    "three0p25",
+    "control0p25"
+  ],
+  "focus_events": {
+    "case1": [
+      "P3",
+      "V2"
+    ],
+    "ladder8": [
+      "P2",
+      "V1"
+    ],
+    "mixed0p25": [
+      "P1",
+      "V1"
+    ],
+    "control0p25": [
+      "P1"
+    ],
+    "three0p25": [
+      "V1",
+      "P2"
+    ]
+  },
+  "seeds": [
+    43000,
+    43001,
+    43002,
+    43003
+  ],
+  "population": 200,
+  "generations": 300,
+  "save_every": 20,
+  "workers": 32,
+  "methods": [
+    "MAG_PHA",
+    "MAG_PHA_INTEGRAL",
+    "MAG_PHA_RADIAL",
+    "MAG_PHA_OCCUPANCY",
+    "MAG_PHA_ANGULAR",
+    "MAG_PHA_BRIDGE",
+    "MAG_PHA_EXCESS"
+  ],
+  "planned_jobs": 140,
+  "planned_evaluations": 8400000,
+  "geometry": {
+    "points_per_window": 129,
+    "half_window_widths": 3.0,
+    "frequency_slack_widths": 0.25,
+    "ohm_floor": 1e-06,
+    "clip_at_neighbor_midpoints": true
+  },
+  "chord": {
+    "half_spans_widths": [
+      0.125,
+      0.25,
+      0.5
+    ],
+    "coefficient": 1.0,
+    "direction_coefficient": 1.0,
+    "log_length_coefficient": 1.0,
+    "no_candidate_normalization": true
+  },
+  "integral": {
+    "edge_measure": "(dt+ds)/2",
+    "edge_distance": "trapezoid of full normalized 3D squared link distance",
+    "normalization": "fixed target window span, never path point count",
+    "steps": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "no_free_frequency_alignment": true
+  },
+  "selection": {
+    "alpha": 25.12,
+    "primary": "MAG_plus_alpha_PHA over final retained population, no auxiliary score",
+    "secondary": "common original max Frechet score within paired baseline MAG/PHA allowance",
+    "relative_allowance": 0.1,
+    "absolute_floors": [
+      0.01,
+      7.615435494667714e-05
+    ]
+  },
+  "geometry_audit": {
+    "points": [
+      257,
+      513,
+      1025
+    ],
+    "relative_tolerance": 0.01,
+    "absolute_tolerance": 0.01,
+    "candidate_mode_anchors": true
+  },
+  "success_scope": "Independent amplitude events, local phase progress and full phase events, global MAG/PHA, other events and costs. Four seeds and all five targets used in development; no generalization claim. Individual auxiliary targets, no combined seven-objective search.",
+  "cpu_policy": "32 allocated CPUs; BLAS threads 1 per worker; measure cgroup CPU consumption during useful computation; do not launch dummy work to inflate utilization; tail and IO may use less CPU",
+  "budget_policy": "No post-result tuning, extra seeds or website upload; fixed definitions, hashes, paired initializations, operators and budgets; final population rules do not guarantee globally optimal parameters",
+  "family": {
+    "aggregation": "equal event/active angular block/bridge pair/TV segment mean; no post-result tuning",
+    "radial_db_scale": 3.0,
+    "occupancy_levels_db": [
+      0,
+      3,
+      6
+    ],
+    "occupancy_tau_db": 1.0,
+    "angular_min_target_turn_deg": 10.0,
+    "angular_floor_deg": 10.0,
+    "angular_orientation_coefficient": 1.0,
+    "bridge_points_per_block": 129,
+    "bridge_frequency_width": "minimum width of the two fixed target events",
+    "bridge_block_measure": "three equal positive blocks separated by 3dB core crossings; if overlapping, two equal blocks split at center midpoint",
+    "bridge_single_event": "exact original C fallback",
+    "tv_noise_allowance": 0.0,
+    "tv_phase_floor_deg": 10.0,
+    "tv_log_radius_floor_db": 3.0,
+    "radius_floor": "target window scale times 1e-12 with absolute floor 1e-15 ohm",
+    "feature_grid": "fixed target grids in training; 257/513/1025 plus target and candidate anchors in independent audit; finite resolution limitation explicitly retained",
+    "angular_blocks": "nonoverlapping selected amplitude windows and intervening gaps; activate if target total angle variation >=10 degrees",
+    "tv_partition": "all target amplitude extrema and actual phase derivative zero crossings inside full focus span",
+    "curve_phase": "passive positive-real impedance angle; increments on frozen training grid, no candidate reorientation"
+  },
+  "scheduling": "longest predicted tasks first; target base timings from completed previous batch and new auxiliary preflight timings; prediction frozen before optimization"
+}

@@ -1,0 +1,162 @@
+{
+  "target_csv_sha256": "ec50906f6cd3e5fdc5792734f7339f8368d2a3280b0a0d14451b0420acc7b725",
+  "target_features": {
+    "frequency_points": 201,
+    "target_turns": 2,
+    "turn_u": [
+      0.015049698100070081,
+      0.06002158669654864
+    ],
+    "target_crossings": 9,
+    "target_amplitude_extrema": 11,
+    "path_scales": [
+      73982.05645048112,
+      1459593.5529434802
+    ],
+    "impedance_median_scale": 1000.0000000000002,
+    "speed_epsilon": 180.44895382073818,
+    "target_turn_threshold": 2.09750309303674,
+    "fit_turn_threshold": 0.5126181292729822
+  },
+  "random_parameter_seed": 20260917,
+  "diagnostic_samples": 256,
+  "objectives": [
+    {
+      "id": "I-01",
+      "name": "turning_event_global_count_5",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "distinct_values": 3
+    },
+    {
+      "id": "I-02",
+      "name": "turning_event_coverage_5_of_6",
+      "minimum": 0.5,
+      "maximum": 1.0,
+      "distinct_values": 2
+    },
+    {
+      "id": "I-03",
+      "name": "reactance_crossing_direction_consistency",
+      "minimum": 0.5555555555555556,
+      "maximum": 1.0,
+      "distinct_values": 5
+    },
+    {
+      "id": "I-04",
+      "name": "reactance_crossing_global_count_10",
+      "minimum": 0.5555555555555556,
+      "maximum": 1.0,
+      "distinct_values": 5
+    },
+    {
+      "id": "I-05",
+      "name": "turning_event_global_count_4",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "distinct_values": 3
+    },
+    {
+      "id": "I-06",
+      "name": "paper_ptc",
+      "minimum": 0.2994809459123774,
+      "maximum": 0.4100000000000001,
+      "distinct_values": 47
+    },
+    {
+      "id": "I-07",
+      "name": "reactance_crossing_global_count_8",
+      "minimum": 0.5,
+      "maximum": 1.0,
+      "distinct_values": 5
+    },
+    {
+      "id": "II-01",
+      "name": "characteristic_frequency_shift_error_decades",
+      "minimum": 0.02935850458876956,
+      "maximum": 738.9367610509041,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-02",
+      "name": "transition_speed_relative_error",
+      "minimum": 0.24455923715931624,
+      "maximum": 1598.4810146887244,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-03",
+      "name": "constrained_dtw_window_4",
+      "minimum": 0.029127672675487562,
+      "maximum": 179.18699804200907,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-04",
+      "name": "soft_dtw_divergence_gamma_0.10",
+      "minimum": 0.11204671113627371,
+      "maximum": 498.65788411796916,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-05",
+      "name": "hausdorff95_error",
+      "minimum": 0.09672842639048071,
+      "maximum": 1249.6706251538405,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-06",
+      "name": "sobolev_h1_error",
+      "minimum": 0.9972163660793875,
+      "maximum": 591.1538526295557,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-07",
+      "name": "translation_aligned_spatial_shape_error",
+      "minimum": 0.02905798940429026,
+      "maximum": 182.55928351930078,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-08",
+      "name": "turning_event_weak_location",
+      "minimum": 0.5249339117091565,
+      "maximum": 1.0,
+      "distinct_values": 37
+    },
+    {
+      "id": "II-09",
+      "name": "turning_event_existence_count_guard",
+      "minimum": 0.5,
+      "maximum": 1.0,
+      "distinct_values": 2
+    },
+    {
+      "id": "II-10",
+      "name": "normal_shape_error_relative",
+      "minimum": 1.772227712460077,
+      "maximum": 22939.114422232386,
+      "distinct_values": 256
+    },
+    {
+      "id": "II-11",
+      "name": "turning_event_coverage_4_of_6",
+      "minimum": 0.5,
+      "maximum": 1.0,
+      "distinct_values": 2
+    }
+  ],
+  "equivalent_by_formula": [
+    [
+      "I-01",
+      "I-05"
+    ],
+    [
+      "I-02",
+      "II-11"
+    ]
+  ],
+  "note": "Original min(requested_count,target_count) formulas retained. Two detected target turns are near the low-frequency end. No feature tuning or denoising."
+}

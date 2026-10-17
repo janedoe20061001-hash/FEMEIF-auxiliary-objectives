@@ -1,0 +1,45 @@
+{
+  "status": "plan_only",
+  "seed_start": 0,
+  "seed_count": 100,
+  "population": 200,
+  "generations": 300,
+  "group_count": 4,
+  "groups": [
+    {
+      "name": "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades",
+      "auxiliaries": [
+        "reactance_crossing_direction_consistency",
+        "characteristic_frequency_shift_error_decades"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "reactance_crossing_direction_consistency+transition_speed_relative_error",
+      "auxiliaries": [
+        "reactance_crossing_direction_consistency",
+        "transition_speed_relative_error"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "characteristic_frequency_shift_error_decades+transition_speed_relative_error",
+      "auxiliaries": [
+        "characteristic_frequency_shift_error_decades",
+        "transition_speed_relative_error"
+      ],
+      "objective_count": 4
+    },
+    {
+      "name": "reactance_crossing_direction_consistency+characteristic_frequency_shift_error_decades+transition_speed_relative_error",
+      "auxiliaries": [
+        "reactance_crossing_direction_consistency",
+        "characteristic_frequency_shift_error_decades",
+        "transition_speed_relative_error"
+      ],
+      "objective_count": 5
+    }
+  ],
+  "planned_runs": 400,
+  "planned_evaluations": 24000000
+}

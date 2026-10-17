@@ -1,0 +1,403 @@
+{
+  "scope": "Posthoc explanation only; no formula or label changes",
+  "comparison": [
+    {
+      "metric": "J0",
+      "dev": 11,
+      "regression": 19,
+      "missing": 6,
+      "distortion": 5,
+      "extra": 8
+    },
+    {
+      "metric": "ARX_S_L",
+      "dev": 10,
+      "regression": 20,
+      "missing": 7,
+      "distortion": 5,
+      "extra": 8
+    },
+    {
+      "metric": "Local_ARX",
+      "dev": 8,
+      "regression": 15,
+      "missing": 2,
+      "distortion": 6,
+      "extra": 7
+    },
+    {
+      "metric": "Root",
+      "dev": 10,
+      "regression": 17,
+      "missing": 3,
+      "distortion": 6,
+      "extra": 8
+    },
+    {
+      "metric": "B",
+      "dev": 9,
+      "regression": 13,
+      "missing": 1,
+      "distortion": 4,
+      "extra": 8
+    },
+    {
+      "metric": "JM",
+      "dev": 11,
+      "regression": 19,
+      "missing": 6,
+      "distortion": 5,
+      "extra": 8
+    },
+    {
+      "metric": "JC",
+      "dev": 11,
+      "regression": 19,
+      "missing": 6,
+      "distortion": 5,
+      "extra": 8
+    },
+    {
+      "metric": "JV",
+      "dev": 11,
+      "regression": 19,
+      "missing": 6,
+      "distortion": 5,
+      "extra": 8
+    }
+  ],
+  "transitions": {
+    "J0": {
+      "repaired": [
+        "held_004",
+        "held_012",
+        "held_019"
+      ],
+      "newly_wrong": [
+        "held_003",
+        "held_010",
+        "held_011"
+      ]
+    },
+    "ARX_S_L": {
+      "repaired": [],
+      "newly_wrong": [
+        "held_000"
+      ]
+    },
+    "Root": {
+      "repaired": [
+        "held_001",
+        "held_017",
+        "held_018",
+        "held_019"
+      ],
+      "newly_wrong": [
+        "held_003",
+        "held_011"
+      ]
+    },
+    "B": {
+      "repaired": [
+        "held_001",
+        "held_002",
+        "held_004",
+        "held_008",
+        "held_017",
+        "held_018",
+        "held_019"
+      ],
+      "newly_wrong": [
+        "held_011"
+      ]
+    }
+  },
+  "all_JM_JC_JV_directions_identical": true,
+  "failures": [
+    {
+      "pair_id": "held_000",
+      "target": "mixed_resonators/base",
+      "region": "V3",
+      "family": "missing_structure",
+      "better": {
+        "J0": 0.02777943932796114,
+        "constant_offset_real": -0.04056596229932856,
+        "constant_offset_imag": 0.12619952670000448,
+        "constant_offset_squared": 0.01757191783657569,
+        "centered_point_error": 0.010207521491385457,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": true,
+          "fit_event_id": "V3",
+          "shift_decades": 0.004604983186487388,
+          "height_delta_db": 1.84743479579722,
+          "width_ratio": 0.8505088216332466,
+          "width_evaluable": true,
+          "target_frequency_hz": 52680.083425742676,
+          "target_width_hz": 7573.562442378745
+        },
+        "scores": {
+          "JM": 0.33031087937697995,
+          "JC": 0.311292473203111,
+          "JV": 0.32080167629004547
+        }
+      },
+      "worse": {
+        "J0": 0.027766497275849854,
+        "constant_offset_real": -0.040658598609162516,
+        "constant_offset_imag": 0.1274976797583969,
+        "constant_offset_squared": 0.01790877998463572,
+        "centered_point_error": 0.009857717291214142,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": false,
+          "complete": false,
+          "fit_event_id": null,
+          "shift_decades": null,
+          "height_delta_db": null,
+          "width_ratio": null,
+          "width_evaluable": true,
+          "target_frequency_hz": 52680.083425742676,
+          "target_width_hz": 7573.562442378745
+        },
+        "scores": {
+          "JM": 0.26909510666412195,
+          "JC": 0.24212804227566898,
+          "JV": 0.25561157446989546
+        }
+      },
+      "worse_has_larger_constant_but_smaller_centered": true
+    },
+    {
+      "pair_id": "held_003",
+      "target": "mixed_resonators/base",
+      "region": "V3",
+      "family": "existing_distortion",
+      "better": {
+        "J0": 0.028224511360201612,
+        "constant_offset_real": -0.03828450968118874,
+        "constant_offset_imag": 0.12853593083926879,
+        "constant_offset_squared": 0.017987189198246326,
+        "centered_point_error": 0.01023732216195528,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": true,
+          "fit_event_id": "V3",
+          "shift_decades": 0.0023517558895056467,
+          "height_delta_db": 1.5796968571973977,
+          "width_ratio": 0.672956565483508,
+          "width_evaluable": true,
+          "target_frequency_hz": 52680.083425742676,
+          "target_width_hz": 7573.562442378745
+        },
+        "scores": {
+          "JM": 0.3660124556304636,
+          "JC": 0.3481976587016942,
+          "JV": 0.3571050571660789
+        }
+      },
+      "worse": {
+        "J0": 0.02846799258133899,
+        "constant_offset_real": -0.04031173632091903,
+        "constant_offset_imag": 0.12861922589410327,
+        "constant_offset_squared": 0.01816794135480567,
+        "centered_point_error": 0.010300051226533335,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": false,
+          "fit_event_id": "V3",
+          "shift_decades": 0.05744020227954216,
+          "height_delta_db": 3.26944322268573,
+          "width_ratio": 1.0132278951416422,
+          "width_evaluable": true,
+          "target_frequency_hz": 52680.083425742676,
+          "target_width_hz": 7573.562442378745
+        },
+        "scores": {
+          "JM": 0.3417117591710538,
+          "JC": 0.29772893908118664,
+          "JV": 0.31972034912612024
+        }
+      },
+      "worse_has_larger_constant_but_smaller_centered": false
+    },
+    {
+      "pair_id": "held_009",
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "region": "V3",
+      "family": "missing_structure",
+      "better": {
+        "J0": 0.11601551208099894,
+        "constant_offset_real": -0.08748633741498016,
+        "constant_offset_imag": 0.24348357208716456,
+        "constant_offset_squared": 0.06693810911061322,
+        "centered_point_error": 0.04907740297038568,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": true,
+          "fit_event_id": "V3",
+          "shift_decades": -0.0037136837979376836,
+          "height_delta_db": 2.4826037051211216,
+          "width_ratio": 1.2844492746689469,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.4150730151461518,
+          "JC": 0.35316850985416515,
+          "JV": 0.3841207625001585
+        }
+      },
+      "worse": {
+        "J0": 0.11466873559309562,
+        "constant_offset_real": -0.08562913507544223,
+        "constant_offset_imag": 0.24373125606667573,
+        "constant_offset_squared": 0.06673727395760777,
+        "centered_point_error": 0.04793146163548782,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": false,
+          "complete": false,
+          "fit_event_id": null,
+          "shift_decades": null,
+          "height_delta_db": null,
+          "width_ratio": null,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.4115426761162006,
+          "JC": 0.3451529736260412,
+          "JV": 0.3783478248711209
+        }
+      },
+      "worse_has_larger_constant_but_smaller_centered": false
+    },
+    {
+      "pair_id": "held_010",
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "region": "V3",
+      "family": "existing_distortion",
+      "better": {
+        "J0": 0.05895495392072997,
+        "constant_offset_real": -0.04602585028605151,
+        "constant_offset_imag": 0.16683621553335815,
+        "constant_offset_squared": 0.029952701708047164,
+        "centered_point_error": 0.02900225221268283,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": true,
+          "fit_event_id": "V3",
+          "shift_decades": -0.0007600191147059121,
+          "height_delta_db": 1.9896802001477667,
+          "width_ratio": 1.290082738413839,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.44965156603745016,
+          "JC": 0.41744938266329024,
+          "JV": 0.4335504743503702
+        }
+      },
+      "worse": {
+        "J0": 0.06626016317505226,
+        "constant_offset_real": -0.059443546846687,
+        "constant_offset_imag": 0.18810712063125318,
+        "constant_offset_squared": 0.038917824093895104,
+        "centered_point_error": 0.02734233908115713,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": false,
+          "fit_event_id": "V3",
+          "shift_decades": -0.0003311816206839069,
+          "height_delta_db": 3.251269210271353,
+          "width_ratio": 4.000931135841183,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.36063876399013683,
+          "JC": 0.31416054298506724,
+          "JV": 0.33739965348760204
+        }
+      },
+      "worse_has_larger_constant_but_smaller_centered": true
+    },
+    {
+      "pair_id": "held_011",
+      "target": "mixed_resonators/lc_reciprocal_8p0",
+      "region": "V3",
+      "family": "existing_distortion",
+      "better": {
+        "J0": 0.10773031667532501,
+        "constant_offset_real": -0.08727967186747476,
+        "constant_offset_imag": 0.2227936886816333,
+        "constant_offset_squared": 0.057254768837662603,
+        "centered_point_error": 0.05047554783766239,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": true,
+          "fit_event_id": "V3",
+          "shift_decades": -0.00589821930143497,
+          "height_delta_db": 2.2692183614893295,
+          "width_ratio": 1.407759810372941,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.440418496685894,
+          "JC": 0.3727926133371885,
+          "JV": 0.4066055550115413
+        }
+      },
+      "worse": {
+        "J0": 0.11034709225114883,
+        "constant_offset_real": -0.07411583286114387,
+        "constant_offset_imag": 0.22338423587588285,
+        "constant_offset_squared": 0.05539367351855307,
+        "centered_point_error": 0.05495341873259578,
+        "event": {
+          "event_id": "V3",
+          "kind": "valley",
+          "matched": true,
+          "complete": false,
+          "fit_event_id": "V3",
+          "shift_decades": 0.004040517371668884,
+          "height_delta_db": 3.573623772081554,
+          "width_ratio": 4.539621475501589,
+          "width_evaluable": true,
+          "target_frequency_hz": 42004.91990714643,
+          "target_width_hz": 1105.160364749623
+        },
+        "scores": {
+          "JM": 0.40116040476040027,
+          "JC": 0.358466131635934,
+          "JV": 0.37981326819816713
+        }
+      },
+      "worse_has_larger_constant_but_smaller_centered": false
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "mixed_resonators/lc_reciprocal_0p25",
+  "kind": "theoretical",
+  "circuit": {
+    "id": "mixed_resonators",
+    "title": "串联和并联谐振结构混合嵌套",
+    "tree": [
+      "S",
+      "Rs",
+      [
+        "P",
+        [
+          "S",
+          "R1",
+          "L1",
+          "C1"
+        ],
+        [
+          "S",
+          "L2",
+          [
+            "P",
+            "R2",
+            "C2",
+            [
+              "S",
+              "R3",
+              "L3",
+              "C3"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "expression": "(Rs + ((R1 + L1 + C1) // (L2 + (R2 // C2 // (R3 + L3 + C3)))))",
+    "names": [
+      "Rs",
+      "R1",
+      "L1",
+      "C1",
+      "L2",
+      "R2",
+      "C2",
+      "R3",
+      "L3",
+      "C3"
+    ],
+    "parameters": [
+      5.0,
+      2.0,
+      0.0015915494309189533,
+      1.5915494309189535e-07,
+      0.0007234315595086153,
+      1500.0,
+      7.234315595086153e-08,
+      7.0,
+      9.947183943243458e-05,
+      1.5915494309189535e-07
+    ],
+    "units": [
+      "ohm",
+      "ohm",
+      "H",
+      "F",
+      "H",
+      "ohm",
+      "F",
+      "ohm",
+      "H",
+      "F"
+    ],
+    "netlist": [
+      {
+        "component": "Rs",
+        "a": 1,
+        "b": 2
+      },
+      {
+        "component": "R1",
+        "a": 2,
+        "b": 3
+      },
+      {
+        "component": "L1",
+        "a": 3,
+        "b": 4
+      },
+      {
+        "component": "C1",
+        "a": 4,
+        "b": 0
+      },
+      {
+        "component": "L2",
+        "a": 2,
+        "b": 5
+      },
+      {
+        "component": "R2",
+        "a": 5,
+        "b": 0
+      },
+      {
+        "component": "C2",
+        "a": 5,
+        "b": 0
+      },
+      {
+        "component": "R3",
+        "a": 5,
+        "b": 6
+      },
+      {
+        "component": "L3",
+        "a": 6,
+        "b": 7
+      },
+      {
+        "component": "C3",
+        "a": 7,
+        "b": 0
+      }
+    ]
+  },
+  "lower_log10": [
+    -0.8010299956639811,
+    -1.1989700043360187,
+    -4.298179868358115,
+    -8.298179868358115,
+    -4.640602549180321,
+    1.6760912590556813,
+    -8.640602549180322,
+    -0.6549019599857432,
+    -4.900239859686078,
+    -8.900239859686078
+  ],
+  "upper_log10": [
+    2.1989700043360187,
+    1.8010299956639813,
+    -1.298179868358115,
+    -5.298179868358115,
+    -1.6406025491803211,
+    4.676091259055681,
+    -5.640602549180321,
+    2.345098040014257,
+    -1.9002398596860774,
+    -5.900239859686077
+  ],
+  "events": [
+    {
+      "event_id": "P1",
+      "kind": "peak",
+      "x": 4.0295679627055305,
+      "frequency_hz": 10704.53885039795,
+      "height_db": 28.89555688922635,
+      "prominence_db": 8.842567564386353,
+      "width_3db_decades": 0.022221972476186735,
+      "width_3db_hz": 550.1425332321596,
+      "left_3db_x": 4.020318566425705,
+      "right_3db_x": 4.042540538901892
+    },
+    {
+      "event_id": "P2",
+      "kind": "peak",
+      "x": 4.838147748326528,
+      "frequency_hz": 68888.66178424947,
+      "height_db": 47.425501442938014,
+      "prominence_db": 1.2002640752075067,
+      "width_3db_decades": null,
+      "width_3db_hz": null,
+      "left_3db_x": null,
+      "right_3db_x": null
+    },
+    {
+      "event_id": "V1",
+      "kind": "valley",
+      "x": 3.998078931017323,
+      "frequency_hz": 9955.863441320078,
+      "height_db": 16.742006528418354,
+      "prominence_db": 46.255369494664066,
+      "width_3db_decades": 0.03111551154429293,
+      "width_3db_hz": 706.8350414815814,
+      "left_3db_x": 3.978474798119815,
+      "right_3db_x": 4.009590309664108
+    },
+    {
+      "event_id": "V2",
+      "kind": "valley",
+      "x": 4.082848991347814,
+      "frequency_hz": 12101.77269318513,
+      "height_db": 20.052989324839995,
+      "prominence_db": 8.842567564386353,
+      "width_3db_decades": 0.07375604022641191,
+      "width_3db_hz": 2094.8904542251166,
+      "left_3db_x": 4.053748227058062,
+      "right_3db_x": 4.127504267284474
+    },
+    {
+      "event_id": "V3",
+      "kind": "valley",
+      "x": 4.8828125,
+      "frequency_hz": 76350.60803383346,
+      "height_db": 46.22523736773051,
+      "prominence_db": 1.2002640752075067,
+      "width_3db_decades": null,
+      "width_3db_hz": null,
+      "left_3db_x": null,
+      "right_3db_x": null
+    }
+  ],
+  "phase_events": [
+    {
+      "event_id": "U1",
+      "sign": 1,
+      "x": 4.00130826987036,
+      "frequency_hz": 10030.169445455967,
+      "slope_deg_per_decade": 3548.7553544722987,
+      "width_decades": 0.02413708302786821
+    },
+    {
+      "event_id": "U2",
+      "sign": 1,
+      "x": 4.0771484375,
+      "frequency_hz": 11943.962673773618,
+      "slope_deg_per_decade": 1313.8910126698602,
+      "width_decades": 0.07300219197488289
+    },
+    {
+      "event_id": "U3",
+      "sign": 1,
+      "x": 4.8818359375,
+      "frequency_hz": 76179.11754341997,
+      "slope_deg_per_decade": 323.59453475798824,
+      "width_decades": 0.041045162928281975
+    },
+    {
+      "event_id": "D1",
+      "sign": -1,
+      "x": 2.4296875,
+      "frequency_hz": 268.95987855750434,
+      "slope_deg_per_decade": -65.34842876275421,
+      "width_decades": 0.5483629299103367
+    },
+    {
+      "event_id": "D2",
+      "sign": -1,
+      "x": 4.0280253186855415,
+      "frequency_hz": 10666.58303919891,
+      "slope_deg_per_decade": -3671.839691130959,
+      "width_decades": 0.01957098804532098
+    },
+    {
+      "event_id": "D3",
+      "sign": -1,
+      "x": 4.84033203125,
+      "frequency_hz": 69236.00988354701,
+      "slope_deg_per_decade": -248.74688626461946,
+      "width_decades": 0.5422179584519116
+    }
+  ],
+  "factor": 0.25,
+  "source": {
+    "path": "output/mse_structure_complex_20261010_server/retrieved/other/inputs_core/mixed_resonators/lc_reciprocal_0p25/target.json",
+    "sha256": "21595134e243ddb4cf4738a0ee1387c05fa3d704d143a5e5055aa1da56ac01de"
+  },
+  "blocks": [
+    {
+      "lo": 2.0,
+      "hi": 3.904732396384444,
+      "label": "gap_0",
+      "event": false
+    },
+    {
+      "lo": 3.904732396384444,
+      "hi": 4.0138234468614264,
+      "label": "V1",
+      "event": true
+    },
+    {
+      "lo": 4.0138234468614264,
+      "hi": 4.056208477026672,
+      "label": "P1",
+      "event": true
+    },
+    {
+      "lo": 4.056208477026672,
+      "hi": 4.30411711202705,
+      "label": "V2",
+      "event": true
+    },
+    {
+      "lo": 4.30411711202705,
+      "hi": 6.0,
+      "label": "end_gap",
+      "event": false
+    }
+  ]
+}

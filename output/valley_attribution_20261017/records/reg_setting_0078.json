@@ -1,0 +1,275 @@
+{
+  "id": "reg_setting_0078",
+  "target": "mixed_resonators/lc_reciprocal_8p0",
+  "cohort": "physical_regression",
+  "levels": [
+    {
+      "n": 128,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 605.5801110816435,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.616847230901252,
+          "frequency_hz": 41385.40703111484,
+          "kind": "peak",
+          "real_ohm": 142.87073242106922,
+          "imag_ohm": 172.22582725957233,
+          "magnitude_ohm": 223.77171795778125,
+          "phase_deg": 50.32243929118978,
+          "R_dR": 6374792.595103302,
+          "X_dX": -6374792.595102971,
+          "radial_balance_relative": 2.5931785940962508e-14,
+          "normalized_radial_dot": 2.548552486170353e-14
+        },
+        {
+          "x": 4.62270585550369,
+          "frequency_hz": 41947.47805371263,
+          "kind": "valley",
+          "real_ohm": 43.988646687265124,
+          "imag_ohm": 44.57135249249568,
+          "magnitude_ohm": 62.62273149893209,
+          "phase_deg": 45.3769885032859,
+          "R_dR": -470460.1062988386,
+          "X_dX": 470460.1062986933,
+          "radial_balance_relative": 1.544706207338088e-13,
+          "normalized_radial_dot": -1.5445724614103695e-13
+        },
+        {
+          "x": 4.624299896287581,
+          "frequency_hz": 42101.72559038804,
+          "kind": "peak",
+          "real_ohm": 53.90620639822589,
+          "imag_ohm": 62.398146369993675,
+          "magnitude_ohm": 82.45852144356752,
+          "phase_deg": 49.176029822849216,
+          "R_dR": 3109269.0869181803,
+          "X_dX": -3109269.086904582,
+          "radial_balance_relative": 2.1867262903045375e-12,
+          "normalized_radial_dot": 2.163534345380931e-12
+        },
+        {
+          "x": 4.624949214379679,
+          "frequency_hz": 42164.719387648445,
+          "kind": "valley",
+          "real_ohm": 32.94141617725194,
+          "imag_ohm": 43.34361431773154,
+          "magnitude_ohm": 54.44084681456726,
+          "phase_deg": 52.76494037179469,
+          "R_dR": -801888.0135337953,
+          "X_dX": 801888.0135327418,
+          "radial_balance_relative": 6.568512245059441e-13,
+          "normalized_radial_dot": -6.328702120935418e-13
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.62270585550369,
+            "frequency_hz": 41947.47805371263,
+            "kind": "valley",
+            "real_ohm": 43.988646687265124,
+            "imag_ohm": 44.57135249249568,
+            "magnitude_ohm": 62.62273149893209,
+            "phase_deg": 45.3769885032859,
+            "R_dR": -470460.1062988386,
+            "X_dX": 470460.1062986933,
+            "radial_balance_relative": 1.544706207338088e-13,
+            "normalized_radial_dot": -1.5445724614103695e-13
+          },
+          "location": "in_core",
+          "frequency_offset_decades": -0.0005876473255526093,
+          "frequency_offset_core_widths": -0.05181089963324779,
+          "max_normalized_state_residual": 0.5518468914052083,
+          "mean_normalized_state_residual": 0.15327175806319737,
+          "max_normalized_derivative_residual": 18.89222776823797,
+          "mean_normalized_derivative_residual": 1.8344982890270023,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 18
+        },
+        {
+          "index": 1,
+          "root": {
+            "x": 4.624949214379679,
+            "frequency_hz": 42164.719387648445,
+            "kind": "valley",
+            "real_ohm": 32.94141617725194,
+            "imag_ohm": 43.34361431773154,
+            "magnitude_ohm": 54.44084681456726,
+            "phase_deg": 52.76494037179469,
+            "R_dR": -801888.0135337953,
+            "X_dX": 801888.0135327418,
+            "radial_balance_relative": 6.568512245059441e-13,
+            "normalized_radial_dot": -6.328702120935418e-13
+          },
+          "location": "in_core",
+          "frequency_offset_decades": 0.0016557115504367559,
+          "frequency_offset_core_widths": 0.14597855079255018,
+          "max_normalized_state_residual": 0.6038168843637429,
+          "mean_normalized_state_residual": 0.1595310513017737,
+          "max_normalized_derivative_residual": 13.273555825720022,
+          "mean_normalized_derivative_residual": 1.760526246285374,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 2,
+      "boundary_valley_count": 0,
+      "search_valley_count": 2,
+      "occupancy": "multiple_core_candidates",
+      "signature_relation": "no_strict_translation_evidence",
+      "signature_consistent_count": 0,
+      "signature_center_location": null,
+      "signature_center_x": null
+    },
+    {
+      "n": 256,
+      "search": [
+        4.577924877330564,
+        4.668662128327921
+      ],
+      "core": [
+        4.620830561344682,
+        4.632172717719351
+      ],
+      "path_length_in_search": 605.5802533390555,
+      "zero_motion": false,
+      "all_radial_extrema": [
+        {
+          "x": 4.616847230901252,
+          "frequency_hz": 41385.40703111484,
+          "kind": "peak",
+          "real_ohm": 142.87073242106922,
+          "imag_ohm": 172.22582725957233,
+          "magnitude_ohm": 223.77171795778125,
+          "phase_deg": 50.32243929118978,
+          "R_dR": 6374792.595103302,
+          "X_dX": -6374792.595102971,
+          "radial_balance_relative": 2.5931785940962508e-14,
+          "normalized_radial_dot": 2.548552486170353e-14
+        },
+        {
+          "x": 4.62270585550369,
+          "frequency_hz": 41947.47805371263,
+          "kind": "valley",
+          "real_ohm": 43.988646687265124,
+          "imag_ohm": 44.57135249249568,
+          "magnitude_ohm": 62.62273149893209,
+          "phase_deg": 45.3769885032859,
+          "R_dR": -470460.1062988386,
+          "X_dX": 470460.1062986933,
+          "radial_balance_relative": 1.544706207338088e-13,
+          "normalized_radial_dot": -1.5445724614103695e-13
+        },
+        {
+          "x": 4.62429989628758,
+          "frequency_hz": 42101.72559038796,
+          "kind": "peak",
+          "real_ohm": 53.90620639818213,
+          "imag_ohm": 62.39814637003149,
+          "magnitude_ohm": 82.45852144356753,
+          "phase_deg": 49.176029822889404,
+          "R_dR": 3109269.086922184,
+          "X_dX": -3109269.086881663,
+          "radial_balance_relative": 6.516147809406857e-12,
+          "normalized_radial_dot": 6.447038958522474e-12
+        },
+        {
+          "x": 4.624949214379678,
+          "frequency_hz": 42164.71938764836,
+          "kind": "valley",
+          "real_ohm": 32.94141617727337,
+          "imag_ohm": 43.34361431771525,
+          "magnitude_ohm": 54.44084681456726,
+          "phase_deg": 52.76494037176636,
+          "R_dR": -801888.0135366304,
+          "X_dX": 801888.013532707,
+          "radial_balance_relative": 2.4463697611073793e-12,
+          "normalized_radial_dot": -2.357055131830583e-12
+        }
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "root": {
+            "x": 4.62270585550369,
+            "frequency_hz": 41947.47805371263,
+            "kind": "valley",
+            "real_ohm": 43.988646687265124,
+            "imag_ohm": 44.57135249249568,
+            "magnitude_ohm": 62.62273149893209,
+            "phase_deg": 45.3769885032859,
+            "R_dR": -470460.1062988386,
+            "X_dX": 470460.1062986933,
+            "radial_balance_relative": 1.544706207338088e-13,
+            "normalized_radial_dot": -1.5445724614103695e-13
+          },
+          "location": "in_core",
+          "frequency_offset_decades": -0.0005876473255526093,
+          "frequency_offset_core_widths": -0.05181089963324779,
+          "max_normalized_state_residual": 0.5518468914052083,
+          "mean_normalized_state_residual": 0.15327175806319737,
+          "max_normalized_derivative_residual": 18.89222776823797,
+          "mean_normalized_derivative_residual": 1.8344982890270023,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 18
+        },
+        {
+          "index": 1,
+          "root": {
+            "x": 4.624949214379678,
+            "frequency_hz": 42164.71938764836,
+            "kind": "valley",
+            "real_ohm": 32.94141617727337,
+            "imag_ohm": 43.34361431771525,
+            "magnitude_ohm": 54.44084681456726,
+            "phase_deg": 52.76494037176636,
+            "R_dR": -801888.0135366304,
+            "X_dX": 801888.013532707,
+            "radial_balance_relative": 2.4463697611073793e-12,
+            "normalized_radial_dot": -2.357055131830583e-12
+          },
+          "location": "in_core",
+          "frequency_offset_decades": 0.0016557115504358677,
+          "frequency_offset_core_widths": 0.14597855079247185,
+          "max_normalized_state_residual": 0.6038168843635057,
+          "mean_normalized_state_residual": 0.15953105130171902,
+          "max_normalized_derivative_residual": 13.273555825760177,
+          "mean_normalized_derivative_residual": 1.7605262462874736,
+          "state_numerically_consistent": false,
+          "derivative_numerically_consistent": false,
+          "translation_signature_consistent": false,
+          "signature_points": 18
+        }
+      ],
+      "core_valley_count": 2,
+      "boundary_valley_count": 0,
+      "search_valley_count": 2,
+      "occupancy": "multiple_core_candidates",
+      "signature_relation": "no_strict_translation_evidence",
+      "signature_consistent_count": 0,
+      "signature_center_location": null,
+      "signature_center_x": null
+    }
+  ],
+  "stability_checks": {
+    "root_count_type_location": true,
+    "candidate_location_signature": true,
+    "categories": true
+  },
+  "numerical_passed": true
+}

@@ -1,0 +1,73 @@
+{
+  "reference_fingerprint": "9554e637df159e8b2079afe47a4869f756d4c806ed5f319635297ab9d6bc1c6f",
+  "reference_code_sha256": {
+    "experiment.py": "583765bffe929fa5c1f63c912c53e4559d365fddc6613ed7856dbf5eb8a8efc8",
+    "objectives.py": "cef3de8eeecf7f8ab3e8de812c01078be1397014a244e25491007234b77c6bf2",
+    "case2.py": "7fa5289f1eb42020d83a79bdf899c844da93d5ec9ecfffedb3c8fff582781790",
+    "summarize.py": "0a035449cf84ab1c635d05c60ac290ac5bdf4d257a6295336a4b977a2d85c645",
+    "final_selection.py": "4f17d00600454dc51cf3d5cee007d4ef6c397df881468965575956df8e9295c6",
+    "report_results.py": "8841f52e2eac02b963a5778b01acfef279104128ca205209de2e7aae88397b8f",
+    "launch_batch.py": "daa9c1b999493786e70ca5ff3f7a9618bb7bdf75de62f5cde878417e05a9016d",
+    "stability.py": "60124decd62f788ba9c981991a43ba81bfdf811956cddb2204bb9591d5f1a364",
+    "analysis_config.json": "be609bf5b37d7b6f63b221fb2d17599c3b10279d435f3aa9fdc197cf06fb95c8",
+    "requirements.txt": "5b0116a7d571714d89afe1f8ddfee71eef762b3bcc3b31c69ceeaad23972bd36",
+    "requirements-lock.txt": "11b9eec6ce0dbc32f6d55f6fc307d1e5d82268720fdaf4f1e78df0fd4f439714"
+  },
+  "search_ast_sha256": {
+    "initial_population": "d15a04884aec82ba747fa0b23a344a5cb16f0ec149621b61b74086c85f224795",
+    "stats": "e03e594d140c09c9df475f7585717687314da8b3753569fee1515c7bf6c3ee69",
+    "Case2": "230ea1157aad2793a4c1d87434a831f5d91a152171ebafb8d2813ecadd3e7c60",
+    "Trace": "f9298c720c5fb9117028c4e4d584c7f0ff7211413d53f4360dc0d215170108f4",
+    "run_one": "b3cb3c382024163b15d68c7934c1d6384b70860e3c2a608b9b216cb1d12edee3"
+  },
+  "sets": {
+    "A": [
+      "reactance_crossing_direction_consistency",
+      "characteristic_frequency_shift_error_decades",
+      "transition_speed_relative_error"
+    ],
+    "B": [
+      "turning_event_coverage_5_of_6",
+      "paper_ptc",
+      "characteristic_frequency_shift_error_decades"
+    ]
+  },
+  "case1_comparisons": [
+    {
+      "label": "A_discovery_0_99",
+      "file": "case1_reference/A_discovery_0_99.csv",
+      "sha256": "cc6543e9c63abe556f5500962a10024089a71aa5e828d6c30b3a01a49bc44b16",
+      "source_fingerprint": "4c2484d5570e54b35cda22682da5ba7861da261ffd30768f8a164f8289660a0a",
+      "seed_start": 0,
+      "seed_count": 100,
+      "set_key": "A"
+    },
+    {
+      "label": "A_validation_100_199",
+      "file": "case1_reference/A_validation_100_199.csv",
+      "sha256": "aad5f44fee673094e64e7f0476ec03a5da427783312548e146b26bed260512c0",
+      "source_fingerprint": "c3a43262d919e39b7d271cc0b8710931ca0e1754478df03f2f8ecaff707c3fce",
+      "seed_start": 100,
+      "seed_count": 100,
+      "set_key": "A"
+    },
+    {
+      "label": "B_pairs_discovery_0_99",
+      "file": "case1_reference/B_pairs_discovery_0_99.csv",
+      "sha256": "03f45b32cd27a49b64459c5f1ea8d65f90adf87fdb14a2151eebba6a6d19e9a1",
+      "source_fingerprint": "9b0ec57cd3de78e21701a92f65db46c4d5d6e9c53bf54f69c7ac099fd5cc2c13",
+      "seed_start": 0,
+      "seed_count": 100,
+      "set_key": "B"
+    },
+    {
+      "label": "B_validation_200_299",
+      "file": "case1_reference/B_validation_200_299.csv",
+      "sha256": "314c91643f02bcf027aaf07d72e440de50c3c28e67456051c7791b9504dfc0f2",
+      "source_fingerprint": "a6e955263f13f75ad7f1fef11d828d66bd950a5008a05a2bc1f94cd7678a2ff4",
+      "seed_start": 200,
+      "seed_count": 100,
+      "set_key": "B"
+    }
+  ]
+}

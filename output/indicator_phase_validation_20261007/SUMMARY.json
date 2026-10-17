@@ -1,0 +1,450 @@
+{
+  "means": [
+    {
+      "case": "case1",
+      "group": "baseline",
+      "magnitude_mse": 14.555712544251936,
+      "phase_mse": 0.16590234514837715,
+      "wsmse": 18.72317945437917,
+      "worst_band_phase_rmse": 0.8158847971655518,
+      "II02": 0.2935676807441339,
+      "D_phi": 0.6438483136518937
+    },
+    {
+      "case": "case1",
+      "group": "old_pair",
+      "magnitude_mse": 11.280108136044904,
+      "phase_mse": 0.1539529647955427,
+      "wsmse": 15.147406611708934,
+      "worst_band_phase_rmse": 0.8207124049769096,
+      "II02": 0.18427530766249162,
+      "D_phi": 0.6462841421903577
+    },
+    {
+      "case": "case1",
+      "group": "signed_phase_pair",
+      "magnitude_mse": 18.03518012996887,
+      "phase_mse": 0.18463121976968225,
+      "wsmse": 22.673116370583287,
+      "worst_band_phase_rmse": 0.8852819881509377,
+      "II02": 0.3100714929430271,
+      "D_phi": 0.6451242753430269
+    },
+    {
+      "case": "case2",
+      "group": "baseline",
+      "magnitude_mse": 5.589658647745774,
+      "phase_mse": 0.0849303208688749,
+      "wsmse": 7.06574762444682,
+      "worst_band_phase_rmse": 0.7191060617424632,
+      "II02": 0.13042205850122873,
+      "D_phi": 0.697653401517709
+    },
+    {
+      "case": "case2",
+      "group": "old_pair",
+      "magnitude_mse": 4.330825916356721,
+      "phase_mse": 0.08265929423276748,
+      "wsmse": 5.76744445012222,
+      "worst_band_phase_rmse": 0.7128638422382386,
+      "II02": 0.10338314931406112,
+      "D_phi": 0.725511162942764
+    },
+    {
+      "case": "case2",
+      "group": "signed_phase_pair",
+      "magnitude_mse": 6.026543204789467,
+      "phase_mse": 0.09417085308689345,
+      "wsmse": 7.663232631439676,
+      "worst_band_phase_rmse": 0.7040940090760316,
+      "II02": 0.13963620866270599,
+      "D_phi": 0.6590426416968169
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "wsmse",
+      "mean_difference": 7.525709758874352,
+      "bootstrap95": [
+        3.1756193932665484,
+        11.994972786659472
+      ],
+      "lower_error_seeds": 5,
+      "higher_error_seeds": 15,
+      "ties": 0,
+      "relative_change_of_means_pct": 49.68315667354558
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "magnitude_mse",
+      "mean_difference": 6.75507199392397,
+      "bootstrap95": [
+        3.3914537622205154,
+        10.135732461213731
+      ],
+      "lower_error_seeds": 5,
+      "higher_error_seeds": 15,
+      "ties": 0,
+      "relative_change_of_means_pct": 59.88481592954366
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "phase_mse",
+      "mean_difference": 0.030678254974139528,
+      "bootstrap95": [
+        -0.022299111199843173,
+        0.0849729357521947
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": 19.927030970064003
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": 0.06456958317402825,
+      "bootstrap95": [
+        -0.05891127749623602,
+        0.19129391908393098
+      ],
+      "lower_error_seeds": 10,
+      "higher_error_seeds": 10,
+      "ties": 0,
+      "relative_change_of_means_pct": 7.8675042295534565
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "wsmse",
+      "mean_difference": 3.9499369162041176,
+      "bootstrap95": [
+        -2.673285100341422,
+        10.578249109632436
+      ],
+      "lower_error_seeds": 8,
+      "higher_error_seeds": 12,
+      "ties": 0,
+      "relative_change_of_means_pct": 21.09650727766894
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "magnitude_mse",
+      "mean_difference": 3.479467585716936,
+      "bootstrap95": [
+        -1.6202286100538554,
+        8.428997215739399
+      ],
+      "lower_error_seeds": 7,
+      "higher_error_seeds": 13,
+      "ties": 0,
+      "relative_change_of_means_pct": 23.904481317137446
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "phase_mse",
+      "mean_difference": 0.018728874621305062,
+      "bootstrap95": [
+        -0.06024676793956813,
+        0.09718395968576284
+      ],
+      "lower_error_seeds": 10,
+      "higher_error_seeds": 10,
+      "ties": 0,
+      "relative_change_of_means_pct": 11.289095765677468
+    },
+    {
+      "case": "case1",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": 0.06939719098538592,
+      "bootstrap95": [
+        -0.11646894902504536,
+        0.25360915318277427
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": 8.505758561316162
+    },
+    {
+      "case": "case1",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "wsmse",
+      "mean_difference": -3.575772842670235,
+      "bootstrap95": [
+        -8.262880692548872,
+        1.1634724633237319
+      ],
+      "lower_error_seeds": 13,
+      "higher_error_seeds": 7,
+      "ties": 0,
+      "relative_change_of_means_pct": -19.098106982219285
+    },
+    {
+      "case": "case1",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "magnitude_mse",
+      "mean_difference": -3.2756044082070317,
+      "bootstrap95": [
+        -7.17493737087528,
+        0.47561982481437504
+      ],
+      "lower_error_seeds": 12,
+      "higher_error_seeds": 8,
+      "ties": 0,
+      "relative_change_of_means_pct": -22.503909707261776
+    },
+    {
+      "case": "case1",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "phase_mse",
+      "mean_difference": -0.011949380352834467,
+      "bootstrap95": [
+        -0.06198479593128717,
+        0.03872500534583403
+      ],
+      "lower_error_seeds": 10,
+      "higher_error_seeds": 10,
+      "ties": 0,
+      "relative_change_of_means_pct": -7.202659095715233
+    },
+    {
+      "case": "case1",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": 0.00482760781135771,
+      "bootstrap95": [
+        -0.15788896139050748,
+        0.1685745826861485
+      ],
+      "lower_error_seeds": 11,
+      "higher_error_seeds": 9,
+      "ties": 0,
+      "relative_change_of_means_pct": 0.5917021408082612
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "wsmse",
+      "mean_difference": 1.8957881813174566,
+      "bootstrap95": [
+        0.06701062816855548,
+        3.76766052675981
+      ],
+      "lower_error_seeds": 7,
+      "higher_error_seeds": 13,
+      "ties": 0,
+      "relative_change_of_means_pct": 32.870506126457485
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "magnitude_mse",
+      "mean_difference": 1.695717288432747,
+      "bootstrap95": [
+        0.11844726808183514,
+        3.3077710038117516
+      ],
+      "lower_error_seeds": 6,
+      "higher_error_seeds": 14,
+      "ties": 0,
+      "relative_change_of_means_pct": 39.15459363139809
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "phase_mse",
+      "mean_difference": 0.01151155885412596,
+      "bootstrap95": [
+        -0.00410677097263775,
+        0.02736604546838336
+      ],
+      "lower_error_seeds": 7,
+      "higher_error_seeds": 13,
+      "ties": 0,
+      "relative_change_of_means_pct": 13.926514811159121
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "old_pair",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": -0.008769833162207048,
+      "bootstrap95": [
+        -0.06325625295816484,
+        0.0456731260100113
+      ],
+      "lower_error_seeds": 10,
+      "higher_error_seeds": 10,
+      "ties": 0,
+      "relative_change_of_means_pct": -1.230225555369966
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "wsmse",
+      "mean_difference": 0.5974850069928553,
+      "bootstrap95": [
+        -1.6197990966570028,
+        2.8692974658078207
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": 8.456076253355182
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "magnitude_mse",
+      "mean_difference": 0.43688455704369356,
+      "bootstrap95": [
+        -1.478505449547674,
+        2.41590827832428
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": 7.815943415791276
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "phase_mse",
+      "mean_difference": 0.009240532218018512,
+      "bootstrap95": [
+        -0.01041468341582616,
+        0.028927355945182993
+      ],
+      "lower_error_seeds": 8,
+      "higher_error_seeds": 12,
+      "ties": 0,
+      "relative_change_of_means_pct": 10.88013341228876
+    },
+    {
+      "case": "case2",
+      "treatment": "signed_phase_pair",
+      "reference": "baseline",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": -0.015012052666431713,
+      "bootstrap95": [
+        -0.09160123034232363,
+        0.06107164118793025
+      ],
+      "lower_error_seeds": 10,
+      "higher_error_seeds": 10,
+      "ties": 0,
+      "relative_change_of_means_pct": -2.0875992381507764
+    },
+    {
+      "case": "case2",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "wsmse",
+      "mean_difference": -1.2983031743246007,
+      "bootstrap95": [
+        -3.0606310075991776,
+        0.3584517942248117
+      ],
+      "lower_error_seeds": 11,
+      "higher_error_seeds": 9,
+      "ties": 0,
+      "relative_change_of_means_pct": -18.374604406087112
+    },
+    {
+      "case": "case2",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "magnitude_mse",
+      "mean_difference": -1.2588327313890535,
+      "bootstrap95": [
+        -2.8013303218554295,
+        0.19114269275864842
+      ],
+      "lower_error_seeds": 11,
+      "higher_error_seeds": 9,
+      "ties": 0,
+      "relative_change_of_means_pct": -22.520744301563422
+    },
+    {
+      "case": "case2",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "phase_mse",
+      "mean_difference": -0.002271026636107448,
+      "bootstrap95": [
+        -0.019100989553015733,
+        0.012594204346009566
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": -2.6739880561780964
+    },
+    {
+      "case": "case2",
+      "treatment": "old_pair",
+      "reference": "baseline",
+      "metric": "worst_band_phase_rmse",
+      "mean_difference": -0.006242219504224667,
+      "bootstrap95": [
+        -0.07553426448111741,
+        0.057415839991096264
+      ],
+      "lower_error_seeds": 9,
+      "higher_error_seeds": 11,
+      "ties": 0,
+      "relative_change_of_means_pct": -0.8680526887924109
+    }
+  ],
+  "cases": {
+    "case1": {
+      "target_top5_phase_derivative_energy_share": 0.5401428258539147,
+      "max_target_phase_step_deg": 177.66951114725052,
+      "old_II02_lower_phase_worse_vs_baseline": 8,
+      "candidate_Dphi_lower_phase_worse_vs_baseline": 2,
+      "representative_seeds": {
+        "lower_median_paired_difference": 2202,
+        "largest_candidate_regression": 2216
+      }
+    },
+    "case2": {
+      "target_top5_phase_derivative_energy_share": 0.7824069230103559,
+      "max_target_phase_step_deg": 184.9,
+      "old_II02_lower_phase_worse_vs_baseline": 7,
+      "candidate_Dphi_lower_phase_worse_vs_baseline": 4,
+      "representative_seeds": {
+        "lower_median_paired_difference": 2201,
+        "largest_candidate_regression": 2203
+      }
+    }
+  },
+  "seed_count_per_group": 20,
+  "bootstrap_replicates": 10000
+}
