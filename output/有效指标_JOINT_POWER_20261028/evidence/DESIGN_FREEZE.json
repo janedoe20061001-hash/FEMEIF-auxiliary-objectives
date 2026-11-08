@@ -1,0 +1,39 @@
+{
+  "selected_method": "JOINT_POWER",
+  "metric_source": "experiments/axis_power_20261028/power_metric.py",
+  "metric_sha256": "c5b590f028e972bfdab912fb24c3963e677b4983957e03f486b4b3b3b8c415ca",
+  "public_api_source": "experiments/power_precision_confirm_20261028/observable_power.py",
+  "public_api_sha256": "3d7885cf7d1c98a6f7137c5325343ad3c9a0203e6a77b6605b29bf6f900cd5fb",
+  "truth_score_limits": [
+    0.001,
+    0.001
+  ],
+  "development_review_sha256": "1e2cd65af03a67a5630b121b5c477a799e0fec2b3d3689dccb3ac5da3f6d5091",
+  "development_manifest_sha256": "915d3ef75cfd0088d3ef28bf2e1c17790a26bb698bbc49cc7b5945d83dda8c98",
+  "protocol_sha256": "25ba5d46e1caae8f713a855993cae82736baa57b089ae86c31261f1112cc933c",
+  "utc": "2026-10-28T07:09:43.592213+00:00",
+  "generator_seed": 862034,
+  "optimizer_seeds": [
+    76000,
+    76001,
+    76002,
+    76003,
+    76004,
+    76005,
+    76006,
+    76007
+  ],
+  "formula_and_weights_frozen": true,
+  "targets_not_generated": false,
+  "reusing_identical_prior_conditions": true,
+  "prior_conditions_sha256": "eedb211406f4c600f4efeaa0f15f8543c4f7523fa7e315df0d3cbd6039694f13",
+  "prior_design_sha256": "a0a45d0a19cafe9989f3c7aaffab12584b00c5cb1aa2d2e26a2478b2221bf84b",
+  "prior_admission_failure_sha256": "4ebfdbd34c649d4666729f6d1d3729143f4fc0ca4c6ad2feff8b07dc919a80b1",
+  "response_arithmetic_digits": 70,
+  "raw_log_ranges": {
+    "frequency": 0.2,
+    "R": 0.5,
+    "decay": 0.9
+  },
+  "bound_scale_rule": "min(1,.99*mR/.5,.99*mC/1.4,.99*mL/1.8)"
+}

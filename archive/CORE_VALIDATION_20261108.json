@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "publication_date": "2026-11-08",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "source_files_checked": 156,
+  "trials_read": 312,
+  "fixed_representatives_replayed": 72,
+  "branch_permutations_checked": 72,
+  "cohorts": [
+    {
+      "folder": "有效指标_L1_COARSE_20261028",
+      "trials_read": 96,
+      "method": "L1_COARSE",
+      "p3": 23,
+      "strict_peaks": 140,
+      "all_six": 20,
+      "auxiliary_replay": {
+        "passed": true,
+        "representatives": 24,
+        "permutation_checks": 24,
+        "maximum_absolute_score_error": 1.8712809080057013e-13,
+        "scope": "Auxiliary-score replay; strict curve verdicts are frozen independent records, not recomputed by this script"
+      }
+    },
+    {
+      "folder": "L1_COARSE_扩大参数验证_20261028",
+      "trials_read": 96,
+      "method": "L1_COARSE",
+      "p3": 21,
+      "strict_peaks": 137,
+      "all_six": 21,
+      "auxiliary_replay": {
+        "passed": true,
+        "representatives": 24,
+        "permutation_checks": 24,
+        "maximum_absolute_score_error": 7.821521208484228e-14,
+        "scope": "Auxiliary-score replay; strict curve verdicts are frozen independent records, not recomputed by this script"
+      }
+    },
+    {
+      "folder": "有效指标_JOINT_POWER_20261028",
+      "trials_read": 120,
+      "method": "JOINT_POWER",
+      "p3": 19,
+      "strict_peaks": 133,
+      "all_six": 18,
+      "auxiliary_replay": {
+        "passed": true,
+        "representatives": 24,
+        "permutation_checks": 24,
+        "maximum_absolute_error": 4.709566070459914e-13,
+        "public_api_sha256": "3d7885cf7d1c98a6f7137c5325343ad3c9a0203e6a77b6605b29bf6f900cd5fb",
+        "scope": "Auxiliary replay of fixed representatives; curve verdicts remain independent frozen evidence"
+      }
+    }
+  ],
+  "scope": "Recomputed CSV summaries and fixed auxiliary values only; no new optimization, mode extraction, strict curve integration, or timing benchmark."
+}

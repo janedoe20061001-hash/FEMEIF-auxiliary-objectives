@@ -1,0 +1,67 @@
+{
+  "accepted": true,
+  "method": "L1_COARSE",
+  "requirements": {
+    "scope": "Known six-module series-of-parallel-RLC theoretical class; noiseless, distinct observable modes; conditional on declared parameter distribution",
+    "definition": true,
+    "numerical_and_cost": true,
+    "fixed_budget_and_selection": true,
+    "curve_structure_and_phase": true,
+    "physical_parameter_relationship": true,
+    "fresh_parameter_generalization": true,
+    "delivery_replay": true,
+    "raw_recovery": true
+  },
+  "experiments": 96,
+  "main_search_evaluations": 5760000,
+  "knee_rechecks": 1440,
+  "strict_classification_rechecks": 1728,
+  "paired_initialization_blocks": 24,
+  "actual_auxiliary_checks": 14400,
+  "final_members": 19200,
+  "stable_final_members": 19188,
+  "representatives_accepted": 96,
+  "api_final_candidates": 4800,
+  "api_precheck_inputs": 5790,
+  "local_representative_replays": 24,
+  "source_files_unchanged": 1764,
+  "raw_files": 9709,
+  "raw_sha256": "ed9f85d1dc2bb838dda3369128a939e9fb64fa5cdbe2cbe533a4166b23c341c1",
+  "frozen_p3": [
+    7,
+    8,
+    8
+  ],
+  "strict_peaks": 140,
+  "all_six_representatives": 20,
+  "statistics": {
+    "seed_clusters": 8,
+    "conditions": 3,
+    "p3_difference_by_seed": [
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "observed_difference": 23,
+    "one_sided_exact_seed_cluster_signflip_p": 0.00390625,
+    "passed": true,
+    "scope": "Conditional on the three frozen parameter targets; not inference to arbitrary targets or topologies"
+  },
+  "public_api_sha256": "e3b3d9883b8d10f7a3023428f97bfa130d77908b6945c2d575322fbf2606627d",
+  "remaining_required_work": [],
+  "utc": "2026-10-28T03:42:23.329351+00:00",
+  "verification_inputs_sha256": {
+    "experiments/axis_candidate_confirm_20261028/completion_audit.py": "e400b14b0a139b82cec612d3fbb3a33680b32f7c00320859bfbeec2fa1f87373",
+    "output/axis_candidate_confirm_20261028/RECOVERY.json": "5048eca483a62c1c66c9b8efadda21d1e5dd4509eb6a0b49123b53718bd9fabf",
+    "output/有效指标_L1_COARSE_20261028/evidence/CLOSING_SOURCE_GUARD.json": "5da5efd11930b79d2fb644f53bdbb30700f2163647a11eb350da49a6c119aba7",
+    "output/有效指标_L1_COARSE_20261028/evidence/CONFIRMATION.json": "6ba675455dea7a32df8953a689a2dea84b492e3b322682e4c29a63e4e05404f0",
+    "output/有效指标_L1_COARSE_20261028/MATH.md": "af84b926973334a9ab4e5e8aa141bfb0aa6057ccae1c2c7b5620785696b6abec",
+    "output/有效指标_L1_COARSE_20261028/CONFIRMATION_REPORT.md": "279bf87ac669dff2d0b507633bd90092f880609a1424c964c37150b1e36627dd",
+    "output/有效指标_L1_COARSE_20261028/LOCAL_REPLAY.json": "0ab87cadece1275abfad6ecd799d0dc9ba9a6696f4e1565b79b2e219ad7ceaef"
+  }
+}

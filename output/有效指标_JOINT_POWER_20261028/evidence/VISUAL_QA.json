@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "figures": 3,
+  "visual_inspection_completed": true,
+  "all_fixed_seeds_present": true,
+  "rows": [
+    {
+      "file": "power_confirm_1_all_seeds.png",
+      "sha256": "37e60d712da702b94f80c661d5722097399f01d0ea1f503ef05c7dff68280fdc",
+      "fixed_seeds": 8,
+      "readable_layout": true,
+      "target_and_both_controls_visible": true,
+      "failures_visible": true
+    },
+    {
+      "file": "power_confirm_2_all_seeds.png",
+      "sha256": "b1db0f76e0d6407439a9e61635b6aceb8c55913f7517a10ad630aeb7082de0b9",
+      "fixed_seeds": 8,
+      "readable_layout": true,
+      "target_and_both_controls_visible": true,
+      "failures_visible": true
+    },
+    {
+      "file": "power_confirm_3_all_seeds.png",
+      "sha256": "b3b762d589c3b932279dc3c4985cf2e8473615308200910bf7b2879720426c3f",
+      "fixed_seeds": 8,
+      "readable_layout": true,
+      "target_and_both_controls_visible": true,
+      "failures_visible": true
+    }
+  ],
+  "spotcheck": {
+    "target": "power_confirm_2",
+    "method": "JOINT_POWER",
+    "seed": 76007,
+    "P3_maximum_location_in_target_width": -0.4102183085225526,
+    "P3_maximum_height_db": 70.69307077887215,
+    "agrees_with_frozen_strict_peak": true
+  },
+  "scope": "Visual inspection using the image viewer of all three full-seed figures and numerical spotcheck; frozen curve verdicts remain independent"
+}

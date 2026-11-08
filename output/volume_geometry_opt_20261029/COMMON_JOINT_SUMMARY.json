@@ -1,0 +1,12 @@
+{
+  "tasks": 104,
+  "passed": 104,
+  "all_passed": true,
+  "completion": "raw-only postprocessing; original parent console serialization failure retained",
+  "original_status": {
+    "status": "failed",
+    "pid": 11734,
+    "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/femeif_20261027/experiments/volume_geometry_opt_20261029/common_joint.py\", line 35, in <module>\n    try:main()\n        ^^^^^^\n  File \"/root/autodl-tmp/femeif_20261027/experiments/volume_geometry_opt_20261029/common_joint.py\", line 32, in main\n    for f in as_completed([pool.submit(one,tuple(j)) for j in plan['jobs']]):rows.append(f.result());dump(OUT/'COMMON_JOINT_RESULTS.json',rows);print(json.dumps(dict(completed=len(rows),passed=sum(r['passed'] for r in rows))),flush=True)\n                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/miniconda3/lib/python3.12/json/__init__.py\", line 231, in dumps\n    return _default_encoder.encode(obj)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/miniconda3/lib/python3.12/json/encoder.py\", line 200, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/miniconda3/lib/python3.12/json/encoder.py\", line 258, in iterencode\n    return _iterencode(o, 0)\n           ^^^^^^^^^^^^^^^^^\n  File \"/root/miniconda3/lib/python3.12/json/encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\nTypeError: Object of type int64 is not JSON serializable\n"
+  },
+  "new_scientific_calls": 0
+}
